@@ -1,0 +1,27 @@
+state={
+	id=745
+	name="STATE_745"
+	
+	history={
+		owner = PAP
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			782 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ITA
+		add_core_of = PAP
+
+	}
+	
+	provinces={
+		782 6793 6985 9582 9924 
+	}
+	manpower=1597067
+	state_category = town
+	buildings_max_level_factor=1.000
+}

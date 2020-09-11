@@ -1,0 +1,19 @@
+state={
+	id=749
+	name="STATE_749"
+	
+	history={
+	    owner = YEM
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	provinces={
+		5006 8030 
+	}
+	manpower= 2859
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+}

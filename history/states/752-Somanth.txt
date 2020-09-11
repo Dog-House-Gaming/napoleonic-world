@@ -1,0 +1,29 @@
+state={
+	id=752
+	name="STATE_752"
+	
+	history={
+		owner = POR
+		add_core_of = MAR
+		victory_points = {
+			4090 1 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			4090 = {
+				naval_base = 4
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		4090 
+	}
+	manpower=48690
+	state_category = town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,21 @@
+﻿add_namespace = NAPeng
+
+news_event = {
+	id = NAPeng.0
+	title = NAPeng.0.t
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	fire_only_once = yes
+	desc = {
+		text = NAPeng.0.d
+
+	}
+	option = {
+	name = NAPeng.0.a
+trigger = {
+     ENG = {
+	 has_completed_focus = ENG_free_canada 
+	}
+   }
+ }
+}

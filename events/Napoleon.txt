@@ -1,0 +1,1938 @@
+﻿add_namespace = napoleon
+
+#Third Treaty of San Ildefonso
+country_event = {
+	id = napoleon.1
+	title = napoleon.1.t
+	desc = napoleon.1.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.1.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+					NOT = { has_wargoal_against = NSP }
+					NOT = { is_justifying_wargoal_against = NSP }
+				}
+			}
+		}
+
+
+		FRA = {
+			country_event = { days = 7 id = napoleon.3 }
+		}		
+	}
+option = {
+		name = napoleon.1.b
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+					NOT = { has_wargoal_against = NSP }
+					NOT = { is_justifying_wargoal_against = NSP }
+				}
+			}
+		}
+		FRA = {
+			country_event = { days = 7 id = napoleon.2 }
+		}
+	}
+}
+#Spain Rejects Treaty
+country_event = {
+	id = napoleon.2
+	title = napoleon.2.t
+	desc = napoleon.2.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.2.a
+
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SPR
+		}
+		
+	}
+}
+#Spain Accepts Treaty
+country_event = {
+	id = napoleon.3
+	title = napoleon.3.t
+	desc = napoleon.3.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.3.a	
+
+		if = {
+			limit = { 
+				NSP = { 
+					owns_state = 371
+					controls_state = 371 
+				}
+			}
+			transfer_state = 371
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 372
+					controls_state = 372
+				}
+			}
+			transfer_state = 372
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 373
+					controls_state = 373 
+				}
+			}
+			transfer_state = 373
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 392
+					controls_state = 392
+				}
+			}
+			transfer_state = 392
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 391
+					controls_state = 391 
+				}
+			}
+			transfer_state = 391
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 374
+					controls_state = 374 
+				}
+			}
+			transfer_state = 374
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 383
+					controls_state = 383
+				}
+			}
+			transfer_state = 383
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 384
+					controls_state = 384
+				}
+			}
+			transfer_state = 384
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 390
+					controls_state = 390
+				}
+			}
+			transfer_state = 390
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 389
+					controls_state = 389
+				}
+			}
+			transfer_state = 389
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 382
+					controls_state = 382 
+				}
+			}
+			transfer_state = 382
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 381
+					controls_state = 381 
+				}
+			}
+			transfer_state = 381
+		}
+			if = {
+			limit = { 
+				NSP = { 
+					owns_state = 388
+					controls_state = 388 
+				}
+			}
+			transfer_state = 388
+		}
+
+	}
+}
+
+#Spain Non Agression Pact
+country_event = {
+	id = napoleon.4
+	title = napoleon.4.t
+	desc = napoleon.4.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.4.a	
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}
+		diplomatic_relation = { country = FRA relation = non_aggression_pact }
+		
+		FRA = {
+				country_event = { days = 1 id = napoleon.5 }
+		}
+
+	}
+		option = {
+		name = napoleon.4.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}	
+		FRA = {
+				country_event = { days = 1 id = napoleon.6 }
+		} 
+		}
+}
+
+
+#Spain Refuses Non Agression
+country_event = {
+	id = napoleon.6
+	title = napoleon.6.t
+	desc = napoleon.6.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.6.a	
+	}
+}
+
+#Spain Signs Non Agression
+country_event = {
+	id = napoleon.5
+	title = napoleon.5.t
+	desc = napoleon.5.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.5.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}
+
+	}
+}
+#Louisiana Purchase
+country_event = {
+	id = napoleon.7
+	title = napoleon.7.t
+	desc = napoleon.7.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.7.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = USA }
+					NOT = { is_justifying_wargoal_against = USA }
+				}
+			}
+		}
+
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 371
+					controls_state = 371 
+				}
+			}
+			transfer_state = 371
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 372
+					controls_state = 372
+				}
+			}
+			transfer_state = 372
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 373
+					controls_state = 373 
+				}
+			}
+			transfer_state = 373
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 392
+					controls_state = 392
+				}
+			}
+			transfer_state = 392
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 391
+					controls_state = 391 
+				}
+			}
+			transfer_state = 391
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 374
+					controls_state = 374 
+				}
+			}
+			transfer_state = 374
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 383
+					controls_state = 383
+				}
+			}
+			transfer_state = 383
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 384
+					controls_state = 384
+				}
+			}
+			transfer_state = 384
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 390
+					controls_state = 390
+				}
+			}
+			transfer_state = 390
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 389
+					controls_state = 389
+				}
+			}
+			transfer_state = 389
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 382
+					controls_state = 382 
+				}
+			}
+			transfer_state = 382
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 381
+					controls_state = 381 
+				}
+			}
+			transfer_state = 381
+		}
+			if = {
+			limit = { 
+				FRA = { 
+					owns_state = 388
+					controls_state = 388 
+				}
+			}
+			transfer_state = 388
+		}
+		FRA = {
+			country_event = { days = 1 id = napoleon.8 }
+		}
+	}
+
+	option = {
+		name = napoleon.7.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}
+		FRA = {
+			country_event = { days = 1 id = napoleon.9 }
+		}
+	}
+}
+
+country_event = {
+	id = napoleon.8
+	title = napoleon.8.t
+	desc = napoleon.8.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.8.a	
+	}
+}
+
+country_event = {
+	id = napoleon.9
+	title = napoleon.9.t
+	desc = napoleon.9.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.9.a	
+	}
+}
+
+#Major Non Agression Pact GER
+country_event = {
+	id = napoleon.10
+	title = napoleon.10.t
+	desc = napoleon.10.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.10.a	
+		ai_chance = {
+			factor = 80
+		}
+		diplomatic_relation = { country = FRA relation = non_aggression_pact }
+		
+		FRA = {
+				country_event = { days = 1 id = napoleon.11 }
+		}
+
+	}
+		option = {
+		name = napoleon.10.b
+		ai_chance = {
+			factor = 20		}	
+		FRA = {
+				country_event = { days = 1 id = napoleon.12 }
+		} 
+		}
+}
+
+#Major Signs Non Agression GER
+country_event = {
+	id = napoleon.11
+	title = napoleon.11.t
+	desc = napoleon.11.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.11.a	
+	}
+}
+
+#Major Refuses Non Agression GER
+country_event = {
+	id = napoleon.12
+	title = napoleon.12.t
+	desc = napoleon.12.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.12.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}
+
+	}
+}
+#Major Non Agression Pact AUS
+country_event = {
+	id = napoleon.13
+	title = napoleon.13.t
+	desc = napoleon.13.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.13.a	
+		ai_chance = {
+			factor = 80
+		}
+		diplomatic_relation = { country = FRA relation = non_aggression_pact }
+		
+		FRA = {
+				country_event = { days = 1 id = napoleon.14 }
+		}
+
+	}
+		option = {
+		name = napoleon.13.b
+		ai_chance = {
+			factor = 20		}	
+		FRA = {
+				country_event = { days = 1 id = napoleon.15 }
+		} 
+		}
+}
+
+#Major Signs Non Agression AUS
+country_event = {
+	id = napoleon.14
+	title = napoleon.14.t
+	desc = napoleon.14.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.14.a	
+	}
+}
+
+#Major Refuses Non Agression AUS
+country_event = {
+	id = napoleon.15
+	title = napoleon.15.t
+	desc = napoleon.15.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.15.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}
+
+	}
+}
+#Major Non Agression Pact ENG
+country_event = {
+	id = napoleon.16
+	title = napoleon.16.t
+	desc = napoleon.16.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.16.a	
+		ai_chance = {
+			factor = 80
+		}
+		diplomatic_relation = { country = FRA relation = non_aggression_pact }
+		
+		FRA = {
+				country_event = { days = 1 id = napoleon.17 }
+		}
+
+	}
+		option = {
+		name = napoleon.16.b
+		ai_chance = {
+			factor = 20		}	
+		FRA = {
+				country_event = { days = 1 id = napoleon.18 }
+		} 
+		}
+}
+
+#Major Signs Non Agression ENG
+country_event = {
+	id = napoleon.17
+	title = napoleon.17.t
+	desc = napoleon.17.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.17.a	
+	}
+}
+
+#Major Refuses Non Agression ENG
+country_event = {
+	id = napoleon.18
+	title = napoleon.18.t
+	desc = napoleon.18.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.18.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}
+
+	}
+}
+#Major Non Agression Pact SOV
+country_event = {
+	id = napoleon.19
+	title = napoleon.19.t
+	desc = napoleon.19.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.19.a	
+		ai_chance = {
+			factor = 80
+		}
+		diplomatic_relation = { country = FRA relation = non_aggression_pact }
+		
+		FRA = {
+				country_event = { days = 1 id = napoleon.20 }
+		}
+
+	}
+		option = {
+		name = napoleon.19.b
+		ai_chance = {
+			factor = 20		}	
+		FRA = {
+				country_event = { days = 1 id = napoleon.21 }
+		} 
+		}
+}
+
+#Major Signs Non Agression SOV
+country_event = {
+	id = napoleon.20
+	title = napoleon.20.t
+	desc = napoleon.20.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.20.a	
+	}
+}
+
+#Major Refuses Non Agression SOV
+country_event = {
+	id = napoleon.21
+	title = napoleon.21.t
+	desc = napoleon.21.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.21.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				FRA = {
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
+				}
+			}
+		}
+
+	}
+}
+#French Majors Factions SOV
+country_event = {
+	id = napoleon.22
+	title = napoleon.22.t
+	desc = napoleon.22.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.22.a
+		ai_chance = {
+			factor = 70
+		}
+		add_national_unity = 0.05
+		FRA = {
+				country_event = { days = 1 id = napoleon.24 }
+		} 
+	}
+	option = {
+		name = napoleon.22.b
+		ai_chance = {
+			factor = 30
+		}
+		FRA = {
+				country_event = { days = 1 id = napoleon.25 }
+		} 
+	}
+}
+#French Faction Accept SOV
+country_event = {
+	id = napoleon.24
+	title = napoleon.24.t
+	desc = napoleon.24.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.24.a	
+		FRA = {
+				add_to_faction = SOV
+		} 
+
+	}
+}
+
+#French Faction Refuse SOV
+country_event = {
+	id = napoleon.25
+	title = napoleon.25.t
+	desc = napoleon.25.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.25.a
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+#French Majors Factions GER
+country_event = {
+	id = napoleon.26
+	title = napoleon.26.t
+	desc = napoleon.26.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.26.a
+		ai_chance = {
+			factor = 70
+		}
+		add_national_unity = 0.05
+		FRA = {
+				country_event = { days = 1 id = napoleon.27 }
+		} 
+	}
+	option = {
+		name = napoleon.26.b
+		ai_chance = {
+			factor = 30
+		}
+		FRA = {
+				country_event = { days = 1 id = napoleon.28 }
+		} 
+	}
+}
+#French Faction Accept GER
+country_event = {
+	id = napoleon.27
+	title = napoleon.27.t
+	desc = napoleon.27.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.27.a	
+				FRA = {
+				add_to_faction = GER
+		} 
+	}
+}
+
+#French Faction Refuse GER
+country_event = {
+	id = napoleon.28
+	title = napoleon.28.t
+	desc = napoleon.28.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.28.a
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+#French Majors Factions AUS
+country_event = {
+	id = napoleon.29
+	title = napoleon.29.t
+	desc = napoleon.29.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.29.a
+		ai_chance = {
+			factor = 70
+		}
+		add_national_unity = 0.05
+		FRA = {
+				country_event = { days = 1 id = napoleon.30 }
+		} 
+	}
+	option = {
+		name = napoleon.29.b
+		ai_chance = {
+			factor = 30
+		}
+		FRA = {
+				country_event = { days = 1 id = napoleon.31 }
+		} 
+	}
+}
+#French Faction Accept AUS
+country_event = {
+	id = napoleon.30
+	title = napoleon.30.t
+	desc = napoleon.30.d
+	picture = GFX_news_event_generic_panzer_attack
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.30.a	
+				FRA = {
+				add_to_faction = AUS
+		} 
+	}
+}
+
+#French Faction Refuse AUS
+country_event = {
+	id = napoleon.31
+	title = napoleon.31.t
+	desc = napoleon.31.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.31.a
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+#Germany wants to annex Mecklenburg
+country_event = {
+	id = napoleon.32
+	title = napoleon.32.t
+	desc = napoleon.32.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.32.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		61 = {
+			if = {
+				limit = { is_owned_by = MEC }
+				add_core_of = GER
+			}
+		}
+
+
+		GER = {
+				country_event = { days = 1 id = napoleon.33 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.32.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.34 }
+		} 
+
+	}
+
+}
+#Meclenburg Says yes
+country_event = {
+	id = napoleon.33
+	title = napoleon.33.t
+	desc = napoleon.33.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.33.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = MEC transfer_troops = yes }
+	}
+}
+#Meclenburg Says no
+country_event = {
+	id = napoleon.34
+	title = napoleon.34.t
+	desc = napoleon.34.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.34.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = MEC
+		}
+	}
+}
+
+#Germany wants to annex Saxony
+country_event = {
+	id = napoleon.35
+	title = napoleon.35.t
+	desc = napoleon.35.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.35.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		65 = {
+			if = {
+				limit = { is_owned_by = SAX }
+				add_core_of = GER
+			}
+		}
+		60 = {
+			if = {
+				limit = { is_owned_by = SAX }
+				add_core_of = GER
+			}
+		}
+
+
+		GER = {
+				country_event = { days = 1 id = napoleon.36 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.35.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.37 }
+		} 
+
+	}
+
+}
+#Saxony Says yes
+country_event = {
+	id = napoleon.36
+	title = napoleon.36.t
+	desc = napoleon.36.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.36.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = SAX transfer_troops = yes }
+	}
+}
+#Saxony Says no
+country_event = {
+	id = napoleon.37
+	title = napoleon.37.t
+	desc = napoleon.37.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.37.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = SAX
+		}
+	}
+}
+
+#Germany wants to annex Hannover
+country_event = {
+	id = napoleon.38
+	title = napoleon.38.t
+	desc = napoleon.38.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.38.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		59 = {
+			if = {
+				limit = { is_owned_by = HAN }
+				add_core_of = GER
+			}
+		}
+
+		GER = {
+				country_event = { days = 1 id = napoleon.39 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.38.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.40 }
+		} 
+
+	}
+
+}
+#Hannover Says yes
+country_event = {
+	id = napoleon.39
+	title = napoleon.39.t
+	desc = napoleon.39.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.39.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = HAN transfer_troops = yes }
+	}
+}
+#Hannover Says no
+country_event = {
+	id = napoleon.40
+	title = napoleon.40.t
+	desc = napoleon.40.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.40.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = HAN
+		}
+	}
+}
+#Germany wants to annex Oldenburg
+country_event = {
+	id = napoleon.41
+	title = napoleon.41.t
+	desc = napoleon.41.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.41.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		56 = {
+			if = {
+				limit = { is_owned_by = WES }
+				add_core_of = GER
+			}
+		}
+
+		GER = {
+				country_event = { days = 1 id = napoleon.42 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.41.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.43 }
+		} 
+
+	}
+
+}
+#Oldenburg Says yes
+country_event = {
+	id = napoleon.42
+	title = napoleon.42.t
+	desc = napoleon.42.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.42.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = WES transfer_troops = yes }
+	}
+}
+#Oldenburg Says no
+country_event = {
+	id = napoleon.43
+	title = napoleon.43.t
+	desc = napoleon.43.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.43.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = WES
+		}
+	}
+}
+#Germany wants to annex Cologne
+country_event = {
+	id = napoleon.44
+	title = napoleon.44.t
+	desc = napoleon.44.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.44.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		57 = {
+			if = {
+				limit = { is_owned_by = GNE }
+				add_core_of = GER
+			}
+		}
+
+		GER = {
+				country_event = { days = 1 id = napoleon.45 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.44.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.46 }
+		} 
+
+	}
+
+}
+#Cologne Says yes
+country_event = {
+	id = napoleon.45
+	title = napoleon.45.t
+	desc = napoleon.45.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.45.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = GNE transfer_troops = yes }
+	}
+}
+#Cologne Says no
+country_event = {
+	id = napoleon.46
+	title = napoleon.46.t
+	desc = napoleon.46.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.46.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = GNE
+		}
+	}
+}
+#Germany wants to annex Wurzburg
+country_event = {
+	id = napoleon.47
+	title = napoleon.47.t
+	desc = napoleon.47.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.47.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		54 = {
+			if = {
+				limit = { is_owned_by = WUZ }
+				add_core_of = GER
+			}
+		}
+
+		GER = {
+				country_event = { days = 1 id = napoleon.48 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.47.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.49 }
+		} 
+
+	}
+
+}
+#Wurzburg Says yes
+country_event = {
+	id = napoleon.48
+	title = napoleon.48.t
+	desc = napoleon.48.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.48.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = WUZ transfer_troops = yes }
+	}
+}
+#Wurzburg Says no
+country_event = {
+	id = napoleon.49
+	title = napoleon.49.t
+	desc = napoleon.49.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.49.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = WUZ
+		}
+	}
+}
+#Germany wants to annex Hesse
+country_event = {
+	id = napoleon.50
+	title = napoleon.50.t
+	desc = napoleon.50.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.50.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		55 = {
+			if = {
+				limit = { is_owned_by = HES }
+				add_core_of = GER
+			}
+		}
+
+		GER = {
+				country_event = { days = 1 id = napoleon.51 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.50.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.52 }
+		} 
+
+	}
+
+}
+#Hesse Says yes
+country_event = {
+	id = napoleon.51
+	title = napoleon.51.t
+	desc = napoleon.51.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.51.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = HES transfer_troops = yes }
+	}
+}
+#Hesse Says no
+country_event = {
+	id = napoleon.52
+	title = napoleon.52.t
+	desc = napoleon.52.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.52.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = HES
+		}
+	}
+}
+#Germany wants to annex Wurttemburg
+country_event = {
+	id = napoleon.53
+	title = napoleon.53.t
+	desc = napoleon.53.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.53.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		50 = {
+			if = {
+				limit = { is_owned_by = WUR }
+				add_core_of = GER
+			}
+		}
+
+		GER = {
+				country_event = { days = 1 id = napoleon.54 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.53.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.55 }
+		} 
+
+	}
+
+}
+#Wurttemburg Says yes
+country_event = {
+	id = napoleon.54
+	title = napoleon.54.t
+	desc = napoleon.54.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.54.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = WUR transfer_troops = yes }
+	}
+}
+#Wurttemburg Says no
+country_event = {
+	id = napoleon.55
+	title = napoleon.55.t
+	desc = napoleon.55.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.55.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = WUR
+		}
+	}
+}
+#
+#Germany wants to annex Bavaria
+country_event = {
+	id = napoleon.56
+	title = napoleon.56.t
+	desc = napoleon.56.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.56.a
+		ai_chance = {
+			factor = 90
+		}
+		
+		53 = {
+			if = {
+				limit = { is_owned_by = BAV }
+				add_core_of = GER
+			}
+		}
+
+		GER = {
+				country_event = { days = 1 id = napoleon.57 }
+		} 
+
+	}
+
+	option = {
+		name = napoleon.56.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		
+		GER = {
+				country_event = { days = 1 id = napoleon.58 }
+		} 
+
+	}
+
+}
+#Bavaria Says yes
+country_event = {
+	id = napoleon.57
+	title = napoleon.57.t
+	desc = napoleon.57.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.57.a
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = { target = BAV transfer_troops = yes }
+	}
+}
+#Bavaria Says no
+country_event = {
+	id = napoleon.58
+	title = napoleon.58.t
+	desc = napoleon.58.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.58.a
+		ai_chance = {
+			factor = 100
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = BAV
+		}
+	}
+}
+#Germany Non aggression with france
+country_event = {
+	id = napoleon.59
+	title = napoleon.59.t
+	desc = napoleon.59.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.59.a
+		ai_chance = {
+			factor = 70
+		}
+			GER = {
+				country_event = { days = 1 id = napoleon.60 }
+		} 
+
+		}
+	
+	option = {
+		name = napoleon.59.b
+		ai_chance = {
+			factor = 30
+		}
+		GER = {
+				country_event = { days = 1 id = napoleon.61 }
+		} 
+	}
+}
+
+#France Accepts Non-Aggression w Ger
+country_event = {
+	id = napoleon.60
+	title = napoleon.60.t
+	desc = napoleon.60.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.60.a
+		ai_chance = {
+			factor = 100
+		}
+		diplomatic_relation = { country = FRA relation = non_aggression_pact }
+		}
+}
+#France Declines Non-Aggression w Ger
+country_event = {
+	id = napoleon.61
+	title = napoleon.61.t
+	desc = napoleon.61.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.61.a
+		ai_chance = {
+			factor = 100
+		}
+		}
+}
+#France help GER in SOV?
+country_event = {
+	id = napoleon.62
+	title = napoleon.62.t
+	desc = napoleon.62.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.62.a
+		ai_chance = {
+			factor = 60
+		}
+			create_wargoal = {
+			type = annex_everything
+			target = SOV
+		}
+		GER = {
+				country_event = { days = 1 id = napoleon.63 }
+		} 
+		}
+
+	option = {
+		name = napoleon.62.a
+		ai_chance = {
+			factor = 40
+		}
+		GER = {
+				country_event = { days = 1 id = napoleon.64 }
+		} 
+		}
+}
+#France Accepts
+country_event = {
+	id = napoleon.63
+	title = napoleon.63.t
+	desc = napoleon.63.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.63.a
+		ai_chance = {
+			factor = 100
+		}
+
+		}
+}
+#France Rejects
+country_event = {
+	id = napoleon.64
+	title = napoleon.64.t
+	desc = napoleon.64.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.64.a
+		ai_chance = {
+			factor = 100
+		}
+
+		}
+}
+#Prussia wants non-aggression w Austria
+country_event = {
+	id = napoleon.65
+	title = napoleon.65.t
+	desc = napoleon.65.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.65.a
+		ai_chance = {
+			factor = 80
+		}
+		diplomatic_relation = { country = GER relation = non_aggression_pact }
+
+		GER = {
+				country_event = { days = 1 id = napoleon.66 }
+		} 
+		}
+
+	option = {
+		name = napoleon.65.b
+		ai_chance = {
+			factor = 20
+		}
+		GER = {
+				country_event = { days = 1 id = napoleon.67 }
+		} 
+		}
+
+}
+#Austria Says Yes
+country_event = {
+	id = napoleon.66
+	title = napoleon.66.t
+	desc = napoleon.66.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.66.a
+		ai_chance = {
+			factor = 100 
+		}
+
+		}
+
+}
+#Austria Says No
+country_event = {
+	id = napoleon.67
+	title = napoleon.67.t
+	desc = napoleon.67.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.67.a
+		ai_chance = {
+			factor = 100
+		}
+
+		}
+}
+#Prussia wants alliance w Austria
+country_event = {
+	id = napoleon.68
+	title = napoleon.68.t
+	desc = napoleon.68.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.68.a
+		ai_chance = {
+			factor = 70
+		}
+		GER = {
+				country_event = { days = 1 id = napoleon.69 }
+		}
+		}
+	option = {
+		name = napoleon.68.b
+		ai_chance = {
+			factor = 30
+		}
+		GER = {
+				country_event = { days = 1 id = napoleon.70 }
+		}
+		}
+}
+#Austria Accepts
+country_event = {
+	id = napoleon.69
+	title = napoleon.69.t
+	desc = napoleon.69.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.69.a
+		ai_chance = {
+			factor = 100
+		}
+		GER = {
+				create_faction = "pru_aus_alliance"
+				add_to_faction = AUS
+			} 
+		}
+}
+#Austria Denies
+country_event = {
+	id = napoleon.70
+	title = napoleon.70.t
+	desc = napoleon.70.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = napoleon.70.a
+		ai_chance = {
+			factor = 100
+		}
+
+		}
+}

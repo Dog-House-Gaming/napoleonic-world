@@ -1,0 +1,1444 @@
+focus_tree = {
+	id = german_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+#
+	focus = {
+		id = PRU_begin_industrialization
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_civilian_1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PRU_begin_industrialization }
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_civilian_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PRU_civilian_1 }
+		x = 0
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_civilian_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PRU_civilian_2 }
+		x = 0
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_naval_1
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = PRU_begin_industrialization }
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+		}
+	
+#
+	focus = {
+		id = PRU_naval_2
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = PRU_naval_1 }
+		x = 2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+		}
+	
+#
+	focus = {
+		id = PRU_naval_3
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = PRU_naval_2 }
+		x = 2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+		}
+	
+#
+	focus = {
+		id = PRU_army_1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PRU_begin_industrialization }
+		x = 4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_army_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PRU_army_1 }
+		x = 4
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_army_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PRU_army_2 }
+		x = 4
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_inf_1
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PRU_begin_industrialization }
+		x = 6
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_inf_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PRU_inf_1 }
+		x = 6
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_inf_3
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PRU_inf_2 }
+		x = 6
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_german_engineering
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = PRU_inf_3 }
+		prerequisite = { focus = PRU_civilian_3 }
+		prerequisite = { focus = PRU_naval_3 }
+		prerequisite = { focus = PRU_army_3 }
+		x = 3
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			 	add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 3
+				category = industry
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_research
+		icon = GFX_focus_research
+		prerequisite = { focus = PRU_german_engineering }
+		x = 3
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			 	add_research_slot = 1
+		}
+	}
+#### FOCUS COMPLETE ####
+	focus = {
+		id = PRU_refit_the_army
+		icon = GFX_goal_generic_position_armies
+		x = 8
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+#
+	focus = {
+		id = PRU_small_arms_technology
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = PRU_refit_the_army }
+		x = 8
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_artillery_technology
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = PRU_small_arms_technology }
+		x = 8
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_land_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = PRU_artillery_technology }
+		x = 8
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_naval_power
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 10
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				navy_experience = 20
+		}
+	}
+#
+	focus = {
+		id = PRU_destroyer_focus
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = PRU_naval_power }
+		x = 10
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}		
+			}
+	}
+#
+	focus = {
+		id = PRU_battleship_focus
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = PRU_destroyer_focus }
+		x = 10
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+				name = uk_carrier_focus
+				bonus = 0.5
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+#
+	focus = {
+		id = PRU_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = PRU_battleship_focus }
+		x = 10
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+#### FOCUS COMPLETE ####
+	focus = {
+		id = PRU_political
+		icon = GFX_goal_generic_demand_territory
+		x = 15
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+#
+
+
+#### FOCUS COMPLETE ####
+	focus = {
+		id = PRU_align_with_napoleon
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = PRU_political }
+		mutually_exclusive = { focus = PRU_condemn_napoleon }
+		x = 12
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nationalism
+		}
+	}
+#
+	focus = {
+		id = PRU_non_aggression
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = PRU_align_with_napoleon }
+		available = {
+			GER = { 
+			NOT = { has_war_with = FRA }
+			}
+		}
+		x = 12
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA = {
+			country_event = { days = 1 id = napoleon.59 }
+		}
+		}
+	}
+#
+	focus = {
+		id = PRU_eyes_towards_russia
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = PRU_non_aggression }
+		x = 12
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SOV
+		}
+		}
+	}
+#
+	focus = {
+		id = PRU_help_from_napoleon
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = PRU_eyes_towards_russia }
+		available = {
+			GER = { has_war_with = SOV }
+		}
+		x = 12
+		y = 4
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA = {
+			country_event = { days = 1 id = napoleon.62 }
+		}
+		}
+	}
+#### FOCUS COMPLETE ####
+	focus = {
+		id = PRU_condemn_napoleon
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PRU_political }
+		mutually_exclusive = { focus = PRU_align_with_napoleon }
+		x = 15
+		y = 1
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = peoples_commissariat_focus
+			add_ideas = war_economy
+		}
+	}
+#
+	focus = {
+		id = PRU_embargo_napoleon
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PRU_condemn_napoleon }
+		x = 14
+		y = 2
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_opinion_modifier = { target = FRA modifier = embargo }
+		}
+	}
+#
+	focus = {
+		id = PRU_prussian_fortress
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PRU_embargo_napoleon }
+		x = 14
+		y = 3
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_fortification_focus
+		}
+	}
+#
+	focus = {
+		id = PRU_network_with_majors
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRU_condemn_napoleon }
+		x = 16
+		y = 2
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			add_national_unity = 0.1
+		}
+	}
+#
+	focus = {
+		id = PRU_prepare_for_war
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PRU_network_with_majors }
+		x = 16
+		y = 3
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = militarism_focus
+		}
+	}
+#
+	focus = {
+		id = PRU_war_with_napoleon
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {
+		 focus = PRU_prepare_for_war 
+		 focus = PRU_prussian_fortress
+		}
+		x = 15
+		y = 4
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FRA
+		}
+		}
+	}
+#### FOCUS COMPLETE ####
+
+	focus = {
+		id = PRU_the_hre
+		icon = GFX_goal_generic_military_deal
+		x = 9
+		y = 4
+		cost = 10
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+#
+	focus = {
+		id = PRU_german_ambitions
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PRU_the_hre }
+		mutually_exclusive = { focus = PRU_stand_with_austria }
+		x = 8
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_national_unity = 0.1
+		}
+	}
+#
+
+#	focus = {
+#		id = PRU_reclaim_mecklenburg
+#		icon = GFX_goal_generic_forceful_treaty
+#		prerequisite = { focus = PRU_german_ambitions }
+#		x = 8
+#		y = 6
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#		MEC = {
+#			country_event = { days = 1 id = napoleon.32 }
+#		}	
+#		}
+#	}
+#
+	focus = {
+		id = PRU_reclaim_saxony
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 6
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		SAX = {
+			country_event = { days = 1 id = napoleon.35 }
+		}	
+		}
+	}
+#
+	focus = {
+		id = PRU_reclaim_hannover
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 4
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		HAN = {
+			country_event = { days = 1 id = napoleon.38 }
+		}	
+		}
+	}
+#
+	focus = {
+		id = PRU_reclaim_oldenburg
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 2
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		WES = {
+			country_event = { days = 1 id = napoleon.41 }
+		}	
+		}
+	}
+#
+	focus = {
+		id = PRU_reclaim_cologne
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 0
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		GNE = {
+			country_event = { days = 1 id = napoleon.44 }
+		}	
+		}
+	}
+#
+	focus = {
+		id = PRU_reclaim_wurzburg
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 8
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		WUZ = {
+			country_event = { days = 1 id = napoleon.47 }
+		}	
+		}
+	}
+#
+	focus = {
+		id = PRU_reclaim_hesse
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 10
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		HES = {
+			country_event = { days = 1 id = napoleon.50 }
+		}	
+		}
+	}
+#
+	focus = {
+		id = PRU_reclaim_wurttemburg
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 12
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		WUR = {
+			country_event = { days = 1 id = napoleon.53 }
+		}	
+		}
+	}
+#
+	focus = {
+		id = PRU_reclaim_bavaria
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_german_ambitions }
+		x = 14
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		BAV = {
+			country_event = { days = 1 id = napoleon.56 }
+		}	
+		}
+	}
+#### FOCUS COMPLETE ####
+	focus = {
+		id = PRU_stand_with_austria
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = PRU_the_hre }
+		mutually_exclusive = { focus = PRU_german_ambitions }
+		x = 18
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_national_unity = 0.1
+		}
+	}
+#
+	focus = {
+		id = PRU_non_aggression_aus
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = PRU_stand_with_austria }
+		x = 18
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			AUS = {
+				country_event = { days = 1 id = napoleon.65 }
+		} 
+		}
+	}
+#
+	focus = {
+		id = PRU_ally_austria
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRU_non_aggression_aus }
+		x = 18
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			AUS = {
+				country_event = { days = 1 id = napoleon.68 }
+		} 
+		}
+	}

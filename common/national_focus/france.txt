@@ -1,0 +1,968 @@
+focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = NAP_prepare_for_war
+		icon = GFX_goal_generic_small_arms
+		available = {
+		}
+		x = 2
+		y = 0
+		cost = 20
+		#ai_will_do = {
+		#	factor = 1
+		#}		
+
+		bypass = {
+			#custom_trigger_tooltip = {
+			#	tooltip = FRA_metropolitan_france_tt
+			#	NOT = {
+			#		any_owned_state = {
+			#			free_building_slots = {
+			#				building = infrastructure
+			#				size > 2
+			#			}
+			#			OR = {
+			#				region = 19
+			#				region = 20
+			#			}		
+			#		}
+			#	}
+			#}
+		}
+
+		#complete_tooltip = {
+		#	every_state = {
+		#		limit	= {	has_state_flag = FRA_french_focus_3Inf }
+		#		add_building_construction = {
+		#			type = infrastructure
+		#			level = 3
+		#			instant_build = yes
+		#		}
+		#	}
+		#}
+
+		completion_reward = {
+
+		
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						region = 19
+						region = 20
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = FRA_french_focus_3Inf
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						region = 19
+						region = 20
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = FRA_french_focus_3Inf
+			}			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						region = 19
+						region = 20
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = FRA_french_focus_3Inf
+			}			
+		}
+	}
+#
+		focus = {
+		id = NAP_begin_arms_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NAP_prepare_for_war }
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_military_factories_2MF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_military_factories_2MF
+			}
+		}
+	}
+#
+		focus = {
+		id = NAP_continue_arms_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NAP_begin_arms_expansion }
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_military_factories_2MF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_military_factories_2MF
+			}
+		}
+	}
+#
+		focus = {
+		id = NAP_finalize_arms_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NAP_continue_arms_expansion }
+		x = 0
+		y = 3
+		cost = 15
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FRA_military_factories_2MF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FRA_military_factories_2MF
+			}
+		}
+	}
+#
+		focus = {
+		id = NAP_study_military_tactics
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = NAP_prepare_for_war }
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.7
+				uses = 1
+				category = land_doctrine
+			}
+
+		}
+	}
+#
+		focus = {
+		id = NAP_lower_entrance_age
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = NAP_study_military_tactics }
+		x = 2
+		y = 2
+		cost = 10
+		completion_reward = {
+		if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}			
+			add_ideas = militarism_focus
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+#
+		focus = {
+		id = NAP_show_the_people
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = NAP_lower_entrance_age }
+		prerequisite = { focus = NAP_finalize_arms_expansion }
+		prerequisite = { focus = NAP_finalize_construction_expansion }
+		x = 2
+		y = 4
+		cost = 10
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+
+			add_national_unity = 0.2
+		}
+	}
+#
+		focus = {
+		id = NAP_extra_research_under_people
+		icon = GFX_focus_research
+		prerequisite = { focus = NAP_show_the_people }
+		x = 2
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+#
+
+		focus = {
+		id = NAP_begin_construction_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NAP_prepare_for_war }
+		x = 4
+		y = 1
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+		}
+	}
+#
+		focus = {
+		id = NAP_continue_construction_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NAP_begin_construction_expansion }
+		x = 4
+		y = 2
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+		}
+	}
+#
+		focus = {
+		id = NAP_finalize_construction_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NAP_continue_construction_expansion }
+		x = 4
+		y = 3
+		cost = 15
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+		}
+	}
+#### FOCUS COMPLETE ####
+
+focus = {
+		id = NAP_invest_in_arms
+		icon = GFX_goal_generic_production2
+		x = 6
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+#
+focus = {
+		id = NAP_dig_for_steel
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { 
+		focus = NAP_invest_in_arms
+		}
+		x = 6
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 16
+			}
+		}
+	}
+#
+focus = {
+		id = NAP_invest_in_industry
+		icon = GFX_goal_generic_production
+		prerequisite = { 
+		focus = NAP_dig_for_steel
+		}
+		prerequisite = { 
+		focus = NAP_begin_construction_expansion
+		}
+		x = 6
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+#
+focus = {
+		id = NAP_advance_research
+		icon = GFX_focus_research
+		prerequisite = { focus = NAP_invest_in_industry }
+		x = 6
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+#### FOCUS COMPLETE ####
+focus = {
+		id = NAP_instability_in_Europe
+		icon = GFX_goal_generic_neutrality_focus
+		x = 14
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+#
+focus = {
+		id = NAP_third_treaty_of_san_ildefonso
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = NAP_instability_in_Europe }
+		available = {
+			SPR = {
+				exists = yes
+			}
+			#date > 1800.10.1
+		}
+		x = 10
+		y = 1
+		cost = 10
+		completion_reward = {
+			SPR = {
+				country_event = napoleon.1
+			}
+		}
+	}
+#
+focus = {
+		id = NAP_louisiana_purchase
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = NAP_third_treaty_of_san_ildefonso }
+		available = {
+			SPR = {
+				exists = yes
+			}
+			date > 1803.1.1
+		}
+		x = 8
+		y = 2
+		cost = 10
+		completion_reward = {
+			USA = {
+				country_event = napoleon.7
+			}
+		add_political_power = 150
+		}
+	}
+#
+focus = {
+		id = NAP_improve_spanish_relations
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = NAP_third_treaty_of_san_ildefonso }
+		x = 10
+		y = 2
+		cost = 10
+		completion_reward = {
+			FRA = { add_opinion_modifier = { target = SPR modifier = balkan_strategy_good } }
+			SPR = { add_opinion_modifier = { target = FRA modifier = balkan_strategy_good } }
+		}
+	}
+
+	focus = {
+		id = NAP_spanish_non_aggression
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = NAP_improve_spanish_relations }
+		available =
+		{
+			is_puppet = no
+			#has_army_manpower = { size > 699999 } #ca 90 div
+			SPR = {
+				NOT = { has_war_with = FRA }
+				country_exists = SPR
+			}
+		}
+		cancel = {
+			OR = {
+				has_war_with = SPR
+				NOT = { country_exists = SPR }
+			}
+		}
+		x = 8
+		y = 4
+		cost = 10
+		completion_reward = {
+			SPR = {
+				country_event = { id = napoleon.4 days = 1}
+			}
+		}
+	}
+#
+	focus = {
+		id = NAP_war_with_spain
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = NAP_improve_spanish_relations }
+		available =
+		{
+			is_puppet = no
+		#	has_army_manpower = { size > 799999 } #ca 90 div
+			SPR = {
+				NOT = { has_war_with = FRA }
+				country_exists = SPR
+			}
+		}
+		cancel = {
+			OR = {
+				has_war_with = SPR
+				NOT = { country_exists = SPR }
+			}
+		}
+
+		x = 10
+		y = 4
+		cost = 10
+		completion_reward = {
+			FRA = {
+				create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SPR
+				}
+			}
+		}
+	}
+
+#### FOCUS COMPLETE ####
+focus = {
+		id = NAP_annex_bavatian_republic
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = NAP_instability_in_Europe }
+		available = { 
+			has_army_manpower = { size > 599999 }
+			NOT = { has_war_with = HOL }
+			country_exists = HOL
+			HOL = {
+				has_civil_war = no
+			}
+		}
+		x = 12
+		y = 1
+		cost = 10
+		completion_reward = {
+			annex_country = { target = HOL }
+		}
+	}
+#
+focus = {
+		id = NAP_annex_helvetic_republic
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = NAP_annex_bavatian_republic }
+		available = { 
+			has_army_manpower = { size > 599999 }
+			NOT = { has_war_with = SWI }
+			country_exists = SWI
+			SWI = {
+				has_civil_war = no
+			}
+			}
+		
+		x = 12
+		y = 2
+		cost = 10
+		completion_reward = {
+			annex_country = { target = SWI }
+		}
+	}
+#
+focus = {
+		id = NAP_annex_kingdom_of_italy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = NAP_annex_helvetic_republic }
+		available = { 
+			has_army_manpower = { size > 599999 }
+			NOT = { has_war_with = ITA }
+			country_exists = ITA
+			ITA = {
+				has_civil_war = no
+			}
+		}
+		x = 12
+		y = 3
+		cost = 10
+		completion_reward = {
+			annex_country = { target = ITA }
+		}
+	}
+#### FOCUS COMPLETE ####
+focus = {
+		id = NAP_continental_system
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = NAP_instability_in_Europe }
+		mutually_exclusive = { focus = NAP_peace_through_europe }
+		available = { 
+			country_exists = ENG
+		}
+		x = 14
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = {
+			ENG = { 
+			add_opinion_modifier = { target = FRA modifier = embargo }
+			add_national_unity = 0.1 
+			}
+		}
+	}
+#
+focus = {
+		id = NAP_force_system_upon_portugal
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = NAP_continental_system }
+		available = { 
+			has_army_manpower = { size > 599999 }
+			NOT = { has_war_with = POR }
+			country_exists = POR
+			FRA = {
+				has_civil_war = no
+			}
+		}
+		x = 14
+		y = 2
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = POR
+			}
+		}
+}
+#
+focus = {
+		id = NAP_force_system_upon_prussia
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = NAP_force_system_upon_portugal }
+		available = { 
+			has_army_manpower = { size > 599999 }
+			NOT = { has_war_with = GER }
+			country_exists = GER
+			FRA = {
+				has_civil_war = no
+			}
+		}
+		x = 14
+		y = 3
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+		}
+}
+#
+focus = {
+		id = NAP_force_system_upon_russia
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = NAP_force_system_upon_prussia }
+		available = { 
+			has_army_manpower = { size > 599999 }
+			NOT = { has_war_with = SOV }
+			country_exists = SOV
+			FRA = {
+				has_civil_war = no
+			}
+		}
+		x = 14
+		y = 4
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+}
+#### FOCUS COMPLETE ####
+
+focus = {
+		id = NAP_peace_through_europe
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = NAP_instability_in_Europe }
+		mutually_exclusive = { focus = NAP_continental_system }
+		x = 18
+		y = 1
+		cost = 10
+		completion_reward = {
+				add_ideas = democratic_influence
+			}
+		}
+
+#
+focus = {
+		id = NAP_non_aggression_with_major_powers
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = NAP_peace_through_europe }
+		x = 18
+		y = 2
+		cost = 10
+		completion_reward = {
+			GER = {
+				country_event = { id = napoleon.10 days = 1}
+			}
+			AUS = {
+				country_event = { id = napoleon.13 days = 1}
+			}
+			ENG = {
+				country_event = { id = napoleon.16 days = 1}
+			}
+			SOV = {
+				country_event = { id = napoleon.19 days = 1}
+			}
+			}
+		}
+#
+focus = {
+		id = NAP_ally_europe
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = NAP_non_aggression_with_major_powers }
+		x = 18
+		y = 3
+		cost = 10
+		completion_reward = {
+		create_faction = "french_major_alliance"
+		add_to_faction = FRA
+			
+				SOV = {
+				country_event = napoleon.22
+			}
+				GER = {
+				country_event = napoleon.26
+			}
+				AUS = {
+				country_event = napoleon.29
+			}
+			}
+		}
+
+focus = {
+		id = NAP_prosperity
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NAP_ally_europe }
+		x = 18
+		y = 4
+		cost = 10
+		completion_reward = {
+		add_national_unity = 0.15
+
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						region = 19
+						region = 20
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FRA_industrial_expansion_2IC
+			}
+			}
+		}

@@ -1,0 +1,319 @@
+﻿###########################
+# Sweden Events ##########
+###########################
+
+add_namespace = svenska
+
+# Sweden Demands Norway
+country_event = {
+	id = svenska.1
+	title = svenska.1.t
+	desc = svenska.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name = svenska.1.a
+		ai_chance = {
+			factor = 90
+		}
+
+    SWE = {
+			country_event = { id = svenska.3 }
+		}
+
+		SWE = {
+			transfer_state = 110
+			transfer_state = 142
+			transfer_state = 143
+			transfer_state = 144
+			110 = { add_core_of = SWE }
+  		142 = { add_core_of = SWE }
+  		143 = { add_core_of = SWE }
+      144 = { add_core_of = SWE }
+		}
+	}
+
+	option = { # Refuse demands
+		name = svenska.1.b
+		ai_chance = {
+			factor = 10
+		}
+    SWE = {
+			country_event = { id = svenska.2 }
+		}
+		}
+	}
+
+
+# DEN Refuses Demands
+country_event = {
+	id = svenska.2
+	title = svenska.2.t
+	desc = svenska.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.2.a
+    create_wargoal = {
+			type = annex_everything
+			target = DEN
+		}
+	}
+}
+
+# DEN accepts Demands
+country_event = {
+	id = svenska.3
+	title = svenska.3.t
+	desc = svenska.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.3.a
+	}
+}
+
+# Sweden Demands Livonia
+country_event = {
+	id = svenska.4
+	title = svenska.4.t
+	desc = svenska.4.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name = svenska.4.a
+		ai_chance = {
+			factor = 90
+		}
+
+    SWE = {
+			country_event = { id = svenska.6 }
+		}
+
+		SWE = {
+			transfer_state = 13
+			transfer_state = 191
+			transfer_state = 190
+			transfer_state = 12
+			191 = { add_core_of = SWE }
+			13 = { add_core_of = SWE }
+		}
+	}
+
+	option = { # Refuse demands
+		name = svenska.4.b
+		ai_chance = {
+			factor = 10
+		}
+    SWE = {
+			country_event = { id = svenska.5 }
+		}
+		}
+	}
+
+
+# SOV Refuses Demands
+country_event = {
+	id = svenska.5
+	title = svenska.5.t
+	desc = svenska.5.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.5.a
+    create_wargoal = {
+			type = annex_everything
+			target = SOV
+		}
+	}
+}
+
+# SOV accepts Demands
+country_event = {
+	id = svenska.6
+	title = svenska.6.t
+	desc =  svenska.6.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.6.a
+	}
+}
+
+# Sweden Demands Danish Submission
+country_event = {
+	id = svenska.7
+	title =  svenska.7.t
+	desc =  svenska.7.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name =  svenska.7.a
+		ai_chance = {
+			factor = 70
+		}
+
+    SWE = {
+			country_event = { id = svenska.9 }
+		}
+
+		SWE = {
+		  transfer_state = 58
+			transfer_state = 99
+			transfer_state = 37
+			transfer_state = 100
+			transfer_state = 101
+		}
+	}
+
+	option = { # Refuse demands
+		name =  svenska.7.b
+		ai_chance = {
+			factor = 30
+		}
+    SWE = {
+			country_event = { id = svenska.8 }
+		 }
+		}
+	}
+
+
+# DEN Refuses Demands
+country_event = {
+	id = svenska.8
+	title = svenska.8.t
+	desc = svenska.8.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.8.a
+    create_wargoal = {
+			type = annex_everything
+			target = DEN
+		}
+	}
+}
+
+# DEN accepts Demands
+country_event = {
+	id = svenska.9
+	title = svenska.9.t
+	desc =  svenska.9.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.9.a
+	}
+}
+
+# DEN accepts Demand_2 (Vassalize)
+country_event = {
+	id = svenska.10
+	title = svenska.10.t
+	desc =  svenska.10.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.10.a
+	}
+}
+
+# Sweden Demands Northern Russia
+country_event = {
+	id = svenska.11
+	title = svenska.11.t
+	desc = svenska.11.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name = svenska.11.a
+		ai_chance = {
+			factor = 90
+		}
+
+    SWE = {
+			country_event = { id = svenska.13 }
+		}
+
+		SWE = {
+			transfer_state = 146
+			transfer_state = 195
+			transfer_state = 216
+			transfer_state = 215
+      transfer_state = 147
+      transfer_state = 722
+      transfer_state = 213
+      transfer_state = 208
+      146 = { add_core_of = SWE }
+  		147 = { add_core_of = SWE }
+  		722 = { add_core_of = SWE }
+      208 = { add_core_of = SWE }
+      195 = { add_core_of = SWE }
+		}
+	}
+
+	option = { # Refuse demands
+		name = svenska.11.b
+		ai_chance = {
+			factor = 10
+		}
+    SWE = {
+			country_event = { id = svenska.12 }
+		}
+		}
+	}
+
+
+# SOV Refuses Demands
+country_event = {
+	id = svenska.12
+	title = svenska.12.t
+	desc = svenska.12.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.12.a
+    create_wargoal = {
+			type = annex_everything
+			target = SOV
+		}
+	}
+}
+
+# SOV accepts Demands
+country_event = {
+	id = svenska.13
+	title = svenska.13.t
+	desc =  svenska.13.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = svenska.13.a
+	}
+}

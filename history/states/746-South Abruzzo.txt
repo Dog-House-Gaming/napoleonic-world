@@ -1,0 +1,25 @@
+state={
+	id=746
+	name="STATE_746"
+	history={
+		owner = NAP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			6831 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = NAP
+		add_core_of = ITA
+
+	}
+	provinces={
+		963 3923 3966 6831 
+	}
+	manpower= 744833
+	state_category = town
+	buildings_max_level_factor=1.000
+}

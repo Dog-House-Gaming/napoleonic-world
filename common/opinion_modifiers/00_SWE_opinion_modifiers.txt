@@ -1,0 +1,28 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	SWE_franco_swedish_relations = {
+		value = 100
+	}
+
+	SWE_russo_swedish_relations = {
+		value = 100
+	}
+	
+        SWE_chose_the_french = {
+		value = -40
+	}
+
+	SWE_chose_the_russia = { 
+		value = -40
+	}
+}	
