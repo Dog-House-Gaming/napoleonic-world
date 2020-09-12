@@ -11,4 +11,3 @@ tags={
 name="Napoleonic World"
 picture="thumbnail.png"
 supported_version="1.7.1"
-remote_file_id="2226165202"
