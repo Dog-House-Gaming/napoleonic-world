@@ -1,13 +1,10 @@
-version="1.0"
-replace_path="common/technologies"
+﻿name="Napoleonic World"
+path="mod/napoleonic-world/"
 tags={
+	"Events"
 	"Historical"
 	"Graphics"
-	"Events"
-	"Technologies"
-	"National Focuses"
 	"Military"
 }
-name="Napoleonic World"
 picture="thumbnail.png"
 supported_version="1.7.1"
