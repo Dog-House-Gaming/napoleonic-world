@@ -40,19 +40,19 @@ set_national_unity = 0.65
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 26
 		}
 
 		fascism = {
 			popularity = 70
 		}
-		
+
 		communism = {
 			popularity = 4
 		}
 	}
-	
+
 	ruling_party = fascism
 	last_election = "1799.11.9"
 	election_frequency = 48
@@ -90,7 +90,7 @@ add_ideas = {
 #	expire = "1965.1.1"
 #	ideology = conservatism
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -112,19 +112,98 @@ add_ideas = {
 #	expire = "1965.1.1"
 #	ideology = 	stalinism
 #	traits = {
-#		
+#
 #	}
 #}
 
 create_country_leader = {
-	name = "Napoleon Bonaparte"
+	name = "Napoléon Bonaparte"
 	desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
 	picture = "Portrait_France_Napoleon.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+
 	}
+}
+
+
+
+create_field_marshal = {
+	name = "Napoléon Bonaparte"
+	picture = "Portrait_France_Napoleon_Bonaparte.dds"
+	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer }
+	skill = 5
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Louis-Alexandre Berthier"
+	picture = "Portrait_France_Berthier.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Joachim Murat"
+	picture = "Portrait_France_Murat.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Bon-Adrien Jeannot de Moncey"
+	picture = "Portrait_France_Moncey.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Jean-Baptiste Jourdan"
+	picture = "Portrait_France_Jourdan.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "André Masséna"
+	picture = "Portrait_France_Massena.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Jean-de-Dieu Soult"
+	picture = "Portrait_France_Soult.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 
@@ -189,7 +268,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-	
+
 	create_equipment_variant = {
 		name = "Aurore Class"
 		type = submarine_2

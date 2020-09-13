@@ -554,6 +554,7 @@
  STATE_553:0 "Lebanon"
  STATE_554:0 "Damascus"
  STATE_555:0 "Kuril Islands"
+ # CHANGE
  STATE_556:0 "French West Africa"
  STATE_557:0 "Mauritania"
  STATE_558:0 "Nigeria"
@@ -751,4 +752,3 @@
  STATE_750:1 "Asir"
  STATE_751:1 "Kars"
  STATE_752:1 "Somanth"
-
