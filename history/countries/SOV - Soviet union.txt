@@ -127,6 +127,18 @@ create_field_marshal = {
 	logistics_skill = 1
 }
 
+create_field_marshal = {
+	name = "Friedrich Wilhelm von Buxhoeveden"
+	picture = "Portrait_Russia_Buxhoeveden.dds"
+	traits = { substance_abuser }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
 
 
 

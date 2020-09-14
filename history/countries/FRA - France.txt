@@ -123,7 +123,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-
+		dictator
 	}
 }
 
@@ -132,7 +132,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Napoléon Bonaparte"
 	picture = "Portrait_France_Napoleon_Bonaparte.dds"
-	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer }
+	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer dictator }
 	skill = 5
 	attack_skill = 4
 	defense_skill = 3
