@@ -9,7 +9,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
@@ -33,23 +33,23 @@ set_national_unity = 0.55
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 10 #shared between all parties, should add to 100
 		}
 
 		fascism = {
 			popularity = 5
 		}
-		
+
 		communism = {
 			popularity = 5
 		}
-		
+
 		neutrality = {
 			popularity = 80
 		}
 	}
-	
+
 	ruling_party = democratic
 	last_election = "1933.7.1"
 	election_frequency = 48
@@ -71,7 +71,7 @@ add_ideas = {
 #	expire = "1953.3.1"
 #	ideology = stalinism
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -82,7 +82,7 @@ add_ideas = {
 #	expire = "1953.3.1"
 #	ideology = fascism_ideology
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -93,7 +93,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = socialism
 	traits = {
-		
+
 	}
 }
 
@@ -104,7 +104,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = despotism
 	traits = {
-		
+
 	}
 }
 
@@ -112,6 +112,22 @@ add_namespace = {
 	name = "unit_leader_sov"
 	type = unit_leader
 }
+
+
+
+
+create_field_marshal = {
+	name = "Mikhail Kutuzov"
+	picture = "Portrait_Russia_Kutuzov.dds"
+	traits = { trait_cautious }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+
 
 
 ### Ship Variants ###
@@ -147,30 +163,5 @@ create_equipment_variant = {
 		destroyer_engine_upgrade = 3
 		ship_ASW_upgrade = 3
 		ship_anti_air_upgrade = 3
-	}
-}
-
-1939.1.1 = {
-
-	create_equipment_variant = {
-		name = "Series X Shchuka"
-		type = submarine_2
-		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 3
-			sub_stealth_upgrade = 3
-			sub_torpedo_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Maxim Gorky Class"
-		type = heavy_cruiser_2
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
 	}
 }

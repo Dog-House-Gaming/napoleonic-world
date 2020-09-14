@@ -134,10 +134,10 @@ create_field_marshal = {
 	picture = "Portrait_France_Napoleon_Bonaparte.dds"
 	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer }
 	skill = 5
-	attack_skill = 1
+	attack_skill = 4
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -145,6 +145,39 @@ create_field_marshal = {
 	picture = "Portrait_France_Soult.dds"
 	traits = {  }
 	skill = 4
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Louis-Nicolas Davout"
+	picture = "Portrait_France_Davout.dds"
+	traits = { army_infantry_2 }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Joachim Murat"
+	picture = "Portrait_France_Murat.dds"
+	traits = { army_cavalry_3 cavalry_leader aggressive_assaulter }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Jean Lannes"
+	picture = "Portrait_France_Lannes.dds"
+	traits = {  }
+	skill = 2
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 2
@@ -162,16 +195,6 @@ create_field_marshal = {
 #	logistics_skill = 1
 #}
 #
-#create_field_marshal = {
-#	name = "Joachim Murat"
-#	picture = "Portrait_France_Murat.dds"
-#	traits = {  }
-#	skill = 2
-#	attack_skill = 1
-#	defense_skill = 3
-#	planning_skill = 2
-#	logistics_skill = 1
-#}
 #
 #create_field_marshal = {
 #	name = "Bon-Adrien Jeannot de Moncey"
