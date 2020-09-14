@@ -141,61 +141,6 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Louis-Alexandre Berthier"
-	picture = "Portrait_France_Berthier.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "Joachim Murat"
-	picture = "Portrait_France_Murat.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "Bon-Adrien Jeannot de Moncey"
-	picture = "Portrait_France_Moncey.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "Jean-Baptiste Jourdan"
-	picture = "Portrait_France_Jourdan.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "André Masséna"
-	picture = "Portrait_France_Massena.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_field_marshal = {
 	name = "Jean-de-Dieu Soult"
 	picture = "Portrait_France_Soult.dds"
 	traits = {  }
@@ -205,6 +150,62 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 1
 }
+
+#create_field_marshal = {
+#	name = "Louis-Alexandre Berthier"
+#	picture = "Portrait_France_Berthier.dds"
+#	traits = {  }
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 3
+#	planning_skill = 2
+#	logistics_skill = 1
+#}
+#
+#create_field_marshal = {
+#	name = "Joachim Murat"
+#	picture = "Portrait_France_Murat.dds"
+#	traits = {  }
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 3
+#	planning_skill = 2
+#	logistics_skill = 1
+#}
+#
+#create_field_marshal = {
+#	name = "Bon-Adrien Jeannot de Moncey"
+#	picture = "Portrait_France_Moncey.dds"
+#	traits = {  }
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 3
+#	planning_skill = 2
+#	logistics_skill = 1
+#}
+#
+#create_field_marshal = {
+#	name = "Jean-Baptiste Jourdan"
+#	picture = "Portrait_France_Jourdan.dds"
+#	traits = {  }
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 3
+#	planning_skill = 2
+#	logistics_skill = 1
+#}
+#
+#create_field_marshal = {
+#	name = "André Masséna"
+#	picture = "Portrait_France_Massena.dds"
+#	traits = {  }
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 3
+#	planning_skill = 2
+#	logistics_skill = 1
+#}
+
 
 
 
