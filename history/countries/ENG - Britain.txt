@@ -10,9 +10,9 @@ set_national_unity = 0.6
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
-	tech_recon = 1	 
+	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_submarine = 1
@@ -92,22 +92,22 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 20
 		}
 
 		fascism = {
 			popularity = 25
 		}
-		
+
 		communism = {
 			popularity = 0
 		}
-		neutrality = { 
+		neutrality = {
 			popularity = 55
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1935.11.14"
 	election_frequency = 48
@@ -136,7 +136,7 @@ set_politics = {
 #	expire = "1965.1.1"
 #	ideology = conservatism
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -148,7 +148,7 @@ create_country_leader = {
 	expire = "1938.1.1"
 	ideology = centrism
 	traits = {
-		
+
 	}
 }
 
@@ -159,7 +159,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = liberalism
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -170,7 +170,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = fascism_ideology
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -181,9 +181,47 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = leninism
 #	traits = {
-#		
+#
 #	}
 #}
+
+
+
+# military commander: Baird, Wellesley, Stuart, Picton, Moore
+create_field_marshal = {
+	name = "Arthur Wellesley, 1st Duke of Wellington"
+	picture = "Portrait_England_Wellesley.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "John Stuart"
+	picture = "Portrait_England_Stuart.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Sir Thomas Picton"
+	picture = "Portrait_England_Picton.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+
 
 
 ### Ship Variants ###
