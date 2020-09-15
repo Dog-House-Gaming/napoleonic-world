@@ -6,13 +6,13 @@ state={
 		steel=8
 		oil=4
 	}
-	
+
 	state_category = large_city
 
 	history={
 		owner = AUS
 		victory_points = {
-			9427 10		
+			9427 10
 		}
 		buildings = {
 			infrastructure = 6
@@ -24,6 +24,6 @@ state={
 	}
 
 	provinces={
-		417 442 466 3410 6464 6499 6522 9412 9427 11398 11413 11507 
+		417 442 466 3410 6464 6499 6522 9412 9427 11398 11413 11507 13205
 	}
 }
