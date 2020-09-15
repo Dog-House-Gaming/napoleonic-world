@@ -12,8 +12,8 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	
-	
+
+
 	early_submarine = 1
 	early_destroyer = 1
 	basic_destroyer = 1
@@ -27,7 +27,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -38,12 +38,12 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "TUR_1939"
 	set_technology = {
-		
-		
-		
+
+
+
 		gw_artillery = 1
 		interwar_artillery = 1
 		interwar_antiair = 1
@@ -57,7 +57,7 @@ set_technology = {
 		mass_assault = 1
 		pocket_defence = 1
 		defence_in_depth = 1
-		
+
 		fleet_in_being = 1
 		convoy_sailing = 1
 		submarine_operations = 1
@@ -88,7 +88,7 @@ set_autonomy = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 10
 		}
 
@@ -96,17 +96,17 @@ set_politics = {
 			popularity = 0
 			banned = yes
 		}
-		
+
 		communism = {
 			popularity = 0
 			banned = yes #default is no
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 100
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48
@@ -120,7 +120,7 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		democratic = {
 			popularity = 10
 		}
 
@@ -128,17 +128,17 @@ set_national_unity = 0.55
 			popularity = 0
 			banned = yes
 		}
-		
+
 		communism = {
 			popularity = 0
 			banned = yes #default is no
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 100
 		}
 	}
-	
+
 	ruling_party = neutrality
 		last_election = "1939.2.8"
 		election_frequency = 48
@@ -216,7 +216,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Cemil Cahit Toydemir"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	traits = { desert_fox }
+	traits = { desert_fox infantry_officer }
 	skill = 3
 
 }
@@ -224,7 +224,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nazmi Solok"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = { trickster }
+	traits = { trickster calvary_officer }
 	skill = 2
 
 }
@@ -232,7 +232,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Salih Omurtak"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	traits = {  hill_fighter }
+	traits = {  hill_fighter infantry_officer }
 	skill = 2
 
 }
@@ -240,20 +240,20 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Rauf Orbay"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = {  }
+	traits = { cautious organizer }
 	skill = 2
 }
 
 
 ### Ship Variants ###
-
-create_equipment_variant = {
-	name = "Dumlupinar Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
-	}
-}
+#
+#create_equipment_variant = {
+#	name = "Dumlupinar Class"
+#	type = submarine_1
+#	upgrades = {
+#		ship_reliability_upgrade = 2
+#		sub_engine_upgrade = 2
+#		sub_stealth_upgrade = 2
+#		sub_torpedo_upgrade = 2
+#	}
+#}
