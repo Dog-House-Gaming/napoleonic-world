@@ -1,16 +1,16 @@
 state={
 	id=743
 	name="STATE_743"
- 
+
         state_category = town
 
 history={
-		owner = SWE
-		
+		owner = CHI
+
 		victory_points = {
 			11305  10
 		}
-		
+
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
@@ -19,14 +19,13 @@ history={
 				naval_base = 3
 			}
 		}
-		add_core_of = GER
+		#add_core_of = GER
 	}
 
 	provinces={
-		11305 
+		10000
 	}
 
 	manpower= 537680
 	buildings_max_level_factor=1.000
 }
-

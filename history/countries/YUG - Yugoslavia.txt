@@ -9,12 +9,12 @@ add_ideas = {
 }
 
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
-	
-	
-	
+
+
+
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	early_destroyer = 1
@@ -29,7 +29,7 @@ set_technology = {
 	}
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -40,14 +40,14 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "YUG_1939"
 	set_technology = {
-		
-		
-		
-		
-		
+
+
+
+
+
 		gw_artillery = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
@@ -85,24 +85,24 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 15
 		}
 
 		fascism = {
 			popularity = 10
 		}
-		
+
 		communism = {
 			popularity = 15
 			#banned = no #default is no
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 60
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1935.5.3"
 	election_frequency = 36
@@ -113,24 +113,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 5
 			}
 
 			fascism = {
 				popularity = 20
 			}
-			
+
 			communism = {
 				popularity = 5
 				#banned = no #default is no
 			}
-			
-			neutrality = { 
+
+			neutrality = {
 				popularity = 60
 			}
 		}
-		
+
 		ruling_party = neutrality
 		last_election = "1938.12.1"
 		election_frequency = 36
@@ -196,5 +196,5 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { urban_assault_specialist }
 	skill = 3
-	
+
 }
