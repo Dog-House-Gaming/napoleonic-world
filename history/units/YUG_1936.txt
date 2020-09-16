@@ -63,6 +63,13 @@ division_template = {
 }
 
 
+
+units = {
+	
+}
+
+
+
 #units = {
 #	######## LAND UNITS ########
 #	###### Vojska Kraljevine Jugoslavije ######
