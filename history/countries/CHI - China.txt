@@ -5,9 +5,9 @@ oob = "CHI_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	
-	
-	
+
+
+
 	mass_assault = 1
 	fleet_in_being = 1
 	early_destroyer = 1
@@ -24,7 +24,7 @@ set_convoys = 40
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -50,7 +50,7 @@ set_convoys = 40
 		CHI_chen_shaokuan
 		jiangnan_shipyard_group
 	}
-	
+
 	set_global_flag = fall_of_nanjing
 	create_faction = chinese_united_front
 	add_to_faction = PRC
@@ -61,8 +61,8 @@ set_convoys = 40
 	set_technology = {
 
 		#PLACEHOLDER techs for vehicles
-		 
-		tech_support = 1		
+
+		tech_support = 1
 		tech_recon = 1
 		tech_engineers = 1
 
@@ -101,24 +101,24 @@ set_convoys = 40
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 3
 		}
 
 		fascism = {
 			popularity = 7
 		}
-		
+
 		communism = {
 			popularity = 30
 			#banned = no #default is no
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 50
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -175,24 +175,24 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		democratic = {
 			popularity = 0
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 100
 		}
 	}
-		
+
 		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
@@ -203,27 +203,27 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 create_field_marshal = {
 	name = "Tu Yu-ming"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
-	traits = { defensive_doctrine }
+	traits = { defensive_doctrine commando }
 	skill = 4
 }
 
 create_field_marshal = {
 	name = "Hsueh Yueh"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
-	traits = { offensive_doctrine }
+	traits = { offensive_doctrine infantry_leader }
 	skill = 3
 }
 
 create_field_marshal = {
 	name = "Tai An-lan"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
-	traits = {  offensive_doctrine }
+	traits = {  offensive_doctrine hill_fighter }
 	skill = 3
 }
 
 create_field_marshal = {
 	name = "Wang Yao-wu"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	traits = { defensive_doctrine }
+	traits = { defensive_doctrine hill_fighter }
 	skill = 2
 }

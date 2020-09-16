@@ -1,11 +1,11 @@
-﻿capital = 141	
+﻿capital = 141
 
 oob = "SWE_1936"
 
 set_research_slots = 3
 
 add_ideas = {
-	
+
 }
 
 set_technology = {
@@ -13,7 +13,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_submarine = 1
 	early_destroyer = 1
@@ -27,7 +27,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 75
 		}
 
@@ -42,9 +42,9 @@ set_politics = {
 		fascism = {
 			popularity = 3
 		}
-		
+
 	}
-	
+
 	ruling_party = democratic
 	last_election = "1932.9.18"
 	election_frequency = 48
@@ -55,7 +55,7 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			democratic = {
 				popularity = 85
 			}
 
@@ -70,9 +70,9 @@ set_politics = {
 			fascism = {
 				popularity = 1
 			}
-			
+
 		}
-		
+
 		ruling_party = democratic
 		last_election = "1936.9.20"
 		election_frequency = 48
@@ -133,7 +133,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Folke Högberg"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { commando }
+	traits = { commando winter_specialist infantry_officer }
 	skill = 3
 
 }
@@ -141,27 +141,27 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erik af Edholm"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  hill_fighter }
+	traits = { hill_fighter winter_specialist infantry_officer }
 	skill = 4
 
 }
 
-create_navy_leader = {
-	name = "Claes Lindström"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { blockade_runner }
-	skill = 4
-}
+#create_navy_leader = {
+#	name = "Claes Lindström"
+#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+#	traits = { blockade_runner }
+#	skill = 4
+#}
 
 ### Ship Variants ###
 
-create_equipment_variant = {
-	name = "Draken Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-}
+#create_equipment_variant = {
+#	name = "Draken Class"
+#	type = submarine_1
+#	upgrades = {
+#		ship_reliability_upgrade = 1
+#		sub_engine_upgrade = 1
+#		sub_stealth_upgrade = 1
+#		sub_torpedo_upgrade = 1
+#	}
+#}
