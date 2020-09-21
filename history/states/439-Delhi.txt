@@ -7,7 +7,7 @@ state={
 	state_category = city
 	
 	history={
-		owner = MUG
+		owner = RAJ
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1

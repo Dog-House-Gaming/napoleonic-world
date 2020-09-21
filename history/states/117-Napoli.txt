@@ -6,12 +6,12 @@ state={
 	
 	state_category = city
 	resources={
-		aluminium=16
-		steel = 24
+		aluminium=10 # was: 16
+		steel = 15 # was: 24
 	}
 
 	history={
-		owner = NAP
+		owner = ITA
 		victory_points = {
 			819 20 
 		}
@@ -24,7 +24,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = NAP
+		add_core_of = ITA
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

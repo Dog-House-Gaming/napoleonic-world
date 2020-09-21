@@ -7,12 +7,12 @@ state={
 	state_category = rural
 
 	history={
-		owner = NSP
+		owner = ARG
 		buildings = {
 			infrastructure = 3
-	
+			industrial_complex = 1
 		}
-		add_core_of = NSP
+		add_core_of = ARG
 		victory_points = {
 			8216 1 
 		}

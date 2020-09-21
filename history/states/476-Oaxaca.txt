@@ -6,16 +6,26 @@ state={
 	
 	state_category = rural
 
+	resources={
+		oil=8
+	}
+	
 	history={
-		owner = NSP
+		owner = MEX
 		buildings = {
 			infrastructure = 3
-
+			air_base = 2
 			10889 = {
 				naval_base = 2
 			}
 		}
-		add_core_of = NSP
+		add_core_of = MEX
+		victory_points = {
+			10889 1
+		}
+		victory_points = {
+			2021 3
+		}
 	}
 
 	provinces={

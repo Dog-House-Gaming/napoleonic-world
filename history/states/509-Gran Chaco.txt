@@ -7,17 +7,17 @@ state={
 	state_category = town
 	
 	resources={
-		tungsten=46
-		steel=8
+		tungsten=35 # was: 46
+		steel=6 # was: 8
 	}
 
 	history={
-		owner = NSP
+		owner = ARG
 		buildings = {
 			infrastructure = 3
-	
+			industrial_complex = 1
 		}
-		add_core_of = NSP
+		add_core_of = ARG
 	}
 
 	provinces={

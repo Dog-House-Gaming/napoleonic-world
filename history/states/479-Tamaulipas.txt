@@ -6,15 +6,23 @@ state={
 	
 	state_category = town
 
+	resources={
+		oil=9
+		#steel=2 moved to Guerrero
+	}
+	
 	history={
-		owner = NSP
+		owner = MEX
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 1
 		}
-		add_core_of = NSP
+		add_core_of = MEX
 		victory_points = {
-			4956 1 
+			4956 10
+		}
+		victory_points = {
+			5015 5
 		}
 
 	}

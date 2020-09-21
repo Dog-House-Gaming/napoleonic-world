@@ -5,9 +5,11 @@ state={
 	manpower = 1693974
 	
 	state_category = wasteland
-
+	resources={
+		rubber=5 # was: 5
+	}
 	history={
-		#owner = FRA
+		owner = BEL
 		buildings = {
 			infrastructure = 1
 		}

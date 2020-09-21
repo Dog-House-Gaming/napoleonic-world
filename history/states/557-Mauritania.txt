@@ -2,19 +2,23 @@
 state={
 	id=557
 	name="STATE_557" # Mauritania
-	manpower = 429200
+	manpower = 225000
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
-		#owner = FRA
+		owner = FRA
+		add_core_of = MRT
+		victory_points = {
+			5034 1
+		}
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 
 	}
 
 	provinces={
-		1115 1897 1962 5034 5077 7943 7992 8035 8058 10725 10779 10814 10838 10868 
+		5034 5077 7992 8058 10814
 	}
 }

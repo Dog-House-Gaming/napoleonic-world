@@ -4,13 +4,13 @@ state={
 	name="STATE_473"
 	manpower = 638165
 	resources={
-		oil=2
+		oil=1 # was: 2
 	}
 	
 	state_category = town
 
 	history={
-		#owner = FRA
+		owner = CAN
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
@@ -21,7 +21,7 @@ state={
 				naval_base = 5
 			}
 		}
-		#add_core_of = CAN
+		add_core_of = CAN
 		victory_points = {
 			1408 15 
 		}

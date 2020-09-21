@@ -1575,7 +1575,7 @@
  MOR_fascism_ADJ:0 "Moroccan"
  MOR_democratic_ADJ:0 "Moroccan"
  MOR_neutrality_ADJ:0 "Moroccan"
- MOR_communism_ADJ:0 "Moroccan" 
+ MOR_communism_ADJ:0 "Moroccan"
 
  WES_fascism:0 "Oldenburg"
  WES_fascism_DEF:0 "Oldenburg"
@@ -1588,7 +1588,7 @@
  WES_fascism_ADJ:0 "Oldenburg"
  WES_democratic_ADJ:0 "Oldenburg"
  WES_neutrality_ADJ:0 "Oldenburg"
- WES_communism_ADJ:0 "Oldenburg" 
+ WES_communism_ADJ:0 "Oldenburg"
 
  MEC_fascism:0 "Mecklenburg"
  MEC_fascism_DEF:0 "Mecklenburg"
@@ -1601,7 +1601,7 @@
  MEC_fascism_ADJ:0 "Mecklenburg"
  MEC_democratic_ADJ:0 "Mecklenburg"
  MEC_neutrality_ADJ:0 "Mecklenburg"
- MEC_communism_ADJ:0 "Mecklenburg" 
+ MEC_communism_ADJ:0 "Mecklenburg"
 
  WUZ_fascism:0 "Wurzburg"
  WUZ_fascism_DEF:0 "Wurzburg"
@@ -1614,7 +1614,7 @@
  WUZ_fascism_ADJ:0 "Wurzburg"
  WUZ_democratic_ADJ:0 "Wurzburg"
  WUZ_neutrality_ADJ:0 "Wurzburg"
- WUZ_communism_ADJ:0 "Wurzburg" 
+ WUZ_communism_ADJ:0 "Wurzburg"
 
  NSP_fascism:0 "New Spain"
  NSP_fascism_DEF:0 "New Spain"
@@ -1627,7 +1627,10 @@
  NSP_fascism_ADJ:0 "Spanish"
  NSP_democratic_ADJ:0 "Spanish"
  NSP_neutrality_ADJ:0 "Spanish"
- NSP_communism_ADJ:0 "Spanish" 
+ NSP_communism_ADJ:0 "Spanish"
+
+ UCA_neutrality:0 "Uncharted"
+ UCA_neutrality_DEF:0 "Uncharted"
 
  FACTION_NAME_DEMOCRATIC_1:0 "The $CONTINENT_ADJ$ Association"
  FACTION_NAME_DEMOCRATIC_2:0 "The $CONTINENT_ADJ$ Entente"
@@ -1650,4 +1653,3 @@
  FACTION_NAME_NONALIGNED_3:0 "The $CONTINENT$ Alliance"
  FACTION_NAME_NONALIGNED_4:0 "Confederate $CONTINENT_ADJ$ Nations"
  FACTION_NAME_NONALIGNED_5:0 "The $LEADER_COUNTRY$ Coalition"
- 

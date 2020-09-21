@@ -6,8 +6,9 @@ state=
 	manpower=21657
 	history=
 	{
-		owner = SPR
-		add_core_of = SPR
+		owner = JAP
+		add_core_of = JAP
+		add_core_of = GUM
 		buildings = {
 			infrastructure = 3
 			air_base = 3

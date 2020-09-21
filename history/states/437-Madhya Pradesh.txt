@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = MAR
+		owner = RAJ
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

@@ -4,21 +4,23 @@ state={
 	name="STATE_510"
 	manpower = 3497169
 	resources={
-		oil=12
+		oil=8 # was: 12
 	}
 	
 	state_category = large_town
 
 	history={
-		owner = NSP
+		owner = ARG
 		buildings = {
 			infrastructure = 5
-	
+			industrial_complex = 4
+			air_base = 1
+			arms_factory = 1
 		}
 		victory_points = {
 			7500 1 
 		}
-		add_core_of = NSP
+		add_core_of = ARG
 	}
 
 	provinces={

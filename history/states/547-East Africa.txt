@@ -7,13 +7,16 @@ state={
 	state_category = rural
 
 	history={
-		#owner = FRA 
+		owner = ENG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			5210 = {
 				naval_base = 2
 			}
+		}
+		victory_points = {
+			1939 2
 		}
 		victory_points = {
 			5210 1

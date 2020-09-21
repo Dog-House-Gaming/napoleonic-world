@@ -7,14 +7,18 @@ state={
 	state_category = rural
 	
 	history={
-		owner = SOV
+		victory_points = {
+			9262 3
+		}
+		owner = LAT
 		buildings = {
 			infrastructure = 5
 			9262 = {
 				naval_base = 1
 			}
+			dockyard = 1
 		}
-		add_core_of = SOV
+		add_core_of = LAT
 	}
 
 	provinces={

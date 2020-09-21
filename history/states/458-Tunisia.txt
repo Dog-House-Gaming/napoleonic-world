@@ -5,16 +5,20 @@ state={
 	manpower = 1982940
 	state_category = town
 	resources={
-		steel=8
+		steel=6 # was: 8
 	}
 
 	history={
-		#owner = TUR
+		owner = FRA
+		add_core_of = TUN
 		victory_points = {
 			11969 10 
 		}
 		victory_points = {
 			9994 1 
+		}
+		victory_points = {
+			11921 1 
 		}
 		buildings = {
 			infrastructure = 4

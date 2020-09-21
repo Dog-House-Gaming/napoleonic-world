@@ -7,11 +7,10 @@ state={
 	state_category = rural
 
 	history={
-		owner = NSP
+		owner = MEX
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-
+			air_base = 1
 			4904 = {
 				naval_base = 2
 			}
@@ -19,7 +18,16 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = NSP
+		add_core_of = MEX
+		#victory_points = {
+		#	12715 3
+		#}
+		victory_points = {
+			4904 1
+		}
+		#victory_points = {
+		#	4965 5
+		#}
 	}
 
 	provinces={

@@ -7,11 +7,13 @@ state={
 	state_category = town
 	
 	resources={
-		rubber=4
+		rubber=3 # was: 4
+		tungsten = 92
 	}
 
 	history={
-		owner = BUR
+		add_core_of = BRM
+		owner = RAJ
 		victory_points = {
 			1330 5 
 		}

@@ -10,9 +10,9 @@ state= {
 			6389 10 
 		}
 		victory_points = {
-			9347 15 
+			9347 20
 		}
-		owner = DEN
+		owner = GER
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -22,7 +22,7 @@ state= {
 				naval_base = 8
 			}
 		}
-		add_core_of = DEN
+		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3

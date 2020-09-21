@@ -1,23 +1,28 @@
 state={
 	id=748
 	name="STATE_748"
-	
+	provinces={
+		1010 4141 4325 4431 9939 10763 11972 
+	}
 	history={
-		owner = AUS
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 2
 
 		}
-		add_core_of = AUS
-		add_core_of = SER
-
+		victory_points = {
+			1010 3
+		}
+		1939.1.1 = {
+			buildings = {
+				infrastructure = 4
+				air_base = 1
+			}
+		}
 	}
-	
-	provinces={
-		614 3614 6643 11580 11787 
-	}
-	manpower= 567899
-	state_category = rural
+	manpower=1500000
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }

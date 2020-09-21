@@ -8,11 +8,11 @@ state={
 	
 
 	history={
-		owner = NSP
+		owner = PRU
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = NSP
+		add_core_of = PRU
 	}
 
 	provinces={

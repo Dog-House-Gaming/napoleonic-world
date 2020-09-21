@@ -5,9 +5,15 @@ state={
 	manpower = 364900
 	
 	state_category = enclave
-
+	resources={
+		rubber=1 # was: 1
+	}
 	history={
-		#owner = FRA
+		owner = POR
+		add_core_of = GNB
+		victory_points = {
+			12891 1
+		}
 		buildings = {
 			infrastructure = 2
 			12891 ={

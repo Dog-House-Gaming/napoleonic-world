@@ -4,23 +4,24 @@ state=
 	name="STATE_314"
 	manpower = 1437611
 	resources={
-		chromium=1
+		chromium=1 # was: 1
 	}
 	
 	state_category = town
 	
 	history=
 	{
-		owner = NSP
+		owner = ELS
 		buildings = {
 			infrastructure = 4
-
+			arms_factory = 1
+			industrial_complex = 2 
 			air_base = 1
 			12823 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = NSP
+		add_core_of = ELS
 		victory_points = {
 			12823 3
 		}

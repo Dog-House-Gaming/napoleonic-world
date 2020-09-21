@@ -7,16 +7,16 @@ state={
 	state_category = pastoral
 	
 	resources={
-		aluminium=4
+		aluminium=4 # was: 4
 	}
 
 	history={
-		owner = POR
+		owner = BRA
 		buildings = {
 			infrastructure = 0
 
 		}
-		add_core_of = POR
+		add_core_of = BRA
 	}
 
 	provinces={

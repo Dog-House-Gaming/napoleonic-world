@@ -5,16 +5,16 @@ state={
 	state_category = wasteland
 	
 	resources={
-		aluminium=8.000
+		aluminium=7 # was: 8.000
 	}
 
 	history={
-		owner = ENG
+		owner = CAN
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = ENG
+		add_core_of = CAN
 
 	}
 

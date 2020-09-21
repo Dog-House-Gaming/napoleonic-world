@@ -7,17 +7,17 @@ state={
 	state_category = rural
 	
 	resources={
-		steel=136
-		tungsten=62
-		aluminium=44
+		steel=70 # was: 136
+		tungsten=32 # was: 62
+		aluminium=25 # was: 44
 	}
 
 	history={
-		owner = NSP
+		owner = USA
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = NSP
+		add_core_of = USA
 	}
 
 	provinces={

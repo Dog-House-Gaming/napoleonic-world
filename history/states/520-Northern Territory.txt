@@ -9,11 +9,11 @@ state={
 	
 	
 	resources={
-		steel=28
+		steel=22 # was: 28
 	}
 
 	history={
-		#owner = FRA
+		owner = AST
 		buildings = {
 			infrastructure = 3
 			air_base = 1
@@ -24,7 +24,7 @@ state={
 		victory_points = {
 			7669 5 
 		}
-		#add_core_of = FRA
+		add_core_of = AST
 	}
 
 	provinces={

@@ -6,13 +6,18 @@ state={
 	
 	state_category = rural
 
+	resources={
+		aluminium=7 # was: 10
+	}
+
 	history={
-		owner = CHI
+		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
+			#industrial_complex = 1
 		}
 		victory_points = {
 			4572 1

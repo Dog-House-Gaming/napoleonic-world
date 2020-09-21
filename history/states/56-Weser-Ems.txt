@@ -6,14 +6,21 @@ state={
 	state_category = city
 
 	history={
-		owner = GNE
+		owner = GER
 		victory_points = {
 			241 5 
+		}
+		victory_points = {
+			11360 1
+		}
+		victory_points = {
+			11388 5
 		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
 			dockyard = 2
+			fuel_silo = 1
 			241 = {
 				naval_base = 8
 
@@ -21,7 +28,7 @@ state={
 			air_base = 3
 
 		}
-		add_core_of = GNE
+		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

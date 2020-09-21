@@ -6,18 +6,21 @@ state={
 	state_category = large_city
 
 	history={
-		owner = GNE
+		owner = GER
 		victory_points = {
 			495 5 
 		}
+		#victory_points = {
+		#	9509 1
+		#}
 		buildings = {
 			infrastructure = 8
-			arms_factory = 4
+			arms_factory = 3
 			industrial_complex = 1
 			air_base = 3
 
 		}
-		add_core_of = GNE
+		add_core_of = GER
 
 		1939.1.1 ={
 			buildings = {

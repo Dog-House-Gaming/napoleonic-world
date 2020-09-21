@@ -4,13 +4,13 @@ state= {
 	manpower = 12700000
 	state_category = town
 	resources={
-		tungsten=20
-		steel= 20
-		chromium = 4
+		tungsten=15 # was: 20
+		steel= 15 # was: 20
+		chromium = 3 # was: 4
 	}
 
 	history= {
-		owner = CHI
+		owner = GXC
 		add_core_of = GXC
 		add_core_of = CHI
 		add_core_of = PRC

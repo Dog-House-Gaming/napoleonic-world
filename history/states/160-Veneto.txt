@@ -1,17 +1,15 @@
-
 state={
 	id=160
 	name="STATE_160"
 	resources={
-		steel=32.000
-		aluminium=18.000
+		steel=20 # was: 32.000
+		aluminium=11 # was: 18.000
 	}
+	
+	state_category = large_city
 
 	history={
-		owner = AUS
-		victory_points = {
-			6626 1 
-		}
+		owner = ITA
 		victory_points = {
 			11584 10 
 		}
@@ -27,7 +25,7 @@ state={
 			}
 
 		}
-		add_core_of = AUS
+		add_core_of = ITA
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2
@@ -40,9 +38,8 @@ state={
 	}
 
 	provinces={
-		603 628 3604 3657 6656 9613 11584 
+		603 628 3604 3657 6656 9582 9613 11584 
 	}
 	manpower=3963151
 	buildings_max_level_factor=1.000
-	state_category=large_city
 }

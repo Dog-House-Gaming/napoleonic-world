@@ -6,17 +6,17 @@ state={
 	state_category = rural
 
 	history={
-		owner = POR
+		owner = BRA
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = POR
+		add_core_of = BRA
 
 	}
 
 	provinces={
-		2168 2190 2218 5115 5148 5151 5174 5208 8129 8140 12923 12959 12987 
+		2168 5115 5148 5151 5208 8140 12959 12987 
 	}
 	manpower=1662200
 	buildings_max_level_factor=1.000

@@ -2,37 +2,30 @@
 state={
 	id=62
 	name="STATE_62"
+	manpower = 1006221
+	
+	
+	state_category = town
 
 	history={
-		owner = GER
 		victory_points = {
-			6282 1 
+			9388 1
 		}
+		owner = GER
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 1
-			6282 = {
-				naval_base = 4
-
-			}
-			air_base = 3
-
+			fuel_silo = 1
 		}
 		add_core_of = GER
+
 		1939.1.1 = {
 			buildings = {
 				air_base = 8
-
 			}
-
 		}
-
 	}
 
 	provinces={
-		3207 3312 6282 6309 6334 6390 9334 
+		349 3207 3258 3312 3340 9388 
 	}
-	manpower=1406221
-	buildings_max_level_factor=1.000
-	state_category=town
 }

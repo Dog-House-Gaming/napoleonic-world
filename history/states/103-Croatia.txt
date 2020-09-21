@@ -8,9 +8,12 @@ state={
 
 
 	history={
-		owner = AUS
+		owner = YUG
 		victory_points = {
-			3924 1 
+			3924 3
+		}
+		victory_points = {
+			11564 1 
 		}
 		buildings = {
 			infrastructure = 5
@@ -23,8 +26,9 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = AUS
-
+		add_core_of = YUG
+		#add_claim_by = ITA #added by focus
+		add_core_of = CRO
 	}
 
 	provinces={

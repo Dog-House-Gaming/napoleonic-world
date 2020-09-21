@@ -6,11 +6,11 @@ state={
 	
 	state_category = wasteland
 	resources={
-		tungsten=54
+		# tungsten=49 # was: 54
 	}
 
 	history={
-		owner = CHI
+		owner = RAJ
 		buildings = {
 			infrastructure = 1
 		}

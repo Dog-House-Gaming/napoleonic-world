@@ -6,22 +6,23 @@ state={
 	
 	state_category = city
 	history={
-		owner = NAP
+		owner = ITA
 		victory_points = {
 			11837 15 
 		}
 		buildings = {
 			infrastructure = 5
 			dockyard = 4
+			fuel_silo = 1
 			air_base = 5
 			11837 = {
 				naval_base = 10
 			}
-			9784 = {
+			11998 = {
 				naval_base = 2
 			}
 		}
-		add_core_of = NAP
+		add_core_of = ITA
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5
