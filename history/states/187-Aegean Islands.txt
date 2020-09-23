@@ -3,15 +3,15 @@ state={
 	id=187
 	name="STATE_187"
 	manpower = 322600
-	
+
 	state_category = small_island
-	
+
 	resources={
 		chromium=7 # was: 10
 	}
 
 	history={
-		owner = GRE
+		owner = TUR
 		buildings = {
 			infrastructure = 4
 			dockyard = 1
@@ -26,6 +26,6 @@ state={
 	}
 
 	provinces={
-		3401 6550 8435 
+		3401 6550 8435
 	}
 }

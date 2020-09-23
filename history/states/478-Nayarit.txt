@@ -3,15 +3,15 @@ state={
 	id=478
 	name="STATE_478" # Jalisco
 	manpower = 2470875
-	
+
 	state_category = town
-	
+
 	resources={
 		tungsten=8 # was: 10
 	}
 
 	history={
-		owner = MEX
+		owner = SPR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -30,7 +30,7 @@ state={
 	}
 
 	provinces={
-		2051 5052 10172 12746 12873 13089 
+		2051 5052 10172 12746 12873 13089
 	}
-	
+
 }

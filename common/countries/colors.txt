@@ -1,5 +1,9 @@
 #reload countrycolors
 
+UCA = {
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
@@ -370,7 +374,7 @@ ICE = {
 
 UKR = {
 	color = rgb { 0  80  230 }
-	color_ui = rgb { 0  80  230 }	
+	color_ui = rgb { 0  80  230 }
 }
 
 AZR = {

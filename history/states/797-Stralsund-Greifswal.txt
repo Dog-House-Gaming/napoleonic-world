@@ -1,7 +1,7 @@
 
 state={
-	id=62
-	name="STATE_62"
+	id=797
+	name="STATE_797"
 	manpower = 1006221
 
 
@@ -9,23 +9,18 @@ state={
 
 	history={
 		victory_points = {
-			3207 1
+			9388 1
 		}
-		owner = GER
+		owner = SWE
 		buildings = {
 			infrastructure = 6
 			fuel_silo = 1
 		}
 		add_core_of = GER
 
-		1939.1.1 = {
-			buildings = {
-				air_base = 8
-			}
-		}
 	}
 
 	provinces={
-		3207 3258 3312
+		9388 3340 349 6282
 	}
 }

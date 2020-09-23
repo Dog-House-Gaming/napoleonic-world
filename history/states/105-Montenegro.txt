@@ -10,7 +10,7 @@ state={
 		victory_points = {
 			9809 3
 		}
-		owner = YUG
+		owner = TUR
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 3
@@ -26,7 +26,7 @@ state={
 	}
 
 	provinces={
-		937 6913 9809 9821 11858 
+		937 6913 9809 9821 11858
 	}
 	manpower=895500
 	buildings_max_level_factor=1.000

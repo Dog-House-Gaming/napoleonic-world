@@ -3,12 +3,12 @@ state=
 	id=626
 	name="STATE_626"
 	manpower = 83041
-	
+
 	state_category = rural
-	
+
 	history=
 	{
-		owner = PHI
+		owner = SPR
 		buildings = {
 			infrastructure = 3
 			4429 = {
@@ -18,6 +18,6 @@ state=
 		add_core_of = PHI
 	}
 	provinces={
-		4429 7419 10145 
+		4429 7419 10145
 	}
 }

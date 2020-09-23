@@ -6,11 +6,12 @@ state={
 	resources={
 		aluminium=18 # was: 30
 	}
-	
+
 	state_category = city
 
 	history={
-		owner = GER
+		owner = BAV
+		add_core_of = BAV
 		victory_points = {
 			692 20
 		}
@@ -33,6 +34,6 @@ state={
 	}
 
 	provinces={
-		692 707 708 3688 3705 6540 6693 9652 9666 11620 11638 11653 
+		692 707 708 3688 3705 6540 6693 9652 9666 11620 11638 11653
 	}
 }

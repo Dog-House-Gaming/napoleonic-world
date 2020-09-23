@@ -12,7 +12,8 @@ state={
 		#victory_points = {
 		#	513 1
 		#}
-		owner = POL
+		owner = SOV
+		add_core_of = SOV
 		buildings = {
 			infrastructure = 5
 
@@ -23,7 +24,7 @@ state={
 	}
 
 	provinces={
-		422 474 513 572 3412 6435 6520 6557 11441 11543 
+		422 474 513 572 3412 6435 6520 6557 11441 11543
 	}
 	manpower=1985600
 	buildings_max_level_factor=1.000

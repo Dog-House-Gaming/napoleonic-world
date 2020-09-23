@@ -3,13 +3,14 @@ state={
 	id=157
 	name="STATE_157"
 	manpower = 2979335
-	
+
 	state_category = city
 
 	history={
-		owner = ITA
+		owner = PAP
+		add_core_of = PAP
 		victory_points = {
-			925 1 
+			925 1
 		}
 		buildings = {
 			infrastructure = 6
@@ -25,6 +26,6 @@ state={
 	}
 
 	provinces={
-		925 963 967 3910 3923 3966 6831 6926 9838 11790 11861 
+		925 967 3910 6926 9838 11790 11861 6793 782 6985 9924
 	}
 }

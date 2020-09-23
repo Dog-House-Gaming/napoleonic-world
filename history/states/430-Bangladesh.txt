@@ -4,9 +4,10 @@ state={
 
 	history={
 		add_core_of = BAN
-		owner = RAJ
+		owner = ENG
+		add_core_of = ENG
 		victory_points = {
-			11929 1 
+			11929 1
 		}
 		buildings = {
 			infrastructure = 5

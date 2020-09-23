@@ -3,12 +3,13 @@ state=
 	id=145
 	name="STATE_145"
 	manpower = 27400
-	
+
 	state_category = small_island
-	
+
 	history=
 	{
-		owner = FIN
+		owner = SWE
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 5
 			9228 = {
@@ -17,7 +18,7 @@ state=
 		}
 		add_core_of = FIN
 	}
-	
+
 	provinces=	{
 		9228
 	}

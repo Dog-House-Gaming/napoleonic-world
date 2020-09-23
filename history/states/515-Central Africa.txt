@@ -1,12 +1,13 @@
 state={
 	id=515
 	name="STATE_515"
-	
+
 	state_category = pastoral
 	impassable = yes
 
 	history={
-		owner = FRA
+		owner = UCA
+		add_core_of = FRA
 		add_core_of = NGR
 		buildings = {
 			infrastructure = 1

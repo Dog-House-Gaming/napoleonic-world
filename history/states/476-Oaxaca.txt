@@ -3,15 +3,15 @@ state={
 	id=476
 	name="STATE_476"
 	manpower = 1663331
-	
+
 	state_category = rural
 
 	resources={
 		oil=8
 	}
-	
+
 	history={
-		owner = MEX
+		owner = SPR
 		buildings = {
 			infrastructure = 3
 			air_base = 2
@@ -29,7 +29,7 @@ state={
 	}
 
 	provinces={
-		2021 8236 10773 10889 12712 
+		2021 8236 10773 10889 12712
 	}
-	
+
 }

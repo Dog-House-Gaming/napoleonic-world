@@ -2,11 +2,12 @@ state={
 	id=72
 	name="STATE_72"
 	manpower = 152000
-	
+
 	state_category = rural
-	
+
 	history={
-		owner = CZE
+		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
@@ -20,6 +21,6 @@ state={
 	}
 
 	provinces={
-		9551 9567 
+		9551 9567
 	}
 }

@@ -3,14 +3,14 @@ state={
 	id=451
 	name="STATE_451"
 	manpower = 45628
-	
+
 	state_category = wasteland
 
 	history={
-		owner = ITA
-		
+		owner = TUR
+
 		victory_points = {
-			1130 5 
+			1130 5
 		}
 		buildings = {
 			infrastructure = 2
@@ -23,6 +23,6 @@ state={
 	}
 
 	provinces={
-		1130 1204 4136 4151 7082 9992 10120 12094 
+		1130 1204 4136 4151 7082 9992 10120 12094
 	}
 }

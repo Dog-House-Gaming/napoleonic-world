@@ -3,11 +3,12 @@ state={
 	id=441
 	name="STATE_441"
 	manpower = 2123700
-	
+
 	state_category = rural
 
 	history={
-		owner = RAJ
+		owner = CHI
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
 		}
@@ -16,6 +17,6 @@ state={
 	}
 
 	provinces={
-		5042 7273 7316 8005 10905 12754 12884 
+		5042 7273 7316 8005 10905 12754 12884
 	}
 }

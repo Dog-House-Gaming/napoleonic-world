@@ -3,11 +3,12 @@ state={
 	id=557
 	name="STATE_557" # Mauritania
 	manpower = 225000
-	
+
 	state_category = pastoral
 
 	history={
-		owner = FRA
+		owner = UCA
+		add_core_of = FRA
 		add_core_of = MRT
 		victory_points = {
 			5034 1

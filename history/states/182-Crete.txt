@@ -3,11 +3,11 @@ state=
 	id=182
 	name="STATE_182"
 	manpower = 387900
-	
+
 	state_category = rural
 	history=
 	{
-		owner = GRE
+		owner = TUR
 		victory_points = {
 			9940 5
 		}

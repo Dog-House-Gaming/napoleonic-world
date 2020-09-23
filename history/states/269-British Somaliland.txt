@@ -3,17 +3,17 @@ state=
 	id=269
 	name="STATE_269"
 	manpower = 344700
-	
+
 	state_category = enclave
-	
+
 	history= {
-		victory_points = { 
+		victory_points = {
 			10833 1
 		}
-		victory_points = { 
+		victory_points = {
 			5068 1
 		}
-		owner = ENG
+		owner = UCA
 		add_core_of = SOM
 		buildings = {
 			infrastructure = 3

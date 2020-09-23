@@ -3,13 +3,13 @@ state=
 	id=69
 	name="STATE_69"
 	manpower = 2830000
-	
+
 	state_category = town
-	
+
 	resources={
 		steel=4 # was: 8
 	}
-	
+
 	history={
 		victory_points = {
 			3585 3
@@ -20,7 +20,8 @@ state=
 		victory_points = {
 			11401 3
 		}
-		owner = CZE
+		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 2

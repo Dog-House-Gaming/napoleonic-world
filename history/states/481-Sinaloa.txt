@@ -3,11 +3,11 @@ state={
 	id=481
 	name="STATE_481" # Durango
 	manpower = 1255094
-	
+
 	state_category = rural
-	
+
 	history={
-		owner = MEX
+		owner = SPR
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
@@ -28,7 +28,7 @@ state={
 	}
 
 	provinces={
-		1945 4946 7921 8003 8057 10853 10871 10895 12804 
+		1945 4946 7921 8003 8057 10853 10871 10895 12804
 	}
-	
+
 }

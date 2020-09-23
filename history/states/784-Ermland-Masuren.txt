@@ -2,11 +2,12 @@ state={
 	id=784
 	name="STATE_784"
 	manpower = 517081
-	
+
 	state_category = rural
-	
+
 	history={
-		owner = POL
+		owner = SOV
+		add_core_of = SOV
 		victory_points = {
 			3320 3
 		}

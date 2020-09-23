@@ -3,11 +3,11 @@ state={
 	id=490
 	name="STATE_490"
 	manpower = 70020
-	
+
 	state_category = pastoral
 
 	history={
-		owner = PRU
+		owner = SPR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -17,6 +17,6 @@ state={
 	}
 
 	provinces={
-		8149 10942 
+		8149 10942
 	}
 }

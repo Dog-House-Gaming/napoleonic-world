@@ -3,11 +3,11 @@ state={
 	id=454
 	name="STATE_454" #Palestine
 	manpower = 933142
-	
+
 	state_category = rural
 
 	history={
-		owner = ENG
+		owner = TUR
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
@@ -17,10 +17,10 @@ state={
 			}
 		}
 		victory_points = {
-			1086 1 
+			1086 1
 		}
 		victory_points = {
-			4206 1 
+			4206 1
 		}
 		add_core_of = PAL
 		add_core_of = ISR

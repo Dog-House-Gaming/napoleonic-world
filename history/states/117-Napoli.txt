@@ -3,7 +3,7 @@ state={
 	id=117
 	name="STATE_117" # Campania
 	manpower = 5333611
-	
+
 	state_category = city
 	resources={
 		aluminium=10 # was: 16
@@ -11,9 +11,10 @@ state={
 	}
 
 	history={
-		owner = ITA
+		owner = NAP
+		add_core_of = NAP
 		victory_points = {
-			819 20 
+			819 20
 		}
 		buildings = {
 			infrastructure = 6
@@ -34,6 +35,6 @@ state={
 	}
 
 	provinces={
-		819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803 
+		819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803 3923 3966 963 6831
 	}
 }

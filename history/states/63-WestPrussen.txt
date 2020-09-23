@@ -7,13 +7,13 @@ state={
 		steel=23 # was: 36
 		aluminium=8 # was: 12
 	}
-	
+
 	state_category = town
 
 	history={
 		owner = GER
 		victory_points = {
-			6282 5
+			11372 5
 		}
 		victory_points = {
 			11372 3
@@ -24,7 +24,7 @@ state={
 			11372 = {
 				naval_base = 1
 			}
-			6282 = {
+			11372 = {
 				naval_base = 4
 
 			}
@@ -34,6 +34,6 @@ state={
 	}
 
 	provinces={
-		6282 6309 6334 6390 9252 9277 9306 9334 9361 11260 11288 11316 11343 11372 
+		11372 6309 6334 6390 9252 9277 9306 9334 9361 11260 11288 11316 11343
 	}
 }
