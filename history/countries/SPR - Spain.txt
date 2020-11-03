@@ -1,4 +1,4 @@
-﻿capital = 41
+capital = 41
 
 oob = "SPR_1936"
 
@@ -24,27 +24,32 @@ set_technology = {
 	early_battleship = 1
 	transport = 1
 }
-
+add_ideas = {
+	spr_declining_empire
+	spr_manuel_godoy
+	spr_ferdinand_claim
+	spr_feudal_society
+}
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 26
+			popularity = 25
 		}
 
 		fascism = {
-			popularity = 67
+			popularity = 65
 		}
 		
 		communism = {
-			popularity = 7
+			popularity = 10
 		}
 	}
 	
 	ruling_party = fascism
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_convoys = 150
@@ -206,4 +211,5 @@ create_equipment_variant = {
 		ship_gun_upgrade = 1
 		ship_anti_air_upgrade = 1
 	}
+}
 }
