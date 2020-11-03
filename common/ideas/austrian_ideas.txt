@@ -1,0 +1,192 @@
+ideas = {
+	country = {
+	
+		aus_holy_roman_emperor = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				OR = {
+					BAV = { is_subject_of = AUS }
+					SAX = { is_subject_of = AUS }
+					WUR = { is_subject_of = AUS }
+					HES = { is_subject_of = AUS }
+					GNE = { is_subject_of = AUS }
+					WUZ = { is_subject_of = AUS }
+					}
+			}
+			
+			cancel = {
+				BAV = {NOT = {is_subject_of = AUS}}
+				SAX = {NOT = {is_subject_of = AUS}}
+				WUR = {NOT = {is_subject_of = AUS}}
+				HES = {NOT = {is_subject_of = AUS}}
+				GNE = {NOT = {is_subject_of = AUS}}
+				WUZ = {NOT = {is_subject_of = AUS}}
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+				guarantee_cost = -0.50
+				improve_relations_maintain_cost_factor = -0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		aus_great_holy_roman_emperor = {
+			picture = idea_hun_hungarian_monarchy_habsburg
+
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				OR = {
+					BAV = { is_subject_of = AUS }
+					SAX = { is_subject_of = AUS }
+					WUR = { is_subject_of = AUS }
+					HES = { is_subject_of = AUS }
+					GNE = { is_subject_of = AUS }
+					WUZ = { is_subject_of = AUS }
+					GER = { is_subject_of = AUS }
+					}
+			}
+			
+			cancel = {
+				BAV = {NOT = {is_subject_of = AUS}}
+				SAX = {NOT = {is_subject_of = AUS}}
+				WUR = {NOT = {is_subject_of = AUS}}
+				HES = {NOT = {is_subject_of = AUS}}
+				GNE = {NOT = {is_subject_of = AUS}}
+				WUZ = {NOT = {is_subject_of = AUS}}
+				GER = {NOT = {is_subject_of = AUS}} 
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.15
+				weekly_manpower = 5000
+				political_power_factor = 0.25
+				guarantee_cost = -0.50
+				improve_relations_maintain_cost_factor = -0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		aus_multi_cultural_empire_4 = {
+			picture = generic_disjointed_gov
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.4
+				army_org_factor = -0.2
+				planning_speed = -0.2
+			}
+		}
+		
+		aus_multi_cultural_empire_3 = {
+			picture = generic_disjointed_gov
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.3
+				army_org_factor = -0.15
+				planning_speed = -0.15
+			}
+		}
+		
+		aus_multi_cultural_empire_2 = {
+			picture = generic_disjointed_gov
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.2
+				army_org_factor = -0.1
+				planning_speed = -0.1
+			}
+		}
+		
+		aus_multi_cultural_empire_1 = {
+			picture = generic_disjointed_gov
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.1
+				army_org_factor = -0.05
+				planning_speed = -0.05
+			}
+		}
+		
+		aus_franco_austrian_alliance = {
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				max_planning = 0.25
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+	}
+}
