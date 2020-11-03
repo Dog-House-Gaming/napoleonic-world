@@ -1,0 +1,41 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_spr_american_support"
+		texturefile = "gfx/interface/ideas/idea_spr_american_support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_declining_empire"
+		texturefile = "gfx/interface/ideas/idea_spr_declining_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_feudal_society"
+		texturefile = "gfx/interface/ideas/idea_spr_feudal_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_iberian_horses"
+		texturefile = "gfx/interface/ideas/idea_spr_iberian_horses.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_legends_conquistators"
+		texturefile = "gfx/interface/ideas/idea_spr_legends_conquistators.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_manuel_godoy"
+		texturefile = "gfx/interface/ideas/idea_spr_manuel_godoy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_modern_society"
+		texturefile = "gfx/interface/ideas/idea_spr_.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_modernizing_society"
+		texturefile = "gfx/interface/ideas/idea_spr_modernizing_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_sun_never_sets"
+		texturefile = "gfx/interface/ideas/idea_spr_sun_never_sets.dds"
+	}
+	
+	
+}
