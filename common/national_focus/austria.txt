@@ -1,0 +1,1989 @@
+focus_tree = {
+	id = austrian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	
+	##########
+	#INDUSTRY#
+	##########
+	
+	focus = {
+		id = AUS_begin_industrialization
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_civilian_1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AUS_begin_industrialization }
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_civilian_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AUS_civilian_1 }
+		x = 0
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_civilian_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AUS_civilian_2 }
+		x = 0
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_naval_1
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = AUS_begin_industrialization }
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+		}
+	
+#
+	focus = {
+		id = AUS_naval_2
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = AUS_naval_1 }
+		x = 2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+		}
+	
+#
+	focus = {
+		id = AUS_naval_3
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = AUS_naval_2 }
+		x = 2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+		}
+	
+#
+	focus = {
+		id = AUS_army_1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AUS_begin_industrialization }
+		x = 4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_army_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AUS_army_1 }
+		x = 4
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_army_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AUS_army_2 }
+		x = 4
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_inf_1
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = AUS_begin_industrialization }
+		x = 6
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_inf_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = AUS_inf_1 }
+		x = 6
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_inf_3
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = AUS_inf_2 }
+		x = 6
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#
+	focus = {
+		id = AUS_imperial_engineering
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = AUS_inf_3 }
+		prerequisite = { focus = AUS_civilian_3 }
+		prerequisite = { focus = AUS_naval_3 }
+		prerequisite = { focus = AUS_army_3 }
+		x = 3
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			 	add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 3
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_research
+		icon = GFX_focus_research
+		prerequisite = { focus = AUS_imperial_engineering }
+		x = 3
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			 	add_research_slot = 1
+		}
+	}
+	
+	######
+	#ARMY#
+	######
+	
+	focus = {
+		id = AUS_learn_from_war
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {}
+		relative_position_id = AUS_begin_industrialization
+		x = 8
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				army_experience = 25
+				bonus = 0.50
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_new_strategies_1
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {focus = AUS_learn_from_war}
+		relative_position_id = AUS_learn_from_war
+		x = -2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				army_experience = 20
+				bonus = 0.50
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_new_strategies_2
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = {focus=AUS_new_strategies_1}
+		relative_position_id = AUS_learn_from_war
+		x = -2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				army_experience = 20
+				bonus = 0.50
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = AUS_new_strategies_3
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus=AUS_new_strategies_2}
+		relative_position_id = AUS_learn_from_war
+		x = -2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				army_experience = 20
+				bonus = 0.50
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_new_weapons_1
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = AUS_learn_from_war}
+		relative_position_id = AUS_learn_from_war
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_new_weapons_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = {focus = AUS_new_weapons_1}
+		relative_position_id = AUS_learn_from_war
+		x = 0
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_new_weapons_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = {focus = AUS_new_weapons_2}
+		relative_position_id = AUS_learn_from_war
+		x = 0
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_promote_nationalism
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = {focus = AUS_learn_from_war}
+		relative_position_id = AUS_learn_from_war
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = aus_multi_cultural_empire_4
+				add_idea = aus_multi_cultural_empire_3
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_establish_german
+		icon = GFX_focus_generic_military_academy
+		prerequisite = {focus = AUS_promote_nationalism}
+		relative_position_id = AUS_learn_from_war
+		x = 2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = aus_multi_cultural_empire_3
+				add_idea = aus_multi_cultural_empire_2
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_unify_army
+		icon = GFX_focus_generic_little_entente
+		prerequisite = {focus = AUS_establish_german}
+		relative_position_id = AUS_learn_from_war
+		x = 2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = aus_multi_cultural_empire_2
+				add_idea = aus_multi_cultural_empire_1
+			}
+		}
+	}
+	
+	#####
+	#HRE#
+	#####
+	
+	focus = {
+		id = AUS_reinforce_the_empire
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {}
+		mutually_exclusive = {focus = AUS_dismantle_the_hierarchy}
+		available = {has_idea = aus_holy_roman_emperor}
+		relative_position_id = AUS_learn_from_war
+		x = 11
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			stability_factor = 0.05
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = AUS_invest_subjects
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {focus = AUS_reinforce_the_empire}
+		mutually_exclusive = {}
+		available = {has_idea = aus_holy_roman_emperor}
+		relative_position_id = AUS_reinforce_the_empire
+		x = -3
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = AUS_invest_bav
+		icon = GFX_focus_generic_industry_3
+		available = {
+			BAV = {is_subject_of = AUS}
+		}
+		prerequisite = {focus = AUS_invest_subjects}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = -7
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		BAV = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_invest_sax
+		icon = GFX_focus_generic_industry_3
+		available = {
+			SAX = {is_subject_of = AUS}
+		}
+		prerequisite = {focus = AUS_invest_subjects}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = -5
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		SAX = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_invest_wur
+		icon = GFX_focus_generic_industry_3
+		available = {
+			WUR = {is_subject_of = AUS}
+		}
+		prerequisite = {focus = AUS_invest_subjects}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = -3
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		WUR = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_invest_gne
+		icon = GFX_focus_generic_industry_3
+		available = {
+			GNE = {is_subject_of = AUS}
+		}
+		prerequisite = {focus = AUS_invest_subjects}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = -1
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		GNE = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_invest_hes
+		icon = GFX_focus_generic_industry_3
+		available = {
+			HES = {is_subject_of = AUS}
+		}
+		prerequisite = {focus = AUS_invest_subjects}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 1
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		HES = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_aproach_alpines
+		icon = GFX_goal_generic_position_armies
+		available = {
+			OR = {
+			ITA = {exists = yes}
+			SWI = {exists = yes}
+			}
+			has_idea = aus_holy_roman_emperor
+			
+		}
+		bypass = {
+			ITA = {exists = no}
+			SWI = {exists = no}
+		}
+		prerequisite = {focus = AUS_reinforce_the_empire}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ITA = {
+				add_ideas = {neutrality_influence}
+			}
+			SWI = {
+				add_ideas = {neutrality_influence}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_puppet_swi
+		icon = GFX_goal_generic_cavalry
+		available = {
+			SWI = {exists = yes
+					neutrality > 0.5
+			}
+			has_idea = aus_holy_roman_emperor
+		}
+		bypass = {
+			SWI = {exists = no}
+		}
+		prerequisite = {focus = AUS_aproach_alpines}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 3
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			puppet = SWI
+		}
+	}
+	
+	focus = {
+		id = AUS_puppet_ita
+		icon = GFX_goal_generic_cavalry
+		available = {
+			ITA = {exists = yes
+					neutrality > 0.5
+			}
+			has_idea = aus_holy_roman_emperor
+		}
+		bypass = {
+			ITA = {exists = no}
+		}
+		prerequisite = {focus = AUS_aproach_alpines}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 5
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			puppet = ITA
+		}
+	}
+	
+	focus = {
+		id = AUS_pru_matter
+		icon = GFX_goal_generic_demand_territory
+		available = {
+			GER = {exists = yes}
+		}
+		prerequisite = {focus = AUS_reinforce_the_empire}
+		mutually_exclusive = {}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 8
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = AUS_crush_prussia
+		icon = GFX_goal_generic_political_pressure
+		available = {
+			GER = {exists = yes}
+		}
+		prerequisite = {focus = AUS_pru_matter}
+		mutually_exclusive = {focus = AUS_buy_loyalty}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 7
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_buy_loyalty
+		icon = GFX_focus_mex_privatisation
+		available = {
+			GER = {exists = yes}
+			has_political_power > 300
+			GER = {
+			has_opinion = {
+				target = AUS
+				value > 97
+			}
+			}
+		}
+		prerequisite = {focus = AUS_pru_matter}
+		mutually_exclusive = {focus = AUS_crush_prussia}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 9
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = austria.2
+					days = 7
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_restore_empire
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = {focus = AUS_invest_bav}
+		prerequisite = {focus = AUS_invest_gne}
+		prerequisite = {focus = AUS_invest_hes}
+		prerequisite = {focus = AUS_invest_sax}
+		prerequisite = {focus = AUS_invest_wur}
+		prerequisite = {focus = AUS_puppet_ita}
+		prerequisite = {focus = AUS_puppet_swi}
+		prerequisite = {
+			focus = AUS_crush_prussia
+			focus = AUS_buy_loyalty
+		}
+		available = {
+			has_idea = aus_holy_roman_emperor
+		}
+		mutually_exclusive = {focus = AUS_one_empire}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 0
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 200
+			swap_ideas = {
+				remove_idea = aus_holy_roman_emperor
+				add_idea = aus_great_holy_roman_emperor
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_one_empire
+		icon = GFX_focus_generic_home_defense
+		prerequisite = {focus = AUS_invest_bav}
+		prerequisite = {focus = AUS_invest_gne}
+		prerequisite = {focus = AUS_invest_hes}
+		prerequisite = {focus = AUS_invest_sax}
+		prerequisite = {focus = AUS_invest_wur}
+		prerequisite = {focus = AUS_puppet_ita}
+		prerequisite = {focus = AUS_puppet_swi}
+		prerequisite = {
+			focus = AUS_crush_prussia
+			focus = AUS_buy_loyalty
+		}
+		mutually_exclusive = {focus = AUS_restore_empire}
+		relative_position_id = AUS_reinforce_the_empire
+		x = 2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country = {
+				limit = {is_subject_of = AUS}
+				AUS = {
+					annex_country = {
+					target= PREV
+					transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_dismantle_the_hierarchy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {}
+		relative_position_id = AUS_reinforce_the_empire
+		mutually_exclusive = {focus = AUS_reinforce_the_empire}
+		x = 16
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_political_power = 250
+			remove_ideas = aus_holy_roman_emperor
+		}
+	}
+	
+	focus = {
+		id = AUS_sell_their_independence
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = {focus = AUS_dismantle_the_hierarchy}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_sell_to_pru}
+		x = -5
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country = {
+				limit = {is_subject_of = AUS}
+				AUS = {
+					end_puppet = PREV
+					add_offsite_building = { type = industrial_complex level = 3 }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_sell_to_pru
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {focus = AUS_dismantle_the_hierarchy}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_sell_to_pru}
+		x = -3
+		y = 1
+		cost = 10
+		available = {
+			GER = {exists = yes}
+			NOT = {has_war_with = GER}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country = {
+				limit = {is_subject_of = AUS}
+				AUS = {
+					end_puppet = PREV
+					add_offsite_building = { type = industrial_complex level = 2 }
+				}
+				GER = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_new_allies_old_enemies
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {focus = AUS_dismantle_the_hierarchy}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {}
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = AUS_ally_pru
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {focus = AUS_new_allies_old_enemies}
+		prerequisite = {focus = AUS_sell_to_pru}
+		available = {
+			GER = {exists = yes}
+			NOT = {has_war_with = GER}
+		}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_remember_the_war}
+		x = -3
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = austria.1
+					days = 7
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_remember_the_war
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = AUS_new_allies_old_enemies}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_ally_pru}
+		x = -1
+		y = 2
+		cost = 10
+		available = {
+			GER = {exists = yes}
+			NOT = {has_war_with = GER}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = GER
+		}
+		}
+	}
+	
+	focus = {
+		id = AUS_ally_tur
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {focus = AUS_new_allies_old_enemies}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_liberate_balkans}
+		x = 1
+		y = 2
+		cost = 10
+		available = {
+			TUR = {exists = yes}
+			NOT = {has_war_with = TUR}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			TUR = {
+				country_event = {
+					id = austria.1
+					days = 7
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_liberate_balkans
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = AUS_new_allies_old_enemies}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_ally_tur}
+		x = 3
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		available = {
+			TUR = {exists = yes}
+			NOT = {has_war_with = TUR}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TUR
+				generator = { 104 }
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_ally_rus
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {focus = AUS_new_allies_old_enemies}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_control_eastern_europe}
+		x = 5
+		y = 2
+		cost = 10
+		available = {
+			SOV = {exists = yes}
+			NOT = {has_war_with = SOV}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = austria.1
+					days = 7
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_control_eastern_europe
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = AUS_new_allies_old_enemies}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {focus = AUS_ally_rus}
+		x = 7
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		available = {
+			SOV = {exists = yes}
+			NOT = {has_war_with = SOV}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SOV
+				generator = { 199 93 94 201 198 197 202 203 192 }
+			}
+		}
+	}
+	
+	########
+	#FRANCE#
+	########
+
+	focus = {
+		id = AUS_french_matter
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {}
+		relative_position_id = AUS_dismantle_the_hierarchy
+		mutually_exclusive = {}
+		x = 10
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = AUS_allign_napoleon
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = {focus = AUS_french_matter}
+		mutually_exclusive = {focus = AUS_condemn_napoleon}
+		relative_position_id = AUS_french_matter
+		x = -1
+		y = 1
+		cost = 10
+		available = {
+			FRA = {exists = yes}
+			NOT = {has_war_with = FRA}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nationalism
+		}
+	}
+	
+	focus = {
+		id = AUS_embargo_britain
+		icon = GFX_goal_generic_trade
+		prerequisite = {focus = AUS_allign_napoleon}
+		mutually_exclusive = {}
+		relative_position_id = AUS_french_matter
+		x = -1
+		y = 2
+		cost = 8
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = embargo }
+		}
+	}
+	
+	focus = {
+		id = AUS_napoleonic_warfare
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {focus = AUS_embargo_britain}
+		mutually_exclusive = {}
+		relative_position_id = AUS_french_matter
+		x = -1
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		available = {
+			FRA = {exists = yes}
+			NOT = {has_war_with = FRA}
+		}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_formalize_alliance
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = AUS_napoleonic_warfare}
+		mutually_exclusive = {}
+		relative_position_id = AUS_french_matter
+		x = -1
+		y = 4
+		cost = 10
+		available = {
+			FRA = {exists = yes}
+			NOT = {has_war_with = FRA}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = aus_franco_austrian_alliance
+		}
+	}
+	
+	focus = {
+		id = AUS_condemn_napoleon
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = AUS_french_matter}
+		relative_position_id = AUS_french_matter
+		mutually_exclusive = {focus = AUS_allign_napoleon}
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = peoples_commissariat_focus
+			add_ideas = war_economy
+		}
+	}
+	
+	focus = {
+		id = AUS_embargo_napoleon
+		icon = GFX_goal_generic_trade
+		prerequisite = {focus = AUS_condemn_napoleon}
+		relative_position_id = AUS_french_matter
+		mutually_exclusive = {}
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_opinion_modifier = { target = FRA modifier = embargo }
+		}
+	}
+	
+	focus = {
+		id = AUS_austrian_fort
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = {focus = AUS_embargo_napoleon}
+		relative_position_id = AUS_french_matter
+		mutually_exclusive = {}
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_fortification_focus
+		}
+	}
+	
+	focus = {
+		id = AUS_network_with_majors
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {focus = AUS_condemn_napoleon}
+		relative_position_id = AUS_french_matter
+		mutually_exclusive = {}
+		x = 3
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = AUS_prepare_for_war
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus = AUS_network_with_majors}
+		relative_position_id = AUS_french_matter
+		mutually_exclusive = {}
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = militarism_focus
+		}
+	}
+	
+	focus = {
+		id = AUS_war_with_napoleon
+		icon = GFX_focus_attack_france
+		prerequisite = {focus = AUS_prepare_for_war}
+		prerequisite = {focus = AUS_austrian_fort}
+		relative_position_id = AUS_french_matter
+		mutually_exclusive = {}
+		x = 2
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FRA
+		}
+		}
+	}
+	
+	default = no
+	}
