@@ -1,0 +1,59 @@
+economy_decisions = {
+	SOV_open_trade = {
+		icon =
+		available = {
+		tag = SOV
+		SOV={
+			has_completed_focus = SOV_open_trade_with_britain
+			has_idea = sov_embargo_britain
+			NOT = {has_idea = sov_trade_britain}
+			}
+		}
+		cost = 100
+		days_remove = 10
+		
+		remove_effect = {
+			remove_ideas = sov_embargo_britain
+			add_ideas = sov_trade_britain
+			add_offsite_building = {
+				type = industrial_complex
+				level = 15
+			}
+		}
+		
+		visible = {
+			has_idea = sov_embargo_britain
+			has_completed_focus = SOV_open_trade_with_britain
+		}
+	}
+	SOV_close_trade = {
+		icon =
+		
+		available = {
+		tag = SOV
+		SOV={
+			has_completed_focus = SOV_embargo_britain
+			has_idea = sov_trade_britain
+			NOT = {has_idea = sov_embargo_britain}
+			}
+		}
+		
+		cost = 100
+		days_remove = 10
+		
+		remove_effect = {
+			remove_ideas = sov_trade_britain
+			add_ideas = sov_embargo_britain
+			add_offsite_building = {
+				type = industrial_complex
+				level = -15
+			}
+		}
+		
+		
+		visible = {
+			has_idea = sov_trade_britain
+			has_completed_focus = SOV_embargo_britain
+		}
+	}
+}

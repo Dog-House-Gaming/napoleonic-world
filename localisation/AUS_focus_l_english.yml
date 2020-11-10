@@ -1,0 +1,181 @@
+﻿l_english:
+
+ AUS_begin_industrialization:0 "Begin Industrialization"
+ AUS_begin_industrialization_desc:0 "We should begin building up our economy, and strengthen our nation."
+
+ AUS_civilian_1:0 "Civilian Effort I"
+ AUS_civilian_1_desc:0 "We should build civilian factories so the rest of the economy can progress."
+
+ AUS_civilian_2:0 "Civilian Effort II"
+ AUS_civilian_2_desc:0 "Continue to build civilian factories, and increase production of military factories, forts, docks, and more."
+
+ AUS_civilian_3:0 "Civilian Effort III"
+ AUS_civilian_3_desc:0 "Our final attempt at creating a self sufficient economy."
+
+ AUS_naval_1:0 "Naval Effort I"
+ AUS_naval_1_desc:0 "We need to compete with Britain or France, and while we do on the ground, the seas is a different story."
+
+ AUS_naval_2:0 "Naval Effort II"
+ AUS_naval_2_desc:0 "Continue to improve our navy, by building docks throughout the coast."
+
+ AUS_naval_3:0 "Naval Effot III"
+ AUS_naval_3_desc:0 "Finalize our plans to overtake the seas."
+
+ AUS_army_1:0 "Army Effort I"
+ AUS_army_1_desc:0 "A massive army is essential to protect the people, and we must strive to have the biggest army in all of Europe."
+
+ AUS_army_2:0 "Army Effort II"
+ AUS_army_2_desc:0 "Continue to increase our arms production, and we will become more powerful than ever before."
+
+ AUS_army_3:0 "Army Effort III"
+ AUS_army_3_desc:0 "Our final push to become the most powerful nation in all of Europe."
+
+ AUS_inf_1:0 "Infrastructure Effort I"
+ AUS_inf_1_desc:0 "We need more infrastructure to bring our nation up to date."
+
+ AUS_inf_2:0 "Infrastructure Effort II"
+ AUS_inf_2_desc:0 "Continue our effort to have an efficient transportation system."
+
+ AUS_inf_3:0 "Infrastructure Effort III"
+ AUS_inf_3_desc:0 "In the event of war, supply is your lifeline. Lets not fail our troops in the battlefield."
+
+ AUS_imperial_engineering:0 "Imperial Engineering"
+ AUS_imperial_engineering_desc:0 "We have proven that Austria can compete with other European nations."
+ 
+ AUS_research:0 "Research"
+ AUS_research_desc:0 "After all of our preparations, we can finally invest in to science."
+ 
+ 
+ AUS_learn_from_war:0 "Learn from the First Coalition War"
+ AUS_learn_from_war_desc:0 "We were humilliated by France in our first war to crush the revolution. Me must learn from our mistakes if we want to win."
+ 
+ AUS_new_strategies_1:0 "New strategies"
+ AUS_new_strategies_1_desc:0 "Napoleon has shown us that our strategies are outdates, our armies must mive faster and organize better."
+ 
+ AUS_new_strategies_2:0 "Advanced Tactics"
+ AUS_new_strategies_2_desc:0 "The organization of our infantry, cavalry and artillery is vital in the battlefield. Advanced tactics will help us to triunf."
+ 
+ AUS_new_strategies_3:0 "Modern Warfare"
+ AUS_new_strategies_3_desc:0 "Modern problems require modern solutions. We must adapt to modern warfare or be destroyed."
+ 
+ AUS_new_weapons_1:0  "Small Arms"
+ AUS_new_weapons_1_desc:0  "Producing small arms in mass will help us to equip our soldiers."
+ 
+ AUS_new_weapons_2:0 "Increase Firepower"
+ AUS_new_weapons_2_desc:0 "Firing with muskets and cannons can effectively destroy the enemy morale and organization."
+ 
+ AUS_new_weapons_3:0 "Superior Artillery"
+ AUS_new_weapons_3_desc:0 "We will increase the range and the accuracy of our cannons greatly."
+ 
+ AUS_promote_nationalism:0 "Promote Nationalism"
+ AUS_promote_nationalism_desc:0 "We lack of a general sentiment of nationalism. We mmust create our own identity to unify our country under it."
+ 
+ AUS_establish_german:0 "Establish German as Standard Language"
+ AUS_establish_german_desc:0 "Multiple languages are spoken in our territories, but German will be used for official documents and in the army."
+ 
+ AUS_unify_army:0 "Unify our army"
+ AUS_unify_army_desc:0 "Divide and conquer, that is what the enemy says. The union makes the force, united we will prevail!"
+ 
+ AUS_reinforce_the_empire:0 "Reinforce The Empire"
+ AUS_reinforce_the_empire_desc:0 "The Holy Roman Empire has declined for centuries. We will take it back to its former glory!"
+
+ AUS_invest_subjects:0 "Invest In Our Subjects"
+ AUS_invest_subjects_desc:0 "Helping our subjects will increase their collaboration towards us."
+ 
+ AUS_invest_bav:0 "Invest In Bavaria"
+ AUS_invest_bav_desc:0 "We will finance the industrial expansion of our subject Bavaria."
+ AUS_invest_sax:0 "Invest In Saxony"
+ AUS_invest_sax_desc:0 "We will finance the industrial expansion of our subject Saxony."
+ AUS_invest_wur:0 "Invest In Württemberg"
+ AUS_invest_wur_desc:0 "We will finance the industrial expansion of our subject Württemberg."
+ AUS_invest_gne:0 "Invest In Cologne"
+ AUS_invest_gne_desc:0 "We will finance the industrial expansion of our subject Cologne."
+ AUS_invest_hes:0 "Invest In Hesse"
+ AUS_invest_hes_desc:0 "We will finance the industrial expansion of our subject Hesse."
+ 
+ AUS_aproach_alpines:0 "Aproach The Alpines"
+ AUS_aproach_alpines_desc:0 "Used to be part of the HRE, now subjects of France, we will bring their back."
+
+ AUS_puppet_swi:0 "Puppet Switzerland"
+ AUS_puppet_swi_desc:0 "The Swiss are more similar to us than to France,they are ansious to come back to the Empire."
+ 
+ AUS_puppet_ita:0 "Puppet Italy"
+ AUS_puppet_ita_desc:0 "The Italian Peninsula is under French control, but we have enough influence to bring their back to the Hierarchy."
+ 
+ AUS_pru_matter:0 "The Prussian Matter"
+ AUS_pru_matter_desc:0 "We see the Prussians as traitors, we have to choose if aproach nicely or with agression."
+ 
+ AUS_crush_prussia:0 "Crush Prussia"
+ AUS_crush_prussia_desc:0 "Prussia has a growing inffluence in the German duchies, we must crush them now that we can."
+ 
+ AUS_buy_loyalty:0 "Buy Their Loyalty"
+ AUS_buy_loyalty_desc:0 "We have our differences, but enough land and money should convince them to come back with us."
+ 
+ AUS_restore_empire:0 "Restore The Empire"
+ AUS_restore_empire_desc:0 "Finally, united again. A new golden era starts to Austria and the Holy Roman Empire."
+ 
+ AUS_one_empire:0 "One Empire"
+ AUS_one_empire_desc:0 "The structure of the HRE is obsolete, we shall unify all our subjects under one empire."
+ 
+ AUS_dismantle_the_hierarchy:0 "Dismantle The Hierarchy"
+ AUS_dismantle_the_hierarchy_desc:0 "The Holy Roman Empire doesn't have any porpouse any more. We shall look towards other ambitions and priorities."
+ 
+ AUS_sell_their_independence:0 "Sell Them Their Independence"
+ AUS_sell_their_independence_desc:0 "We can make a deal and liberate them for a price."
+ 
+ AUS_sell_to_pru:0 "Sell Them To Prussia"
+ AUS_sell_to_pru_desc:0 "The Prussians are interested in unifying Germany, giving them the land will help us to improve our relations."
+ 
+ AUS_new_allies_old_enemies:0 "New Allies Old Enemies"
+ AUS_new_allies_old_enemies_desc:0 "Now me must choose: Who will we befriend? Who will we attack?"
+ 
+ AUS_ally_pru:0 "Ally Prussia"
+ AUS_ally_pru_desc:0 "Being much culutraly similar to us than our other neighbours, the Prussians seem the best option for us to ally."
+ 
+ AUS_remember_the_war:0 "Remember The 7 Years War"
+ AUS_remember_the_war_desc:0 "The conflict between Austria and Prussia ended in an unofficial World War. We must avenge the fallen ones in that lost war."
+ 
+ AUS_ally_tur:0 "Ally the Ottomans"
+ AUS_ally_tur_desc:0 "The Ottomans still have a great army, despite their decline. Their help might be useful against our enemies."
+ 
+ AUS_liberate_balkans:0 "Liberate The Balkans"
+ AUS_liberate_balkans_desc:0 "The Ottoman Empire has been weakened. We must use this opportunity to retake the peninsula."
+ 
+ AUS_ally_rus:0 "Ally Russia"
+ AUS_ally_rus_desc:0 "The Russian Empire is the largest and more populated in Europe. Despite being technologically behind our standards, all that manpower will destroy any of our enemies."
+ 
+ AUS_control_eastern_europe:0 "Control Eastern Europe"
+ AUS_control_eastern_europe_desc:0 "Russian army is big, but outdated and disorganized. A direct attack should be effective, the Winter cannot be that cold."
+ 
+ AUS_french_matter:0 "The French Matter"
+ AUS_french_matter_desc:0 "The French Revolution has caused panic among our nobility, but it can also be an oportunity to destroy our common enemies. We must choose our side."
+ 
+ AUS_allign_napoleon:0 "Allign Napoleon"
+ AUS_allign_napoleon_desc:0 "We may not have the same ideology, but a strategic alliance will help us to expand our borders."
+ 
+ AUS_embargo_britain:0 "Embargo Britain"
+ AUS_embargo_britain_desc:0 "We will help France with the continental system by ending our trade relations with Britain."
+ 
+ AUS_napoleonic_warfare:0 "Napoleonic Warfare"
+ AUS_napoleonic_warfare_desc:0 "The Tactics and Strategy of Napoleon Bonaparte are marvelous. We will incorporate their ways to our own army."
+ 
+ AUS_formalize_alliance:0 "Formalize Our Alliance"
+ AUS_formalize_alliance_desc:0 "We can now formalize our alliance and create our own faction against our common enemies."
+ 
+ AUS_condemn_napoleon:0 "Condemn Napoleon"
+ AUS_condemn_napoleon_desc:0 "Napoleon's power grows bigger every day. We must be careful and protect ourselves."
+ 
+ AUS_embargo_napoleon:0 "Embargo Napoleon"
+ AUS_embargo_napoleon_desc:0 "We will not give our precious resources to a revolutionary dictator like Napoleon."
+ 
+ AUS_austrian_fort:0 "Austrian Fortifications"
+ AUS_austrian_fort_desc:0 "The French attack is inminent, we must prepare our deffences."
+ 
+ AUS_network_with_majors:0 "Network With Majors"
+ AUS_network_with_majors_desc:0 "We need to ally other European nations, in the hope that Napoleon can't beat all of us."
+ 
+ AUS_prepare_for_war:0 "Prepare For War"
+ AUS_prepare_for_war_desc:0 "We need to prepare for war with France, just in case they get to power hungry."
+ 
+ AUS_war_with_napoleon:0 "War With Napoleon"
+ AUS_war_with_napoleon_desc:0 "It is time for war. Diplomacy has failed us."

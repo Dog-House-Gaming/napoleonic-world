@@ -37,14 +37,13 @@ bookmarks = {
 			history = "AUS_NAPOLEON_TO_POWER_DESC"
 			ideology = neutrality
 			ideas = {
-				#home_of_the_free
-				#great_depression
-				#undisturbed_isolation
+				aus_holy_roman_emperor
+				aus_multi_cultural_empire_4
 			}
 			focuses = {
-				#USA_war_plan_black
-				#USA_strike_at_the_empire
-				#USA_pearl_harbor_gambit
+				AUS_restore_empire
+				AUS_one_empire
+				AUS_dismantle_the_hierarchy
 			}
 		}
 		"ENG"={
@@ -79,13 +78,15 @@ bookmarks = {
 			history = "SPR_NAPOLEON_TO_POWER_DESC"
 			ideology = fascism
 			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
+				spr_manuel_godoy
+				spr_declining_empire
+				spr_ferdinand_claim
+				spr_feudal_society
 			}	
 			focuses = {
-			#	ITA_pact_of_steel
-			#	ITA_spanish_italian_faction
-			#	ITA_italy_first
+				SPR_sun_never_sets
+				SPR_restore_armada
+				SPR_reconquest_iberia
 			}		
 		}
 		"SOV"={

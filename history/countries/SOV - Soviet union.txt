@@ -1,4 +1,4 @@
-﻿capital = 219
+﻿capital = 195
 
 oob = "SOV_1936"
 
@@ -60,31 +60,32 @@ set_politics = {
 
 
 add_ideas = {
-	trotskyite_plot
-	home_of_revolution
+	spr_feudal_society
+	sov_zars_cannon
+	sov_orthodox_church
 }
 
-#create_country_leader = {
-#	name = "Paul I"
-#	desc = "POLITICS_PAUL_I_DESC"
-#	picture = "Portrait_Russia_Paul_I.dds"
-#	expire = "1953.3.1"
-#	ideology = stalinism
-#	traits = {
-#
-#	}
-#}
+create_country_leader = {
+	name = "Revolutionary Commune"
+	desc = ""
+	picture = "Portrait_Russia_Revolutionary_Commune.dds"
+	expire = "1953.3.1"
+	ideology = anarchist_communism
+	traits = {
 
-#create_country_leader = {
-#	name = "Paul I"
-#	desc = "POLITICS_PAUL_I_DESC"
-#	picture = "Portrait_Russia_Paul_I.dds"
-#	expire = "1953.3.1"
-#	ideology = fascism_ideology
-#	traits = {
-#
-#	}
-#}
+	}
+}
+
+create_country_leader = {
+	name = "Alexander I"
+	desc = ""
+	picture = "Portrait_Russia_Alexander_I.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+
+	}
+}
 
 create_country_leader = {
 	name = "Paul I"
@@ -98,9 +99,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Paul I"
-	desc = "POLITICS_PAUL_I_DESC"
-	picture = "Portrait_Russia_Paul_I.dds"
+	name = "Alexander I"
+	desc = ""
+	picture = "Portrait_Russia_Alexander_I.dds"
 	expire = "1953.3.1"
 	ideology = despotism
 	traits = {

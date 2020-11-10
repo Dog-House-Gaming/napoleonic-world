@@ -1,0 +1,213 @@
+ideas = {
+	country = {
+		
+		spr_declining_empire = {
+			picture = idea_spr_declining_empire
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.1
+			political_power_gain = -0.1
+			}
+		}
+		
+		spr_manuel_godoy = {
+			picture =  idea_spr_manuel_godoy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}
+		
+		spr_ferdinand_claim = {
+			picture = king_edward 
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		
+		spr_feudal_society = {
+			picture =  idea_spr_feudal_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.30
+				production_speed_buildings_factor = -0.50
+				industrial_capacity_factory = -0.50
+			}
+		}
+		
+		spr_modernizing_society = {
+			picture =  idea_spr_modernizing_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.10
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		spr_modern_society = {
+			picture =  idea_spr_modern_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		spr_american_support = {
+			picture =  idea_spr_american_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = 0.02
+				heat_attrition = -0.05
+				acclimatization_hot_climate_gain_factor = 0.1
+			}
+		}
+		
+		spr_iberian_horses = {
+			picture =  idea_spr_iberian_horses
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+			}
+		}
+		
+		spr_legends_conquistators = {
+			picture =  idea_spr_legends_conquistators
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				terrain_penalty_reduction = 0.05
+			}
+		}
+		
+		spr_sun_never_sets = {
+			picture =  idea_spr_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				conscription = 0.02
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				naval_coordination = 0.05
+				naval_speed_factor = 0.05
+				navy_max_range_factor = 0.15
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+			}
+		}
+		
+	}
+}
