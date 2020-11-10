@@ -4,3 +4,8 @@
  soviet.1.t:0 "Patriotic War!"
  soviet.1.d:0 "We are being attacked by foreign nations, instead of generating panic among the population, all the men in Russia are willing to fight for the Motherland.
  soviet.1.a:0 "Fot the Motherland!"
+ 
+ soviet.999.t:0 "Old names for cities"
+ soviet.999.d:0 "As you probably know, Stalingrad and Leningrad were named after Stalin and Lenin, who don't exist in this era. If you want you can keep the names of the cities or change it for the older ones."
+ soviet.999.a:0 "OK"
+ soviet.999.b:0 "No thanks"
