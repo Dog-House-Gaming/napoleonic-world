@@ -1,0 +1,159 @@
+ideas = {
+	country = {
+		
+		sov_patriotic_war= {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				army_org_factor = 0.30
+				war_support_factor = 0.2
+				partisan_effect = 0.25
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		sov_orthodox_church= {
+			picture = YUG_orthodox_church_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.15
+				foreign_subversive_activites = -0.50
+			}
+		}
+		
+		sov_zars_cannon= {
+			picture = generic_artillery_regiments
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				army_artillery_attack_factor = 0.10
+				army_artillery_defence_factor = 0.10
+			}
+		}
+		
+		sov_winter_soldiers= {
+			picture = sisu
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				winter_attrition_factor = -0.8
+				acclimatization_cold_climate_gain_factor = 0.8
+			}
+		}
+		
+		sov_trade_britain= {
+			picture = can_wartime_prices_and_trade_board
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				min_export = 0.20
+			}
+		}
+		
+		sov_embargo_britain= {
+			picture = SOV_scientist_defect
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.05
+				min_export = -0.10
+				add_opinion_modifier = { target = ENG modifier = embargo }
+			}
+		}
+		
+		sov_mutual_collaboration= {
+			picture = german_advisors
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				max_planning = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+		
+		sov_conservative_values= {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				neutrality_drift = 0.10
+			}
+		}
+		
+	}
+}
