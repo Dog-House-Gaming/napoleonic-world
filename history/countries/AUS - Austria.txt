@@ -1,0 +1,129 @@
+﻿capital = 4
+
+oob = "AUS_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_mountaineers = 1
+
+}
+
+set_politics = {
+
+	
+
+	ruling_party = neutrality
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+		neutrality = 70
+		
+
+		fascism =  15
+		
+
+		democratic = 15
+		
+
+		communism =0
+		
+	}
+add_ideas = {
+	aus_holy_roman_emperor
+	aus_multi_cultural_empire_4
+}
+puppet = SAX
+puppet = BAV
+puppet = WUR
+puppet = HES
+puppet = GNE
+
+set_national_unity = 0.50
+
+create_country_leader = {
+	name = "Francis I"
+	desc = "POLITICS_FRANCIS_I_DESC"
+	picture = "Portrait_Austria_Francis_I.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+#create_country_leader = {
+#	name = "Francis I"
+#	desc = "POLITICS_FRANCIS_I_DESC"
+#	picture = "Portrait_Austria_Francis_I.dds"
+#	expire = "1965.1.1"
+#	ideology = socialism
+#	traits = {
+		#
+#	}
+#}
+
+#create_country_leader = {
+#	name = "Francis I"
+#	desc = "POLITICS_FRANCIS_I_DESC"
+#	picture = "Portrait_Austria_Francis_I.dds"
+#	expire = "1965.1.1"
+#	ideology = nazism
+#	traits = {
+		#
+#	}
+#}
+
+#create_country_leader = {
+#	name = "Francis I"
+#	desc = "POLITICS_FRANCIS_I_DESC"
+#	picture = "Portrait_Austria_Francis_I.dds"
+#	expire = "1965.1.1"
+#	ideology = marxism
+#	traits = {
+		#
+#	}
+#}
+
+
+
+
+create_field_marshal = {
+	name = "Archduke John"
+	picture = "Portrait_Austria_John.dds"
+	traits = { infelxible_strategist infantry_leader politically_connected }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Karl Mack von Leiberich"
+	picture = "Portrait_Austria_Mack.dds"
+	traits = { organizer skilled_staffer reckless }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Archduke Charles"
+	picture = "Portrait_Austria_Charles.dds"
+	traits = { organizer skilled_staffer reckless }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
