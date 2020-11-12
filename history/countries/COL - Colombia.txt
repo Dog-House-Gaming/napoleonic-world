@@ -17,27 +17,24 @@ set_convoys = 10
 set_convoys = 5
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
+	
 	
 	ruling_party = democratic
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
+set_popularities = {
+		democratic = 99
+		
 
+		fascism = 0
+		
+		
+		communism =  1
+			#banned = no #default is no
+		
+	}
 create_country_leader = {
 	name = "Alfonso López Pumarejo"
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
@@ -64,17 +61,17 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 100
+				 100
 			}
 
 			fascism = {
-				popularity = 0
+				 0
 			}
 			
 			communism = {
-				popularity = 0
+				 0
 				#banned = no #default is no
 			}
 		}

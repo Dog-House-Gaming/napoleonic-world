@@ -42,23 +42,7 @@ create_import = {
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 10
-			banned = no #default is no
-		}
-		neutrality = { 
-			popularity = 70
-		}
-	}
+	
 	
 	ruling_party = neutrality
 	last_election = "1933.3.5"
@@ -66,7 +50,19 @@ set_politics = {
 	elections_allowed = no
 
 }
+set_popularities = {
+		democratic = 5
+		
 
+		fascism =15
+		
+		
+		communism =10
+			banned = no #default is no
+		
+		neutrality =  70
+		
+	}
 
 add_ideas = {
 	#sour_loser

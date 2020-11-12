@@ -150,27 +150,24 @@ set_national_unity = 0.6
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
+	
 	
 	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
+set_popularities = {
+		democratic = 99
+		
 
+		fascism = 0
+		
+		
+		communism = 1
+			#banned = no #default is no
+		
+	}
 add_ideas = {
 	undisturbed_isolation
 #	great_depression
@@ -188,17 +185,17 @@ add_ideas = {
 
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 99
+				 99
 			}
 
 			fascism = {
-				popularity = 0
+				 0
 			}
 			
 			communism = {
-				popularity = 1
+				 1
 				#banned = no #default is no
 			}
 		}

@@ -61,27 +61,24 @@ set_convoys = 10
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 100
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
+	
 	
 	ruling_party = democratic
 	last_election = "1932.10.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
+set_popularities = {
+		democratic = 100
+		
 
+		fascism = 0
+		
+		
+		communism = 0
+			#banned = no #default is no
+		
+	}
 create_country_leader = {
 	name = "Tiburcio Carías Andino"
 	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
@@ -96,17 +93,17 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 100
+				 100
 			}
 
 			fascism = {
-				popularity = 0
+				 0
 			}
 			
 			communism = {
-				popularity = 0
+				 0
 				#banned = no #default is no
 			}
 		}

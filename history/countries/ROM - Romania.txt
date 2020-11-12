@@ -86,48 +86,44 @@ set_convoys = 10
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 20
-		}
-
-		fascism = {
-			popularity = 18
-		}
-		
-		communism = {
-			popularity = 2
-		}
-		
-		neutrality = { 
-			popularity = 60
-		}
-	}
+	
 	
 	ruling_party = neutrality
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
 }
+set_popularities = {
+		democratic = 20
+		
 
+		fascism = 18
+		
+		
+		communism =  2
+		
+		
+		neutrality = 60
+		
+	}
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 48
+				 48
 			}
 
 			fascism = {
-				popularity = 30
+				 30
 			}
 			
 			communism = {
-				popularity = 2
+				 2
 			}
 			
 			neutrality = { 
-				popularity = 20
+				 20
 			}
 		}
 		

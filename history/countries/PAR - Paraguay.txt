@@ -61,17 +61,17 @@ set_country_flag = monroe_doctrine
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 25
+			 25
 		}
 
 		fascism = {
-			popularity = 0
+			 0
 		}
 		
 		communism = {
-			popularity = 75
+			 75
 			#banned = no #default is no
 		}
 	}
@@ -108,22 +108,22 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 20
+				 20
 			}
 
 			fascism = {
-				popularity = 0
+				 0
 			}
 			
 			communism = {
-				popularity = 30
+				 30
 				#banned = no #default is no
 			}
 
 			neutrality = {
-				popularity = 50
+				 50
 			}
 		}
 

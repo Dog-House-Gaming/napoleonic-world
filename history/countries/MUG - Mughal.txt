@@ -10,30 +10,26 @@ set_technology = {
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 100
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		neutrality = { 
-			popularity = 0
-		}
-	}
+	
 	
 	ruling_party = fascism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
 }
+set_popularities = {
+		democratic =  0
+		
 
+		fascism = 100
+		
+		
+		communism =  0
+		
+		
+		neutrality =  0
+		
+	}
 create_country_leader = {
 	name = "Shah Salam II"
 	desc = "POLITICS_SHAH_SALAM_DESC"

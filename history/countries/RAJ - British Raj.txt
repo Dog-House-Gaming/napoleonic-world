@@ -16,19 +16,6 @@ set_technology = {
 	
 }
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_ideas = {
-		RAJ_princely_states
-		RAJ_marginalized_muslim_community
-		RAJ_agrarian_society
-		RAJ_risk_of_famine
-	}
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
 set_convoys = 20
 
 set_cosmetic_tag = RAJ_UK # British Raj
@@ -117,30 +104,26 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 51
-		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		communism = {
-			popularity = 17
-		}
-
-		neutrality = {
-			popularity = 30
-		}
-	}
+	
 	
 	ruling_party = democratic
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
+set_popularities = {
+		democratic =  51
+		
 
+		fascism =  2
+		
+		
+		communism = 17
+		
+
+		neutrality = 30
+		
+	}
 create_country_leader = {
 	name = "George III"
 	desc = "POLITICS_GEORGE_III_DESC"

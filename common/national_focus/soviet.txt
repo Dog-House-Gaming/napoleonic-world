@@ -1164,7 +1164,8 @@ focus_tree = {
 			}
 			if = {
 			limit = {
-				has_stability < 0.60			
+				has_stability < 0.60
+				}
 			start_civil_war = {
 				ideology = democratic
 				size = 0.2
