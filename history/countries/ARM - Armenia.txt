@@ -43,13 +43,9 @@ set_politics = {
 }
 set_popularities = {
 		fascism = 34
-		
-	
 		democratic =30
-		
-		
-		communism =36
-		
+		communism = 36
+		neutrality = 0
 	}
 create_country_leader = {
 	name = "Drastamat Kanayan"
