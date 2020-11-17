@@ -19,9 +19,6 @@ set_technology = {
 
 
 set_politics = {
-
-	
-
 	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
@@ -29,13 +26,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic =  83
-		
-
 		fascism =11
-		
-
 		communism =6
-		
+		neutrality = 0
 	}
 set_convoys = 80
 set_national_unity = 0.75
