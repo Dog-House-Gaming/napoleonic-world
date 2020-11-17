@@ -54,13 +54,9 @@ create_country_leader = {
 }
 set_popularities = {
 		democratic = 30
-		
-		
 		communism = 40
-		
-		
 		neutrality =30
-				
+		fascism = 0		
 	}
 create_country_leader = {
 	name = "Mammad Amin Rasulzade"
