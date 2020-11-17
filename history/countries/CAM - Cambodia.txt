@@ -30,26 +30,17 @@ set_technology = {
 }
 
 set_politics = {
-
-	
-
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-		democratic =40
-		
-
-		fascism =0
-		
-		
-		communism =25
-		
-		neutrality =35
-		
-	}
+	democratic =40
+	fascism =0
+	communism =25
+	neutrality =35
+}
 create_country_leader = {
 	name = "Pol Pot" 
 	desc = ""
