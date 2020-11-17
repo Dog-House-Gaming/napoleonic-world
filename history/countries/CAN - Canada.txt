@@ -117,7 +117,7 @@ set_popularities = {
 		fascism = 1
 		communism =  1
 		neutrality = 0
-	}
+}
 create_country_leader = {
 	name = "George III"
 	desc = "POLITICS_GEORGE_III_DESC"
