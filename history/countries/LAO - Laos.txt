@@ -31,20 +31,24 @@ set_technology = {
 
 set_politics = {
 
-	
-}
-set_popularities = {
-		democratic = 25
-		
+	parties = {
+		democratic = { 
+			popularity = 25
+		}
 
-		fascism = 0
+#		fascism = {
+#		
+#		}
 		
-		
-		communism = 35
-		
-		neutrality = 40
-		
+		communism = {
+			popularity = 35
+		}
+		neutrality = {
+			popularity = 40
+		}
 	}
+}
+
 create_country_leader = {
 	name = "Souphanouvong"
 	desc = ""

@@ -19,37 +19,40 @@ set_technology = {
 
 set_politics = {
 
-	
+	parties = {
+		democratic = { 
+			popularity = 23
+		}
+
+		fascism = {
+			popularity = 60
+		}
+		
+		communism = {
+			popularity = 17
+		}
+	}
 	
 	ruling_party = fascism
 	last_election = "1935.10.22"
 	election_frequency = 48
 	elections_allowed = yes
 }
-set_popularities = {
-		democratic = 20
-		
 
-		fascism = 60
-		
-		
-		communism = 20
-		
-	}
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 			democratic = { 
-				 30
+				popularity = 30
 			}
 
 			fascism = {
-				 60
+				popularity = 60
 			}
 			
 			communism = {
-				 10
+				popularity = 10
 			}
 		}
 		

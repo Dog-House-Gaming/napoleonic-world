@@ -39,18 +39,21 @@ set_technology = {
 
 set_politics = {
 
+	parties = {
+		fascism = { 
+			popularity = 34
+		}	
 	
-}
-set_popularities = {
-		fascism = 34
+		democratic = { 
+			popularity = 30
+		}
 		
-	
-		democratic =30
-		
-		
-		communism =36
-		
+		communism = {
+			popularity = 36
+		}	
 	}
+}
+
 create_country_leader = {
 	name = "Drastamat Kanayan"
 	desc = ""

@@ -93,14 +93,13 @@ bookmarks = {
 			history = "SOV_NAPOLEON_TO_POWER_DESC"
 			ideology = democratic
 			ideas = {
-				sov_orthodox_church
-				sov_zars_cannon
-				spr_feudal_society
+			#	trotskyite_plot
+			#	home_of_revolution
 			}
 			focuses = {
-				SOV_winter_soldiers
-				SOV_russian_revolution
-				SOV_conquer_finland
+			#	SOV_great_purge
+			#	SOV_claims_on_baltic
+			#	SOV_war_with_uk
 			}	
 		}
 

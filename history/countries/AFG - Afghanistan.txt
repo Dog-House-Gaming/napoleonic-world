@@ -88,22 +88,22 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 			democratic = {
-				 0
+				popularity = 0
 			}
 
 			fascism = {
-				 20
+				popularity = 20
 			}
 
 			communism = {
-				 10
+				popularity = 10
 				#banned = no #default is no
 			}
 
 			neutrality = {
-				 75
+				popularity = 75
 			}
 		}
 

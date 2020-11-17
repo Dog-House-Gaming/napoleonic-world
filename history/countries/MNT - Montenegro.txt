@@ -22,16 +22,19 @@ set_technology = {
 
 set_politics = {
 
-	
-}
-set_popularities = {
-		fascism = 33
-		
-		neutrality =33
-		
-		communism =34
-		
+	parties = {
+		fascism = { 
+			popularity = 33
+		}
+		neutrality = { 
+			popularity = 33
+		}		
+		communism = {
+			popularity = 34
+		}
 	}
+}
+
 create_country_leader = {
 	name = "Sekula Drljević"
 	desc = ""

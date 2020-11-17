@@ -38,23 +38,23 @@ if = {
 
 set_politics = {
 
-	
-}
-set_popularities = {
+	parties = {
 		democratic = { 
-			 33
+			popularity = 33
 		}
 
-		fascism = {
-		}
+#		fascism = {
+#		}
 		
 		communism = {
-			 33
+			popularity = 33
 		}
 		neutrality = {
-			 34
+			popularity = 34
 		}
 	}
+}
+
 create_country_leader = {
 	name = "Onn Jaafar"
 	desc = ""

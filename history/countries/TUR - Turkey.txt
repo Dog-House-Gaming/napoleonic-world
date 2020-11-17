@@ -87,51 +87,55 @@ set_autonomy = {
 
 set_politics = {
 
-	
+	parties = {
+		democratic = {
+			popularity = 10
+		}
+
+		fascism = {
+			popularity = 0
+			banned = yes
+		}
+
+		communism = {
+			popularity = 0
+			banned = yes #default is no
+		}
+
+		neutrality = {
+			popularity = 100
+		}
+	}
 
 	ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
-set_popularities = {
-		democratic = 10
-		
 
-		fascism =  0
-			banned = yes
-		
-
-		communism = 0
-			banned = yes #default is no
-		
-
-		neutrality =  90
-		
-	}
 set_convoys = 20
 set_national_unity = 0.55
 
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 		democratic = {
-			 10
+			popularity = 10
 		}
 
 		fascism = {
-			 0
+			popularity = 0
 			banned = yes
 		}
 
 		communism = {
-			 0
+			popularity = 0
 			banned = yes #default is no
 		}
 
 		neutrality = {
-			 100
+			popularity = 100
 		}
 	}
 

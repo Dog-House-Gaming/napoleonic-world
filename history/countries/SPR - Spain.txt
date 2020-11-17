@@ -1,4 +1,4 @@
-﻿capital = 41
+capital = 41
 
 oob = "SPR_1936"
 
@@ -32,23 +32,26 @@ add_ideas = {
 }
 set_politics = {
 
-	
+	parties = {
+		democratic = { 
+			popularity = 25
+		}
+
+		fascism = {
+			popularity = 65
+		}
+		
+		communism = {
+			popularity = 10
+		}
+	}
 	
 	ruling_party = fascism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
 }
-set_popularities = {
-		democratic =25
-		
 
-		fascism = 65
-		
-		
-		communism = 10
-		
-	}
 set_convoys = 150
 set_national_unity = 0.7
 
@@ -119,17 +122,17 @@ puppet = NSP
 
 	set_politics = { 
 
-		set_popularities = {
+		parties = {
 			democratic = { 
-				 22
+				popularity = 22
 			}
 
 			fascism = {
-				 76
+				popularity = 76
 			}
 			
 			communism = {
-				 2
+				popularity = 2
 			}
 		}
 		
@@ -208,4 +211,5 @@ create_equipment_variant = {
 		ship_gun_upgrade = 1
 		ship_anti_air_upgrade = 1
 	}
+}
 }

@@ -39,21 +39,25 @@ set_technology = {
 
 set_politics = {
 
-	
-}
-set_popularities = {
-		democratic =15
-		
+	parties = {
+		democratic = { 
+			popularity = 15
+		}
 
-		neutrality = 20
+		neutrality = {
+			popularity = 20
+		}
 		
-		
-		communism =60
-		
+		communism = {
+			popularity = 60
+		}
 
-		fascism = 5
-		
+		fascism = { 
+			popularity = 5
+		}
 	}
+}
+
 create_country_leader = {
     name = "Vasil Zacharka"
     desc = ""

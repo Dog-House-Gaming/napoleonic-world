@@ -1448,7 +1448,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUS_restore_empire
-		icon = GFX_focus_ger_revive_kaiserreich
+		icon = GFX_focus_hun_elect_a_king
 		prerequisite = {focus = AUS_invest_bav}
 		prerequisite = {focus = AUS_invest_gne}
 		prerequisite = {focus = AUS_invest_hes}

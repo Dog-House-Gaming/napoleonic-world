@@ -30,40 +30,43 @@ if = {
 
 set_politics = {
 
-	
+	parties = {
+		democratic = { 
+			popularity = 98
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 2
+			#banned = no #default is no
+		}
+	}
 	
 	ruling_party = democratic
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
 }
-set_popularities = {
-		democratic =  98
-		
 
-		fascism = 0
-		
-		
-		communism = 2
-			#banned = no #default is no
-		
-	}
 set_convoys = 100
 
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 			democratic = { 
-				 99
+				popularity = 99
 			}
 
 			fascism = {
-				 0
+				popularity = 0
 			}
 			
 			communism = {
-				 1
+				popularity = 1
 				#banned = no #default is no
 			}
 		}

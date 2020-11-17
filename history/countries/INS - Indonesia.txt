@@ -25,20 +25,24 @@ set_convoys = 25
 
 set_politics = {
 
-	
-}
-set_popularities = {
-		democratic = 10
-		
+	parties = {
+		democratic = { 
+			popularity = 10
+		}
 
-		fascism = 10
+		fascism = {
+			popularity = 10
+		}
 		
-		
-		communism = 30
-		
-		neutrality =  50
-		
+		communism = {
+			popularity = 30
+		}
+		neutrality = {
+			popularity = 50
+		}
 	}
+}
+
 create_country_leader = {
 	name = "Sukarno"
 	desc = ""

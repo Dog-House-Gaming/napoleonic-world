@@ -56,26 +56,29 @@ add_ideas = {
 
 set_politics = {
 
-	
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		fascism = {
+			popularity = 0
+			banned = yes
+		}
+		
+		communism = {
+			popularity = 100
+			#banned = no #default is no
+		}
+	}
 	
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {
-		democratic =  0
-			banned = yes
-		
 
-		fascism =  0
-			banned = yes
-		
-		
-		communism = 100
-			#banned = no #default is no
-		
-	}
 create_country_leader = {
 	name = "Salchak Toka"
 	desc = "POLITICS_SALCHAK_TOKA_DESC"
@@ -90,19 +93,19 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 			democratic = { 
-				 0
+				popularity = 0
 				banned = yes
 			}
 
 			fascism = {
-				 0
+				popularity = 0
 				banned = yes
 			}
 			
 			communism = {
-				 100
+				popularity = 100
 				#banned = no #default is no
 			}
 		}

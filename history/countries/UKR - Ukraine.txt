@@ -38,21 +38,22 @@ set_technology = {
 }
 
 set_politics = {
-ruling_party = democratic
-	last_election = "1934.4.19"
-	election_frequency = 48
-	elections_allowed = yes
-	
-}
-set_popularities = {
-		democratic = 15
-		
 
-		fascism = 30
+	parties = {
+		democratic = { 
+			popularity = 15
+		}
+
+		fascism = {
+			popularity = 30
+		}
 		
-		
-		communism =  50
+		communism = {
+			popularity = 50
+		}
 	}
+}
+
 create_country_leader = {
 	name = "Kost Levytsky"
 	desc = ""

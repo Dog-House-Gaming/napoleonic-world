@@ -58,25 +58,28 @@ set_convoys = 5
 
 set_politics = {
 
-	
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes #default is no
+		}
+
+		fascism = {
+			popularity = 100
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes #default is no
+		}
+	}
 	
 	ruling_party = fascism
 	last_election = "1935.1.15"
 	election_frequency = 48
 	elections_allowed = yes
 }
-set_popularities = {
-		democratic =0
-			banned = yes #default is no
-		
 
-		fascism = 100
-		
-		
-		communism = 0
-			banned = yes #default is no
-		
-	}
 create_country_leader = {
 	name = "Maximiliano Hernández Martínez"
 	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
@@ -91,18 +94,18 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 			democratic = { 
-				 0
+				popularity = 0
 				banned = yes #default is no
 			}
 
 			fascism = {
-				 100
+				popularity = 100
 			}
 			
 			communism = {
-				 0
+				popularity = 0
 				banned = yes #default is no
 			}
 		}

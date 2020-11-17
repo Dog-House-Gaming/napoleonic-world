@@ -14,6 +14,11 @@ set_technology = {
 	early_light_cruiser = 1
 }
 
+add_ideas = {
+	german_advisors
+	CHI_communist_uprisings
+}
+
 set_convoys = 40
 
 1939.1.1 = {
@@ -95,27 +100,31 @@ set_convoys = 40
 
 set_politics = {
 
-	
+	parties = {
+		democratic = {
+			popularity = 3
+		}
+
+		fascism = {
+			popularity = 7
+		}
+
+		communism = {
+			popularity = 30
+			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 50
+		}
+	}
 
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {
-		democratic = 3
-		
 
-		fascism =17
-		
-
-		communism = 30
-			#banned = no #default is no
-		
-
-		neutrality =50
-		
-	}
 create_country_leader = {
 	name = "Jiaqing Emperor"
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
@@ -165,22 +174,22 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 		democratic = {
-			 0
+			popularity = 0
 		}
 
 		fascism = {
-			 0
+			popularity = 0
 		}
 
 		communism = {
-			 0
+			popularity = 0
 			#banned = no #default is no
 		}
 
 		neutrality = {
-			 100
+			popularity = 100
 		}
 	}
 

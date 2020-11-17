@@ -67,26 +67,30 @@ set_country_flag = monroe_doctrine
 
 set_politics = {
 
-	
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
 }
-set_popularities = {
-		democratic =  0
-		
 
-		fascism = 0
-		
-		
-		communism = 0
-		
-		
-		neutrality = 100
-		
-	}
 create_country_leader = {
 	name = "José Luis Tejada Sorzano"
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
@@ -112,21 +116,21 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 		democratic = { 
-			 0
+			popularity = 0
 		}
 
 		fascism = {
-			 0
+			popularity = 0
 		}
 		
 		communism = {
-			 0
+			popularity = 0
 		}
 		
 		neutrality = { 
-			 100
+			popularity = 100
 		}
 	}
 	

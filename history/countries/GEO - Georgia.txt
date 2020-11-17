@@ -39,15 +39,17 @@ set_technology = {
 
 set_politics = {
 
-	
-}
-set_popularities = {
-		democratic = 25
+	parties = {
+		democratic = { 
+			popularity = 25
+		}
 		
-		
-		communism = 75
-		
+		communism = {
+			popularity = 75
+		}
 	}
+}
+
 create_country_leader = {
 	name = "Noe Zhordania"
 	desc = ""

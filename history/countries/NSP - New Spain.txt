@@ -27,23 +27,26 @@ set_technology = {
 
 set_politics = {
 
-	
+	parties = {
+		democratic = { 
+			popularity = 26
+		}
+
+		fascism = {
+			popularity = 67
+		}
+		
+		communism = {
+			popularity = 7
+		}
+	}
 	
 	ruling_party = fascism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
-set_popularities = {
-		democratic = 26
-		
 
-		fascism =  67
-		
-		
-		communism =7
-		
-	}
 set_convoys = 150
 set_national_unity = 0.5
 
@@ -112,17 +115,17 @@ set_national_unity = 0.5
 
 	set_politics = { 
 
-		set_popularities = {
+		parties = {
 			democratic = { 
-				 22
+				popularity = 22
 			}
 
 			fascism = {
-				 76
+				popularity = 76
 			}
 			
 			communism = {
-				 2
+				popularity = 2
 			}
 		}
 		
