@@ -65,17 +65,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-		democratic =  0
-		
-
-		fascism =0
-		
-		
+		democratic = 0
+		fascism = 0
 		communism = 0
-		
-		
 		neutrality = 100
-		
 	}
 create_country_leader = {
 	name = "Juddha Rana"

@@ -70,17 +70,6 @@ set_popularities = {
 		
 	}
 create_country_leader = {
-	name = "Tekle Giyorgis I"
-	desc = "POLITICS_HAILE_SELASSIE_DESC"
-	picture = "leader_unknown.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Fitawrari Yeebio Woldai"
 	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"

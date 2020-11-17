@@ -70,17 +70,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 30
-		
-
 		fascism = 0
-		
-		
 		communism = 0
-			#banned = no #default is no
-		
-
 		neutrality = 70
-		
 	}
 create_country_leader = {
 	name = "Jorge Ubico"

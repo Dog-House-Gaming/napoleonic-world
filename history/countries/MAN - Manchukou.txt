@@ -60,19 +60,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-		democratic =0
-			banned = yes
-		
-
+		democratic = 0
 		fascism = 80
-		
-		
-		communism =0
-			banned = yes
-		
-
+		communism = 0
 		neutrality = 20
-		
 	}
 create_country_leader = {
 	name = "Aisin Gioro Puyi"

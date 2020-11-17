@@ -48,16 +48,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 0
-		
-
-		neutrality =100
-		
-		
-		communism =  0
-		
-
-		fascism =  0
-		
+		neutrality = 100
+		communism = 0
+		fascism = 0
 	}
 create_country_leader = {
 	name = "Maharaja Serfoji II"

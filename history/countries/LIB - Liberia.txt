@@ -66,14 +66,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-		democratic =100
-		
-
-		fascism =  0
-		
-		
-		communism =  0
-			#banned = no #default is no
+		democratic = 100
+		fascism = 0
+		communism = 0
+		neutrality = 0
 	}
 create_country_leader = {
 	name = "Edwin Barclay"

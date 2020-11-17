@@ -9,9 +9,6 @@ set_technology = {
 }
 
 set_politics = {
-
-	
-	
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -19,16 +16,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 0
-		
-
-		fascism =  0
-		
-		
-		communism =0
-		
-		
-		neutrality =100
-		
+		fascism = 0
+		communism = 0
+		neutrality = 100
 	}
 set_convoys = 5
 
