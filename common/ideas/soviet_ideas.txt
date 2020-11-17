@@ -43,7 +43,7 @@ ideas = {
 		}
 		
 		sov_zars_cannon= {
-			picture = idea_sov_zars_cannon
+			picture = generic_artillery_regiments
 
 			allowed = {
 				always = no

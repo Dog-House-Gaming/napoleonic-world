@@ -25,15 +25,12 @@ bookmarks = {
 			history = "GER_NAPOLEON_TO_POWER_DESC"
 			ideology = communism
 			ideas = {
-				pru_victors_from_7yw
-				pru_old_officers
-				pru_german_efficiency
-				
+			#	state_shintoism
 			}	
 			focuses = {
-				PRU_prussian_descipline
-				PRU_prussian_dragoons
-				PRU_german_ambitions
+			#	southern_expansion_focus
+			#	divine_wind_focus
+			#	found_own_faction_focus
 			}			
 		}
 		"AUS"={

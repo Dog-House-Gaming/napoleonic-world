@@ -862,7 +862,7 @@ focus_tree = {
 	focus = {
 		id = PRU_refit_the_army
 		icon = GFX_goal_generic_position_armies
-		x = 10
+		x = 8
 		y = 0
 		cost = 10
 
@@ -877,8 +877,7 @@ focus_tree = {
 		id = PRU_small_arms_technology
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = PRU_refit_the_army }
-		relative_position_id = PRU_refit_the_army
-		x = 2
+		x = 8
 		y = 1
 		cost = 10
 
@@ -897,10 +896,9 @@ focus_tree = {
 	focus = {
 		id = PRU_artillery_technology
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = PRU_refit_the_army}
-		relative_position_id = PRU_refit_the_army
-		x = -2
-		y = 1
+		prerequisite = { focus = PRU_small_arms_technology }
+		x = 8
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -916,106 +914,16 @@ focus_tree = {
 	}
 #
 	focus = {
-		id = PRU_recruit_new_officers
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = PRU_refit_the_army }
-		available = {
-			has_army_experience > 20
-		}
-		relative_position_id = PRU_refit_the_army
-		x = 0
-		y = 1
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-				army_experience = -20
-				swap_ideas = {
-					remove_idea = pru_old_officers
-					add_idea = pru_inefficient_bureocracy
-				}
-				add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = PRU_reform_bureocracy
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRU_recruit_new_officers }
-		available = {
-			has_army_experience > 20
-		}
-		relative_position_id = PRU_refit_the_army
-		x = 0
-		y = 2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-				army_experience = -20
-				swap_ideas = {
-					remove_idea = pru_inefficient_bureocracy
-					add_idea = pru_experienced_army
-				}
-				add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = PRU_prussian_discipline
-		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = PRU_reform_bureocracy }
-		available = {
-			has_army_experience > 20
-		}
-		relative_position_id = PRU_refit_the_army
-		x = -1
+		id = PRU_land_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = PRU_artillery_technology }
+		x = 8
 		y = 3
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-				army_experience = -20
-				add_ideas = pru_prussian_discipline
-				add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = PRU_prussian_dragoons
-		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = PRU_reform_bureocracy }
-		available = {
-			has_army_experience > 20
-		}
-		relative_position_id = PRU_refit_the_army
-		x = 1
-		y = 3
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-				army_experience = -20
-				add_ideas = pru_prussian_dragoons
 				add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -1028,7 +936,7 @@ focus_tree = {
 	focus = {
 		id = PRU_naval_power
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 15
+		x = 10
 		y = 0
 		cost = 10
 
@@ -1043,8 +951,7 @@ focus_tree = {
 		id = PRU_destroyer_focus
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = PRU_naval_power }
-		relative_position_id = PRU_naval_power
-		x = -1
+		x = 10
 		y = 1
 		cost = 10
 
@@ -1064,8 +971,7 @@ focus_tree = {
 		id = PRU_battleship_focus
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = PRU_destroyer_focus }
-		relative_position_id = PRU_naval_power
-		x = -1
+		x = 10
 		y = 2
 		cost = 10
 
@@ -1085,8 +991,7 @@ focus_tree = {
 		id = PRU_naval_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = PRU_battleship_focus }
-		relative_position_id = PRU_naval_power
-		x = -1
+		x = 10
 		y = 3
 		cost = 10
 
@@ -1101,68 +1006,11 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = PRU_supremacy_over_the_baltic
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = PRU_naval_power }
-		relative_position_id = PRU_naval_power
-		x = 1
-		y = 1
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			political_power = 120
-			navy_experience = 30
-		}
-	}
-	
-	focus = {
-		id = PRU_conquer_hamburg
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = PRU_supremacy_over_the_baltic }
-		relative_position_id = PRU_naval_power
-		x = 1
-		y = 2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = DEN
-				generator = {58}
-			}
-		}
-	}
-	
-	focus = {
-		id = PRU_conquer_sweden
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = PRU_conquer_hamburg }
-		relative_position_id = PRU_naval_power
-		x = 1
-		y = 3
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = SWE
-				generator = {797}
-			}
-		}
-	}
 #### FOCUS COMPLETE ####
 	focus = {
 		id = PRU_political
 		icon = GFX_goal_generic_demand_territory
-		x = 21
+		x = 15
 		y = 0
 		cost = 10
 
@@ -1182,8 +1030,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = PRU_political }
 		mutually_exclusive = { focus = PRU_condemn_napoleon }
-		relative_position_id = PRU_political
-		x = -3
+		x = 12
 		y = 1
 		cost = 10
 
@@ -1203,8 +1050,7 @@ focus_tree = {
 			NOT = { has_war_with = FRA }
 			}
 		}
-		relative_position_id = PRU_political
-		x = -3
+		x = 12
 		y = 2
 		cost = 10
 
@@ -1221,8 +1067,7 @@ focus_tree = {
 		id = PRU_eyes_towards_russia
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = PRU_non_aggression }
-		relative_position_id = PRU_political
-		x = -3
+		x = 12
 		y = 3
 		cost = 10
 
@@ -1243,8 +1088,7 @@ focus_tree = {
 		available = {
 			GER = { has_war_with = SOV }
 		}
-		relative_position_id = PRU_political
-		x = -3
+		x = 12
 		y = 4
 		cost = 10
 
@@ -1263,8 +1107,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = PRU_political }
 		mutually_exclusive = { focus = PRU_align_with_napoleon }
-		relative_position_id = PRU_political
-		x = 0
+		x = 15
 		y = 1
 		cost = 10
 
@@ -1281,8 +1124,7 @@ focus_tree = {
 		id = PRU_embargo_napoleon
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = PRU_condemn_napoleon }
-		relative_position_id = PRU_political
-		x = -1
+		x = 14
 		y = 2
 		cost = 10
 
@@ -1298,8 +1140,7 @@ focus_tree = {
 		id = PRU_prussian_fortress
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = PRU_embargo_napoleon }
-		relative_position_id = PRU_political
-		x = -1
+		x = 14
 		y = 3
 		cost = 10
 
@@ -1315,8 +1156,7 @@ focus_tree = {
 		id = PRU_network_with_majors
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = PRU_condemn_napoleon }
-		relative_position_id = PRU_political
-		x = 1
+		x = 16
 		y = 2
 		cost = 10
 
@@ -1333,8 +1173,7 @@ focus_tree = {
 		id = PRU_prepare_for_war
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = PRU_network_with_majors }
-		relative_position_id = PRU_political
-		x = 1
+		x = 16
 		y = 3
 		cost = 10
 
@@ -1353,8 +1192,7 @@ focus_tree = {
 		 focus = PRU_prepare_for_war 
 		 focus = PRU_prussian_fortress
 		}
-		relative_position_id = PRU_political
-		x = 0
+		x = 15
 		y = 4
 		cost = 10
 
@@ -1373,9 +1211,8 @@ focus_tree = {
 	focus = {
 		id = PRU_the_hre
 		icon = GFX_goal_generic_military_deal
-		relative_position_id = PRU_political
-		x = 15
-		y = 0
+		x = 9
+		y = 4
 		cost = 10
 
 
@@ -1391,9 +1228,8 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = PRU_the_hre }
 		mutually_exclusive = { focus = PRU_stand_with_austria }
-		relative_position_id = PRU_the_hre
-		x = -5
-		y = 1
+		x = 8
+		y = 5
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1410,7 +1246,7 @@ focus_tree = {
 #		prerequisite = { focus = PRU_german_ambitions }
 #		x = 8
 #		y = 6
-#		cost = 5
+#		cost = 10
 #
 #		available_if_capitulated = yes
 #
@@ -1425,10 +1261,9 @@ focus_tree = {
 		id = PRU_reclaim_saxony
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -6
-		y = 2
-		cost = 5
+		x = 6
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1443,10 +1278,9 @@ focus_tree = {
 		id = PRU_reclaim_hannover
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -8
-		y = 2
-		cost = 5
+		x = 4
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1461,10 +1295,9 @@ focus_tree = {
 		id = PRU_reclaim_oldenburg
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -10
-		y = 2
-		cost = 5
+		x = 2
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1479,10 +1312,9 @@ focus_tree = {
 		id = PRU_reclaim_cologne
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -12
-		y = 2
-		cost = 5
+		x = 0
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1497,10 +1329,9 @@ focus_tree = {
 		id = PRU_reclaim_wurzburg
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -4
-		y = 2
-		cost = 5
+		x = 8
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1515,10 +1346,9 @@ focus_tree = {
 		id = PRU_reclaim_hesse
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -2
-		y = 2
-		cost = 5
+		x = 10
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1533,10 +1363,9 @@ focus_tree = {
 		id = PRU_reclaim_wurttemburg
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = 0
-		y = 2
-		cost = 5
+		x = 12
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1551,10 +1380,9 @@ focus_tree = {
 		id = PRU_reclaim_bavaria
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = 2
-		y = 2
-		cost = 5
+		x = 14
+		y = 6
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1564,53 +1392,14 @@ focus_tree = {
 		}	
 		}
 	}
-	
-	focus = {
-		id = PRU_crush_austria
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { 
-		focus = PRU_reclaim_bavaria 
-		}prerequisite = { 
-		focus = PRU_reclaim_cologne
-		}prerequisite = {
-		focus = PRU_reclaim_hannover
-		}prerequisite = {
-		focus = PRU_reclaim_hesse
-		}prerequisite = {
-		focus = PRU_reclaim_mecklenburg
-		}prerequisite = {
-		focus = PRU_reclaim_oldenburg
-		}prerequisite = {
-		focus = PRU_reclaim_saxony
-		}prerequisite = {
-		focus = PRU_reclaim_wurttemburg
-		}prerequisite = {
-		focus = PRU_reclaim_wurzburg
-		}
-		relative_position_id = PRU_the_hre
-		x = -5
-		y = 3
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = AUS
-				}
-		}
-	}
-	
 #### FOCUS COMPLETE ####
 	focus = {
 		id = PRU_stand_with_austria
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = PRU_the_hre }
 		mutually_exclusive = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = 5
-		y = 1
+		x = 18
+		y = 5
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1624,9 +1413,8 @@ focus_tree = {
 		id = PRU_non_aggression_aus
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = PRU_stand_with_austria }
-		relative_position_id = PRU_the_hre
-		x = 5
-		y = 2
+		x = 18
+		y = 6
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1642,9 +1430,8 @@ focus_tree = {
 		id = PRU_ally_austria
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = PRU_non_aggression_aus }
-		relative_position_id = PRU_the_hre
-		x = 5
-		y = 3
+		x = 18
+		y = 7
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1655,4 +1442,3 @@ focus_tree = {
 		} 
 		}
 	}
-}
