@@ -38,9 +38,7 @@ set_technology = {
 }
 
 set_politics = {
-
-	
-    ruling_party = neutrality
+    	ruling_party = neutrality
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no		
@@ -48,10 +46,8 @@ set_politics = {
 }
 set_popularities = {
 		democratic =  0
-		
 		communism = 0
-		
-		
+		fascism = 0
 		neutrality = 100
 		}
 create_country_leader = {

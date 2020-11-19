@@ -107,9 +107,6 @@ set_technology = {
 }
 
 set_politics = {
-
-	
-	
 	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
@@ -117,15 +114,10 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 98
-		
-
 		fascism = 1
-		
-		
 		communism =  1
-			#banned = no #default is no
-		
-	}
+		neutrality = 0
+}
 create_country_leader = {
 	name = "George III"
 	desc = "POLITICS_GEORGE_III_DESC"

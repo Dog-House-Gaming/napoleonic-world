@@ -79,18 +79,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-		democratic =  0
-		
-
+		democratic = 0
 		fascism =  20
-		
-		
 		communism = 0
-			#banned = no #default is no
-		
-		
-		neutrality =80
-		
+		neutrality = 80
 	}
 create_country_leader = {
 	name = "Ghazi I"

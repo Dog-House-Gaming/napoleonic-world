@@ -1,0 +1,92 @@
+propaganda_efforts = {
+	FRA_propaganda_1 = {
+		icon = generic_prepare_civil_war
+		available = {
+		tag = FRA
+		}
+		cost = 50
+		days_remove = 10
+		
+		remove_effect = {
+			add_ideas = fra_allons_enfants_de_la_patrie
+		}
+		
+		visible = {
+			NOT = {has_idea = fra_allons_enfants_de_la_patrie}
+			tag = FRA
+		}
+	}
+	FRA_propaganda_2 = {
+		icon = revolt
+		available = {
+		tag = FRA
+		has_idea = fra_allons_enfants_de_la_patrie
+		}
+		cost = 75
+		days_remove = 10
+		
+		remove_effect = {
+			add_ideas = fra_aux_armes_citoyens
+		}
+		
+		visible = {
+			NOT = {has_idea = fra_aux_armes_citoyens}
+			tag = FRA
+		}
+	}
+	FRA_propaganda_3 = {
+		icon = oppression
+		available = {
+		tag = FRA
+		has_idea = fra_aux_armes_citoyens
+		}
+		cost = 75
+		days_remove = 10
+		
+		remove_effect = {
+			add_ideas = fra_la_liberte_guide_nos_pas
+		}
+		
+		visible = {
+			NOT = {has_idea = fra_la_liberte_guide_nos_pas}
+			tag = FRA
+		}
+	}
+	FRA_propaganda_4 = {
+		icon = eng_propaganda_campaigns
+		available = {
+		tag = FRA
+		has_idea = fra_la_liberte_guide_nos_pas
+		}
+		cost = 75
+		days_remove = 10
+		
+		remove_effect = {
+			add_ideas = fra_la_trompette_guerriere
+		}
+		
+		visible = {
+			NOT = {has_idea = fra_la_trompette_guerriere}
+			tag = FRA
+		}
+	}
+	FRA_propaganda_5 = {
+		icon = generic_civil_support
+		available = {
+		tag = FRA
+		has_idea = fra_la_trompette_guerriere
+		}
+		cost = 100
+		days_remove = 10
+		
+		remove_effect = {
+			add_ideas = fra_la_republique_vous_apelle
+		}
+		
+		visible = {
+			NOT = {has_idea = fra_la_republique_vous_apelle}
+			tag = FRA
+		}
+	}
+	
+}

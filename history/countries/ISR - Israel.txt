@@ -60,9 +60,6 @@ set_convoys = 5
 
 
 set_politics = {
-
-	
-	
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -70,14 +67,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 80
-		
-
-		fascism =  0
-		
-		
-		communism =  20
-			#banned = no #default is no
-		
+		fascism = 0
+		communism = 20
+		neutrlity = 0
 	}
 create_country_leader = {
 	name = "David Ben-Gurion"

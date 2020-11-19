@@ -18,17 +18,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-		democratic =  0
-		
-
+		democratic = 0
 		fascism = 100
-		
-		
-		communism =  0
-		
-		
-		neutrality =  0
-		
+		communism = 0
+		neutrality = 0
 	}
 create_country_leader = {
 	name = "Shah Salam II"

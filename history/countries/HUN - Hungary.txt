@@ -85,14 +85,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-		democratic =43
-		
-
-		fascism =  54
-		
-		
+		democratic = 43
+		fascism = 54
 		communism = 3
-		
+		neutrality = 0
 	}
 create_country_leader = {
 	name = "Miklós Horthy"

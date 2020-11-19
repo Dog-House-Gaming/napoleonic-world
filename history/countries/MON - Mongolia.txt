@@ -69,15 +69,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 0
-			banned = yes
-
-		fascism =0
-			banned = yes
-		
-		
+		fascism = 0
 		communism = 100
-			#banned = no #default is no
-		
+		neutrality = 0
 	}
 create_country_leader = {
 	name = "Anandyn Amar"

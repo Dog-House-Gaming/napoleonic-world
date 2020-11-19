@@ -96,18 +96,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 10
-		
-
-		fascism =  0
-			banned = yes
-		
-
+		fascism = 0
 		communism = 0
-			banned = yes #default is no
-		
-
-		neutrality =  90
-		
+		neutrality = 90
 	}
 set_convoys = 20
 set_national_unity = 0.55

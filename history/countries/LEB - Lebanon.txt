@@ -70,17 +70,9 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 50
-		
-
 		fascism = 10
-		
-		
 		communism = 10
-			#banned = no #default is no
-		
-		
-		neutrality =30
-		
+		neutrality = 30
 	}
 create_country_leader = {
 	name = "Hashim al-Atassi"

@@ -93,7 +93,6 @@ set_popularities = {
 		
 		
 		communism =  0
-			banned = yes
 		
 		neutrality =  60
 		

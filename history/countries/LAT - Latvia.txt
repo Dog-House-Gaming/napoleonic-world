@@ -80,17 +80,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-		democratic =30
-		
-
-		fascism =15
-		
-		
-		communism =15
-		
-		
+		democratic = 30
+		fascism = 10
+		communism = 10
 		neutrality = 50
-		
 	}
 1939.1.1 = {# probably needs some adjustment before nazi occupation in 1940
 	set_politics = {

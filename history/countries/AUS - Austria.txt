@@ -15,9 +15,6 @@ set_technology = {
 }
 
 set_politics = {
-
-	
-
 	ruling_party = neutrality
 	last_election = "1930.11.9"
 	election_frequency = 48
@@ -25,16 +22,9 @@ set_politics = {
 }
 set_popularities = {
 		neutrality = 70
-		
-
 		fascism =  15
-		
-
 		democratic = 15
-		
-
 		communism =0
-		
 	}
 add_ideas = {
 	aus_holy_roman_emperor
