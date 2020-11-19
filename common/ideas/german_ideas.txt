@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		
+		#Changed now?
 		pru_victors_from_7yw= {
 			picture = generic_victors_of_ww1
 
