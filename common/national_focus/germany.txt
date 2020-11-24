@@ -1,6 +1,6 @@
 focus_tree = {
 	id = german_focus
-	
+	#Chaged now?
 	country = {
 		factor = 0
 		
