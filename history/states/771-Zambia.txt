@@ -1,7 +1,7 @@
 state={
 	id=771
 	name="STATE_771" # Zambia
-	
+
 	state_category = rural
 
 	resources={
@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = ENG
+		owner = UCA
 		add_core_of = ZAM
 		victory_points = {
 			5199 1

@@ -1629,8 +1629,8 @@
  NSP_neutrality_ADJ:0 "Spanish"
  NSP_communism_ADJ:0 "Spanish"
 
- UCA_neutrality:0 "Uncharted Area"
- UCA_neutrality_DEF:0 "Uncharted Area"
+ UCA_neutrality:0 "Nomad Territory"
+ UCA_neutrality_DEF:0 "Nomad Territory"
 
  FACTION_NAME_DEMOCRATIC_1:0 "The $CONTINENT_ADJ$ Association"
  FACTION_NAME_DEMOCRATIC_2:0 "The $CONTINENT_ADJ$ Entente"

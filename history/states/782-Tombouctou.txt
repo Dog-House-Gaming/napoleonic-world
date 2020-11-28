@@ -8,8 +8,7 @@ state={
 	impassable = yes
 
 	history={
-	owner = FRA
-		add_core_of = MLI
+	owner = UCA
 		buildings = {
 			infrastructure = 0
 		}

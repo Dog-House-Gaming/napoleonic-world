@@ -1,12 +1,11 @@
 state={
 	id=768
 	name="STATE_768" # Rwanda
-	
+
 	state_category = pastoral
 
 	history={
-		owner = BEL
-		add_core_of = RWA
+		owner = UCA
 		victory_points = {
 			9962 1
 		}

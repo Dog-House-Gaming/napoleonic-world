@@ -6,26 +6,26 @@ state=
 	resources={
 		rubber=2 # was: 2
 	}
-	
+
 	state_category = town
 
 	history=
 	{
-		owner = ETH
+		owner = UCA
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 1
 		}
-		victory_points = { 
-			5010 5 
+		victory_points = {
+			5010 5
 		}
-		victory_points = { 
-			1984 1.0 
+		victory_points = {
+			1984 1.0
 		}
-		victory_points = { 
-			7980 1.0 
+		victory_points = {
+			7980 1.0
 		}
 		add_core_of = ETH
 

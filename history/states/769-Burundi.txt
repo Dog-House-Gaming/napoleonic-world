@@ -1,12 +1,11 @@
 state={
 	id=769
 	name="STATE_769" # Burundi
-	
+
 	state_category = pastoral
 
 	history={
-		owner = BEL
-		add_core_of = BRD
+		owner = UCA
 		victory_points = {
 			2220 1
 		}

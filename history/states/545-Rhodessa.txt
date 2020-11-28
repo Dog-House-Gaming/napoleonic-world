@@ -1,18 +1,18 @@
 state={
 	id=545
-	
+
 	state_category = pastoral
-	
+
 	name="STATE_545"
 
 	history={
-		owner = ENG
+		owner = UCA
 		buildings = {
 			infrastructure = 3
 
 		}
 		victory_points = {
-			10929 1 
+			10929 1
 		}
 		add_core_of = ZIM
 	}

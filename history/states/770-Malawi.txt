@@ -3,10 +3,10 @@ state={
 	name="STATE_770"
 
 	history={
-		owner = ENG
+		owner = UCA
 		add_core_of = MLW
 		victory_points = {
-			12986 1 
+			12986 1
 		}
 		buildings = {
 			infrastructure = 3
@@ -16,7 +16,7 @@ state={
 	}
 
 	provinces={
-		2255 12908 12986 13209 
+		2255 12908 12986 13209
 	}
 	manpower=1603975
 	buildings_max_level_factor=1.000

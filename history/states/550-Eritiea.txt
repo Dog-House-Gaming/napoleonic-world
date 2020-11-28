@@ -8,7 +8,7 @@ state=
 
 	history=
 	{
-		owner = ETH
+		owner = UCA
 		add_core_of = ETH
 		victory_points = {
 			12766 1
