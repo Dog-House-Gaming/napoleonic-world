@@ -1,4 +1,4 @@
-version="2.4.2"
+version="2.5.0"
 name="Napoleonic World"
 tags={
 	"Alternative History"
@@ -14,4 +14,4 @@ tags={
 	"Technologies"
 }
 picture="thumbnail.png"
-supported_version="1.9.3"
+supported_version="1.10.*"
