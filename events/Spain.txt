@@ -20,6 +20,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 7
 	}
+	is_triggered_only = yes
 	
 	option = {
 		name = spain.1.a
@@ -48,8 +49,9 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 10
 	}
+	is_triggered_only = yes
 	
 	option = {
 		name = spain.2.a
