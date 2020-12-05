@@ -1,4 +1,4 @@
-﻿capital = 64
+capital = 64
 
 oob = "GER_1936"
 
@@ -28,7 +28,11 @@ set_technology = {
 	synth_oil_experiments = 1
 	transport = 1
 }
-
+add_ideas = {
+	pru_victors_from_7yw
+	pru_old_officers
+	pru_german_efficiency
+}
 
 set_research_slots = 4
 set_convoys = 200
@@ -63,14 +67,6 @@ set_popularities = {
 		neutrality =  70
 		
 	}
-
-add_ideas = {
-	#sour_loser
-	#general_staff
-	#limited_exports
-	#limited_conscription
-	#partial_economic_mobilisation
-}
 
 create_country_leader = {
 	name = "Frederick William III"
