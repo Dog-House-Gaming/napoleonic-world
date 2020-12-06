@@ -1,5 +1,15 @@
 spriteTypes = {	
-
+	
+	spriteType = {
+		name = "GFX_idea_sov_winter_soldiers"
+		texturefile = "gfx/interface/ideas/idea_sov_winter_soldiers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_imperial_guard"
+		texturefile = "gfx/interface/ideas/idea_imperial_guard.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_idea_spr_american_support"
 		texturefile = "gfx/interface/ideas/idea_spr_american_support.dds"
