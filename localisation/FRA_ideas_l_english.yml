@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  
  fra_home_of_the_revolution:0 "Home Of The Revolution"
  fra_home_of_the_revolution_desc:0 "Based on the ideals of enlightment, France awakened in 1789 and defeated the absolutist monarchs. Is is the duty of France to spread the revolution and give the world peace and liberty."
@@ -25,3 +25,11 @@
  fra_bank_of_france:0 "The Bank Of France"
  fra_concordat:0 "The Concordat"
  fra_raised_wages:0 "Raised Wages"
+ 
+ fra_scientific_exchange:0 "Scientific Exchange"
+ fra_succesor_of_rome:0 "Successor Of Rome"
+ fra_socialist_intelectuals:0 "Socialist Intelectuals"
+ fra_cult_of_reason:0 "Cult Of Reason"
+ fra_spread_the_rev:0 "Spread The Revolution"
+ fra_rev_influence:0 "Revolutionary Influence"
+ fra_rev_no_borders:0 "The Revolution Knows No Borders"
