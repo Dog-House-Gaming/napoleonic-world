@@ -37,7 +37,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			army_experience = 30
 			add_tech_bonus = {
@@ -70,7 +70,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			army_experience = 25
 			add_tech_bonus = {
@@ -103,7 +103,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			army_experience = 25
 			add_tech_bonus = {
@@ -127,7 +127,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+			has_country_leader = {
+				name = "Louis XVIII"
+				ruling_only = yes
+			}
+			}
 		}
 		
 		bypass = {
@@ -136,7 +141,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = fra_meritocratic_army
 		}
@@ -164,7 +169,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
 		completion_reward = {
 			add_ideas = fra_cavalry_charge
 		}
@@ -196,7 +200,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
 		completion_reward = {
 			add_ideas = fra_french_military
 		}
@@ -228,7 +231,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
 		completion_reward = {
 			add_ideas = fra_french_artillery
 		}
@@ -256,7 +258,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.50
@@ -288,7 +290,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.50
@@ -320,7 +322,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.50
@@ -352,7 +354,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.50
@@ -389,7 +391,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = militarism_focus
 		}
@@ -421,7 +423,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 30
 			add_tech_bonus = {
@@ -454,7 +456,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -491,7 +493,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -528,7 +530,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -841,7 +843,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_bank_of_france
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_fra_devalue_the_franc
 		relative_position_id = FRA_infraestructure
 		x = 0
 		y = 1
@@ -1125,7 +1127,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		cost = 10
 			ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		available = {
 			
@@ -1137,7 +1139,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			remove_ideas = fra_coup_instability
 		}
@@ -1165,7 +1167,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_stability = 0.05
 			add_popularity = {
@@ -1197,7 +1200,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
 		completion_reward = {
 			add_ideas = closed_economy
 		}
@@ -1225,7 +1227,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.50
@@ -1257,7 +1260,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 			add_popularity = {
@@ -1290,7 +1293,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 			add_popularity = {
@@ -1313,7 +1316,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {has_government = communism}
 		}
 		
 		bypass = {
@@ -1322,7 +1325,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_stability = 0.05
 			add_popularity = {
@@ -1334,7 +1338,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_concordat
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_por_concordat
 		relative_position_id = FRA_appease_the_population
 		x = 0
 		y = 2
@@ -1345,7 +1349,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {has_government = communism}
 		}
 		
 		bypass = {
@@ -1354,7 +1358,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_ideas = fra_concordat
 			add_popularity = {
@@ -1370,7 +1375,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_imperial_coronation
-		icon = GFX_focus_generic_home_defense
+		icon = GFX_focus_focus_fra_third_empire
 		relative_position_id = FRA_appease_the_population
 		x = 0
 		y = 3
@@ -1385,6 +1390,10 @@ focus_tree = {
 				name = "Napoléon Bonaparte"
 				ruling_only = yes
 			}
+			OR = {
+			has_government = fascism
+			has_government = neutrality
+			}
 		}
 		
 		bypass = {
@@ -1393,7 +1402,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			country_event = {
 				id = france.1
@@ -1415,7 +1424,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+			has_country_leader = {
+				name = "Louis XVIII"
+				ruling_only = yes
+			}
+			}
 		}
 		
 		bypass = {
@@ -1424,7 +1438,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.05
 			add_popularity = {
@@ -1447,7 +1462,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+			has_country_leader = {
+				name = "Louis XVIII"
+				ruling_only = yes
+			}
+			}
 		}
 		
 		bypass = {
@@ -1456,7 +1476,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_ideas = fra_raised_wages
 			add_popularity = {
@@ -1479,7 +1500,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+			has_country_leader = {
+				name = "Louis XVIII"
+				ruling_only = yes
+			}
+			}
 		}
 		
 		bypass = {
@@ -1488,7 +1514,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_ }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.05
 			add_popularity = {
@@ -1504,10 +1531,14 @@ focus_tree = {
 
 focus = {
 		id = NAP_instability_in_Europe
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_focus_fra_border
 		x = 32
 		y = 0
 		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -1527,6 +1558,10 @@ focus = {
 		x = -4
 		y = 1
 		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			SPR = {
 				country_event = napoleon.1
@@ -1548,6 +1583,8 @@ focus = {
 		x = -6
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			USA = {
 				country_event = napoleon.7
@@ -1564,6 +1601,7 @@ focus = {
 		x = -4
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			FRA = { add_opinion_modifier = { target = SPR modifier = balkan_strategy_good } }
 			SPR = { add_opinion_modifier = { target = FRA modifier = balkan_strategy_good } }
@@ -1593,6 +1631,7 @@ focus = {
 		x = -6
 		y = 4
 		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			SPR = {
 				country_event = { id = napoleon.4 days = 1}
@@ -1602,7 +1641,7 @@ focus = {
 #
 	focus = {
 		id = NAP_war_with_spain
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_focus_focus_fra_intervention_spain
 		prerequisite = { focus = NAP_improve_spanish_relations }
 		available =
 		{
@@ -1624,6 +1663,7 @@ focus = {
 		x = -4
 		y = 4
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			FRA = {
 				create_wargoal = {
@@ -1651,6 +1691,7 @@ focus = {
 		x = -2
 		y = 1
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			annex_country = { target = HOL }
 		}
@@ -1673,6 +1714,7 @@ focus = {
 		x = -2
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			annex_country = { target = SWI }
 		}
@@ -1694,6 +1736,7 @@ focus = {
 		x = -2
 		y = 3
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			annex_country = { target = ITA }
 		}
@@ -1701,9 +1744,13 @@ focus = {
 #### FOCUS COMPLETE ####
 focus = {
 		id = NAP_continental_system
-		icon = GFX_goal_generic_trade
+		icon = GFX_focus_fra_le_deluge
 		prerequisite = { focus = NAP_instability_in_Europe }
-		mutually_exclusive = { focus = NAP_peace_through_europe }
+		mutually_exclusive = { 
+			focus = FRA_return_to_monarchism
+			focus = FRA_rebirth_of_revolution
+			focus = NAP_peace_through_europe
+			}
 		available = { 
 			country_exists = ENG
 		}
@@ -1711,6 +1758,7 @@ focus = {
 		x = 0
 		y = 1
 		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
 			factor = 8
 		}
@@ -1724,7 +1772,7 @@ focus = {
 #
 focus = {
 		id = NAP_force_system_upon_portugal
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_attack_portugal
 		prerequisite = { focus = NAP_continental_system }
 		available = { 
 			has_army_manpower = { size > 599999 }
@@ -1738,6 +1786,7 @@ focus = {
 		x = 0
 		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1748,7 +1797,7 @@ focus = {
 #
 focus = {
 		id = NAP_force_system_upon_prussia
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_attack_prussia
 		prerequisite = { focus = NAP_force_system_upon_portugal }
 		available = { 
 			has_army_manpower = { size > 599999 }
@@ -1762,6 +1811,7 @@ focus = {
 		x = 0
 		y = 3
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1772,7 +1822,7 @@ focus = {
 #
 focus = {
 		id = NAP_force_system_upon_russia
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_attack_russia
 		prerequisite = { focus = NAP_force_system_upon_prussia }
 		available = { 
 			has_army_manpower = { size > 599999 }
@@ -1786,6 +1836,7 @@ focus = {
 		x = 0
 		y = 4
 		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1795,15 +1846,24 @@ focus = {
 }
 #### FOCUS COMPLETE ####
 
+	###########
+	#DEMOCRACY#
+	###########
+	
 focus = {
 		id = NAP_peace_through_europe
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = NAP_instability_in_Europe }
-		mutually_exclusive = { focus = NAP_continental_system }
+		mutually_exclusive = { 
+			focus = NAP_continental_system 
+			focus = FRA_return_to_monarchism
+			focus = FRA_rebirth_of_revolution
+			}
 		relative_position_id = NAP_instability_in_Europe
-		x = 4
+		x = 7
 		y = 1
 		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 				add_ideas = democratic_influence
 			}
@@ -1814,10 +1874,11 @@ focus = {
 		id = NAP_non_aggression_with_major_powers
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = NAP_peace_through_europe }
-		relative_position_id = NAP_instability_in_Europe
-		x = 4
-		y = 2
+		relative_position_id = NAP_peace_through_europe
+		x = 0
+		y = 1
 		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			GER = {
 				country_event = { id = napoleon.10 days = 1}
@@ -1838,10 +1899,11 @@ focus = {
 		id = NAP_ally_europe
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = NAP_non_aggression_with_major_powers }
-		relative_position_id = NAP_instability_in_Europe
-		x = 4
-		y = 3
+		relative_position_id = NAP_peace_through_europe
+		x = 0
+		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 		create_faction = "french_major_alliance"
 		add_to_faction = FRA
@@ -1857,15 +1919,111 @@ focus = {
 			}
 			}
 		}
+		
+		focus = {
+		id = FRA_towards_second_republic
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = NAP_non_aggression_with_major_powers }
+		relative_position_id = NAP_peace_through_europe
+		x = -3
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.25
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_constitutional_monarchy
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = FRA_towards_second_republic }
+		mutually_exclusive = {
+			focus = FRA_bonapartist_party
+			focus = FRA_call_for_elections
+		}
+		relative_position_id = NAP_peace_through_europe
+		x = -5
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				create_country_leader = {
+					name = "Louis XVIII"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_France_Louis_XVIII.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							constitutional_monarch
+						}
+				}
+			}
+		}
+		focus = {
+		id = FRA_bonapartist_party
+		icon = GFX_focus_focus_fra_third_empire
+		prerequisite = { focus = FRA_towards_second_republic }
+		mutually_exclusive = {
+			focus = FRA_constitutional_monarchy
+			focus = FRA_call_for_elections
+		}
+		relative_position_id = NAP_peace_through_europe
+		x = -3
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				create_country_leader = {
+					name = "Napoléon Bonaparte"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_France_Napoleon.dds"
+						expire = "1965.1.1"
+						ideology = liberalism
+						traits = {
+							generallissimo
+							popular_figurehead
+							silent_workhorse
+						}
+				}
+			}
+		}
+		focus = {
+		id = FRA_call_for_elections
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = FRA_towards_second_republic }
+		mutually_exclusive = {
+			focus = FRA_bonapartist_party
+			focus = FRA_constitutional_monarchy
+		}
+		relative_position_id = NAP_peace_through_europe
+		x = -1
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				hold_election = FRA
+			}
+		}
 
 focus = {
 		id = NAP_prosperity
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = NAP_ally_europe }
-		relative_position_id = NAP_instability_in_Europe
-		x = 4
-		y = 4
+		prerequisite = { focus = NAP_non_aggression_with_major_powers}
+		relative_position_id = NAP_peace_through_europe
+		x = 2
+		y = 2
 		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 		add_national_unity = 0.15
 
@@ -1929,6 +2087,1436 @@ focus = {
 				}
 				set_state_flag = FRA_industrial_expansion_2IC
 			}
+			}
+		}
+		
+		focus = {
+		id = FRA_technologic_advances
+		icon = GFX_focus_research
+		prerequisite = { focus = NAP_prosperity}
+		relative_position_id = NAP_peace_through_europe
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+				add_research_slot = 1
+			}
+		}
+		
+		focus = {
+		id = FRA_free_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = NAP_prosperity}
+		relative_position_id = NAP_peace_through_europe
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+				add_ideas = free_trade
+			}
+		}
+		
+		focus = {
+		id = FRA_scientific_exchange
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = FRA_technologic_advances}
+		prerequisite = { focus = FRA_free_trade}
+		relative_position_id = NAP_peace_through_europe
+		x = 2
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+				add_ideas = fra_scientific_exchange
+			}
+		}
+		
+		############
+		#MONARCHISM#
+		############
+		
+		focus = {
+		id = FRA_return_to_monarchism
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = NAP_instability_in_Europe }
+		mutually_exclusive = { 
+			focus = NAP_continental_system 
+			focus = NAP_peace_through_europe
+			focus = FRA_rebirth_of_revolution
+			}
+		relative_position_id = NAP_instability_in_Europe
+		x = 16
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_ideas = neutrality_influence
+			}
+		}
+		
+		#Bonaparte#
+		
+		focus = {
+		id = FRA_bonapartist_dinasty
+		icon = GFX_focus_focus_fra_third_empire
+		prerequisite = { focus = FRA_return_to_monarchism }
+		mutually_exclusive = { focus = FRA_bourbon_restoration }
+		available = {
+			neutrality > 0.30
+		}
+		relative_position_id = FRA_return_to_monarchism
+		x = -3
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+			limit = {
+				NOT={has_completed_focus = FRA_imperial_coronation}
+			}
+			create_country_leader = {
+				name = "Napoléon Bonaparte"
+				desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+				picture = "Portrait_France_Napoleon.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					dictator
+				}
+			}
+			}
+			if = {
+			limit = {
+				has_completed_focus = FRA_imperial_coronation
+			}
+			create_country_leader = {
+				name = "Napoléon Bonaparte"
+				desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+				picture = "Portrait_France_Napoleon.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					dictator
+					autocratic_imperialist
+				}
+			}
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+			create_country_leader = {
+					name = "Louis XVIII"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_France_Louis_XVIII.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							autocratic_imperialist
+						}
+				}
+			
+			if = {
+				limit = {
+					NOT = {has_completed_focus = FRA_side_workers}
+				}
+				start_civil_war = {
+					ideology = communism
+					size = 0.5
+					states = {
+				
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT={has_completed_focus = FRA_side_burg}
+					NOT={has_completed_focus = FRA_protect_manufactures}
+				}
+				start_civil_war = {
+					ideology = democratic
+					size = 0.3
+					states = {
+				
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_workers
+					NOT = {has_completed_focus = FRA_raise_wages}
+				}
+				start_civil_war = {
+					ideology = communism
+					size = 0.3
+					states = {
+				
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT={has_completed_focus = FRA_side_clergy}
+					NOT={has_completed_focus = FRA_concordat}
+					NOT={has_completed_focus = FRA_imperial_coronation}
+				}
+				start_civil_war = {
+					ideology = fascism
+					size = 0.2
+					states = {
+						
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_burg
+					NOT={has_completed_focus = FRA_protect_manufactures}
+				}
+				start_civil_war = {
+					ideology = democratic
+					size = 0.2
+					states = {
+						
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_workers
+					has_completed_focus = FRA_raise_wages
+					NOT = {has_completed_focus = FRA_give_land}
+				}
+				start_civil_war = {
+					ideology = communism
+					size = 0.15
+					states = {
+				
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_clergy
+					NOT={has_completed_focus = FRA_concordat}
+					NOT={has_completed_focus = FRA_imperial_coronation}
+				}
+				start_civil_war = {
+					ideology = fascism
+					size = 0.15
+					states = {
+						
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_burg
+					has_completed_focus = FRA_protect_manufactures
+				}
+				start_civil_war = {
+					ideology = democratic
+					size = 0.1
+					states = {
+						
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_clergy
+					has_completed_focus = FRA_concordat
+					NOT={has_completed_focus = FRA_imperial_coronation}
+				}
+				start_civil_war = {
+					ideology = fascism
+					size = 0.1
+					states = {
+						
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_workers
+					has_completed_focus = FRA_raise_wages
+					has_completed_focus = FRA_give_land
+				}
+				start_civil_war = {
+					ideology = communism
+					size = 0.05
+					states = {
+				
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = FRA_side_clergy
+					has_completed_focus = FRA_concordat
+					has_completed_focus = FRA_imperial_coronation
+				}
+				start_civil_war = {
+					ideology = fascism
+					size = 0.05
+					states = {
+						
+					}
+				}
+			}
+		}
+		}
+		
+		focus = {
+		id = FRA_french_imperialism
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = FRA_bonapartist_dinasty }
+		relative_position_id = FRA_return_to_monarchism
+		x = -3
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+				add_war_support = 0.20
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_restore_french_glory
+		icon = GFX_focus_fra_french_union
+		prerequisite = { focus = FRA_french_imperialism }
+		relative_position_id = FRA_return_to_monarchism
+		x = -4
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_stability = 0.10
+				add_war_support = 0.10
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_carolingian_empire
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = FRA_restore_french_glory }
+		relative_position_id = FRA_return_to_monarchism
+		x = -4
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				declare_war_on = {
+					target = WUR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = HES
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = BAV
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = GNE
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = HAN
+					type = annex_everything
+				}
+				add_state_core = 50
+				add_state_core = 55
+				add_state_core = 56
+				add_state_core = 57
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+				add_state_core = 59
+				add_state_core = 60
+			}
+		}
+		
+		focus = {
+		id = FRA_unificate_italy
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = FRA_french_imperialism }
+		relative_position_id = FRA_return_to_monarchism
+		x = -2
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				ITA = {
+					declare_war_on = {
+						target = PAP
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = NAP
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = TUS
+						type = annex_everything
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_tenth_cruzade
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = { focus = FRA_unificate_italy }
+		relative_position_id = FRA_return_to_monarchism
+		x = -2
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				FRA = {
+					declare_war_on = {
+						target = TUR
+						type = annex_everything
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_succesor_of_rome
+		icon = GFX_focus_eng_imperial_federation
+		prerequisite = { focus = FRA_tenth_cruzade }
+		prerequisite = { focus = FRA_carolingian_empire }
+		relative_position_id = FRA_return_to_monarchism
+		x = -3
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+				add_ideas = fra_succesor_of_rome
+			}
+		}
+		
+		focus = {
+		id = FRA_conquer_britannia
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = FRA_succesor_of_rome }
+		relative_position_id = FRA_return_to_monarchism
+		x = -4
+		y = 6
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = ENG
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_conquer_hispania
+		icon = GFX_focus_focus_fra_intervention_spain
+		prerequisite = { focus = FRA_succesor_of_rome }
+		relative_position_id = FRA_return_to_monarchism
+		x = -2
+		y = 6
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = SPR
+				}
+			}
+		}
+		
+		#Bourbon#
+		
+		focus = {
+		id = FRA_bourbon_restoration
+		icon = GFX_focus_focus_fra_orleans_restoration
+		prerequisite = { focus = FRA_return_to_monarchism }
+		mutually_exclusive = { focus = FRA_bonapartist_dinasty }
+		relative_position_id = FRA_return_to_monarchism
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+				start_civil_war = {
+					ideology = fascism
+					size = 0.5
+					states = {
+						
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_befriend_the_kings
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = FRA_bourbon_restoration }
+		relative_position_id = FRA_return_to_monarchism
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.20
+				}
+				add_political_power = 120
+			}
+		}
+		
+		focus = {
+		id = FRA_reborn_old_unions
+		icon = GFX_focus_generic_royal_wedding
+		prerequisite = { focus = FRA_befriend_the_kings }
+		relative_position_id = FRA_return_to_monarchism
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+				add_political_power = 120
+				add_stability = 0.10
+			}
+		}
+		
+		focus = {
+		id = FRA_angelin_empire
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		prerequisite = { focus = FRA_reborn_old_unions }
+		relative_position_id = FRA_return_to_monarchism
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				ENG = {
+				country_event = {
+					id = france.2
+					days = 3
+				}
+				}
+			}
+		}
+		focus = {
+		id = FRA_union_with_the_normans
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = FRA_reborn_old_unions }
+		relative_position_id = FRA_return_to_monarchism
+		x = 2
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				DEN = {
+				country_event = {
+					id = france.3
+					days = 3
+				}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_reconquer_colonies
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = FRA_befriend_the_kings }
+		relative_position_id = FRA_return_to_monarchism
+		x = 4
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+				add_war_support = 0.05
+			}
+		}
+		
+		focus = {
+		id = FRA_reconquer_haiti
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = FRA_reconquer_colonies }
+		relative_position_id = FRA_return_to_monarchism
+		x = 4
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = HAI
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_reconquer_quebec
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		prerequisite = { focus = FRA_reconquer_haiti }
+		relative_position_id = FRA_return_to_monarchism
+		x = 4
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = CAN
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_help_europeans
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = FRA_befriend_the_kings }
+		relative_position_id = FRA_return_to_monarchism
+		x = 6
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+				add_stability = 0.05
+			}
+		}
+		
+		focus = {
+		id = FRA_help_against_prussia
+		icon = GFX_focus_generic_attack_prussia
+		prerequisite = { focus = FRA_help_europeans }
+		relative_position_id = FRA_return_to_monarchism
+		x = 6
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = GER
+				}
+				AUS = {
+					create_wargoal = {
+					type = puppet_wargoal_focus
+					target = GER
+				}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_push_back_ottomans
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = { focus = FRA_help_against_prussia }
+		relative_position_id = FRA_return_to_monarchism
+		x = 6
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = TUR
+				}
+				AUS = {
+					create_wargoal = {
+					type = annex_everything
+					target = TUR
+					}
+				}
+				SOV = {
+					create_wargoal = {
+					type = annex_everything
+					target = TUR
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_crush_democracies
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { 
+			focus = FRA_reconquer_quebec
+			focus = FRA_push_back_ottomans
+			}
+		relative_position_id = FRA_return_to_monarchism
+		x = 5
+		y = 6
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				every_country = {
+						limit = {
+							has_government = democratic
+						}
+						FRA = {
+							create_wargoal = {
+								type = puppet_wargoal_focus
+								target = PREV
+							}
+						}
+				}
+			}
+		}
+		
+		############
+		#REVOLUTION#
+		############
+		
+		focus = {
+		id = FRA_rebirth_of_revolution
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = NAP_instability_in_Europe }
+		mutually_exclusive = { 
+			focus = NAP_continental_system 
+			focus = NAP_peace_through_europe
+			focus = FRA_return_to_monarchism
+			}
+		relative_position_id = NAP_instability_in_Europe
+		x = 29
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.35
+				}
+				set_politics = {
+					ruling_party = communism
+				}
+				start_civil_war = {
+					ideology = fascism
+					size = 0.5
+					states = {
+						
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_french_socialism
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		prerequisite = { focus = FRA_rebirth_of_revolution }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = -4
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}
+				add_political_power = 120
+			}
+		}
+		
+		focus = {
+		id = FRA_socialist_intelectuals
+		icon = GFX_focus_generic_socialist_science
+		prerequisite = { focus = FRA_french_socialism }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = -4
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+				add_ideas = fra_socialist_intelectuals
+			}
+		}
+		
+		focus = {
+		id = FRA_seize_churchs
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		prerequisite = { focus = FRA_rebirth_of_revolution }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 4
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_stability = -0.10
+				add_political_power = 200
+			}
+		}
+		
+		focus = {
+		id = FRA_cult_of_reason
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = FRA_seize_churchs }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 4
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+				add_ideas = fra_cult_of_reason
+			}
+		}
+		
+		focus = {
+		id = FRA_spread_the_revolution
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = FRA_rebirth_of_revolution }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				add_ideas = fra_spread_the_rev
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_americas
+		icon = GFX_focus_por_latin_american_communism
+		prerequisite = { focus = FRA_spread_the_revolution }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = -2
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				CAN = {
+					add_ideas = fra_rev_influence
+				}
+				USA = {
+					add_ideas = fra_rev_influence
+				}
+				BRA = {
+					add_ideas = fra_rev_influence
+				}
+				SPR = {
+					add_ideas = fra_rev_influence
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_usa
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_americas }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = -3
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				USA = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_new_spain
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_americas}
+		relative_position_id = FRA_rebirth_of_revolution
+		available = {
+			SPR = {
+			communism > 0.10
+			}
+		}
+		x = -1
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				country_event = {
+					id = spain.2
+					days = 1
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_east
+		icon = GFX_focus_usa_focus_on_asia
+		prerequisite = { focus = FRA_spread_the_revolution }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 2
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				TUR = {
+					add_ideas = fra_rev_influence
+				}
+				CHI = {
+					add_ideas = fra_rev_influence
+				}
+				JAP = {
+					add_ideas = fra_rev_influence
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_tur
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_east }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				TUR = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_chi
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_east }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				CHI = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_europe
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = { focus = FRA_spread_the_revolution }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				POR = {
+					add_ideas = fra_rev_influence
+				}
+				SPR = {
+					add_ideas = fra_rev_influence
+				}
+				ENG = {
+					add_ideas = fra_rev_influence
+				}
+				ITA = {
+					add_ideas = fra_rev_influence
+				}
+				AUS = {
+					add_ideas = fra_rev_influence
+				}
+				GER = {
+					add_ideas = fra_rev_influence
+				}
+				DEN = {
+					add_ideas = fra_rev_influence
+				}
+				SWE = {
+					add_ideas = fra_rev_influence
+				}
+				SOV = {
+					add_ideas = fra_rev_influence
+				}
+				ROM = {
+					add_ideas = fra_rev_influence
+				}
+			}
+		}
+		
+		focus = {
+		id = FRA_rev_eng
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_europe }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = -5
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				ENG = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		focus = {
+		id = FRA_rev_spr
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_europe }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = -3
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				SPR = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		focus = {
+		id = FRA_rev_aus
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_europe }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = -1
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				AUS = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		focus = {
+		id = FRA_rev_pru
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_europe }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 1
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				GER = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		focus = {
+		id = FRA_rev_swe
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_europe }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 3
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				SWE = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		focus = {
+		id = FRA_rev_sov
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = FRA_rev_europe }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 5
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+				SOV = {
+				if = {
+					limit = {
+						communism > 0.5
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.5
+						communism > 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.25
+						states = {
+						
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+						communism < 0.25
+						}
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.1
+						states = {
+						
+						}
+					}
+				}
+				}
+			}
+		}
+		focus = {
+		id = FRA_rev_knows_no_borders
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		prerequisite = { focus = FRA_rev_eng }
+		prerequisite = { focus = FRA_rev_spr }
+		prerequisite = { focus = FRA_rev_aus }
+		prerequisite = { focus = FRA_rev_pru }
+		prerequisite = { focus = FRA_rev_sov }
+		prerequisite = { focus = FRA_rev_swe }
+		relative_position_id = FRA_rebirth_of_revolution
+		x = 0
+		y = 6
+		cost = 10
+		completion_reward = {
+				add_ideas = fra_rev_no_borders
 			}
 		}
 }
