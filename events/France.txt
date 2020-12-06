@@ -16,3 +16,83 @@ country_event = {
 		}
 	}
 }
+
+#Angevin Empire
+country_event = {
+	id = france.2
+	title = france.2.t
+	desc = france.2.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+	
+	option = {#YES
+		name = france.2.a
+		ai_chance = {
+			factor = 50
+		}
+		FRA = {
+			annex_country = {
+				target = ENG
+				transfer_troops = yes
+			}
+			add_state_core = 127
+			add_state_core = 123
+			add_state_core = 338
+			add_state_core = 126
+			add_state_core = 125
+			add_state_core = 128
+			add_state_core = 129
+			add_state_core = 130
+			add_state_core = 132
+			add_state_core = 131
+		}
+	}
+	option = {#NO
+		name = france.2.b
+		ai_chance = {
+			factor = 50
+		}
+		FRA = {
+			create_wargoal = {
+				target = ENG
+				type = annex_everything
+			}
+		}
+	}
+}
+
+#Norman Union
+country_event = {
+	id = france.3
+	title = france.3.t
+	desc = france.3.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+	
+	option = {#YES
+		name = france.3.a
+		ai_chance = {
+			factor = 50
+		}
+		add_state_core = 15
+		set_state_owner = 15
+		FRA = {
+			puppet = DEN
+		}
+		
+	}
+	option = {#NO
+		name = france.3.b
+		ai_chance = {
+			factor = 50
+		}
+		FRA = {
+			create_wargoal = {
+				target = DEN
+				type = annex_everything
+			}
+		}
+	}
+}
