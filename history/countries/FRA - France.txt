@@ -1,4 +1,4 @@
-﻿capital = 16
+capital = 16
 
 oob = "FRA_1936"
 
@@ -66,6 +66,8 @@ add_ideas = {
 	fra_home_of_the_revolution
 	fra_shortage_of_officers
 	fra_coup_instability
+	limited_conscription
+	partial_economic_mobilisation
 }
 
 #give_guarantee = CZE
@@ -115,7 +117,16 @@ create_country_leader = {
 	}
 }
 
-
+create_country_leader = {
+					name = "Louis XVIII"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_France_Louis_XVIII.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							autocratic_imperialist
+						}
+				}
 
 create_field_marshal = {
 	name = "Napoléon Bonaparte"
