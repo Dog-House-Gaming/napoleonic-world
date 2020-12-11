@@ -1,5 +1,15 @@
-﻿l_english:
+l_english:
  
  france.1.t:0 "Coronation of Napoleon"
  france.1.d:0 "Today in the cathedral of Notre Dame in the presence of the Pope Pius VII, our beloved first consul Napoleon Bonaparte named himself Emperor of the French. With his hands on the Bible he said:'I swear to maintain the integrity of the territory of the Republic, to respect and enforce respect for the Concordat and freedom of religion, equality of rights, political and civil liberty, the irrevocability of the sale of national lands; not to raise any tax except in virtue of the law; to maintain the institution of Legion of Honor and to govern in the sole interest, happiness and glory of the French people.'"
  france.1.a:0 "God Save Our Emperor Napoleon!"
+ 
+ france.2.t:0 "The Kingdom Of France Wants To Recreate The Angevin Empire"
+ france.2.d:0 "The King of France, Louis XVIII, and his diplomats have tried to convince our King to unite our countries in one single nation. Now that we are allies, it doesn't sound that crazy to accept their offer."
+ france.2.a:0 "Britain And France Must Unite!"
+ france.2.b:0 "We Refuse To Give Up Our Autonomy!"
+ 
+ france.3.t:0 "The Kingdom Of France Looks For An Alliance"
+ france.3.d:0 "French diplomats have come to our nation and offer our King the old Duchy of Normandy in exchange for our loyalty. Now that we are allies, it doesn't sound that crazy to accept their offer."
+ france.3.a:0 "We accept the land"
+ france.3.b:0 "We Refuse To Give Up Our Autonomy!"

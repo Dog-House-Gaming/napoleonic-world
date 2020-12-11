@@ -532,7 +532,7 @@ focus_tree = {
 	
 	focus = {
 	id = SOV_winter_soldiers
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_goal_winter_soldiers
 		prerequisite = {focus = SOV_special_forces_2}
 		available = {
 		}

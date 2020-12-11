@@ -6,7 +6,7 @@ ideas = {
 		##########################
 		
 		fra_home_of_the_revolution = {
-			picture = FRA_scw_intervention_republicans_focus
+			picture = FRA_undividable
 
 			allowed = {
 				always = no
@@ -87,7 +87,7 @@ ideas = {
 		}
 		
 		fra_french_military = {
-			picture = generic_infantry_bonus
+			picture = imperial_guard
 
 			allowed = {
 				always = no
@@ -290,6 +290,135 @@ ideas = {
 			modifier = {
 				stability_factor = 0.10
 				consumer_goods_factor = 0.05
+			}
+		}
+		
+		fra_scientific_exchange = {
+			picture = jap_supremacy_of_technology
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		
+		fra_succesor_of_rome = {
+			picture = gre_venerate_the_ancient_hellenes_hoplite
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 1000
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				political_power_factor = 0.20
+				justify_war_goal_time = -0.50
+				conscription = 0.03
+				non_core_manpower = 0.05
+			}
+		}
+		
+		fra_socialist_intelectuals = {
+			picture = socialist_science_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				communism_drift = 0.10
+			}
+		}
+		
+		fra_cult_of_reason = {
+			picture = jap_supremacy_of_will
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.07
+				political_power_factor = 0.05
+			}
+		}
+		
+		fra_spread_the_rev = {
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.10
+				subversive_activites_upkeep = -0.5
+				operative_slot = 2
+			}
+		}
+		fra_rev_influence= {
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
+				communism_drift = 0.25
+			}
+		}
+		fra_rev_no_borders= {
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = -0.90
+				war_support_factor = 0.25
 			}
 		}
 		
