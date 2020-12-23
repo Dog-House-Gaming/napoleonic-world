@@ -1,0 +1,37 @@
+add_namespace = turkey
+
+#Islamic Union Invitation
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = turkey.1.a
+		ai_chance = {
+			factor = 50
+		}
+		TUR = {
+			add_to_faction = ROOT
+			puppet = ROOT
+		}
+	}
+	
+	#No
+	option = {
+		name = turkey.1.b
+		ai_chance = {
+			factor = 50
+		}
+		TUR = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}
