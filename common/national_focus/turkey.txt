@@ -653,9 +653,9 @@ focus_tree = {
 		x = 28
 		y = 0
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			add_political_power = 120
 			add_stability = 0.05
@@ -765,9 +765,9 @@ focus_tree = {
 		x = 7
 		y = 1
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = spr_feudal_society
@@ -786,9 +786,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			797 = {
 				add_building_construction = {
@@ -817,9 +817,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_ideas = tur_golden_age
 		}
@@ -1025,9 +1025,9 @@ focus_tree = {
 		x = 11
 		y = 1
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 9
+		}
 		completion_reward = {
 			add_war_support = 0.15
 		}
@@ -1152,9 +1152,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_war_support = 0.15
 			add_popularity = {
@@ -1174,9 +1174,9 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
@@ -1373,9 +1373,9 @@ focus_tree = {
 		x = 21
 		y = 2
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_ideas = neutrality_idea
 		}
@@ -1392,9 +1392,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			add_ideas = isolation
 		}
@@ -1411,9 +1411,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_ideas = partial_economic_mobilisation
 		}
