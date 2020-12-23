@@ -84,6 +84,13 @@ set_autonomy = {
 		target = ROM
 		autonomous_state = autonomy_integrated_puppet
 	}
+	
+	add_ideas = {
+		spr_feudal_society
+		tur_analphabetism
+		tur_obsolete_uniforms
+		spr_declining_empire
+	}
 
 set_politics = {
 
@@ -122,7 +129,7 @@ set_national_unity = 0.55
 		}
 
 		neutrality = {
-			 100
+			 90
 		}
 	}
 
