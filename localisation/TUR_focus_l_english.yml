@@ -2,7 +2,7 @@
 
  TUR_modernize:0"Modernization"
  TUR_modernize_desc:0 "Our Nation may have a fantasy of recovering its old glory, but it has become an obsolete machine waiting for its collapse. We must catch up with the times."
- 
+
  TUR_a_new_nation:0 "A New Nation"
  TUR_a_new_nation_desc:0 "Now that we have chose to modernize our nation, we must decide in wich way we want it to be."
  TUR_new_empire:0 "A Modern Empire"
@@ -11,14 +11,14 @@
  TUR_empire_economy_desc:0 "By connecting the vast territories in our Empire we can create a large age of economic prosperity. It will help to have subjects that contribute to our economy too."
  TUR_puppet:0 "Puppet the Balkans"
  TUR_puppet_desc:0 "Mantaining the Balkans as occupied territories is not benneficial, and they will eventually revolt against us. Liberating them as puppet nations will be more practical."
- 
+
  TUR_modern_society:0 "Modernize Society"
  TUR_modern_society_desc:0 "It is not enough to have modern technology and military, we also need a modern social structure."
  TUR_independence:0 "Independence For The Balkans"
  TUR_independence_desc:0 "We are a tolerant society and we must not opress the people of the Balkans."
  TUR_revolutionary_science:0 "Revolutionary Science"
  TUR_revolutionary_science_desc: "Our modern society gives space for new ideas and technology."
- 
+
  TUR_modern_economy:0 "Modernize The Economy"
  TUR_modern_economy_desc:0 "Our economy still relies in agriculture, we must modernize and catch up with the industrial revolution."
  TUR_infrastructure:0 "Develop The Infrastructure"
@@ -42,7 +42,7 @@
  TUR_res_1_desc:0 "Creating new universities is a great step towards a modern Ottoman Science."
  TUR_res_2:0 "Industrial Revolution"
  TUR_res_2_desc:0 "The Industrial Revolution has accelerated the advances in technology and science like nothing before, this is the future of humanity."
- 
+
  TUR_modern_army:0 "Modernize The Army"
  TUR_modern_army_desc:0 "If we want to have an even fight with our neighbours we must modernize our tactics, equipment and uniforms."
  TUR_strat_1:0 "Modern Tactics"
@@ -57,12 +57,12 @@
  TUR_uniforms_desc:0 "We must give up the traditional uniforms and switch to the more modern ones of the West. We could start with wearing trousers."
  TUR_napoleonic_warfare:0 "Napoleonic Warfare"
  TUR_napoleonic_warfare_desc:0 "Mr. Napoleon is a very inteligent commander, we can invite him to Istambul to help us to reorganize and modernize our army, specially our artillery."
- 
+
  ##################################################################################
- 
+
  TUR_restore:0 "Restoration"
  TUR_restore_desc:0 "The Ottoman Empire has lost the light it used to have, but if we are loyal to our traditions we can bring it back to its former glory."
- 
+
  TUR_restore_army:0 "Restore The Army"
  TUR_restore_army_desc:0 "Our army has lost the organization and elitism it used to have, we will restore the Ottoman army and defeat our enemies."
  TUR_janissaries:0 "Janissaries"
@@ -71,45 +71,45 @@
  TUR_bronze_cannon_desc:0 "The sieging artillery of the Ottomans was the fear of every Austrian. We should use cannons in all our battles."
  TUR_sipahi:0 "Sipahí"
  TUR_sipahi_desc:0 "The elite cavalry of the Ottoman army. A charge of our horses will break every line of our enemies!"
- 
+
  TUR_restore_economy:0 "Restore The Militar Industry"
  TUR_restore_economy_desc:0 "To have a big army, we need a big industry. Our civilian development may be low, but we must focus our economy on the military."
  TUR_infrastructure_2:0 "Infrastructure Efforts"
  TUR_infrastructure_2_desc:0 "Is it vital for the economy to have effective ways of trasport, such as railways and routes."
  TUR_golden_age:0 "Remember The Golden Age"
  TUR_golden_age_desc:0 "The Middle East was once the center of sciences like Astronomy and Math. We must aim to recover the status of our intelectuals."
- TUR_mil_3:0 "Militar Expansion In Istambul"
- TUR_mil_3_desc:0 "We will expand the military industry in Istambul." 
+ TUR_mil_3:0 "Military Expansion In Istambul"
+ TUR_mil_3_desc:0 "We will expand the military industry in Istambul."
  TUR_doc_3:0 "Naval Expansion In Istambul"
  TUR_doc_3_desc:0 "We will expand the naval industry in Istambul."
- TUR_mil_4:0 "Militar Expansion In Izmir"
+ TUR_mil_4:0 "Military Expansion In Izmir"
  TUR_mil_4_desc:0 "We will expand the military industry in Izmir."
  TUR_doc_4:0 "Naval Expansion In Izmir"
  TUR_doc_4_desc:0 "We will expand the naval industry in Izmir."
- TUR_mil_5:0 "Militar Expansion In Trabzon"
+ TUR_mil_5:0 "Military Expansion In Trabzon"
  TUR_mil_5_desc:0 "We will expand the military industry in Trabzon."
  TUR_doc_5:0 "Naval Expansion In Trabzon"
  TUR_doc_5_desc:0 "We will expand the naval industry in Trabzon."
- 
+
  TUR_expansion:0 "Expand Our Influence"
  TUR_expansion_desc:0 "We must recover our position as an influent empire in the Middle East and the Balkans."
- 
+
  TUR_muslim:0 "Religious Traditions"
  TUR_muslim_desc:0 "We are the most powerful nation of the Islam, and religion is a very important part of our culture. Our traditions are part of our identity and we must show the world our might."
  TUR_teocracy:0 "Teocracy"
  TUR_teocracy_desc:0 "Selim III is not just a common monarch, he is a living divinity that will lead our country to glory."
  TUR_unite_the_islam:0 "Unite The Islam"
  TUR_unite_the_islam_desc:0 "The islamic countries have let other matters to divide us, when we should unite for the good of our people."
- 
+
  TUR_imperial:0 "Imperial Ambitions"
  TUR_imperial_desc:0 "We must unite and expand under the idea of a strong nation."
  TUR_absolutism:0 "Absolutism"
- TUR_absolutism_desc:0 "In order to have a strong Empire, we need a strong leader with absolute powers." 
+ TUR_absolutism_desc:0 "In order to have a strong Empire, we need a strong leader with absolute powers."
  TUR_recover_territories:0 "Recover Lost Territories"
  TUR_recover_territories_desc:0 "The decline of the Ottoman expansionism has made us to lose some of our territory to our neighbours. We must recover what is ours!"
- 
+
  ###################################################################################
- 
+
  TUR_side_france:0 "Side With France"
  TUR_side_france_desc:0 "We will side with the French in their war efforts."
  TUR_war_eng:0 "War With Britain"
@@ -124,5 +124,3 @@
  TUR_side_england_desc:0 "We will side with the British in their war efforts."
  TUR_war_fra:0 "War With France"
  TUR_war_fra_desc:0 "It is time to enter the war in the side of Britain against the French."
- 
- 
