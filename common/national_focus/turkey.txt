@@ -1,0 +1,1463 @@
+focus_tree = {
+	id = turkish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	
+	########### ########### ###########
+	#MODERNIZE# #MODERNIZE# #MODERNIZE#
+	########### ########### ###########
+	
+	focus = {
+	id = TUR_modernize
+		icon = GFX_focus_generic_treaty
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_restore}
+		x = 14
+		y = 0
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+	}
+	
+	#################
+	#INTERN POLITICS#
+	#################
+	
+	focus = {
+	id = TUR_a_new_nation
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {focus = TUR_modernize}
+		available = {
+		}
+		relative_position_id = TUR_modernize
+		x = -13
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_political_power = 250
+		}
+	}
+	
+	focus = {
+	id = TUR_new_empire
+		icon = GFX_goal_generic_political_pressure
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_modern_society}
+		prerequisite = {focus = TUR_a_new_nation}
+		relative_position_id = TUR_a_new_nation
+		x = -2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_ideas = tur_modern_empire
+			remove_ideas = spr_declining_empire
+		}
+	}
+	
+	focus = {
+	id = TUR_empire_economy
+		icon = GFX_focus_generic_self_management
+		available = {
+		}
+		prerequisite = {focus = TUR_new_empire}
+		relative_position_id = TUR_a_new_nation
+		x = -3
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_ideas = tur_imperial_economy
+			every_country = {
+				limit = {
+					is_puppet_of = TUR
+				}
+				add_ideas = tur_imperial_economy
+				TUR = {
+					add_offsite_building = { 
+						type = industrial_complex 
+						level = 2 
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_puppet
+		icon = GFX_focus_CZE_german_puppet
+		available = {
+		}
+		prerequisite = {focus = TUR_new_empire}
+		relative_position_id = TUR_a_new_nation
+		x = -1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			release_puppet = GRE
+			release_puppet = BUL
+			release_puppet = SER
+			release_puppet = BOS
+			release_puppet = ALB
+		}
+	}
+	
+	focus = {
+	id = TUR_modern_society
+		icon = GFX_goal_support_democracy
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_new_empire}
+		prerequisite = {focus = TUR_a_new_nation}
+		relative_position_id = TUR_a_new_nation
+		x = 2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_ideas = tur_modern_society
+			remove_idea = spr_declining_empire
+		}
+	}
+	
+	focus = {
+	id = TUR_independence
+		icon = GFX_focus_BUL_free_balkan_states
+		available = {
+		}
+		prerequisite = {focus = TUR_modern_society}
+		relative_position_id = TUR_a_new_nation
+		x = 1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			release = GRE
+			release = BUL
+			release = SER
+			release = BOS
+			release = ALB
+		}
+	}
+	
+	focus = {
+	id = TUR_revolutionary_science
+		icon = GFX_focus_research
+		available = {
+		}
+		prerequisite = {focus = TUR_modern_society}
+		relative_position_id = TUR_a_new_nation
+		x = 3
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	##########
+	#INDUSTRY#
+	##########
+	
+	focus = {
+	id = TUR_modern_economy
+		icon = GFX_goal_generic_consumer_goods
+		available = {
+		}
+		prerequisite = {focus = TUR_modernize}
+		relative_position_id = TUR_modernize
+		x = -5
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_feudal_society
+				add_idea = spr_modernizing_society
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+		}
+		prerequisite = {focus = TUR_modern_economy}
+		relative_position_id = TUR_modern_economy
+		x = -1
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			797 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			49 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_civ_1
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+		}
+		prerequisite = {focus = TUR_infrastructure}
+		relative_position_id = TUR_modern_economy
+		x = -3
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_mil_1
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		prerequisite = {focus = TUR_civ_1}
+		relative_position_id = TUR_modern_economy
+		x = -3
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			797 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			341 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_doc_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+		}
+		prerequisite = {focus = TUR_mil_1}
+		relative_position_id = TUR_modern_economy
+		x = -3
+		y = 4
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			797 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			341 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_civ_2
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+		}
+		prerequisite = {focus = TUR_infrastructure}
+		relative_position_id = TUR_modern_economy
+		x = -1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			49 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_mil_2
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		prerequisite = {focus = TUR_civ_2}
+		relative_position_id = TUR_modern_economy
+		x = -1
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			49 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			343 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_doc_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+		}
+		prerequisite = {focus = TUR_mil_2}
+		relative_position_id = TUR_modern_economy
+		x = -1
+		y = 4
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			339 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			340 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_education
+		icon = GFX_focus_generic_military_academy
+		available = {
+		}
+		prerequisite = {focus = TUR_modern_economy}
+		relative_position_id = TUR_modern_economy
+		x = 1
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			remove_ideas = tur_analphabetism
+		}
+	}
+	
+	focus = {
+	id = TUR_res_1
+		icon = GFX_focus_research
+		available = {
+			num_of_factories > 75
+		}
+		prerequisite = {focus = TUR_education}
+		prerequisite = {focus = TUR_infrastructure}
+		relative_position_id = TUR_modern_economy
+		x = 1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+	id = TUR_res_2
+		icon = GFX_focus_research2
+		available = {
+			num_of_factories > 125
+		}
+		prerequisite = {focus = TUR_res_1}
+		relative_position_id = TUR_modern_economy
+		x = 1
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	######
+	#ARMY#
+	######
+	
+	focus = {
+	id = TUR_modern_army
+		icon = GFX_focus_chi_army_reform
+		available = {
+		}
+		prerequisite = {focus = TUR_modernize}
+		relative_position_id = TUR_modernize
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.50
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_strat_1
+		icon = GFX_goal_generic_army_doctrines
+		available = {
+		}
+		prerequisite = {focus = TUR_modern_army}
+		relative_position_id = TUR_modern_army
+		x = -2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.50
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_strat_2
+		icon = GFX_goal_generic_army_doctrines
+		available = {
+		}
+		prerequisite = {focus = TUR_strat_1}
+		relative_position_id = TUR_modern_army
+		x = -2
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.50
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_tech_1
+		icon = GFX_goal_generic_allies_build_infantry
+		available = {
+		}
+		prerequisite = {focus = TUR_modern_army}
+		relative_position_id = TUR_modern_army
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.50
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_tech_2
+		icon = GFX_goal_generic_axis_build_infantry
+		available = {
+		}
+		prerequisite = {focus = TUR_tech_1}
+		relative_position_id = TUR_modern_army
+		x = 0
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_uniforms
+		icon = GFX_focus_generic_military_mission
+		available = {
+		}
+		prerequisite = {focus = TUR_modern_army}
+		relative_position_id = TUR_modern_army
+		x = 2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			remove_ideas = tur_obsolete_uniforms
+		}
+	}
+	
+	focus = {
+	id = TUR_napoleonic_warfare
+		icon = GFX_goal_generic_army_artillery2
+		available = {
+		}
+		prerequisite = {focus = TUR_uniforms}
+		prerequisite = {focus = TUR_side_france}
+		relative_position_id = TUR_modern_army
+		x = 2
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	########## ########## ##########
+	#CONSERVE# #CONSERVE# #CONSERVE# ################################################################################################################################
+	########## ########## ##########
+	
+	focus = {
+	id = TUR_restore
+		icon = GFX_focus_generic_support_the_left_right
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_modernize}
+		x = 28
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+	}
+	
+	######
+	#ARMY#
+	######
+	
+	focus = {
+	id = TUR_restore_army
+		icon = GFX_focus_generic_little_entente
+		available = {
+		}
+		prerequisite = {focus = TUR_restore}
+		relative_position_id = TUR_restore
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.50
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_janissaries
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		available = {
+		}
+		prerequisite = {focus = TUR_restore_army}
+		relative_position_id = TUR_restore_army
+		x = -2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_ideas = tur_janissaries
+		}
+	}
+	
+	focus = {
+	id = TUR_bronze_cannon
+		icon = GFX_goal_generic_army_artillery2
+		available = {
+		}
+		prerequisite = {focus = TUR_restore_army}
+		relative_position_id = TUR_restore_army
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_ideas = tur_bronze_cannon
+		}
+	}
+	
+	focus = {
+	id = TUR_sipahi
+		icon = GFX_goal_generic_cavalry
+		available = {
+		}
+		prerequisite = {focus = TUR_restore_army}
+		relative_position_id = TUR_restore_army
+		x = 2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_ideas = tur_sipahi
+		}
+	}
+	
+	##########
+	#INDUSTRY#
+	##########
+	
+	focus = {
+	id = TUR_restore_economy
+		icon = GFX_focus_generic_industry_2
+		available = {
+		}
+		prerequisite = {focus = TUR_restore}
+		relative_position_id = TUR_restore
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_feudal_society
+				add_idea = tur_militarized_economy
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_infrastructure_2
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+		}
+		prerequisite = {focus = TUR_restore_economy}
+		relative_position_id = TUR_restore_economy
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			797 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			49 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_golden_age
+		icon = GFX_focus_TUR_the_sun_language_theory
+		available = {
+		}
+		prerequisite = {focus = TUR_restore_economy}
+		relative_position_id = TUR_restore_economy
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = tur_golden_age
+		}
+	}
+	
+	focus = {
+	id = TUR_mil_3
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		prerequisite = {focus = TUR_infrastructure_2}
+		relative_position_id = TUR_restore_economy
+		x = -3
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			797 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			341 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_doc_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+		}
+		prerequisite = {focus = TUR_mil_3}
+		relative_position_id = TUR_restore_economy
+		x = -3
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			797 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			341 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_mil_4
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		prerequisite = {focus = TUR_infrastructure_2}
+		relative_position_id = TUR_restore_economy
+		x = -1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			340 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			339 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_doc_4
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+		}
+		prerequisite = {focus = TUR_mil_4}
+		relative_position_id = TUR_restore_economy
+		x = -1
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			340 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			339 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_mil_5
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+		}
+		prerequisite = {focus = TUR_infrastructure_2}
+		relative_position_id = TUR_restore_economy
+		x = 1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			354 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			355 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_doc_5
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+		}
+		prerequisite = {focus = TUR_mil_5}
+		relative_position_id = TUR_restore_economy
+		x = 1
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			354 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			355 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#################
+	#INTERN POLITICS#
+	#################
+	
+	focus = {
+	id = TUR_expansion
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+		}
+		prerequisite = {focus = TUR_restore}
+		relative_position_id = TUR_restore
+		x = 11
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 9
+		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	
+	focus = {
+	id = TUR_muslim
+		icon = GFX_focus_TUR_turanist_ambition
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_imperial}
+		prerequisite = {focus = TUR_expansion}
+		relative_position_id = TUR_expansion
+		x = -1
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_stability = 0.10
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_teocracy
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		available = {
+		}
+		prerequisite = {focus = TUR_muslim}
+		relative_position_id = TUR_expansion
+		x = -1
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			add_country_leader_trait = living_divinity
+			remove_ideas = spr_declining_empire
+		}
+	}
+	
+	focus = {
+	id = TUR_unite_the_islam
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		available = {
+		}
+		prerequisite = {focus = TUR_teocracy}
+		relative_position_id = TUR_expansion
+		x = -1
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			create_faction = "Islamic Union"
+			OMA = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+			SAU = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+			IRQ = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+			AFG = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+			PER = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+			YEM = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+			LBA = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+			MOR = {
+				country_event = {
+					id = turkey.1
+					days = 10
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_imperial
+		icon = GFX_focus_TUR_misak_i_milli
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_muslim}
+		prerequisite = {focus = TUR_expansion}
+		relative_position_id = TUR_expansion
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.20
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_absolutism
+		icon = GFX_goal_support_fascism
+		available = {
+		}
+		prerequisite = {focus = TUR_imperial}
+		relative_position_id = TUR_expansion
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			remove_ideas = spr_declining_empire
+		}
+	}
+	
+	focus = {
+	id = TUR_recover_territories
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+		}
+		prerequisite = {focus = TUR_absolutism}
+		relative_position_id = TUR_expansion
+		x = 1
+		y = 3
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			679 = {
+				add_core_of = TUR
+			}
+			413 = {
+				add_core_of = TUR
+			}
+			421 = {
+				add_core_of = TUR
+			}
+			419 = {
+				add_core_of = TUR
+			}
+			230 = {
+				add_core_of = TUR
+			}
+			229 = {
+				add_core_of = TUR
+			}
+			231 = {
+				add_core_of = TUR
+			}
+			234 = {
+				add_core_of = TUR
+			}
+			137 = {
+				add_core_of = TUR
+			}
+			218 = {
+				add_core_of = TUR
+			}
+			227 = {
+				add_core_of = TUR
+			}
+			200 = {
+				add_core_of = TUR
+			}
+			196 = {
+				add_core_of = TUR
+			}
+			197 = {
+				add_core_of = TUR
+			}
+			192 = {
+				add_core_of = TUR
+			}
+			293 = {
+				add_core_of = TUR
+			}
+			448 = {
+				add_core_of = TUR
+			}
+			449 = {
+				add_core_of = TUR
+			}
+			661 = {
+				add_core_of = TUR
+			}
+			662 = {
+				add_core_of = TUR
+			}
+			77 = {
+				add_core_of = TUR
+			}
+			46 = {
+				add_core_of = TUR
+			}
+			766 = {
+				add_core_of = TUR
+			}
+			78 = {
+				add_core_of = TUR
+			}
+			79 = {
+				add_core_of = TUR
+			}
+			81 = {
+				add_core_of = TUR
+			}
+			103 = {
+				add_core_of = TUR
+			}
+			109 = {
+				add_core_of = TUR
+			}
+			45 = {
+				add_core_of = TUR
+			}
+			764 = {
+				add_core_of = TUR
+			}
+			82 = {
+				add_core_of = TUR
+			}
+			163 = {
+				add_core_of = TUR
+			}
+			84 = {
+				add_core_of = TUR
+			}
+			76 = {
+				add_core_of = TUR
+			}
+			154 = {
+				add_core_of = TUR
+			}
+			43 = {
+				add_core_of = TUR
+			}
+			155 = {
+				add_core_of = TUR
+			}
+		}
+	}
+	
+	##########################################################################################################################################
+	
+	###################
+	#EXTERNAL POLITICS#
+	###################
+	
+	focus = {
+	id = TUR_side_france
+		icon = GFX_focus_chi_reach_out_to_france
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_stay_neutral}
+		mutually_exclusive = {focus = TUR_side_england}
+		prerequisite = {focus = TUR_modernize}
+		x = 18
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			give_military_access = FRA
+		}
+	}
+	
+	focus = {
+	id = TUR_war_eng
+		icon = GFX_focus_attack_britain
+		available = {
+		}
+		relative_position_id = TUR_side_france
+		prerequisite = {focus = TUR_side_france}
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+		}
+	}
+	
+	focus = {
+	id = TUR_stay_neutral
+		icon = GFX_goal_generic_neutrality_focus
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_side_france}
+		mutually_exclusive = {focus = TUR_side_england}
+		prerequisite = {
+		focus = TUR_modernize
+		focus = TUR_restore
+		}
+		x = 21
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_ideas = neutrality_idea
+		}
+	}
+	
+	focus = {
+	id = TUR_isolation
+		icon = GFX_goal_generic_wolf_pack
+		available = {
+		}
+		relative_position_id = TUR_stay_neutral
+		mutually_exclusive = {focus = TUR_our_wars}
+		prerequisite = {focus = TUR_stay_neutral}
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = isolation
+		}
+	}
+	
+	focus = {
+	id = TUR_our_wars
+		icon = GFX_goal_generic_major_war
+		available = {
+		}
+		relative_position_id = TUR_stay_neutral
+		mutually_exclusive = {focus = TUR_isolation}
+		prerequisite = {focus = TUR_stay_neutral}
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_ideas = partial_economic_mobilisation
+		}
+	}
+	
+	focus = {
+	id = TUR_side_england
+		icon = GFX_focus_chi_british_cooperation
+		available = {
+		}
+		mutually_exclusive = {focus = TUR_side_france}
+		mutually_exclusive = {focus = TUR_stay_neutral}
+		prerequisite = {focus = TUR_restore}
+		x = 24
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			give_military_access = ENG
+		}
+	}
+	
+	focus = {
+	id = TUR_war_fra
+		icon = GFX_focus_attack_france
+		available = {
+		}
+		relative_position_id = TUR_side_england
+		prerequisite = {focus = TUR_side_england}
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
+		}
+	}
+	
+	default = no
+	}
