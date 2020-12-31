@@ -15,7 +15,6 @@ set_technology = {
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
 	early_battleship = 1
-	transport = 1
 }
 
 set_convoys = 5
@@ -24,7 +23,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -35,9 +34,9 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	set_technology = {
-	
+
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
@@ -67,8 +66,8 @@ set_convoys = 5
 }
 set_politics = {
 
-	
-	
+
+
 	ruling_party = fascism
 	last_election = "1935.6.9"
 	election_frequency = 12
@@ -76,31 +75,31 @@ set_politics = {
 }
 set_popularities = {
 		democratic =15
-		
+
 
 		fascism = 75
-		
-		
+
+
 		communism =10
-		
+
 	}
 1939.1.1 = {
 	set_politics = {
 
 		set_popularities = {
-			democratic = { 
+			democratic = {
 				 15
 			}
 
 			fascism = {
 				 75
 			}
-			
+
 			communism = {
 				 10
 			}
 		}
-		
+
 		ruling_party = fascism
 		last_election = "1935.6.9"
 		election_frequency = 12

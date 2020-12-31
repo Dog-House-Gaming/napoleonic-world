@@ -11,7 +11,6 @@ set_technology = {
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
 	early_battleship = 1
-	transport = 1
 }
 set_country_flag = monroe_doctrine
 
@@ -20,8 +19,8 @@ set_convoys = 20
 set_convoys = 5
 set_politics = {
 
-	
-	
+
+
 	ruling_party = democratic
 	last_election = "1932.10.30"
 	election_frequency = 72  #but 4 years after this one in 1938.
@@ -29,14 +28,14 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 98
-		
+
 
 		fascism =0
-		
-		
+
+
 		communism = 2
 			#banned = no #default is no
-		
+
 	}
 create_country_leader = {
 	name = "Arturo Alessandri"
@@ -53,20 +52,20 @@ create_country_leader = {
 	set_politics = {
 
 		set_popularities = {
-			democratic = { 
+			democratic = {
 				 100
 			}
 
 			fascism = {
 				 0
 			}
-			
+
 			communism = {
 				 0
 				#banned = no #default is no
 			}
 		}
-		
+
 		ruling_party = democratic
 		last_election = "1938.10.25"
 		election_frequency = 48

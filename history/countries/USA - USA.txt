@@ -9,10 +9,10 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
-	
+
 
 	early_submarine = 1
 	basic_submarine = 1
@@ -24,7 +24,6 @@ set_technology = {
 	early_battlecruiser = 1
 	early_carrier = 1
 	basic_carrier = 1
-	transport = 1
 	superior_firepower = 1
 	base_strike = 1
 
@@ -56,7 +55,7 @@ give_guarantee = URG
 1939.1.1 = {
 
 	add_political_power = 1199
-	
+
 	#adding ministers
 	add_ideas = {
 		USA_robert_taft
@@ -91,10 +90,10 @@ give_guarantee = URG
 	set_global_flag = earhart_disappeared
 	oob = "USA_1939"
 	set_technology = {
-		
+
 		CAS2 = 1
-		
-		
+
+
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
@@ -150,8 +149,8 @@ set_national_unity = 0.6
 
 set_politics = {
 
-	
-	
+
+
 	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
@@ -159,14 +158,14 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 99
-		
+
 
 		fascism = 0
-		
-		
+
+
 		communism = 1
 			#banned = no #default is no
-		
+
 	}
 add_ideas = {
 	undisturbed_isolation
@@ -186,20 +185,20 @@ add_ideas = {
 	set_politics = {
 
 		set_popularities = {
-			democratic = { 
+			democratic = {
 				 99
 			}
 
 			fascism = {
 				 0
 			}
-			
+
 			communism = {
 				 1
 				#banned = no #default is no
 			}
 		}
-		
+
 		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
@@ -225,7 +224,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = fascism_ideology
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -236,7 +235,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = marxism
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -313,7 +312,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-	
+
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2

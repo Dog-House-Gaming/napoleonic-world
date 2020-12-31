@@ -11,7 +11,7 @@ set_research_slots = 4
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	marines  = 1
@@ -28,10 +28,8 @@ set_technology = {
 	early_battlecruiser = 1
 	early_carrier = 1
 	basic_carrier = 1
-	transport = 1
 	trench_warfare = 1
 	base_strike = 1
-	synth_oil_experiments = 1
 }
 
 create_import = {
@@ -69,8 +67,8 @@ if = {
 
 set_politics = {
 
-	
-	
+
+
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -87,20 +85,20 @@ set_popularities = {
 	set_politics = {
 
 		set_popularities = {
-			democratic = { 
+			democratic = {
 				 0
 			}
 
 			fascism = {
 				 100
 			}
-			
+
 			communism = {
 				 0
 				#banned = no #default is no
 			}
 		}
-		
+
 		ruling_party = fascism
 		last_election = "1936.1.1"
 		election_frequency = 48
@@ -136,7 +134,7 @@ create_country_leader = {
 			}
 			obsolete = yes
 		}
-		### Battleship Variants	
+		### Battleship Variants
 		create_equipment_variant = {
 			name = "Ise Class"
 			type = battleship_1
@@ -161,7 +159,7 @@ create_country_leader = {
 			}
 			obsolete = yes
 		}
-		### Heavy Cruiser Variants	
+		### Heavy Cruiser Variants
 		create_equipment_variant = {
 			name = "Myoko Class"
 			type = heavy_cruiser_1
@@ -174,7 +172,7 @@ create_country_leader = {
 			}
 			obsolete = yes
 		}
-		### Light Cruiser Variants	
+		### Light Cruiser Variants
 		create_equipment_variant = {
 			name = "Kuma Class"
 			type = light_cruiser_1
@@ -210,8 +208,8 @@ create_country_leader = {
 				ship_ASW_upgrade = 2
 				ship_anti_air_upgrade = 2
 			}
-		}	
-		### Submarine Variants	
+		}
+		### Submarine Variants
 		create_equipment_variant = {
 			name = "Kaidai III Class"
 			type = submarine_1
@@ -223,9 +221,9 @@ create_country_leader = {
 				sub_torpedo_upgrade = 2
 			}
 			obsolete = yes
-		}	
+		}
 
-	# 1939 Start #			
+	# 1939 Start #
 	1939.1.1 = {
 		### Carrier Variants
 		create_equipment_variant = {
@@ -251,7 +249,7 @@ create_country_leader = {
 		#		ship_anti_air_upgrade = 2
 		#	}
 		#	obsolete = yes
-		#}	
+		#}
 		create_equipment_variant = {
 			name = "Kagero Class"
 			type = destroyer_2
@@ -262,6 +260,5 @@ create_country_leader = {
 				ship_ASW_upgrade = 2
 				ship_anti_air_upgrade = 2
 			}
-		}	
+		}
 	}
-	

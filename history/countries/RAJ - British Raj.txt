@@ -6,14 +6,13 @@ oob = "RAJ_1936"
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	transport = 1
 	trench_warfare = 1
 	fleet_in_being = 1
-	
-	
+
+
 }
 
 set_convoys = 20
@@ -21,7 +20,7 @@ set_convoys = 20
 set_cosmetic_tag = RAJ_UK # British Raj
 
 1939.1.1 = {
-	
+
 	if = {
 		limit = {
 			has_dlc = "Together for Victory"
@@ -57,11 +56,11 @@ set_cosmetic_tag = RAJ_UK # British Raj
 		low_economic_mobilisation
 	}
 
-	
+
 	set_technology = {
-		
-		
-		
+
+
+
 		#doctrines
 		#Air
 		force_rotation = 1
@@ -104,8 +103,8 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 set_politics = {
 
-	
-	
+
+
 	ruling_party = democratic
 	last_election = "1935.11.14"
 	election_frequency = 48
@@ -113,16 +112,16 @@ set_politics = {
 }
 set_popularities = {
 		democratic =  51
-		
+
 
 		fascism =  2
-		
-		
+
+
 		communism = 17
-		
+
 
 		neutrality = 30
-		
+
 	}
 create_country_leader = {
 	name = "George III"
@@ -143,7 +142,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
-		
+
 	}
 }
 
@@ -154,7 +153,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
+
 	}
 }
 
@@ -165,7 +164,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = socialism
 #	traits = {
-#		
+#
 #	}
 #}
 

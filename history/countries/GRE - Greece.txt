@@ -12,14 +12,13 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	early_submarine = 1
 	early_destroyer = 1
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
 	early_battleship = 1
-	transport = 1
 }
 
 set_convoys = 10
@@ -27,7 +26,7 @@ set_convoys = 10
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -38,15 +37,15 @@ set_convoys = 10
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "GRE_1939"
 	set_technology = {
-		tech_support = 1		
+		tech_support = 1
 		tech_engineers = 1
-		
-		
-		
-		
+
+
+
+
 		gw_artillery = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
@@ -88,8 +87,8 @@ set_convoys = 10
 
 set_politics = {
 
-	
-	
+
+
 	ruling_party = neutrality
 	last_election = "1935.6.9"
 	election_frequency = 12

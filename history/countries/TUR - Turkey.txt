@@ -20,7 +20,6 @@ set_technology = {
 	early_light_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
-	transport = 1
 }
 
 
@@ -84,7 +83,7 @@ set_autonomy = {
 		target = ROM
 		autonomous_state = autonomy_integrated_puppet
 	}
-	
+
 	add_ideas = {
 		spr_feudal_society
 		tur_analphabetism
@@ -94,7 +93,7 @@ set_autonomy = {
 
 set_politics = {
 
-	
+
 
 	ruling_party = neutrality
 	last_election = "1935.2.8"

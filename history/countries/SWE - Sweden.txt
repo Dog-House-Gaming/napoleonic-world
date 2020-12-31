@@ -20,13 +20,12 @@ set_technology = {
 	basic_destroyer = 1
 	early_light_cruiser = 1
 	early_heavy_cruiser = 1
-	transport = 1
 }
 
 
 set_politics = {
 
-	
+
 
 	ruling_party = democratic
 	last_election = "1932.9.18"
@@ -35,16 +34,16 @@ set_politics = {
 }
 set_popularities = {
 		democratic = 75
-		
+
 
 		neutrality = 14
-		
+
 
 		communism =  8
-		
+
 
 		fascism =  3
-		
+
 
 	}
 1939.1.1 = {
