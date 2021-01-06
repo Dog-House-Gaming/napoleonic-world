@@ -19,8 +19,8 @@ country_event = {
 				FRA = {
 					NOT = { has_wargoal_against = SPR }
 					NOT = { is_justifying_wargoal_against = SPR }
-					NOT = { has_wargoal_against = NSP }
-					NOT = { is_justifying_wargoal_against = NSP }
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
 				}
 			}
 		}
@@ -40,8 +40,8 @@ option = {
 				FRA = {
 					NOT = { has_wargoal_against = SPR }
 					NOT = { is_justifying_wargoal_against = SPR }
-					NOT = { has_wargoal_against = NSP }
-					NOT = { is_justifying_wargoal_against = NSP }
+					NOT = { has_wargoal_against = SPR }
+					NOT = { is_justifying_wargoal_against = SPR }
 				}
 			}
 		}
@@ -83,7 +83,7 @@ country_event = {
 
 		if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 371
 					controls_state = 371 
 				}
@@ -92,7 +92,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 372
 					controls_state = 372
 				}
@@ -101,7 +101,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 373
 					controls_state = 373 
 				}
@@ -110,7 +110,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 392
 					controls_state = 392
 				}
@@ -119,7 +119,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 391
 					controls_state = 391 
 				}
@@ -128,7 +128,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 374
 					controls_state = 374 
 				}
@@ -137,7 +137,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 383
 					controls_state = 383
 				}
@@ -146,7 +146,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 384
 					controls_state = 384
 				}
@@ -155,7 +155,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 390
 					controls_state = 390
 				}
@@ -164,7 +164,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 389
 					controls_state = 389
 				}
@@ -173,7 +173,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 382
 					controls_state = 382 
 				}
@@ -182,7 +182,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 381
 					controls_state = 381 
 				}
@@ -191,7 +191,7 @@ country_event = {
 		}
 			if = {
 			limit = { 
-				NSP = { 
+				SPR = { 
 					owns_state = 388
 					controls_state = 388 
 				}
