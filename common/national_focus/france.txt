@@ -410,9 +410,9 @@ focus_tree = {
 		prerequisite = {}
 		mutually_exclusive = { }
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+			ai_will_do = {
+			factor = 1
+		}
 		available = {
 			
 		}
@@ -443,9 +443,9 @@ focus_tree = {
 		prerequisite = {focus = FRA_naval_effort}
 		mutually_exclusive = { }
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+			ai_will_do = {
+			factor = 1
+		}
 		available = {
 			
 		}
@@ -480,9 +480,9 @@ focus_tree = {
 		prerequisite = {focus = FRA_naval_effort}
 		mutually_exclusive = { }
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+			ai_will_do = {
+			factor = 1
+		}
 		available = {
 			
 		}
@@ -517,9 +517,9 @@ focus_tree = {
 		prerequisite = {focus = FRA_naval_effort}
 		mutually_exclusive = { }
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+			ai_will_do = {
+			factor = 1
+		}
 		available = {
 			
 		}
@@ -555,9 +555,9 @@ focus_tree = {
 		prerequisite = {focus = FRA_hire_privateers}
 		mutually_exclusive = { }
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+			ai_will_do = {
+			factor = 1
+		}
 		available = {
 			
 		}
@@ -591,9 +591,9 @@ focus_tree = {
 		prerequisite = {focus = FRA_protect_our_trade}
 		mutually_exclusive = { }
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+			ai_will_do = {
+			factor = 1
+		}
 		available = {
 			
 		}
@@ -627,9 +627,9 @@ focus_tree = {
 		prerequisite = {focus = FRA_battleship_effort}
 		mutually_exclusive = { }
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+			ai_will_do = {
+			factor = 1
+		}
 		available = {
 			
 		}
@@ -1126,7 +1126,7 @@ focus_tree = {
 		prerequisite = {}
 		mutually_exclusive = { }
 		cost = 10
-		ai_will_do = {
+			ai_will_do = {
 			factor = 10
 		}
 		available = {
@@ -1153,8 +1153,8 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = FRA_appease_the_population}
 		mutually_exclusive = { }
-		cost = 10
-		ai_will_do = {
+		cost = 5
+			ai_will_do = {
 			factor = 1
 		}
 		available = {
@@ -1187,7 +1187,7 @@ focus_tree = {
 		prerequisite = {focus = FRA_side_burg}
 		mutually_exclusive = { }
 		cost = 10
-		ai_will_do = {
+			ai_will_do = {
 			factor = 1
 		}
 		available = {
@@ -1248,7 +1248,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		cost = 10
 			ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		available = {
 			
@@ -1281,7 +1281,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		cost = 10
 			ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		available = {
 			num_of_factories > 150
@@ -1311,7 +1311,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = FRA_appease_the_population}
 		mutually_exclusive = {}
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -1344,7 +1344,7 @@ focus_tree = {
 		y = 2
 		prerequisite = {focus = FRA_side_clergy}
 		mutually_exclusive = {}
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -1381,7 +1381,7 @@ focus_tree = {
 		y = 3
 		prerequisite = {focus = FRA_concordat}
 		mutually_exclusive = {}
-		cost = 10
+		cost = 2
 			ai_will_do = {
 			factor = 1
 		}
@@ -1419,7 +1419,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = FRA_appease_the_population}
 		mutually_exclusive = {}
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -1457,7 +1457,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = FRA_side_workers}
 		mutually_exclusive = {}
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -1495,7 +1495,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = FRA_raise_wages}
 		mutually_exclusive = {}
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -1580,12 +1580,9 @@ focus = {
 			date > 1803.1.1
 		}
 		relative_position_id = NAP_instability_in_Europe
-		ai_will_do = {
-			factor = 5
-		}
 		x = -6
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -1682,9 +1679,6 @@ focus = {
 		id = NAP_annex_bavatian_republic
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = NAP_instability_in_Europe }
-		ai_will_do = {
-			factor = 3
-		}
 		available = { 
 			has_army_manpower = { size > 599999 }
 			NOT = { has_war_with = HOL }
@@ -1720,9 +1714,6 @@ focus = {
 		x = -2
 		y = 2
 		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			annex_country = { target = SWI }
@@ -1769,7 +1760,7 @@ focus = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
 		completion_reward = {
 			ENG = { 
