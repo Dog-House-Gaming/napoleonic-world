@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  
  fra_home_of_the_revolution:0 "Home Of The Revolution"
  fra_home_of_the_revolution_desc:0 "Based on the ideals of enlightment, France awakened in 1789 and defeated the absolutist monarchs. Is is the duty of France to spread the revolution and give the world peace and liberty."
@@ -33,3 +33,39 @@ l_english:
  fra_spread_the_rev:0 "Spread The Revolution"
  fra_rev_influence:0 "Revolutionary Influence"
  fra_rev_no_borders:0 "The Revolution Knows No Borders"
+ 
+ 
+ 
+ charles_maurice_de_talleyrand:0 "Charles Maurice de Talleyrand"
+ charles_maurice_de_talleyrand_desc:0 "From all the governments that I have serve to, there isn't any that has done more for me than I have for him. -Talleyrand"
+ joseph_fouche:0 "Joseph Fouché"
+ joseph_fouche_desc:0 "Fouché is considered the fundator of modern spionage and responsible of the consolidation of the Misistry of Police of France."
+ martin_michel_charles_gaudin:0 "Martin Michel Charles Gaudin"
+ jean_baptiste_collin_de_sussy:0 "Jean Baptiste Collin de Sussy"
+ jean_francois_aime_dejean:0 "Jean Francois Aimé Dejean"
+ 
+ louis_alexandre_berthier:0 "Louis Alexandre Berthier"
+ louis_alexandre_berthier_desc:0 "If only Berthier had been there, I would not have met this misfortune. -Napoleon"
+ joaquin_murat:0 "Joaquín Murat"
+ joaquin_murat_desc:0 "Sir, the combat ends because of lack of enemies. -Murat to Napoleon"
+ michel_ney:0 "Michel Ney"
+ michel_ney_desc:0 "France is full of brave men, but Ney is clearly the most brave between the brave. -Napoleon"
+ 
+ pierre_charles_villeneuve:0 "Pierre Charles Villeneuve"
+ pierre_charles_villeneuve_desc:0 "Villeneuve doesn't have enough strength to command a single frigate. He lacks determination and doesn't have moral courage. -Napoleon to Decrès"
+ jean_marthe_adrien_l_hermite:0 "Jean Marthe Adrien L'Hermite"
+ 
+ henri_jacques_guillaume_clarke:0 "Henri Jacques Guillaume Clarke"
+ pierre_daru:0 "Pierre Daru"
+ jean_gerard_lacuee:0 "Jean Gérard Lacuée"
+ denis_decres:0 "Denis Decrès"
+ 
+ charleville:0 "Manufacture d'armes de Charleville"
+ 
+ naval_group:0 "Naval Group"
+ 
+ societe_d_encouragement:0 "Société d'encouragement pour l'industrie nationale"
+ 
+ jean_de_dieu_soult:0 "Jean de Dieu Soult"
+ louis_nicolas_davout:0 "Louis Nicolas Davout"
+ louis_nicolas_davout_desc:0 "Considered one of the best of Napoleon's marshals, Davout never lost a major battle."
