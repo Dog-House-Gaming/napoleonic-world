@@ -162,7 +162,7 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}				
+				}
 
 				instantTextBoxType = {
 					name = "infantry_year9"
@@ -186,8 +186,8 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}		
-				
+				}
+
 				instantTextBoxType = {
 					name = "infantry_year11"
 					position = { x = 1250 y = 50 }
@@ -198,7 +198,7 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}						
+				}
 				instantTextBoxType = {
 					name = "infantry_year12"
 					position = { x = 1390 y = 50 }
@@ -220,7 +220,7 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}			
+				}
 
 			}
 
@@ -2422,7 +2422,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 2000 y = 0 }
+				position = { x = 20000 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -2430,7 +2430,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "air_doctrine_folder_tab"
-				position = { x = 2000 y = 0 }
+				position = { x = 20000 y = 0 }
 				quadTextureSprite = "GFX_air_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
