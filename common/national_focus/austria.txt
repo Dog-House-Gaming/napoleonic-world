@@ -1397,6 +1397,9 @@ focus_tree = {
 		available = {
 			GER = {exists = yes}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 		prerequisite = {focus = AUS_pru_matter}
 		mutually_exclusive = {focus = AUS_buy_loyalty}
 		relative_position_id = AUS_reinforce_the_empire
