@@ -16,21 +16,23 @@ bookmarks = {
 				fra_shortage_of_officers
 			}
 			focuses = {
-				FRA_french_military
-				FRA_french_artillery
 				FRA_imperial_coronation
+				FRA_return_to_monarchism
+				FRA_rebirth_of_revolution
 			}
 		}
 		"GER"={
 			history = "GER_NAPOLEON_TO_POWER_DESC"
 			ideology = communism
 			ideas = {
-			#	state_shintoism
+				pru_victors_from_7yw
+				pru_old_officers
+				pru_german_efficiency
 			}	
 			focuses = {
-			#	southern_expansion_focus
-			#	divine_wind_focus
-			#	found_own_faction_focus
+				PRU_prussian_discipline
+				PRU_prussian_dragoons
+				PRU_german_ambitions
 			}			
 		}
 		"AUS"={
@@ -50,14 +52,12 @@ bookmarks = {
 			history = "ENG_NAPOLEON_TO_POWER_DESC"
 			ideology = democratic
 			ideas = {
-				#stiff_upper_lip
-				#ENG_the_war_to_end_all_wars
-				#george_v
+				
 			}
 			focuses = {
-				#tizard_mission_focus
-				#ENG_war_with_germany
-				#ENG_war_with_italy
+				ENG_remain_one
+				ENG_fascism
+				ENG_war_with_france
 			}
 		}
 
@@ -65,13 +65,13 @@ bookmarks = {
 			history = "TUR_NAPOLEON_TO_POWER_DESC"
 			ideology = fascism
 			ideas = {
-			#	sour_loser
-			#	general_staff
+				tur_analphabetism
+				tur_obsolete_uniforms
 			}
 			focuses = {
-			#	GER_anschluss
-			#	GER_danzig_or_war
-			#	GER_ussr_war_goal
+				TUR_janissaries
+				TUR_teocracy
+				TUR_imperial
 			}
 		}
 		"SPR"={
