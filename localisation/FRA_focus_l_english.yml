@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  
  FRA_experience_from_italy:0 "Experience From Italy"
  FRA_experience_from_italy_desc:0 "Our campaign in the Italian Peninsula was a success, but we must use that experience to improve our strategies."
@@ -184,17 +184,17 @@ l_english:
  
  FRA_rev_europe:0 "Revolution In Europe"
  FRA_rev_europe_desc:0 "Before planning a worldwide revolution, we must concentrate in supporting the revolution in Europe."
- FRA_rev_eng:0 "Ignite The Revolution In The USA"
+ FRA_rev_eng:0 "Ignite The Revolution In The British Empire"
  FRA_rev_eng_desc:0 "The seed of the revolution has been planted, now it is time to make that spark become a fire."
- FRA_rev_spr:0 "Ignite The Revolution In The USA"
+ FRA_rev_spr:0 "Ignite The Revolution In The Spanish Empire"
  FRA_rev_spr_desc:0 "The seed of the revolution has been planted, now it is time to make that spark become a fire."
- FRA_rev_aus:0 "Ignite The Revolution In The USA"
+ FRA_rev_aus:0 "Ignite The Revolution In The Austrian Empire"
  FRA_rev_aus_desc:0 "The seed of the revolution has been planted, now it is time to make that spark become a fire."
- FRA_rev_pru:0 "Ignite The Revolution In The USA"
+ FRA_rev_pru:0 "Ignite The Revolution In Prussia"
  FRA_rev_pru_desc:0 "The seed of the revolution has been planted, now it is time to make that spark become a fire."
- FRA_rev_swe:0 "Ignite The Revolution In The USA"
+ FRA_rev_swe:0 "Ignite The Revolution In Sweden"
  FRA_rev_swe_desc:0 "The seed of the revolution has been planted, now it is time to make that spark become a fire."
- FRA_rev_sov:0 "Ignite The Revolution In The USA"
+ FRA_rev_sov:0 "Ignite The Revolution In The Russian Empire"
  FRA_rev_sov_desc:0 "The seed of the revolution has been planted, now it is time to make that spark become a fire."
  FRA_rev_knows_no_borders:0 "The Revolution Knows No Borders"
  FRA_rev_knows_no_borders_desc:0 "We have taken the revolution to Europe, now we must take it to the hole world!"
