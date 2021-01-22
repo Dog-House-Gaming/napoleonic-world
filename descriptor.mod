@@ -1,4 +1,4 @@
-version="2.5.2"
+version="3.0"
 name="Napoleonic World"
 tags={
 	"Alternative History"
