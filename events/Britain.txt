@@ -8,6 +8,8 @@ country_event = {
 	picture = GFX_report_event_eng_mosley_speech
 	
 	is_triggered_only = yes
+	fire_only_once = yes
+	
 	
 	option = {
 		name = britain.1.a
@@ -42,7 +44,7 @@ country_event = {
 	title = britain.2.t
 	desc = britain.2.d
 	picture = GFX_report_event_generic_rally
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -180,7 +182,7 @@ country_event = {
 	title = britain.3.t
 	desc = britain.3.d
 	picture = GFX_report_event_spr_anarchists2
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -231,7 +233,7 @@ country_event = {
 	title = britain.4.t
 	desc = britain.4.d
 	picture = GFX_report_event_generic_sign_treaty1
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -312,7 +314,7 @@ country_event = {
 	title = britain.5.t
 	desc = britain.5.d
 	picture = GFX_report_event_generic_sign_treaty2
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -346,7 +348,7 @@ country_event = {
 	title = britain.6.t
 	desc = britain.6.d
 	picture = GFX_report_event_generic_parliament
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -421,7 +423,7 @@ country_event = {
 	title = britain.7.t
 	desc = britain.7.d
 	picture = GFX_report_event_generic_parliament
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -510,7 +512,7 @@ country_event = {
 	title = britain.8.t
 	desc = britain.8.d
 	picture = GFX_report_event_generic_parliament
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -599,7 +601,7 @@ country_event = {
 	title = britain.9.t
 	desc = britain.9.d
 	picture = GFX_report_event_generic_parliament
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -684,7 +686,7 @@ country_event = {
 	title = britain.10.t
 	desc = britain.10.d
 	picture = GFX_report_event_generic_parliament
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -773,7 +775,7 @@ country_event = {
 	title = britain.11.t
 	desc = britain.11.d
 	picture = GFX_report_event_generic_funeral
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
