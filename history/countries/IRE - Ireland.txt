@@ -65,16 +65,16 @@ set_politics = {
 
 	
 	
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1933.1.24"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-		democratic = 98
-		fascism = 1
-		communism = 1
-		neutrality = 0
+		democratic = 30
+		fascism = 10
+		communism = 10
+		neutrality = 50
 	}
 1939.1.1 = {
 	set_politics = {
@@ -133,13 +133,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "William Norton"
-	desc = "POLITICS_JAMES_LARKIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
+	name = "George III"
+	desc = "POLITICS_GEORGE_III_DESC"
+	picture = "Portrait_England_George_III.dds"
+	expire = "1938.1.1"
 	ideology = centrism
 	traits = {
-		#
+
 	}
 }
 

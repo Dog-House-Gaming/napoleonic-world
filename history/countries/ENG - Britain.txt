@@ -32,16 +32,18 @@ set_technology = {
 
 
 
-#add_ideas = {
-	#stiff_upper_lip
-	#ENG_the_war_to_end_all_wars
-	#george_v
-#}
+add_ideas = {
+	eng_home_industrial_revolution_1
+	eng_scottish_enlightenment
+	eng_naval_hegemony
+	eng_william_pitt
+}
 
 set_convoys = 800
 
 # DIPLOMACY
 puppet = HAN
+puppet = IRE
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -137,7 +139,7 @@ create_country_leader = {
 	expire = "1938.1.1"
 	ideology = centrism
 	traits = {
-		stout_defender
+		autocratic_imperialist
 	}
 }
 
@@ -152,16 +154,16 @@ create_country_leader = {
 #	}
 #}
 
-#create_country_leader = {
-#	name = "George III 3"
-#	desc = "POLITICS_GEORGE_III_DESC"
-#	picture = "Portrait_England_George_III.dds"
-#	expire = "1965.1.1"
-#	ideology = fascism_ideology
-#	traits = {
-#
-#	}
-#}
+create_country_leader = {
+	name = "George III "
+	desc = "POLITICS_GEORGE_III_DESC"
+	picture = "Portrait_England_George_III.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		autocratic_imperialist
+	}
+}
 
 #create_country_leader = {
 #	name = "George III"
