@@ -1,1 +1,817 @@
-﻿ 
+﻿add_namespace = britain
+
+#Acts Of Union
+country_event = {
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.1.a
+		ENG = {
+			annex_country = {
+				target = IRE
+				transfer_troops = yes
+			}
+			add_ideas = {
+				eng_union_act
+			}
+			set_cosmetic_tag = UKI_UNIFIED
+		}
+		119 = {
+				add_core_of = ENG
+			}
+		134 = {
+			add_core_of = ENG
+		}
+		113 = {
+			add_core_of = ENG
+		}
+		135 = {
+			add_core_of = ENG
+		}
+	}
+} 
+
+#Topple The Monarchy
+country_event = {
+	id = britain.2
+	title = britain.2.t
+	desc = britain.2.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.2.a
+		ENG = {
+			add_stability = -0.10
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.10
+			}
+			if = {
+			limit = {
+				has_idea = eng_william_pitt
+			}
+			create_country_leader = {
+				name = "William Pitt"
+				desc = "POLITICS_WILLIAM_PIT_DESC"
+				picture = "Portrait_England_William_Pitt.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			}
+			swap_ideas = {
+				remove_idea = eng_william_pitt
+				add_idea = eng_george_iii
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_henry_addington
+			}
+			create_country_leader = {
+				name = "Henry Addington"
+				desc = "POLITICS_HENRY_ADDINGTON_DESC"
+				picture = "Portrait_England_Henry_Addington.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			}
+			swap_ideas = {
+				remove_idea = eng_henry_addington
+				add_idea = eng_george_iii
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_william_grenville
+			}
+			create_country_leader = {
+				name = "William Grenville"
+				desc = "POLITICS_WILLIAM_GRENVILLE_DESC"
+				picture = "Portrait_England_William_Grenville.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					whig
+				}
+			}
+			swap_ideas = {
+				remove_idea = eng_william_grenville
+				add_idea = eng_george_iii
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_william_cavendish
+			}
+			create_country_leader = {
+				name = "William Cavendish"
+				desc = "POLITICS_WILLIAM_CAVENDISH_DESC"
+				picture = "Portrait_England_William_Cavendish.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			}
+			swap_ideas = {
+				remove_idea = eng_william_cavendish
+				add_idea = eng_george_iii
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_spencer_perceval
+			}
+			create_country_leader = {
+				name = "Spencer Perceval"
+				desc = "POLITICS_SPENCER_PERCEVAL_DESC"
+				picture = "Portrait_England_Spencer_Perceval.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			}
+			swap_ideas = {
+				remove_idea = eng_spencer_perceval
+				add_idea = eng_george_iii
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_robert_jenkinson
+			}
+			create_country_leader = {
+				name = "Robert Jenkinson"
+				desc = "POLITICS_ROBERT_JENKINSON_DESC"
+				picture = "Portrait_England_Robert_Jenkinson.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			}
+			swap_ideas = {
+				remove_idea = eng_robert_jenkinson
+				add_idea = eng_george_iii
+			}
+		}
+		set_politics = {
+				ruling_party = democratic
+		}
+		}
+	}
+} 
+
+#Revolution!
+country_event = {
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	picture = GFX_report_event_spr_anarchists2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.3.a
+		ENG = {
+			set_politics = {
+				ruling_party = communism
+			}
+			remove_ideas = {
+				eng_george_iii
+			}
+			start_civil_war = {
+				ideology = democratic
+				size = 0.6
+				states = {
+				}
+			}
+		}
+	}
+	option = {
+		name = britain.3.b
+		ENG = {
+			set_politics = {
+				ruling_party = communism
+			}
+			remove_ideas = {
+				eng_george_iii
+			}
+			add_stability = -0.10
+			add_war_support = 0.10
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			start_civil_war = {
+				ideology = democratic
+				size = 0.4
+				states = {
+				}
+			}
+		}
+	}
+} 
+
+#Abolish The Congress
+country_event = {
+	id = britain.4
+	title = britain.4.t
+	desc = britain.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.4.a
+		ENG = {
+			set_country_leader_ideology = fascism_ideology
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_stability = -0.10
+			add_war_support = 0.10
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			start_civil_war = {
+				ideology = democratic
+				size = 0.4
+				states = {
+				}
+			}
+		if = {
+			limit = {
+				has_idea = eng_william_pitt
+			}
+			remove_ideas = {
+				eng_william_pitt
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_henry_addington
+			}
+			remove_ideas = {
+				eng_henry_addington
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_william_grenville
+			}
+			remove_ideas = {
+				eng_william_grenville
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_william_cavendish
+			}
+			remove_ideas = {
+				eng_william_cavendish
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_spencer_perceval
+			}
+			remove_ideas = {
+				eng_spencer_perceval
+			}
+		}
+		if = {
+			limit = {
+				has_idea = eng_robert_jenkinson
+			}
+			remove_ideas = {
+				eng_robert_jenkinson
+			}
+		}
+		}
+	}
+	
+} 
+
+#The Madness Of King George
+country_event = {
+	id = britain.5
+	title = britain.5.t
+	desc = britain.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1801.1.1
+		country_exists = ENG
+		tag = ENG
+		ENG = {
+			has_government = neutrality
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	option = {
+		name = britain.5.a
+		ENG = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.15
+			}
+			add_country_leader_trait = mad_king
+		}
+	}
+} 
+
+#Change PM 17 3 1801
+country_event = {
+	id = britain.6
+	title = britain.6.t
+	desc = britain.6.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1801.3.17
+		country_exists = ENG
+		tag = ENG
+		ENG = {
+		AND = {
+			NOT = { has_government = communism }
+			NOT = { has_government = fascism }
+			}
+		}
+	}
+	
+	#TORIES
+	option = {
+		name = britain.6.a
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				swap_ideas = {
+					remove_idea = eng_william_pitt
+					add_idea = eng_henry_addington
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+				create_country_leader = {
+				name = "Henry Addington"
+				desc = "POLITICS_HENRY_ADDINGTON_DESC"
+				picture = "Portrait_England_Henry_Addington.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			} 
+			}
+		}
+	}
+	
+	#WHIGS
+	option = {
+		name = britain.6.b
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				swap_ideas = {
+					remove_idea = eng_william_pitt
+					add_idea = eng_william_grenville
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+			create_country_leader = {
+				name = "William Grenville"
+				desc = "POLITICS_WILLIAM_GRENVILLE_DESC"
+				picture = "Portrait_England_William_Grenville.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					whig
+				}
+			}
+			}
+		}
+	}
+}
+#Change PM 10 5 1804
+country_event = {
+	id = britain.7
+	title = britain.7.t
+	desc = britain.7.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1804.5.10
+		country_exists = ENG
+		tag = ENG
+		ENG = {
+			NOT = { has_government = communism }
+			NOT = { has_government = fascism }
+		}
+	}
+	
+	#TORIES
+	option = {
+		name = britain.7.a
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				swap_ideas = {
+					remove_idea = eng_william_grenville
+					add_idea = eng_william_pitt
+				}
+				}
+				if = {
+					limit = { has_idea = eng_henry_addington }
+				swap_ideas = {
+					remove_idea = eng_henry_addington
+					add_idea = eng_william_pitt
+				}
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+				create_country_leader = {
+				name = "William Pitt"
+				desc = "POLITICS_WILLIAM_PITT_DESC"
+				picture = "Portrait_England_William_Pitt.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			} 
+			}
+		}
+	}
+	
+	#WHIGS
+	option = {
+		name = britain.7.b
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				}
+				if = {
+					limit = { has_idea = eng_henry_addington }
+				swap_ideas = {
+					remove_idea = eng_henry_addington
+					add_idea = eng_william_grenville
+				}
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+			create_country_leader = {
+				name = "William Grenville"
+				desc = "POLITICS_WILLIAM_GRENVILLE_DESC"
+				picture = "Portrait_England_William_Grenville.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					whig
+				}
+			}
+			}
+		}
+	}
+}
+#Change PM 11 2 1806
+country_event = {
+	id = britain.8
+	title = britain.8.t
+	desc = britain.8.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1806.2.11
+		country_exists = ENG
+		tag = ENG
+		ENG = {
+			NOT = { has_government = communism }
+			NOT = { has_government = fascism }
+		}
+	}
+	
+	#TORIES
+	option = {
+		name = britain.8.a
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				swap_ideas = {
+					remove_idea = eng_william_grenville
+					add_idea = eng_william_cavendish
+				}
+				}
+				if = {
+					limit = { has_idea = eng_william_pitt }
+				swap_ideas = {
+					remove_idea = eng_william_pitt
+					add_idea = eng_william_cavendish
+				}
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+				create_country_leader = {
+				name = "William Cavendish"
+				desc = "POLITICS_WILLIAM_CAVENDISH_DESC"
+				picture = "Portrait_England_William_Cavendish.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			} 
+			}
+		}
+	}
+	
+	#WHIGS
+	option = {
+		name = britain.8.b
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				}
+				if = {
+					limit = { has_idea = eng_william_pitt }
+				swap_ideas = {
+					remove_idea = eng_william_pitt
+					add_idea = eng_william_grenville
+				}
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+			create_country_leader = {
+				name = "William Grenville"
+				desc = "POLITICS_WILLIAM_GRENVILLE_DESC"
+				picture = "Portrait_England_William_Grenville.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					whig
+				}
+			}
+			}
+		}
+	}
+}
+#Change PM 31 3 1807
+country_event = {
+	id = britain.9
+	title = britain.9.t
+	desc = britain.9.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1807.3.31
+		country_exists = ENG
+		tag = ENG
+		ENG = {
+			NOT = { has_government = communism }
+			NOT = { has_government = fascism }
+		}
+	}
+	
+	#TORIES
+	option = {
+		name = britain.9.a
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				swap_ideas = {
+					remove_idea = eng_william_grenville
+					add_idea = eng_william_cavendish
+				}
+				}
+				if = {
+					limit = { has_idea = eng_william_cavendish }
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+				create_country_leader = {
+				name = "William Cavendish"
+				desc = "POLITICS_WILLIAM_CAVENDISH_DESC"
+				picture = "Portrait_England_William_Cavendish.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			} 
+			}
+		}
+	}
+	
+	#WHIGS
+	option = {
+		name = britain.9.b
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				}
+				if = {
+					limit = { has_idea = eng_william_cavendish }
+				swap_ideas = {
+					remove_idea = eng_william_cavendish
+					add_idea = eng_william_grenville
+				}
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+			create_country_leader = {
+				name = "William Grenville"
+				desc = "POLITICS_WILLIAM_GRENVILLE_DESC"
+				picture = "Portrait_England_William_Grenville.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					whig
+				}
+			}
+			}
+		}
+	}
+}    
+#Change PM 4 10 1809
+country_event = {
+	id = britain.10
+	title = britain.10.t
+	desc = britain.10.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1809.10.4
+		country_exists = ENG
+		tag = ENG
+		ENG = {
+			NOT = { has_government = communism }
+			NOT = { has_government = fascism }
+		}
+	}
+	
+	#TORIES
+	option = {
+		name = britain.10.a
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				swap_ideas = {
+					remove_idea = eng_william_grenville
+					add_idea = eng_spencer_perceval
+				}
+				}
+				if = {
+					limit = { has_idea = eng_william_cavendish }
+					swap_ideas = {
+						remove_idea = eng_william_cavendish
+						add_idea = eng_spencer_perceval
+					}
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+				create_country_leader = {
+				name = "Spencer Perceval"
+				desc = "POLITICS_SPENCER_PERCEVAL_DESC"
+				picture = "Portrait_England_Spencer_Perceval.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			} 
+			}
+		}
+	}
+	
+	#WHIGS
+	option = {
+		name = britain.10.b
+		ENG = {
+			if = {
+				limit = { has_government = neutrality }
+				if = {
+					limit = { has_idea = eng_william_grenville }
+				}
+				if = {
+					limit = { has_idea = eng_william_cavendish }
+				swap_ideas = {
+					remove_idea = eng_william_cavendish
+					add_idea = eng_william_grenville
+				}
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+			create_country_leader = {
+				name = "William Grenville"
+				desc = "POLITICS_WILLIAM_GRENVILLE_DESC"
+				picture = "Portrait_England_William_Grenville.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					whig
+				}
+			}
+			}
+		}
+	}
+}
+#Change PM 5 5 1812 Spence is Murdered
+country_event = {
+	id = britain.11
+	title = britain.11.t
+	desc = britain.11.d
+	picture = GFX_report_event_generic_funeral
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1812.5.5
+		country_exists = ENG
+		tag = ENG
+		has_idea = eng_spencer_perceval
+		ENG = {
+			NOT = { has_government = communism }
+			NOT = { has_government = fascism }
+		}
+	}
+	
+	#TORIES
+	option = {
+		name = britain.11.a
+		ENG = {
+			add_stability = -0.05
+			if = {
+				limit = { has_government = neutrality }
+				swap_ideas = {
+					remove_idea = eng_spencer_perceval
+					add_idea = eng_robert_jenkinson
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+				create_country_leader = {
+				name = "Robert Jenkinson"
+				desc = "POLITICS_ROBERT_JENKINSON_DESC"
+				picture = "Portrait_England_Robert_Jenkinson.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					tory
+				}
+			} 
+			}
+		}
+	}
+}
