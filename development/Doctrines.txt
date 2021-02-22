@@ -1,0 +1,102 @@
+Each doctrine should have 16 techs
+
+Global Logisitics # British style
+Vast civilian support network
+medium damage, medium defence, high support, low speed
+Rigid close order formations (Great against Cavalry and Infantry, but weak against cannons)
+Light cavalry focus, Heavy infantry focus and medium artillery focus
+Speed of arrival, not speed of attack
+Strong Evasion
+
+special tactics:
+Officer Picking (needs rifles, but focuses on taking out officers)
+Rapid Fire
+Officer Control
+Planned Strike
+Feign Attack
+Elastic Defence
+
+
+Grand Armee # French Style Splits into Duchy of Warsaw style
+Focused on speed and supply
+Highly trained (increased training time)
+Manpower bonuses
+Focus on Artillery and Cavalry
+Heavy Units, suffers on light
+High damage, weak defence
+High Tactical attacks
+Weak against ambushes and light infantry
+Smaller units
+
+Special tactics:
+March Column
+Attack Column #If March Column succeeds it will lead into this
+Mixed Order
+Open Order
+Flying Battery
+Grand Battery
+Boar's Head
+Indirect Approach
+Central Position
+Overwhelming Fire
+
+Elite Army # Prussian Style 
+High Moral and Organisation
+High damage, weak defence
+Expensive Units
+Infantry/Cavalry heavy unit composition
+Poor supply
+Good Shock units
+
+Special tactics:
+Planned Strike
+Attack Column
+Half-company fire
+Retreating fire
+Hedge Fire
+Overwhelming Fire
+
+Mass Firepower # Russian Style
+High Moral, Low Organisation
+High defence, Low attack
+Strong Artillery, Weak everything else
+Strong Defence on Artillery
+Cheap units
+Low supply need
+Great Weather Traits
+Mixed Army
+
+Special Tactics:
+Rapid Fire
+Engulfment
+Unorganised Assault
+Weak against Artillery, strong against Cavalry
+Grand Battery
+Defensive Battery
+
+Traditionalism # Austria
+Large army
+Artillery and Infantry Focus
+Strong Light Infantry
+Weak main force
+Balanced attack and defence
+Strong terrain bonuses
+
+Special Tactics:
+Mass Charge
+Guerilla Tactics
+Backhand Blow
+Skirmisher Support
+Multiregimental Cavalry Assault
+Close Formation
+Lay Down Attack #Reduces casualties from Artillery attacks
+
+
+
+
+
+
+
+
+
+

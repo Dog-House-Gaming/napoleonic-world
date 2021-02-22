@@ -1,0 +1,114 @@
+6 tiers of focus tree priority. This defines which trees come first in number of decisions, events and focuses. In case of a design decision, higher priority trees take precedence (I.E if France wants to annex land that an independent Luxembourg wants. France will always take precedence.)
+Listed top to bottom in order of priority.
+
+Tier 1. - Super Trees. These will be the largest trees in the game and be the main driving force behind the wars and decisions in the game. In the end they should have around 500 potential events, decisions and focuses. (I.E. Germany in main game.) These will have unique features.
+Republic of France
+United Kingdom
+Habsburg Empire
+Russian Empire
+
+Tier 2. - Majors. These are big nations but not the driving force behind the wars. They should aim to have around 250-300 events, decisions, and focuses. (I.E France in main game)
+Prussia
+Sweden
+Kingdom of Spain
+Ottoman Empire
+Egypt
+Sardinia
+
+Tier 3. - Impactful Minors. These nations while not having a huge part of the war, were still impactful and had a medium role in the wars of the coallition. Aim for 100 - 200 events, decisions, and focuses. (Like Romania in the main game.)
+Poland-Lithuania
+United States
+New Spain
+Portugal
+Hannover
+Bavaria
+Netherlands
+Switzerland
+Denmark-Norway
+Brazil
+Three Canadas
+Diriyah
+Venice
+British East India Company
+
+Tier 4. - Interesting Minors. These nations won't impact the main war completely (though will have options) they will however have interesting side goals and will act as a sideshow. Aim for 50 - 200 events, decisions, and focuses. (Like Czechoslovakia in the main game.)
+Papal states
+The Knights
+Qing Dynasty
+Chinese Vassal States
+Wallachia/Moldova
+Belgium
+Lubeck
+Persian Civil war
+Maratha Confeds
+Mughal Empire
+Mysore
+Hyderabad
+Durrani Empire
+Kingdom of Vietnam
+Japan and vassals
+Ryukyu
+Australia
+Oman
+Zulu
+Cape Colony
+Peru
+Colombia
+Venezuela
+Argentina
+Chile
+Ottoman Elayets (not Egypt)
+Hawaii wars
+Genoa
+Poljicka
+San Marino (Memes)
+Georgian states
+Ethiopian Princely war
+
+Tier 5. - Normal Minors. These nations don't have the full potential of the interesting minors. Low priority. Aim for 20 - 50 decisions, focuses and events. Will tend to share focus trees. (Like Tibet in main game)
+Rest of Italian Minors
+HRE states
+Montenegro
+Morocco
+Courland
+Native American States
+Azeri States
+Nepal
+Bhutan
+Sri Lanka
+Rest of Africa
+Korea
+Monaco
+Liectenstein
+Central Asian steppe states
+Yemen
+Xhosa
+Indonesian factions
+
+Tier 6. -  Breakaway states. These nations don't exist at the start and will be last priority. Aim for 5 - 20 decisions (some fun ones can go over), focuses and events.  (Like Botswana)
+Serbia (Actually broke free in game)
+Hungary
+Scotland
+Cossacks
+Greek States
+Ireland
+Finland
+Louisiana
+Brittany
+Aragon
+Norway
+Jan Mayen (Memes)
+Crimean Khanate
+Wales
+Bulgaria
+Croatia
+Brandenburg
+Galicia-Lodmerez
+Iceland
+
+Extras. These are Easter Eggs, they aren't official and just need to be as fufilled as possible. No guidelines for these, but don't bring in unfinished and small ones.
+Martians
+American Union State
+
+For first release, all tier 1's must be finished. Tier 2's must be mostly finished. At least 2 tier 3's must be satisfactory. 5 tier 4's must be semi-complete.
+

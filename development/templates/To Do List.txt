@@ -1,0 +1,6 @@
+Change the font colour from White to Gold
+Finish rehauling the interface
+
+
+add easter eggs:
+Jojo Easter egg, allowing for the pillarmen to appear
