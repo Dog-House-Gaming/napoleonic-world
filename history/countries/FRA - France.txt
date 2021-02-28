@@ -131,104 +131,200 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Napoléon Bonaparte"
 	picture = "Portrait_France_Napoleon_Bonaparte.dds"
-	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer dictator }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
+	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer expert_delegator }
+	skill = 7
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "André Masséna"
+	picture = "Portrait_France_Massena.dds"
+	traits = { expert_delegator brilliant_strategist trickster skilled_staffer organisational_leader}
+	skill = 6
+	attack_skill = 5
+	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 3
 }
 
 create_field_marshal = {
+	name = "Jean Victor Marie Moreau"
+	picture = "Portrait_France_Moreau.dds"
+	traits = { brilliant_strategist expert_improviser trickster organisational_leader trait_engineer organizer}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+}
+									#COMMANDERS
+create_corps_commander = {
 	name = "Jean-de-Dieu Soult"
 	picture = "Portrait_France_Soult.dds"
-	traits = { brilliant_strategist infantry_leader media_personality }
+	traits = { media_personality organizer career_officer }
 	skill = 4
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
 }
 
-create_field_marshal = {
-	name = "Louis-Nicolas Davout"
-	picture = "Portrait_France_Davout.dds"
-	traits = { cavalry_leader aggressive_assaulter skilled_staffer brilliant_strategist }
-	skill = 3
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
+create_corps_commander = {
+	name = "Jean-Baptiste Bernadotte"
+	picture = "Portrait_France_Bernadotte.dds"
+	traits = { skilled_staffer organizer trickster organization first brilliant_strategist harsh_leader }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
 }
 
-create_field_marshal = {
+create_corps_commander = {
+	name = "August de Marmont"
+	picture = "Portrait_France_Marmont.dds"
+	traits = { brilliant_strategist trickster }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Laurent de Gouvion Saint-Cyr"
+	picture = "Portrait_France_SaintCyr.dds"
+	traits = { inflexible_strategist organizer trait_ambusher }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Claude Victor-Perrin"
+	picture = "Portrait_France_Victor.dds"
+	traits = { Organizer inflexable_strategist infantry_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Jean-de-Dieu Soult"
+	picture = "Portrait_France_Soult.dds"
+	traits = { media_personality organizer career_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Étienne MacDonald"
+	picture = "Portrait_France_Macdonald.dds"
+	traits = { organizer adaptable career_officer }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 6
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Michel Ney"
+	picture = "Portrait_France_Ney.dds"
+	traits = { cavalry_officer cavalry_leader cavalry_expert trickster inspirational_leader winter_specialst }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Nicolas Oudinot"
+	picture = "Portrait_France_Oudinot.dds"
+	traits = { organizer infantry_leader infantry_expert trait_reckless }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Louis-Gabriel Suchet"
+	picture = "Portrait_France_Suchet.dds"
+	traits = { organizer brilliant_strategist organisational_leader trickster improvisation_expert skilled_staffer}
+	skill = 6
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 2
+}
+
+#create_corps_commander = {
+#	name = "Louis-Nicolas Davout"
+#	picture = "Portrait_France_Davout.dds"
+#	traits = {  }
+#	skill = 6
+#	attack_skill = 
+#	defense_skill = 
+#	planning_skill = 
+#	logistics_skill = 
+#}
+
+create_corps_commander = {
 	name = "Joachim Murat"
 	picture = "Portrait_France_Murat.dds"
-	traits = { army_cavalry_3 cavalry_leader aggressive_assaulter reckless }
-	skill = 2
-	attack_skill = 1
+	traits = { cavalry_officer cavalry_leader aggressive_assaulter trickster offensive_doctrine }
+	skill = 4
+	attack_skill = 6
 	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 1
+	logistics_skill = 4
 }
 
-create_field_marshal = {
-	name = "Jean Lannes"
-	picture = "Portrait_France_Lannes.dds"
-	traits = { brilliant_strategist aggressive_assaulter infantry_leader }
-	skill = 2
-	attack_skill = 1
+#create_corps_commander = {
+#	name = "Jean Lannes"
+#	picture = "Portrait_France_Lannes.dds"
+#	traits = {  }
+#	skill = 6
+#	attack_skill = 
+#	defense_skill = 
+#	planning_skill = 
+#	logistics_skill = 
+#}
+
+create_corps_commander = {
+	name = "Jean-Baptiste Jourdan"
+	picture = "Portrait_France_Jourdan.dds"
+	traits = { war_hero }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 6
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Bon-Adrien Jeannot de Moncey"
+	picture = "Portrait_France_Moncey.dds"
+	traits = { trait_cautious infantry_leader }
+	skill = 3
+	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
 }
-
-#create_field_marshal = {
-#	name = "Louis-Alexandre Berthier"
-#	picture = "Portrait_France_Berthier.dds"
-#	traits = {  }
-#	skill = 2
-#	attack_skill = 1
-#	defense_skill = 3
-#	planning_skill = 2
-#	logistics_skill = 1
-#}
-#
-#
-#create_field_marshal = {
-#	name = "Bon-Adrien Jeannot de Moncey"
-#	picture = "Portrait_France_Moncey.dds"
-#	traits = {  }
-#	skill = 2
-#	attack_skill = 1
-#	defense_skill = 3
-#	planning_skill = 2
-#	logistics_skill = 1
-#}
-#
-#create_field_marshal = {
-#	name = "Jean-Baptiste Jourdan"
-#	picture = "Portrait_France_Jourdan.dds"
-#	traits = {  }
-#	skill = 2
-#	attack_skill = 1
-#	defense_skill = 3
-#	planning_skill = 2
-#	logistics_skill = 1
-#}
-#
-#create_field_marshal = {
-#	name = "André Masséna"
-#	picture = "Portrait_France_Massena.dds"
-#	traits = {  }
-#	skill = 2
-#	attack_skill = 1
-#	defense_skill = 3
-#	planning_skill = 2
-#	logistics_skill = 1
-#}
-
-
 
 
 ### Ship Variants ###
