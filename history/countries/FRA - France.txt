@@ -306,6 +306,17 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "François Joseph Lefebvre"
+	picture = "Portrait_France_Lefebvre.dds"
+	traits = { harsh_leader infantry_leader infantry_expert infantry_officer old_guard }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
 	name = "Guillaume Brune"
 	picture = "Portrait_France_Brune.dds"
 	traits = { trait_looter politically_connected }
