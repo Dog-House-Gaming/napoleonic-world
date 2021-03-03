@@ -2,9 +2,6 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
-light_air
-	medium_air
-	heavy_air
 	armor
 	cat_light_armor
 	cat_medium_armor
@@ -19,7 +16,6 @@ light_air
 	industry
 	electronics
 	land_doctrine
-	air_doctrine
 	naval_doctrine
 	strategic_destruction_tree
 	battlefield_support_tree
@@ -208,11 +204,9 @@ technology_folders = {
 	#guerrila_doctrine_folder
 	#social_advancement_folder
 	#primitive_weapons_folder
-	air_doctrine_folder
-	air_techs_folder
+	#air_doctrine_folder
+	#air_techs_folder
 	electronics_folder
-	
+
 	#secret_weapons_folder
 }
-
- 
