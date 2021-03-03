@@ -26,8 +26,6 @@ state={
 				naval_base = 8
 
 			}
-			air_base = 3
-
 		}
 		add_core_of = GER
 		1939.1.1 = {
