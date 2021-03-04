@@ -128,6 +128,7 @@ create_country_leader = {
 						}
 				}
 											#MARSHALS
+											
 create_field_marshal = {
 	name = "Napoléon Bonaparte"
 	picture = "Portrait_France_Napoleon_Bonaparte.dds"
@@ -194,7 +195,18 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 									#COMMANDERS
-									
+															
+create_corps_commander = {
+	name = "Louis-Nicolas Davout"
+	picture = "Portrait_France_Davout.dds"
+	traits = { organizer brilliant_strategist skilled_staffer trickster harsh_leader organisational_leader unyielding_defender }
+	skill = 7
+	attack_skill = 6
+	defense_skill = 8
+	planning_skill = 6
+	logistics_skill = 8
+}
+
 create_corps_commander = {
 	name = "Louis-Gabriel Suchet"
 	picture = "Portrait_France_Suchet.dds"
@@ -228,32 +240,21 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
-#create_corps_commander = {
-#	name = "Louis-Nicolas Davout"
-#	picture = "Portrait_France_Davout.dds"
-#	traits = {  }
-#	skill = 6
-#	attack_skill = 
-#	defense_skill = 
-#	planning_skill = 
-#	logistics_skill = 
-#}
-
-#create_corps_commander = {
-#	name = "Jean Lannes"
-#	picture = "Portrait_France_Lannes.dds"
-#	traits = {  }
-#	skill = 6
-#	attack_skill = 
-#	defense_skill = 
-#	planning_skill = 
-#	logistics_skill = 
-#}
+create_corps_commander = {
+	name = "Jean Lannes"
+	picture = "Portrait_France_Lannes.dds"
+	traits = { organizer trickster trait_reckless fortress_buster brilliant_strategist aggressive_assaulter inspirational_leader }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 4
+}
 
 create_corps_commander = {
 	name = "Jean-Baptiste Bernadotte"
 	picture = "Portrait_France_Bernadotte.dds"
-	traits = { skilled_staffer organizer trickster organization_first brilliant_strategist harsh_leader }
+	traits = { skilled_staffer organizer trickster organisational_leadertional_leader brilliant_strategist harsh_leader }
 	skill = 5
 	attack_skill = 5
 	defense_skill = 4
@@ -363,7 +364,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Pierre Augereau"
 	picture = "Portrait_France_Augereau.dds"
-	traits = { trait_looter aggreisive_assaulter cavalry_leader}
+	traits = { trait_looter aggressive_assaulter cavalry_leader}
 	skill = 4
 	attack_skill = 5
 	defense_skill = 3
@@ -403,18 +404,62 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
+									#ADMIRALS
 
-create_corps_commander = {
-	name = "Bon-Adrien Jeannot de Moncey"
-	picture = "Portrait_France_Moncey.dds"
-	traits = { career_officer trait_cautious infantry_leader }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
+create_navy_leader = {
+	name = "Louis-René Levassor de Latouche Tréville"
+	picture = "Portrait_France_Treville.dds"
+	traits = { career_officer naval_lineage superior_tactician ironside blockade_runner ground_pounder spotter }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 6
+	maneuvering_skill = 6
+	coordination_skill = 7
 }
 
+create_navy_leader = {
+	name = "Louis-Thomas Villaret de Joyeuse"
+	picture = "Portrait_France_Joyeuse.dds"
+	traits = { politically_connected superior_tactician blockade_runner spotter fleet_protector }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 7
+	maneuvering_skill = 6
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Jean Gaspard de Vence"
+	picture = "Portrait_France_Vence.dds"
+	traits = { spotter bold fleet_protector }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Pierre César Charles de Sercey"
+	picture = "Portrait_France_Sercey.dds"
+	traits = { seawolf lone_wolf spotter }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Pierre-Charles Villeneuve"
+	picture = "Portrait_France_Villeneuve.dds"
+	traits = { spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 2
+}
 
 ### Ship Variants ###
 
