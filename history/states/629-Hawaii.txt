@@ -9,7 +9,6 @@ state={
 		add_core_of = HAW
 		buildings = {
 			infrastructure = 3
-			air_base = 5
 			4180 = {
 				naval_base = 10
 			}

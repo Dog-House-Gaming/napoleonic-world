@@ -11,7 +11,6 @@ state=
 		add_core_of = GUM
 		buildings = {
 			infrastructure = 3
-			air_base = 3
 			3995 = {
 				naval_base = 1
 

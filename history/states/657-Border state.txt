@@ -15,7 +15,6 @@ state={
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 3
-			air_base = 2
 		}
 		add_core_of = SOV
 	}

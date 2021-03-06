@@ -16,7 +16,6 @@ state={
 		owner = UCA
 		buildings = {
 			infrastructure = 3
-			air_base = 1
 			7669 = {
 				naval_base = 1
 			}
