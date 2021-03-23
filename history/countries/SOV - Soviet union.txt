@@ -108,8 +108,8 @@ add_namespace = {
 	name = "unit_leader_sov"
 	type = unit_leader
 }
-
-
+									#MARSHALS 
+						
 create_field_marshal = {
 	name = "Alexander Vasilyevich Suvorov"
 	picture = "Portrait_Russia_Suvorov.dds"
@@ -120,13 +120,14 @@ create_field_marshal = {
 	planning_skill = 7
 	logistics_skill = 7
 }
-
+									#COMMANDERS
+						
 create_corps_commander = {
 	name = "Mikhail Kutuzov"
 	picture = "Portrait_Russia_Kutuzov.dds"
 	traits = { career_officer trait_engineer trickster inflexible_strategist trait_reckless winter_specialist winter_expert skilled_staffer }
 	skill = 6
-	attack_skill = 5
+	attack_skill = 6
 	defense_skill = 6
 	planning_skill = 7
 	logistics_skill = 4
@@ -166,20 +167,55 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-name = "Alexander Petrovich Tormasov"
-picture = "Portrait_Russia_Tormasov.dds"
-traits = { cavalry_leader infantry_leader trickster organizer trickster }
-skill = 5
-attack_skill = 4
-defense_skill = 4
-planning_skill = 5
-logistics_skill = 2
+	name = "Aleksey Petrovich Yermolov"
+	picture = "Portrait_Russia_Yermolov.dds"
+	traits = { brilliant_strategist cavalry_leader trickster organizer trait_engineer fortress_buster }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 3
 
 }
+
+create_corps_commander = {
+	name = "Alexander Petrovich Tormasov"
+	picture = "Portrait_Russia_Tormasov.dds"
+	traits = { cavalry_leader infantry_leader trickster organizer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 2
+
+}
+
+create_corps_commander = {
+	name = "Nikolay Nikolayevich Raevsky"
+	picture = "Portrait_Russia_Raevsky.dds"
+	traits = { trait_reckless cavalry_officer organizer trickster inspirational_leader winter_specialist }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Matvei Ivanovich Platov"
+	picture = "Portrait_Russia_Platov.dds"
+	traits = { cavalry_officer cavalry_leader cavalry_expert trickster }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
 create_corps_commander = {
 	name = "Levin August von Bennigsen"
 	picture = "Portrait_Russia_Bennigsen.dds"
-	traits = { cavalry_officer organizer inflexible_strategist }
+	traits = { cavalry_officer organizer inflexible_strategist winter_specialist }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -197,9 +233,29 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 1
 }
+									#ADMIRALS
 
+create_navy_leader = {
+	name = "Fyodor Ushakov"
+	picture = "Portrait_Russia_Ushakov.dds"
+	traits = { ironside safety_first superior_tactician crisis_magician spotter ground_pounder }
+	skill = 8
+	attack_skill = 6
+	defense_skill = 5
+	maneuvering_skill = 7
+	coordination_skill = 7
+}
 
-
+create_navy_leader = {
+	name = "Dmitry Senyavin"
+	picture = "Portrait_Russia_Senyavin.dds"
+	traits = { naval_lineage crisis_magician ironside bold superior_tactician spotter big_guns_expert }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 6
+	coordination_skill = 3
+}
 
 
 ### Ship Variants ###
