@@ -1406,7 +1406,9 @@ focus_tree = {
 		x = 7
 		y = 2
 		cost = 10
-
+		ai_will_do = {
+			factor = 0
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1651,7 +1653,9 @@ focus_tree = {
 			NOT = {has_war_with = GER}
 		}
 		available_if_capitulated = yes
-
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 			type = puppet_wargoal_focus
@@ -1694,7 +1698,9 @@ focus_tree = {
 		x = 3
 		y = 2
 		cost = 10
-
+		ai_will_do = {
+			factor = 0
+		}
 		available_if_capitulated = yes
 		available = {
 			TUR = {exists = yes}
@@ -1743,7 +1749,9 @@ focus_tree = {
 		x = 7
 		y = 2
 		cost = 10
-
+		ai_will_do = {
+			factor = 0
+		}
 		available_if_capitulated = yes
 		available = {
 			SOV = {exists = yes}
@@ -1977,7 +1985,9 @@ focus_tree = {
 		x = 2
 		y = 4
 		cost = 10
-
+		ai_will_do = {
+			factor = 0
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {

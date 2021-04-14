@@ -618,9 +618,9 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = SWE
@@ -732,9 +732,9 @@ focus_tree = {
 		x = 2
 		y = 2
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = CHI
@@ -935,7 +935,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -1225,9 +1225,9 @@ focus_tree = {
 		x = 2
 		y = 4
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = ENG

@@ -1031,9 +1031,9 @@ focus_tree = {
 		x = -3
 		y = 4
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -1220,9 +1220,9 @@ focus_tree = {
 		x = 5
 		y = 3
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus

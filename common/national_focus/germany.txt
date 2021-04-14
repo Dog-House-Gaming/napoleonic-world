@@ -1,6 +1,5 @@
 focus_tree = {
 	id = german_focus
-	#Chaged now?
 	country = {
 		factor = 0
 		
@@ -9,7 +8,37 @@ focus_tree = {
 			tag = GER
 		}
 	}
-#
+	
+	focus = {
+		id = PRU_state_affairs
+		icon = GFX_focus_generic_self_management
+		x = 25
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = PRU_military_budget
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = PRU_state_affairs }
+		relative_position_id = PRU_state_affairs
+		x = -6
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pru_mil_budget
+		}
+	}
+#----------------------------------------INDUSTRY-----------------------------------------
 	focus = {
 		id = PRU_begin_industrialization
 		icon = GFX_goal_generic_production
@@ -858,12 +887,14 @@ focus_tree = {
 			 	add_research_slot = 1
 		}
 	}
-#### FOCUS COMPLETE ####
+	#---------------------------------------------MILITARY---------------------------------------------
 	focus = {
 		id = PRU_refit_the_army
 		icon = GFX_goal_generic_position_armies
-		x = 10
-		y = 0
+		prerequisite = { focus = PRU_military_budget }
+		relative_position_id = PRU_military_budget
+		x = -4
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -872,49 +903,7 @@ focus_tree = {
 			army_experience = 20
 		}
 	}
-#
-	focus = {
-		id = PRU_small_arms_technology
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = PRU_refit_the_army }
-		relative_position_id = PRU_refit_the_army
-		x = 2
-		y = 1
-		cost = 10
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-				add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-#
-	focus = {
-		id = PRU_artillery_technology
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = PRU_refit_the_army}
-		relative_position_id = PRU_refit_the_army
-		x = -2
-		y = 1
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-				add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 0.5
-				uses = 2
-				category = artillery
-			}
-		}
-	}
-#
 	focus = {
 		id = PRU_recruit_new_officers
 		icon = GFX_focus_generic_military_mission
@@ -974,62 +963,192 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRU_prussian_discipline
-		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = PRU_reform_bureocracy }
+		id = PRU_qual_inf
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = PRU_refit_the_army }
+		mutually_exclusive = { focus = PRU_quan_inf }
 		available = {
 			has_army_experience > 20
 		}
 		relative_position_id = PRU_refit_the_army
-		x = -1
-		y = 3
+		x = -4
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-				army_experience = -20
-				add_ideas = pru_prussian_discipline
-				add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = -20
+			add_ideas = pru_prussian_discipline
 		}
 	}
 	
 	focus = {
-		id = PRU_prussian_dragoons
-		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = PRU_reform_bureocracy }
+		id = PRU_quan_inf
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = PRU_refit_the_army }
+		mutually_exclusive = { focus = PRU_qual_inf }
 		available = {
 			has_army_experience > 20
 		}
 		relative_position_id = PRU_refit_the_army
-		x = 1
-		y = 3
+		x = -2
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-				army_experience = -20
-				add_ideas = pru_prussian_dragoons
-				add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = -20
+			add_ideas = pru_prussian_militarism
 		}
 	}
-#
+	
+	focus = {
+		id = PRU_qual_cav
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { 
+			focus = PRU_quan_inf
+			focus = PRU_qual_inf
+		}
+		mutually_exclusive = { focus = PRU_quan_cav }
+		available = {
+			has_army_experience > 20
+		}
+		relative_position_id = PRU_refit_the_army
+		x = -4
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = -20
+			add_ideas = pru_prussian_dragoons
+		}
+	}
+	
+	focus = {
+		id = PRU_quan_cav
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { 
+			focus = PRU_quan_inf
+			focus = PRU_qual_inf
+		}
+		mutually_exclusive = { focus = PRU_qual_cav }
+		available = {
+			has_army_experience > 20
+		}
+		relative_position_id = PRU_refit_the_army
+		x = -2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = -20
+			add_ideas = pru_expanded_cavalry
+		}
+	}
+	
+	focus = {
+		id = PRU_qual_guns
+		icon = GFX_focus_focus_fra_maquis
+		prerequisite = { focus = PRU_refit_the_army }
+		mutually_exclusive = { focus = PRU_quan_guns }
+		available = {
+			has_army_experience > 20
+		}
+		relative_position_id = PRU_refit_the_army
+		x = 4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = -20
+			add_ideas = pru_quality_guns
+		}
+	}
+	
+	focus = {
+		id = PRU_quan_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = PRU_refit_the_army }
+		mutually_exclusive = { focus = PRU_qual_guns }
+		available = {
+			has_army_experience > 20
+		}
+		relative_position_id = PRU_refit_the_army
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = -20
+			add_ideas = pru_cheap_guns
+		}
+	}
+	
+	focus = {
+		id = PRU_qual_art
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { 
+			focus = PRU_quan_guns
+			focus = PRU_qual_guns
+		}
+		mutually_exclusive = { focus = PRU_quan_art }
+		available = {
+			has_army_experience > 20
+		}
+		relative_position_id = PRU_refit_the_army
+		x = 4
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = -20
+			add_ideas = pru_quality_art
+		}
+	}
+	
+	focus = {
+		id = PRU_quan_art
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { 
+			focus = PRU_quan_guns
+			focus = PRU_qual_guns
+		}
+		mutually_exclusive = { focus = PRU_qual_art }
+		available = {
+			has_army_experience > 20
+		}
+		relative_position_id = PRU_refit_the_army
+		x = 2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = -20
+			add_ideas = pru_cheap_art
+		}
+	}
+	#---------------------------------------------NAVY---------------------------------------------
 	focus = {
 		id = PRU_naval_power
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 15
-		y = 0
+		prerequisite = { focus = PRU_military_budget }
+		relative_position_id = PRU_military_budget
+		x = 4
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1044,7 +1163,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = PRU_naval_power }
 		relative_position_id = PRU_naval_power
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 
@@ -1063,10 +1182,10 @@ focus_tree = {
 	focus = {
 		id = PRU_battleship_focus
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = PRU_destroyer_focus }
+		prerequisite = { focus = PRU_naval_power }
 		relative_position_id = PRU_naval_power
-		x = -1
-		y = 2
+		x = 2
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1084,10 +1203,10 @@ focus_tree = {
 	focus = {
 		id = PRU_naval_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = PRU_battleship_focus }
+		prerequisite = { focus = PRU_naval_power }
 		relative_position_id = PRU_naval_power
-		x = -1
-		y = 3
+		x = 0
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1105,10 +1224,12 @@ focus_tree = {
 	focus = {
 		id = PRU_supremacy_over_the_baltic
 		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = PRU_naval_power }
+		prerequisite = { focus = PRU_destroyer_focus }
+		prerequisite = { focus = PRU_naval_doctrine }
+		prerequisite = { focus = PRU_battleship_focus }
 		relative_position_id = PRU_naval_power
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1124,10 +1245,12 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = PRU_supremacy_over_the_baltic }
 		relative_position_id = PRU_naval_power
-		x = 1
-		y = 2
+		x = -1
+		y = 3
 		cost = 10
-
+		ai_will_do = {
+			factor = 0
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1142,14 +1265,16 @@ focus_tree = {
 	focus = {
 		id = PRU_conquer_sweden
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = PRU_conquer_hamburg }
+		prerequisite = { focus = PRU_supremacy_over_the_baltic }
 		relative_position_id = PRU_naval_power
 		x = 1
 		y = 3
 		cost = 10
 
 		available_if_capitulated = yes
-
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -1158,12 +1283,14 @@ focus_tree = {
 			}
 		}
 	}
-#### FOCUS COMPLETE ####
+#----------------------------------------POLITICS--------------------------------------
 	focus = {
 		id = PRU_political
 		icon = GFX_goal_generic_demand_territory
-		x = 21
-		y = 0
+		prerequisite = { focus = PRU_state_affairs }
+		relative_position_id = PRU_state_affairs
+		x = 6
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1183,7 +1310,7 @@ focus_tree = {
 		prerequisite = { focus = PRU_political }
 		mutually_exclusive = { focus = PRU_condemn_napoleon }
 		relative_position_id = PRU_political
-		x = -3
+		x = -2
 		y = 1
 		cost = 10
 
@@ -1191,6 +1318,53 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = nationalism
+		}
+	}
+	
+	focus = {
+		id = PRU_embargo_britain
+		icon = GFX_goal_generic_trade
+		prerequisite = {focus = PRU_non_aggression }
+		mutually_exclusive = {}
+		relative_position_id = PRU_align_with_napoleon
+		x = -1
+		y = 2
+		cost = 8
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = embargo }
+		}
+	}
+	
+	focus = {
+		id = PRU_napoleonic_warfare
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {focus = PRU_align_with_napoleon }
+		mutually_exclusive = {}
+		relative_position_id = PRU_align_with_napoleon
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		available = {
+			FRA = {exists = yes}
+			NOT = {has_war_with = FRA}
+		}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 #
@@ -1203,9 +1377,9 @@ focus_tree = {
 			NOT = { has_war_with = FRA }
 			}
 		}
-		relative_position_id = PRU_political
-		x = -3
-		y = 2
+		relative_position_id = PRU_align_with_napoleon
+		x = -1
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1220,14 +1394,16 @@ focus_tree = {
 	focus = {
 		id = PRU_eyes_towards_russia
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = PRU_non_aggression }
-		relative_position_id = PRU_political
-		x = -3
-		y = 3
+		prerequisite = { focus = PRU_napoleonic_warfare }
+		relative_position_id = PRU_align_with_napoleon
+		x = 1
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
-
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 			type = puppet_wargoal_focus
@@ -1240,12 +1416,13 @@ focus_tree = {
 		id = PRU_help_from_napoleon
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = PRU_eyes_towards_russia }
+		prerequisite = { focus = PRU_embargo_britain }
 		available = {
 			GER = { has_war_with = SOV }
 		}
-		relative_position_id = PRU_political
-		x = -3
-		y = 4
+		relative_position_id = PRU_align_with_napoleon
+		x = 0
+		y = 3
 		cost = 10
 
 
@@ -1264,7 +1441,7 @@ focus_tree = {
 		prerequisite = { focus = PRU_political }
 		mutually_exclusive = { focus = PRU_align_with_napoleon }
 		relative_position_id = PRU_political
-		x = 0
+		x = 2
 		y = 1
 		cost = 10
 
@@ -1281,9 +1458,9 @@ focus_tree = {
 		id = PRU_embargo_napoleon
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = PRU_condemn_napoleon }
-		relative_position_id = PRU_political
+		relative_position_id = PRU_condemn_napoleon
 		x = -1
-		y = 2
+		y = 1
 		cost = 10
 
 
@@ -1298,9 +1475,9 @@ focus_tree = {
 		id = PRU_prussian_fortress
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = PRU_embargo_napoleon }
-		relative_position_id = PRU_political
+		relative_position_id = PRU_condemn_napoleon
 		x = -1
-		y = 3
+		y = 2
 		cost = 10
 
 
@@ -1315,9 +1492,9 @@ focus_tree = {
 		id = PRU_network_with_majors
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = PRU_condemn_napoleon }
-		relative_position_id = PRU_political
+		relative_position_id = PRU_condemn_napoleon
 		x = 1
-		y = 2
+		y = 1
 		cost = 10
 
 
@@ -1333,9 +1510,9 @@ focus_tree = {
 		id = PRU_prepare_for_war
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = PRU_network_with_majors }
-		relative_position_id = PRU_political
+		relative_position_id = PRU_condemn_napoleon
 		x = 1
-		y = 3
+		y = 2
 		cost = 10
 
 
@@ -1353,14 +1530,16 @@ focus_tree = {
 		 focus = PRU_prepare_for_war 
 		 focus = PRU_prussian_fortress
 		}
-		relative_position_id = PRU_political
+		relative_position_id = PRU_condemn_napoleon
 		x = 0
-		y = 4
+		y = 3
 		cost = 10
 
 
 		available_if_capitulated = yes
-
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			create_wargoal = {
 			type = puppet_wargoal_focus
@@ -1368,13 +1547,13 @@ focus_tree = {
 		}
 		}
 	}
-#### FOCUS COMPLETE ####
+#--------------------------------------------------HRE----------------------------------------
 
 	focus = {
 		id = PRU_the_hre
-		icon = GFX_goal_generic_military_deal
-		relative_position_id = PRU_political
-		x = 15
+		icon = GFX_focus_ger_revive_kaiserreich
+		relative_position_id = PRU_state_affairs
+		x = 35
 		y = 0
 		cost = 10
 
@@ -1392,46 +1571,80 @@ focus_tree = {
 		prerequisite = { focus = PRU_the_hre }
 		mutually_exclusive = { focus = PRU_stand_with_austria }
 		relative_position_id = PRU_the_hre
-		x = -5
+		x = -8
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
-#
-
-#	focus = {
-#		id = PRU_reclaim_mecklenburg
-#		icon = GFX_goal_generic_forceful_treaty
-#		prerequisite = { focus = PRU_german_ambitions }
-#		x = 8
-#		y = 6
-#		cost = 5
-#
-#		available_if_capitulated = yes
-#
-#		completion_reward = {
-#		MEC = {
-#			country_event = { days = 1 id = napoleon.32 }
-#		}	
-#		}
-#	}
-#
+	
+	#DIPLOMATIC WAY
+	
 	focus = {
-		id = PRU_reclaim_saxony
-		icon = GFX_goal_generic_forceful_treaty
+		id = PRU_sphere_of_influence
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -6
-		y = 2
-		cost = 5
+		mutually_exclusive = { focus = PRU_unite_by_the_force }
+		relative_position_id = PRU_german_ambitions
+		x = -7
+		y = 1
+		cost = 10
 
 		available_if_capitulated = yes
 
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = PRU_influence_saxony
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRU_sphere_of_influence }
+		relative_position_id = PRU_sphere_of_influence
+		x = -5
+		y = 1
+		cost = 10
+		available = {
+			SAX = { exists = yes }
+		}
+		bypass = {
+			SAX = { exists = no }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 75
+			add_opinion_modifier = { target = SAX modifier = medium_increase }
+			SAX = {
+				add_opinion_modifier = { target = GER modifier = medium_increase }
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_reclaim_saxony
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_influence_saxony }
+		relative_position_id = PRU_sphere_of_influence
+		x = -5
+		y = 2
+		cost = 10
+		available = {
+			SAX = { exists = yes }
+		}
+		bypass = {
+			SAX = { exists = no }
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 		SAX = {
 			country_event = { days = 1 id = napoleon.35 }
@@ -1440,16 +1653,47 @@ focus_tree = {
 	}
 #
 	focus = {
-		id = PRU_reclaim_hannover
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -8
-		y = 2
-		cost = 5
-
+		id = PRU_influence_hannover
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRU_sphere_of_influence }
+		relative_position_id = PRU_sphere_of_influence
+		x = -3
+		y = 1
+		cost = 10
+		available = {
+			HAN = { exists = yes }
+		}
+		bypass = {
+			HAN = { exists = no }
+		}
 		available_if_capitulated = yes
 
+		completion_reward = {
+			add_political_power = 75
+			add_opinion_modifier = { target = HAN modifier = medium_increase }
+			HAN = {
+				add_opinion_modifier = { target = GER modifier = medium_increase }
+			}
+		}
+	}
+	focus = {
+		id = PRU_reclaim_hannover
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_influence_hannover }
+		relative_position_id = PRU_sphere_of_influence
+		x = -3
+		y = 2
+		cost = 10
+		available = {
+			HAN = { exists = yes }
+		}
+		bypass = {
+			HAN = { exists = no }
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 		HAN = {
 			country_event = { days = 1 id = napoleon.38 }
@@ -1457,35 +1701,50 @@ focus_tree = {
 		}
 	}
 #
+	
+#
 	focus = {
-		id = PRU_reclaim_oldenburg
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -10
-		y = 2
-		cost = 5
-
+		id = PRU_influence_cologne
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRU_sphere_of_influence }
+		relative_position_id = PRU_sphere_of_influence
+		x = -1
+		y = 1
+		cost = 10
+		available = {
+			GNE = { exists = yes }
+		}
+		bypass = {
+			GNE = { exists = no }
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-		WES = {
-			country_event = { days = 1 id = napoleon.41 }
-		}	
+			add_political_power = 75
+			add_opinion_modifier = { target = GNE modifier = medium_increase }
+			GNE = {
+				add_opinion_modifier = { target = GER modifier = medium_increase }
+			}
 		}
 	}
-#
 	focus = {
 		id = PRU_reclaim_cologne
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -12
+		prerequisite = { focus = PRU_influence_cologne }
+		relative_position_id = PRU_sphere_of_influence
+		x = -1
 		y = 2
-		cost = 5
-
+		cost = 10
+		available = {
+			GNE = { exists = yes }
+		}
+		bypass = {
+			GNE = { exists = no }
+		}
 		available_if_capitulated = yes
-
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 		GNE = {
 			country_event = { days = 1 id = napoleon.44 }
@@ -1493,35 +1752,50 @@ focus_tree = {
 		}
 	}
 #
+	
+#
 	focus = {
-		id = PRU_reclaim_wurzburg
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -4
-		y = 2
-		cost = 5
-
+		id = PRU_influence_hesse
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRU_sphere_of_influence }
+		relative_position_id = PRU_sphere_of_influence
+		x = 1
+		y = 1
+		cost = 10
+		available = {
+			HES = { exists = yes }
+		}
+		bypass = {
+			HES = { exists = no }
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-		WUZ = {
-			country_event = { days = 1 id = napoleon.47 }
-		}	
+			add_political_power = 75
+			add_opinion_modifier = { target = HES modifier = medium_increase }
+			HES = {
+				add_opinion_modifier = { target = GER modifier = medium_increase }
+			}
 		}
 	}
-#
 	focus = {
 		id = PRU_reclaim_hesse
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = -2
+		prerequisite = { focus = PRU_influence_hesse }
+		relative_position_id = PRU_sphere_of_influence
+		x = 1
 		y = 2
-		cost = 5
-
+		cost = 10
+		available = {
+			HES = { exists = yes }
+		}
+		bypass = {
+			HES = { exists = no }
+		}
 		available_if_capitulated = yes
-
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 		HES = {
 			country_event = { days = 1 id = napoleon.50 }
@@ -1530,16 +1804,47 @@ focus_tree = {
 	}
 #
 	focus = {
-		id = PRU_reclaim_wurttemburg
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = 0
-		y = 2
-		cost = 5
-
+		id = PRU_influence_wurttermburg
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRU_sphere_of_influence }
+		relative_position_id = PRU_sphere_of_influence
+		x = 3
+		y = 1
+		cost = 10
+		available = {
+			WUR = { exists = yes }
+		}
+		bypass = {
+			WUR = { exists = no }
+		}
 		available_if_capitulated = yes
 
+		completion_reward = {
+			add_political_power = 75
+			add_opinion_modifier = { target = WUR modifier = medium_increase }
+			WUR = {
+				add_opinion_modifier = { target = GER modifier = medium_increase }
+			}
+		}
+	}
+	focus = {
+		id = PRU_reclaim_wurttemburg
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_influence_wurttermburg }
+		relative_position_id = PRU_sphere_of_influence
+		x = 3
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available_if_capitulated = yes
+		available = {
+			WUR = { exists = yes }
+		}
+		bypass = {
+			WUR = { exists = no }
+		}
 		completion_reward = {
 		WUR = {
 			country_event = { days = 1 id = napoleon.53 }
@@ -1548,16 +1853,47 @@ focus_tree = {
 	}
 #
 	focus = {
-		id = PRU_reclaim_bavaria
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRU_german_ambitions }
-		relative_position_id = PRU_the_hre
-		x = 2
-		y = 2
-		cost = 5
-
+		id = PRU_influence_bavaria
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRU_sphere_of_influence }
+		relative_position_id = PRU_sphere_of_influence
+		x = 5
+		y = 1
+		cost = 10
+		available = {
+			BAV = { exists = yes }
+		}
+		bypass = {
+			BAV = { exists = no }
+		}
 		available_if_capitulated = yes
 
+		completion_reward = {
+			add_political_power = 75
+			add_opinion_modifier = { target = BAV modifier = medium_increase }
+			BAV = {
+				add_opinion_modifier = { target = GER modifier = medium_increase }
+			}
+		}
+	}
+	focus = {
+		id = PRU_reclaim_bavaria
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRU_influence_bavaria }
+		relative_position_id = PRU_sphere_of_influence
+		x = 5
+		y = 2
+		cost = 10
+		available = {
+			BAV = { exists = yes }
+		}
+		bypass = {
+			BAV = { exists = no }
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 		BAV = {
 			country_event = { days = 1 id = napoleon.56 }
@@ -1566,8 +1902,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRU_crush_austria
-		icon = GFX_goal_generic_political_pressure
+		id = PRU_german_confederation
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { 
 		focus = PRU_reclaim_bavaria 
 		}prerequisite = { 
@@ -1577,46 +1913,260 @@ focus_tree = {
 		}prerequisite = {
 		focus = PRU_reclaim_hesse
 		}prerequisite = {
-		focus = PRU_reclaim_mecklenburg
-		}prerequisite = {
-		focus = PRU_reclaim_oldenburg
-		}prerequisite = {
 		focus = PRU_reclaim_saxony
 		}prerequisite = {
 		focus = PRU_reclaim_wurttemburg
-		}prerequisite = {
-		focus = PRU_reclaim_wurzburg
 		}
-		relative_position_id = PRU_the_hre
-		x = -5
+		relative_position_id = PRU_sphere_of_influence
+		x = 0
 		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pru_german_unity
+			set_cosmetic_tag = NGC
+		}
+	}
+	
+	#NOT DIPLOMATIC WAY
+	
+	focus = {
+		id = PRU_unite_by_the_force
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = PRU_german_ambitions }
+		mutually_exclusive = { focus = PRU_sphere_of_influence }
+		relative_position_id = PRU_german_ambitions
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.15
+		}
+	}
+	
+	focus = {
+		id = PRU_invade_sax
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PRU_unite_by_the_force}
+		mutually_exclusive = { }
+		relative_position_id = PRU_unite_by_the_force
+		x = -6
+		y = 1
+		cost = 10
+		available = {
+			SAX = { exists = yes }
+		}
+		bypass = {
+			SAX = { exists = no }
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				target = SAX
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_invade_gne
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PRU_unite_by_the_force}
+		mutually_exclusive = {}
+		relative_position_id = PRU_unite_by_the_force
+		x = -4
+		y = 1
+		cost = 10
+		available = {
+			GNE = { exists = yes }
+		}
+		bypass = {
+			GNE = { exists = no }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				target = GNE
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_invade_bav
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PRU_unite_by_the_force}
+		mutually_exclusive = {}
+		relative_position_id = PRU_unite_by_the_force
+		x = -2
+		y = 1
+		cost = 10
+		available = {
+			BAV = { exists = yes }
+		}
+		bypass = {
+			BAV = { exists = no }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				target = BAV
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_invade_aus
+		icon = GFX_focus_generic_attack_austria
+		prerequisite = { focus = PRU_unite_by_the_force}
+		mutually_exclusive = {}
+		relative_position_id = PRU_unite_by_the_force
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			AUS = { exists = yes }
+		}
+		bypass = {
+			AUS = { exists = no }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				target = AUS
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_invade_wur
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PRU_unite_by_the_force}
+		mutually_exclusive = {}
+		relative_position_id = PRU_unite_by_the_force
+		x = 2
+		y = 1
+		cost = 10
+		available = {
+			WUR = { exists = yes }
+		}
+		bypass = {
+			WUR = { exists = no }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				target = WUR
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_invade_hes
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PRU_unite_by_the_force}
+		mutually_exclusive = {}
+		relative_position_id = PRU_unite_by_the_force
+		x = 4
+		y = 1
+		cost = 10
+		available = {
+			HES = { exists = yes }
+		}
+		bypass = {
+			HES = { exists = no }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				target = HES
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_invade_han
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PRU_unite_by_the_force}
+		mutually_exclusive = {}
+		relative_position_id = PRU_unite_by_the_force
+		x = 6
+		y = 1
+		cost = 10
+		available = {
+			HAN = { exists = yes }
+		}
+		bypass = {
+			HAN = { exists = no }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				target = HAN
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = PRU_german_empire
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = PRU_invade_aus }
+		prerequisite = { focus = PRU_invade_bav }
+		prerequisite = { focus = PRU_invade_gne	}
+		prerequisite = { focus = PRU_invade_han }
+		prerequisite = { focus = PRU_invade_hes }
+		prerequisite = { focus = PRU_invade_sax }
+		prerequisite = { focus = PRU_invade_wur }
+		mutually_exclusive = {}
+		relative_position_id = PRU_unite_by_the_force
+		x = 0
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = AUS
-				}
+			add_ideas = pru_german_unity
+			set_cosmetic_tag = GEM
 		}
 	}
 	
-#### FOCUS COMPLETE ####
+#---------------------------------------------GO WITH AUSTRIA------------------------------------------
 	focus = {
 		id = PRU_stand_with_austria
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = PRU_the_hre }
 		mutually_exclusive = { focus = PRU_german_ambitions }
 		relative_position_id = PRU_the_hre
-		x = 5
+		x = 8
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.10
 		}
 	}
 #
@@ -1624,9 +2174,9 @@ focus_tree = {
 		id = PRU_non_aggression_aus
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = PRU_stand_with_austria }
-		relative_position_id = PRU_the_hre
-		x = 5
-		y = 2
+		relative_position_id = PRU_stand_with_austria
+		x = 0
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1642,9 +2192,9 @@ focus_tree = {
 		id = PRU_ally_austria
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = PRU_non_aggression_aus }
-		relative_position_id = PRU_the_hre
-		x = 5
-		y = 3
+		relative_position_id = PRU_stand_with_austria
+		x = 0
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1653,6 +2203,77 @@ focus_tree = {
 			AUS = {
 				country_event = { days = 1 id = napoleon.68 }
 		} 
+		}
+	}
+	
+	focus = {
+		id = PRU_imperial_economy
+		icon = GFX_focus_fra_devalue_the_franc
+		prerequisite = { focus = PRU_ally_austria }
+		relative_position_id = PRU_stand_with_austria
+		x = -2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pru_imperial_economy
+		}
+	}
+	
+	focus = {
+		id = PRU_imperial_army
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = PRU_ally_austria }
+		relative_position_id = PRU_stand_with_austria
+		x = 0
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pru_imperial_army
+		}
+	}
+	
+	focus = {
+		id = PRU_imperial_diplomacy
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = PRU_ally_austria }
+		relative_position_id = PRU_stand_with_austria
+		x = 2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = pru_imperial_diplomacy
+		}
+	}
+	
+	focus = {
+		id = PRU_loyalty_for_land
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRU_imperial_army }
+		prerequisite = { focus = PRU_imperial_diplomacy }
+		prerequisite = { focus = PRU_imperial_economy }
+		relative_position_id = PRU_stand_with_austria
+		x = 0
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			transfer_state = 65
+			transfer_state = 762
+			transfer_state = 92
+			AUS = {
+				puppet = GER
+			}
 		}
 	}
 }

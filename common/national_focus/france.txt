@@ -738,7 +738,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_arms_factory_construction_1
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_french_military_factory
 		relative_position_id = FRA_infraestructure
 		x = -2
 		y = 2
@@ -773,7 +773,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_arms_factory_construction_2
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_french_military_factory
 		relative_position_id = FRA_infraestructure
 		x = -2
 		y = 3
@@ -808,7 +808,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_arms_factory_construction_3
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_french_military_factory
 		relative_position_id = FRA_infraestructure
 		x = -2
 		y = 4
@@ -1147,7 +1147,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_side_burg
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_goal_generic_bourgeoisie
 		relative_position_id = FRA_appease_the_population
 		x = -2
 		y = 1
@@ -1240,7 +1240,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRA_iluminism
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_science
 		relative_position_id = FRA_industrial_exhibitions
 		x = 1
 		y = 1
@@ -1532,7 +1532,7 @@ focus_tree = {
 focus = {
 		id = NAP_instability_in_Europe
 		icon = GFX_focus_focus_fra_border
-		x = 32
+		x = 47
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1544,18 +1544,56 @@ focus = {
 		}
 	}
 #
+	##########
+	#HISTORIC#
+	##########
+	
+focus = {
+		id = NAP_continental_system
+		icon = GFX_focus_fra_le_deluge
+		prerequisite = { focus = NAP_instability_in_Europe }
+		mutually_exclusive = { 
+			focus = FRA_return_to_monarchism
+			focus = FRA_rebirth_of_revolution
+			focus = NAP_peace_through_europe
+			}
+		available = { 
+			country_exists = ENG
+		}
+		relative_position_id = NAP_instability_in_Europe
+		x = -17
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = continental_system_name
+			ENG = { 
+			add_opinion_modifier = { target = FRA modifier = embargo }
+			add_national_unity = 0.1 
+			}
+		}
+	}
+	
+	#----------------------------------------Diplomatic Relations-------------------------------
+	
 focus = {
 		id = NAP_third_treaty_of_san_ildefonso
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = NAP_instability_in_Europe }
+		prerequisite = { focus = NAP_continental_system }
 		available = {
 			SPR = {
 				exists = yes
 			}
 			#date > 1800.10.1
 		}
-		relative_position_id = NAP_instability_in_Europe
-		x = -4
+		relative_position_id = NAP_continental_system
+		x = -3
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1571,7 +1609,7 @@ focus = {
 #
 focus = {
 		id = NAP_louisiana_purchase
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_louisiana_purchase
 		prerequisite = { focus = NAP_third_treaty_of_san_ildefonso }
 		available = {
 			SPR = {
@@ -1579,10 +1617,10 @@ focus = {
 			}
 			date > 1803.1.1
 		}
-		relative_position_id = NAP_instability_in_Europe
-		x = -6
+		relative_position_id = NAP_continental_system
+		x = -5
 		y = 2
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -1592,93 +1630,230 @@ focus = {
 		add_political_power = 150
 		}
 	}
-#
-focus = {
-		id = NAP_improve_spanish_relations
-		icon = GFX_goal_generic_military_deal
+	
+	focus = {
+		id = FRA_house_of_bonaparte
+		icon = GFX_focus_focus_fra_third_empire
 		prerequisite = { focus = NAP_third_treaty_of_san_ildefonso }
-		relative_position_id = NAP_instability_in_Europe
-		x = -4
+		available = {
+
+		}
+		relative_position_id = NAP_third_treaty_of_san_ildefonso
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_louis_i_hol
+		icon = GFX_focus_hol_oranje_boven
+		prerequisite = { focus = FRA_house_of_bonaparte }
+		available = {
+			HOL = {
+				is_puppet_of = FRA
+			}
+		}
+		relative_position_id = NAP_third_treaty_of_san_ildefonso
+		x = -1
 		y = 2
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			FRA = { add_opinion_modifier = { target = SPR modifier = balkan_strategy_good } }
-			SPR = { add_opinion_modifier = { target = FRA modifier = balkan_strategy_good } }
-		}
-	}
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			HOL = {
+				create_country_leader = {
+					name = "Louis I"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_Netherlands_Louis_I.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
 
-	focus = {
-		id = NAP_spanish_non_aggression
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = NAP_improve_spanish_relations }
-		available =
-		{
-			is_puppet = no
-			#has_army_manpower = { size > 699999 } #ca 90 div
-			SPR = {
-				NOT = { has_war_with = FRA }
-				country_exists = SPR
-			}
-		}
-		cancel = {
-			OR = {
-				has_war_with = SPR
-				NOT = { country_exists = SPR }
-			}
-		}
-		relative_position_id = NAP_instability_in_Europe
-		x = -6
-		y = 4
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			SPR = {
-				country_event = { id = napoleon.4 days = 1}
-			}
-		}
-	}
-#
-	focus = {
-		id = NAP_war_with_spain
-		icon = GFX_focus_focus_fra_intervention_spain
-		prerequisite = { focus = NAP_improve_spanish_relations }
-		available =
-		{
-			is_puppet = no
-		#	has_army_manpower = { size > 799999 } #ca 90 div
-			SPR = {
-				NOT = { has_war_with = FRA }
-				country_exists = SPR
-			}
-		}
-		cancel = {
-			OR = {
-				has_war_with = SPR
-				NOT = { country_exists = SPR }
-			}
-		}
-
-		relative_position_id = NAP_instability_in_Europe
-		x = -4
-		y = 4
-		cost = 10
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			FRA = {
-				create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SPR
+						}
 				}
 			}
 		}
 	}
+	
+	focus = {
+		id = FRA_elisa_i_tus
+		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
+		prerequisite = { focus = FRA_house_of_bonaparte }
+		available = {
+			TUS = {
+				is_puppet_of = FRA
+			}
+		}
+		bypass = {
+			TUS = {
+				exists = no
+			}
+		}
+		relative_position_id = NAP_third_treaty_of_san_ildefonso
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			TUS = {
+				create_country_leader = {
+					name = "Elisa I"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_Tuscany_Elisa_I.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
 
-#### FOCUS COMPLETE ####
+						}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_napoleon_i_ita
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = FRA_louis_i_hol }
+		prerequisite = { focus = FRA_elisa_i_tus }
+		available = {
+			ITA = {
+				is_puppet_of = FRA
+			}
+		}
+		bypass = {
+			ITA = {
+				exists = no
+			}
+		}
+		relative_position_id = NAP_third_treaty_of_san_ildefonso
+		x = 0
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			ITA = {
+				create_country_leader = {
+					name = "Napoléon I"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_Italy_Napoleon.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+
+						}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_joseph_i_nap
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = FRA_napoleon_i_ita }
+		prerequisite = { focus = FRA_naples_camp }
+		available = {
+			NAP = {
+				is_puppet_of = FRA
+			}
+		}
+		bypass = {
+			NAP = {
+				exists = no
+			}
+		}
+		relative_position_id = NAP_third_treaty_of_san_ildefonso
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			NAP = {
+				create_country_leader = {
+					name = "Joseph I"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_Naples_Joseph_I.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+
+						}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_joseph_i_spr
+		icon = GFX_focus_spr_maintain_the_republic
+		prerequisite = { focus = FRA_joseph_i_nap }
+		prerequisite = { focus = FRA_portugal_camp }
+		available = {
+			AND = {
+				is_in_faction_with = SPR
+				has_war_with = POR
+			}
+		}
+		
+		relative_position_id = NAP_third_treaty_of_san_ildefonso
+		x = 0
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			SPR = {
+				create_country_leader = {
+					name = "Joseph I"
+						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+						picture = "Portrait_Spain_Joseph_I.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+
+						}
+				}
+			}
+			puppet = SPR
+		}
+	}
+	
+	#-------------------------------------Annexations----------------------------------------
 focus = {
 		id = NAP_annex_bavatian_republic
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = NAP_instability_in_Europe }
+		prerequisite = { focus = NAP_continental_system }
 		available = { 
 			has_army_manpower = { size > 599999 }
 			NOT = { has_war_with = HOL }
@@ -1687,8 +1862,8 @@ focus = {
 				has_civil_war = no
 			}
 		}
-		relative_position_id = NAP_instability_in_Europe
-		x = -2
+		relative_position_id = NAP_continental_system
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1710,8 +1885,8 @@ focus = {
 			}
 			}
 		
-		relative_position_id = NAP_instability_in_Europe
-		x = -2
+		relative_position_id = NAP_continental_system
+		x = 0
 		y = 2
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1732,8 +1907,8 @@ focus = {
 				has_civil_war = no
 			}
 		}
-		relative_position_id = NAP_instability_in_Europe
-		x = -2
+		relative_position_id = NAP_continental_system
+		x = 0
 		y = 3
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1741,111 +1916,281 @@ focus = {
 			annex_country = { target = ITA }
 		}
 	}
-#### FOCUS COMPLETE ####
-focus = {
-		id = NAP_continental_system
-		icon = GFX_focus_fra_le_deluge
-		prerequisite = { focus = NAP_instability_in_Europe }
-		mutually_exclusive = { 
-			focus = FRA_return_to_monarchism
-			focus = FRA_rebirth_of_revolution
-			focus = NAP_peace_through_europe
-			}
-		available = { 
-			country_exists = ENG
+
+#-------------------------Campaigns-------------------------------------------
+	
+	focus = {
+		id = FRA_2nd_ita_camp
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = NAP_continental_system }
+		available = {
+			
 		}
-		relative_position_id = NAP_instability_in_Europe
-		x = 0
+		relative_position_id = NAP_continental_system
+		x = 3
 		y = 1
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 8
-		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			ENG = { 
-			add_opinion_modifier = { target = FRA modifier = embargo }
-			add_national_unity = 0.1 
+			add_timed_idea = {
+				idea = fra_second_italian_campaign
+				days = 700
 			}
 		}
 	}
-#
-focus = {
-		id = NAP_force_system_upon_portugal
-		icon = GFX_focus_generic_attack_portugal
-		prerequisite = { focus = NAP_continental_system }
-		available = { 
-			has_army_manpower = { size > 599999 }
-			NOT = { has_war_with = POR }
-			country_exists = POR
-			FRA = {
-				has_civil_war = no
-			}
+	
+	focus = {
+		id = FRA_triumph_over_ita
+		icon = GFX_focus_france_triumphant
+		prerequisite = { focus = FRA_2nd_ita_camp }
+		available = {
+			has_global_flag = secondcw_over
 		}
-		relative_position_id = NAP_instability_in_Europe
+		relative_position_id = FRA_2nd_ita_camp
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	
+	focus = {
+		id = FRA_ulm_camp
+		icon = GFX_focus_generic_attack_austria
+		prerequisite = { focus = FRA_triumph_over_ita }
+		available = {
+			has_global_flag = thirdcw_started
+		}
+		relative_position_id = FRA_2nd_ita_camp
 		x = 0
 		y = 2
 		cost = 10
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = POR
+			add_timed_idea = {
+				idea = fra_ulm_campaign
+				days = 365
 			}
 		}
-}
-#
-focus = {
-		id = NAP_force_system_upon_prussia
-		icon = GFX_focus_generic_attack_prussia
-		prerequisite = { focus = NAP_force_system_upon_portugal }
-		available = { 
-			has_army_manpower = { size > 599999 }
-			NOT = { has_war_with = GER }
-			country_exists = GER
-			FRA = {
-				has_civil_war = no
-			}
+	}
+	
+	focus = {
+		id = FRA_naples_camp
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = FRA_ulm_camp }
+		available = {
+			has_global_flag = thirdcw_over
 		}
-		relative_position_id = NAP_instability_in_Europe
-		x = 0
+		relative_position_id = FRA_2nd_ita_camp
+		x = -3
 		y = 3
 		cost = 10
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = GER
+			add_timed_idea = {
+				idea = fra_invasion_naples
+				days = 365
 			}
 		}
-}
-#
-focus = {
-		id = NAP_force_system_upon_russia
-		icon = GFX_focus_generic_attack_russia
-		prerequisite = { focus = NAP_force_system_upon_prussia }
-		available = { 
-			has_army_manpower = { size > 599999 }
-			NOT = { has_war_with = SOV }
-			country_exists = SOV
-			FRA = {
-				has_civil_war = no
+	}
+	
+	focus = {
+		id = FRA_prussia_camp
+		icon = GFX_focus_generic_attack_prussia
+		prerequisite = { focus = FRA_ulm_camp }
+		available = {
+			has_global_flag = fourthcw_started
+		}
+		relative_position_id = FRA_2nd_ita_camp
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_timed_idea = {
+				idea = fra_prussian_campaign
+				days = 365
 			}
 		}
-		relative_position_id = NAP_instability_in_Europe
+	}
+	
+	focus = {
+		id = FRA_confederation_rhine
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = FRA_ulm_camp }
+		available = {
+			has_global_flag = thirdcw_over
+		}
+		relative_position_id = FRA_2nd_ita_camp
+		x = -1
+		y = 3
+		cost = 10
+		completion_reward = {
+			RHI = {
+				add_state_core = 50
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+				add_state_core = 55
+				add_state_core = 59
+				add_state_core = 153
+				add_state_core = 39
+				set_state_owner = 50
+				set_state_owner = 52
+				set_state_owner = 53
+				set_state_owner = 54
+				set_state_owner = 55
+				set_state_owner = 59
+				set_state_owner = 153
+				set_state_owner = 39
+				set_state_controller = 50
+				set_state_controller = 52
+				set_state_controller = 53
+				set_state_controller = 54
+				set_state_controller = 55
+				set_state_controller = 59
+				set_state_controller = 153
+				set_state_controller = 39
+			}
+			puppet = RHI
+		}
+	}
+	
+	focus = {
+		id = FRA_arc_of_triumph
+		icon = GFX_focus_arc_of_triumph
+		prerequisite = { focus = FRA_ulm_camp }
+		available = {
+			has_global_flag = thirdcw_over
+		}
+		relative_position_id = FRA_2nd_ita_camp
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_ideas = {
+				fra_arc_of_triumph_construction
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_portugal_camp
+		icon = GFX_focus_generic_attack_portugal
+		prerequisite = { focus = FRA_prussia_camp }
+		prerequisite = { focus = FRA_naples_camp }
+		available = {
+			has_global_flag = fourthcw_started
+		}
+		relative_position_id = FRA_2nd_ita_camp
 		x = 0
 		y = 4
 		cost = 10
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SOV
+			add_timed_idea = {
+				idea = fra_invasion_portugal
+				days = 365
 			}
 		}
-}
-#### FOCUS COMPLETE ####
-
+	}
+	
+	focus = {
+		id = FRA_russia_camp
+		icon = GFX_focus_generic_attack_russia
+		prerequisite = { focus = FRA_portugal_camp }
+		available = {
+			has_global_flag = fifthcw_over
+		}
+		relative_position_id = FRA_2nd_ita_camp
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				date > 1812.01.01
+				factor = 100
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			remove_from_faction = SOV
+			SOV = {
+				white_peace = { tag = ENG }
+			}
+			declare_war_on = {
+				target = SOV
+				type = puppet_wargoal_focus
+			}
+			add_timed_idea = {
+				idea = fra_invasion_russia
+				days = 60
+			}
+			every_country = {
+				news_event = {
+					id = coalition.18
+				}
+			}
+		}
+	}
+	#---------------------------------------------Napoleon Returns------------------------------
+	focus = {
+		id = FRA_napoleon_returns
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { }
+		available = {
+			AND = {
+				has_completed_focus = NAP_continental_system
+				NOT = {
+					has_country_leader = {
+							name = "Napoléon Bonaparte"
+							ruling_only = yes
+						}
+					}
+				has_global_flag = sixthcw_over
+				}
+		}
+		relative_position_id = NAP_continental_system
+		x = 0
+		y = 7
+		cost = 10
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			every_country = {
+				news_event = {
+					id = coalition.24
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_waterloo_camp
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = FRA_napoleon_returns }
+		available = {
+			has_global_flag = seventhcw_started
+		}
+		relative_position_id = NAP_continental_system
+		x = 0
+		y = 8
+		cost = 10
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_timed_idea = {
+				idea = fra_waterloo_campaign
+				days = 60
+			}
+		}
+	}
+	
 	###########
 	#DEMOCRACY#
 	###########
@@ -1860,7 +2205,7 @@ focus = {
 			focus = FRA_rebirth_of_revolution
 			}
 		relative_position_id = NAP_instability_in_Europe
-		x = 7
+		x = -5
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2147,7 +2492,7 @@ focus = {
 			focus = FRA_rebirth_of_revolution
 			}
 		relative_position_id = NAP_instability_in_Europe
-		x = 16
+		x = 5
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2795,7 +3140,7 @@ focus = {
 			focus = FRA_return_to_monarchism
 			}
 		relative_position_id = NAP_instability_in_Europe
-		x = 29
+		x = 18
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
