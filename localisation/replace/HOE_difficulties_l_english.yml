@@ -1,0 +1,12 @@
+﻿l_english:
+ FE_DIFFICULTY_VERY_EASY:0 "Citizen"
+ FE_DIFFICULTY_VERY_EASY_TOOLTIP:0 "§L"Rabble! Rabble! Rabble!"§!"
+ FE_DIFFICULTY_EASY_SOLDIER:0 "Soldier"
+ FE_DIFFICULTY_EASY_TOOLTIP:0 "§L"Soldiers! Forty centuries behold you!"§!"
+ FE_DIFFICULTY_NORMAL:0 "Officer"
+ FE_DIFFICULTY_NORMAL_TOOLTIP: "§L"The most important qualification of a soldier is fortitude under fatigue and privation. Courage is only second; hardship, poverty and want are the best school for a soldier."§!"
+ FE_DIFFICULTY_HARD:0 "King"
+ FE_DIFFICULTY_HARD_TOOLTIP:0 "§L"I saw the crown of France laying on the ground, so I picked it up with my sword.'"§!"
+ FE_DIFFICULTY_EMPEROR:0 "Emperor"
+ FE_DIFFICULTY_VERY_HARD_TOOLTIP:0 "§L"Glory is fleeting, but obscurity is forever."§!"
+ 
