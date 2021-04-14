@@ -32,16 +32,18 @@ set_technology = {
 
 
 
-#add_ideas = {
-	#stiff_upper_lip
-	#ENG_the_war_to_end_all_wars
-	#george_v
-#}
+add_ideas = {
+	eng_home_industrial_revolution_1
+	eng_scottish_enlightenment
+	eng_naval_hegemony
+	eng_william_pitt
+}
 
 set_convoys = 800
 
 # DIPLOMACY
 puppet = HAN
+puppet = IRE
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -105,16 +107,21 @@ set_popularities = {
 	}
 
 
-#create_faction = Second_Coalition_England
-#add_to_faction = ENG
-#add_to_faction = TUR
-#add_to_faction = SOV
-#add_to_faction = AUS
-#add_to_faction = TUS
-#add_to_faction = NAP
-#add_to_faction = POR
+create_faction = Coalition
+add_to_faction = ENG
+add_to_faction = AUS
+add_to_faction = NAP
+add_to_faction = POR
+add_to_faction = CAN
+add_to_faction = RAJ
+add_to_faction = BRA
 
-#give_guarantee = CZE
+declare_war_on = {
+	target = FRA
+	type = puppet_wargoal_focus
+}
+
+
 
 # Order matters - here Chamberlain becomes starting leader
 
@@ -137,7 +144,7 @@ create_country_leader = {
 	expire = "1938.1.1"
 	ideology = centrism
 	traits = {
-		stout_defender
+		autocratic_imperialist
 	}
 }
 
@@ -152,16 +159,16 @@ create_country_leader = {
 #	}
 #}
 
-#create_country_leader = {
-#	name = "George III 3"
-#	desc = "POLITICS_GEORGE_III_DESC"
-#	picture = "Portrait_England_George_III.dds"
-#	expire = "1965.1.1"
-#	ideology = fascism_ideology
-#	traits = {
-#
-#	}
-#}
+create_country_leader = {
+	name = "George III "
+	desc = "POLITICS_GEORGE_III_DESC"
+	picture = "Portrait_England_George_III.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		autocratic_imperialist
+	}
+}
 
 #create_country_leader = {
 #	name = "George III"

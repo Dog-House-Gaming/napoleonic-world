@@ -71,6 +71,11 @@ set_technology = {
 
 puppet = BRA
 
+declare_war_on = {
+	target = FRA
+	type = puppet_wargoal_focus
+}
+
 set_convoys = 50
 set_politics = {
 	ruling_party = neutrality
