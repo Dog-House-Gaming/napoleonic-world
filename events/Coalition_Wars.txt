@@ -1,0 +1,1049 @@
+add_namespace = coalition
+
+#Austria wants to join the coalition
+country_event = {
+	id = coalition.1
+	title = coalition.1.t
+	desc = coalition.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.1.a
+		ai_chance = {
+			factor = 100
+		}
+		add_to_faction = AUS
+	}
+	
+	#NO
+	option = {
+		name = coalition.1.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}
+
+#Portugal wants to join the coalition
+country_event = {
+	id = coalition.2
+	title = coalition.2.t
+	desc = coalition.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.2.a
+		ai_chance = {
+			factor = 100
+		}
+		add_to_faction = POR
+	}
+	
+	#NO
+	option = {
+		name = coalition.2.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}
+
+#Prussia wants to join the coalition
+country_event = {
+	id = coalition.3
+	title = coalition.3.t
+	desc = coalition.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_to_faction = GER
+	}
+	
+	#NO
+	option = {
+		name = coalition.3.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}
+
+#Russia wants to join the coalition
+country_event = {
+	id = coalition.4
+	title = coalition.4.t
+	desc = coalition.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.4.a
+		ai_chance = {
+			factor = 100
+		}
+		add_to_faction = SOV
+	}
+	
+	#NO
+	option = {
+		name = coalition.4.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}
+
+#Sweden wants to join the coalition
+country_event = {
+	id = coalition.5
+	title = coalition.5.t
+	desc = coalition.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.5.a
+		ai_chance = {
+			factor = 100
+		}
+		add_to_faction = SWE
+	}
+	
+	#NO
+	option = {
+		name = coalition.5.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}
+
+#-------------------------------------1801-----------------------------------------
+
+#Austria offers peace. Treaty of Luneville
+country_event = {
+	id = coalition.6
+	title = coalition.6.t
+	desc = coalition.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.6.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = AUS
+		AUS = {
+			leave_faction = yes
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+		34 = {
+			add_core_of = FRA
+		}
+		42 = {
+			add_core_of = FRA
+		}
+		51 = {
+			add_core_of = FRA
+		}
+		8 = {
+			add_core_of = FRA
+		}
+		set_truce = {
+			target = AUS
+			days = 1000
+		}
+	}
+	
+	#NO
+	option = {
+		name = coalition.6.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+
+#Naples offers white peace 
+country_event = {
+	id = coalition.7
+	title = coalition.7.t
+	desc = coalition.7.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.7.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = NAP
+		NAP = {
+			leave_faction = yes
+		}
+		set_truce = {
+			target = NAP
+			days = 1000
+		}
+	}
+	
+	#NO
+	option = {
+		name = coalition.7.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.10
+		add_war_support = -0.10
+	}
+	
+}
+
+#Portugal offers white peace 
+country_event = {
+	id = coalition.8
+	title = coalition.8.t
+	desc = coalition.8.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.8.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = POR
+		POR = {
+			leave_faction = yes
+		}
+		set_truce = {
+			target = POR
+			days = 1000
+		}
+	}
+	
+	#NO
+	option = {
+		name = coalition.8.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.10
+		add_war_support = -0.10
+	}
+	
+}
+
+#--------------------------------------------------------1802-----------------------------------------
+
+#England offers peace. Treaty of Amiens
+country_event = {
+	id = coalition.9
+	title = coalition.9.t
+	desc = coalition.9.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.9.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = ENG
+		white_peace = TUR
+		set_truce = {
+			target = ENG
+			days = 360
+		}
+		set_truce = {
+			target = TUR
+			days = 1000
+		}
+		set_global_flag = secondcw_over
+	}
+	
+	#NO
+	option = {
+		name = coalition.9.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+#----------------------------------------------------1803-------------------------------------------------
+
+#England declares war. 3rd Coalition War
+news_event = {
+	id = coalition.10
+	title = coalition.10.t
+	desc = coalition.10.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#Ah
+	option = {
+		name = coalition.10.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = coalition.10.b
+		trigger = { TAG = FRA }
+		set_global_flag = thirdcw_started 
+	}
+	option = {
+		name = coalition.10.c
+		trigger = { TAG = ENG }
+	}
+}
+#----------------------------------------------------1804-------------------------------------------------
+
+#----------------------------------------------------1805-------------------------------------------------
+#Austria offers peace. Treaty of Pressburg
+country_event = {
+	id = coalition.11
+	title = coalition.11.t
+	desc = coalition.11.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.11.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = AUS
+		AUS = {
+			leave_faction = yes
+			end_puppet = SAX
+			end_puppet = GNE
+			remove_ideas = {
+				aus_holy_roman_emperor
+			}
+		}
+		set_truce = {
+			target = AUS
+			days = 1000
+		}
+		puppet = BAV
+		puppet = WUR
+		puppet = HES
+		160 = {
+			add_core_of = ITA
+		}
+		ITA = {
+			set_state_owner = 160
+		}
+		736 = {
+			add_core_of = ITA
+		}
+		ITA = {
+			set_state_owner = 736
+		}
+		103 = {
+			add_core_of = ITA
+		}
+		ITA = {
+			set_state_owner = 103
+		}
+		153 = {
+			add_core_of = BAV
+		}
+		BAV = {
+			set_state_owner = 153
+		}
+		39 = {
+			add_core_of = BAV
+		}
+		BAV = {
+			set_state_owner = 39
+		}
+		set_global_flag = thirdcw_over 
+	}
+	
+	#NO
+	option = {
+		name = coalition.11.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+#----------------------------------------------------1806-------------------------------------------------
+#Saxony wants to join the coalition
+country_event = {
+	id = coalition.12
+	title = coalition.12.t
+	desc = coalition.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.12.a
+		ai_chance = {
+			factor = 100
+		}
+		add_to_faction = SAX
+	}
+	
+	#NO
+	option = {
+		name = coalition.12.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}
+
+#Prussia declares war. 4th Coalition War
+news_event = {
+	id = coalition.13
+	title = coalition.13.t
+	desc = coalition.13.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#Ah
+	option = {
+		name = coalition.10.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = FRA
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = coalition.13.b
+		trigger = { TAG = FRA }
+		set_global_flag = fourthcw_started 
+	}
+	option = {
+		name = coalition.13.c
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = coalition.13.d
+		trigger = { TAG = GER }
+	}
+}
+#----------------------------------------------------1807-------------------------------------------------
+#Prussia and Russia offers peace. Treaties of Tilsit
+country_event = {
+	id = coalition.14
+	title = coalition.14.t
+	desc = coalition.14.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.14.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = GER
+		set_truce = {
+			target = GER
+			days = 1000
+		}
+		white_peace = SOV
+		set_truce = {
+			target = SOV
+			days = 1000
+		}
+		GER = {
+			release = POL
+		}
+		add_to_faction = GER
+		add_to_faction = SOV
+		puppet = POL
+		RHI = {
+			set_state_owner = 61
+			61 = {
+				add_core_of = RHI
+			}
+			set_state_owner = 62
+			62 = {
+				add_core_of = RHI
+			}
+		}
+		set_global_flag = fourthcw_over 
+	}
+	
+	#NO
+	option = {
+		name = coalition.14.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+#----------------------------------------------------1808-------------------------------------------------
+
+#----------------------------------------------------1809-------------------------------------------------
+#Austria declares war. 5th Coalition War
+news_event = {
+	id = coalition.15
+	title = coalition.15.t
+	desc = coalition.15.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#Ah
+	option = {
+		name = coalition.15.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = FRA
+				TAG = AUS
+			}
+		}
+	}
+	option = {
+		name = coalition.15.b
+		trigger = { TAG = FRA }
+		set_global_flag = fifthcw_started 
+	}
+	option = {
+		name = coalition.15.c
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = coalition.15.d
+		trigger = { TAG = AUS }
+	}
+}
+
+#Sweden offers Finland to Russia
+country_event = {
+	id = coalition.16
+	title = coalition.16.t
+	desc = coalition.16.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.16.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = SWE
+		set_truce = {
+			target = SWE
+			days = 1000
+		}
+		SWE = {
+			leave_faction = yes
+		}
+		148 = {
+			add_core_of = SOV
+		}
+		SOV = {
+			set_state_owner = 148
+		}
+		150 = {
+			add_core_of = SOV
+		}
+		SOV = {
+			set_state_owner = 150
+		}
+		111 = {
+			add_core_of = SOV
+		}
+		SOV = {
+			set_state_owner = 111
+		}
+		149 = {
+			add_core_of = SOV
+		}
+		SOV = {
+			set_state_owner = 149
+		}
+	}
+	
+	#NO
+	option = {
+		name = coalition.16.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+
+#Autria offers peace. Treaty of SchonBrunn
+country_event = {
+	id = coalition.17
+	title = coalition.17.t
+	desc = coalition.17.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.17.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = AUS
+		set_truce = {
+			target = AUS
+			days = 1000
+		}
+		AUS = {
+			leave_faction = yes
+		}
+		add_to_faction = AUS
+		POL = {
+			set_state_owner = 762
+		}
+		POL = {
+			set_state_owner = 88
+		}
+		POL = {
+			set_state_owner = 92
+		}
+		set_global_flag = fifthcw_over 
+	}
+	
+	#NO
+	option = {
+		name = coalition.17.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+#----------------------------------------------------1810-------------------------------------------------
+
+#----------------------------------------------------1811-------------------------------------------------
+
+#----------------------------------------------------1812-------------------------------------------------
+#Napoleon Invades Russia. 6th Coalition War
+news_event = {
+	id = coalition.18
+	title = coalition.18.t
+	desc = coalition.18.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#Ah
+	option = {
+		name = coalition.18.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = FRA
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = coalition.18.b
+		trigger = { TAG = FRA }
+		set_global_flag = sixthcw_started 
+	}
+	option = {
+		name = coalition.18.c
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = coalition.18.d
+		trigger = { TAG = SOV }
+	}
+}
+#----------------------------------------------------1813-------------------------------------------------
+#Prussia offers peace to the coalition
+country_event = {
+	id = coalition.19
+	title = coalition.19.t
+	desc = coalition.19.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.19.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = GER
+		set_truce = {
+			target = GER
+			days = 1000
+		}
+		GER = {
+		leave_faction = yes
+		}
+		
+	}
+	
+	#NO
+	option = {
+		name = coalition.19.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+
+#Austria offers peace to the coalition
+country_event = {
+	id = coalition.20
+	title = coalition.20.t
+	desc = coalition.20.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.20.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = AUS
+		set_truce = {
+			target = AUS
+			days = 1000
+		}
+		AUS = {
+		leave_faction = yes
+		}
+	}
+	
+	#NO
+	option = {
+		name = coalition.20.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+#----------------------------------------------------1814-------------------------------------------------
+#Denmark offers peace. Treaty of Kiel
+country_event = {
+	id = coalition.21
+	title = coalition.21.t
+	desc = coalition.21.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.21.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = DEN
+		set_truce = {
+			target = DEN
+			days = 1000
+		}
+		110 = {
+			add_core_of = SWE
+		}
+		SWE = {
+			set_state_owner = 110
+		}
+		142 = {
+			add_core_of = SWE
+		}
+		SWE = {
+			set_state_owner = 142
+		}
+		143 = {
+			add_core_of = SWE
+		}
+		SWE = {
+			set_state_owner = 143
+		}
+		144 = {
+			add_core_of = SWE
+		}
+		SWE = {
+			set_state_owner = 144
+		}
+		807 = {
+			add_core_of = DEN
+		}
+		DEN = {
+			set_state_owner = 807
+		}
+		
+	}
+	
+	#NO
+	option = {
+		name = coalition.21.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+
+#France offers peace. Treaty of Fontainebleau
+country_event = {
+	id = coalition.22
+	title = coalition.22.t
+	desc = coalition.22.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = {
+		name = coalition.22.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = FRA
+		set_truce = {
+			target = FRA
+			days = 300
+		}
+		FRA = {
+			release = BEL
+			release = ITA
+			release = HOL
+			release = SWI
+			release = SPR
+			release = POL
+			end_puppet = ITA
+			end_puppet = HOL
+			end_puppet = SWI
+			end_puppet = SPR
+			end_puppet = POL
+			end_puppet = BEL
+			dismantle_faction = yes
+		}
+		RHI = {
+			release = WUR
+			release = GNE
+			release = HAN
+			release = SAX
+			release = BAV
+			release = HES
+		}
+		AUS = {
+			puppet = BEL
+			puppet = ITA
+			puppet = TUS
+			set_state_owner = 153
+			set_state_owner = 39
+			set_state_owner = 736
+			set_state_owner = 103
+		}
+		SOV = {
+			puppet = POL
+		}
+		GER = {
+			puppet = SAX
+			set_state_owner = 51
+			set_state_owner = 42
+		}
+		BEL = {
+			set_state_owner = 8
+			8 = {
+				add_core_of = BEL
+			}
+		}
+		set_global_flag = sixthcw_over
+		every_country = {
+			news_event = {
+				id = coalition.23
+			}
+		}
+	}
+	
+	#NO
+	option = {
+		name = coalition.22.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+	
+}
+
+#Napoleon Abdicates News
+news_event = {
+	id = coalition.23
+	title = coalition.23.t
+	desc = coalition.23.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#Ah
+	option = {
+		name = coalition.23.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = coalition.23.b
+		trigger = { TAG = FRA }
+	}
+	option = {
+		name = coalition.23.c
+		trigger = { TAG = ENG }
+	}
+}
+#----------------------------------------------------1815-------------------------------------------------
+#Napoleon Returns News
+news_event = {
+	id = coalition.24
+	title = coalition.24.t
+	desc = coalition.24.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#Ah
+	option = {
+		name = coalition.24.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = coalition.24.b
+		trigger = { TAG = FRA }
+		set_global_flag = seventhcw_started 
+	}
+	option = {
+		name = coalition.24.c
+		trigger = { TAG = ENG }
+	}
+}
+
+#Napoleon Abdicates Again News
+news_event = {
+	id = coalition.25
+	title = coalition.25.t
+	desc = coalition.25.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = seventhcw_started
+		NOT = { has_global_flag = seventhcw_over }
+		NOT = {
+			FRA = {
+				has_war_with = ENG
+			}
+		}
+	}
+	#Ah
+	option = {
+		name = coalition.25.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = coalition.25.b
+		trigger = { TAG = FRA }
+		set_global_flag = seventhcw_over 
+	}
+}
