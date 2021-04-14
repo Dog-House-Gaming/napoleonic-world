@@ -1,6 +1,8 @@
 ideas = {
 	country = {
 		
+		#---------------------------------------STARTERS--------------------------------------------------
+		
 		pru_victors_from_7yw= {
 			picture = generic_victors_of_ww1
 
@@ -56,6 +58,28 @@ ideas = {
 				army_org_factor = -0.15
 			}
 		}
+		
+		#----------------------------------------------ARMY--------------------------------------------------------
+		
+		pru_mil_budget = {
+			picture = generic_license_production
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
+				conscription = 0.01
+			}
+		}
+		
 		pru_inefficient_bureocracy= {
 			picture = generic_disjointed_gov
 
@@ -109,6 +133,22 @@ ideas = {
 				army_morale_factor = 0.20
 			}
 		}
+		pru_prussian_militarism= {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.025
+			}
+		}
 		pru_prussian_dragoons= {
 			picture = porsche
 
@@ -124,6 +164,188 @@ ideas = {
 			modifier = {
 				cavalry_attack_factor = 0.20
 				cavalry_defence_factor = 0.20
+			}
+		}
+		pru_expanded_cavalry= {
+			picture = porsche
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.025
+			}
+			
+		}
+		pru_quality_guns= {
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					reliability = 0.25
+					instant = yes
+				}
+			}
+			
+		}
+		pru_cheap_guns= {
+			picture = generic_army_problems
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.25
+					reliability = -0.05
+				}
+			}
+		}
+		pru_quality_art= {
+			picture = generic_artillery_regiments
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					instant = yes
+					reliability = 0.25
+					build_cost_ic = 0.05
+				}
+			}
+		}
+		pru_cheap_art = {
+			picture = generic_artillery_regiments
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.25
+					reliability = -0.05
+				}
+			}
+		}
+		pru_german_unity = {
+			picture = triumphant_will
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		pru_imperial_economy = {
+			picture = can_wartime_prices_and_trade_board
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.50
+			}
+		}
+		pru_imperial_army = {
+			picture = generic_infantry_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_org_factor = 0.15
+				surrender_limit = -0.10
+			}
+		}
+		pru_imperial_diplomacy = {
+			picture = generic_deal_with_the_devil
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				opinion_gain_monthly_factor = 0.25
+				political_power_factor = 0.15
 			}
 		}
 	}

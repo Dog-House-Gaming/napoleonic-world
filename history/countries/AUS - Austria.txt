@@ -35,7 +35,11 @@ puppet = BAV
 puppet = WUR
 puppet = HES
 puppet = GNE
-
+declare_war_on = {
+	target = FRA
+	type = puppet_wargoal_focus
+}
+	
 set_national_unity = 0.50
 
 create_country_leader = {

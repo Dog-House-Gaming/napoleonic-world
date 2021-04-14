@@ -1,6 +1,41 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_idea_william_pitt"
+		texturefile = "gfx/interface/ideas/idea_william_pitt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_william_grenville"
+		texturefile = "gfx/interface/ideas/idea_william_grenville.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_william_cavendish"
+		texturefile = "gfx/interface/ideas/idea_william_cavendish.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_henry_addington"
+		texturefile = "gfx/interface/ideas/idea_henry_addington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_robert_jenkinson"
+		texturefile = "gfx/interface/ideas/idea_robert_jenkinson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_spencer_perceval"
+		texturefile = "gfx/interface/ideas/idea_spencer_perceval.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_george_iii"
+		texturefile = "gfx/interface/ideas/idea_george_iii.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_sov_winter_soldiers"
 		texturefile = "gfx/interface/ideas/idea_sov_winter_soldiers.dds"
 	}

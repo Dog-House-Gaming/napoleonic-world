@@ -25,6 +25,11 @@ set_popularities = {
 	}
 set_convoys = 5
 
+declare_war_on = {
+	target = FRA
+	type = puppet_wargoal_focus
+}
+
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
 	name = "Ferdinand IV"

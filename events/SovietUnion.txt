@@ -10,17 +10,9 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
-	
 	trigger = {
 		tag = SOV
-		SOV = {
-		has_deffensive_war = yes
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
+		has_defensive_war = yes
 	}
 	
 	option = {
@@ -29,26 +21,16 @@ country_event = {
 	}
 }
 
-#rename city
+#rename cities
 country_event = {
 	id = soviet.999
 	title = soviet.999.t
 	desc = soviet.999.d
 	picture = GFX_report_event_german_reichstag_gathering
-	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		tag = SOV
-		SOV = {
-			owns_state = 217
-			owns_state = 195
-			has_political_power > 1
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 7
 	}
 
 	option = { #a great idea!

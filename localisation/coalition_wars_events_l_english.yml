@@ -1,0 +1,175 @@
+﻿l_english:
+
+ #Global Flags
+ test_flag:0 "Test Flag"
+ secondcw_over:0 "The Second Coalition War is over"
+ thirdcw_over:0 "The Third Coalition War is over"
+ fourthcw_over:0 "The Fourth Coalition War is over"
+ fifthcw_over:0 "The Fifth Coalition War is over"
+ sixthcw_over:0 "The Sixth Coalition War is over"
+ seventhcw_over:0 "The Seventh Coalition War is over"
+ 
+ thirdcw_started:0 "The Third Coalition War has started"
+ fourthcw_started:0 "The Fourth Coalition War has started"
+ fifthcw_started:0 "The Fifth Coalition War has started"
+ sixthcw_started:0 "The Sixth Coalition War has started"
+ seventhcw_started:0 "The Seventh Coalition War has started"
+    
+ #Austria wants to join the coalition
+ coalition.1.t:0 "The Austrian Empire Wants To Join The Coaliton"
+ coalition.1.d:0 "The Austrian diplomats sent by the emperor have asked the King permission to join the Coaliton against France and Napoleon. We may have our differences, but with the French thread we need all the allies we can have."
+ coalition.1.a:0 "They are welcome"
+ coalition.1.b:0 "We don't need them"
+ 
+ #Portugal wants to join the coalition
+ coalition.2.t:0 "Portugal Wants To Join The Coaliton"
+ coalition.2.d:0 "The Portuguese diplomats sent by the emperor have asked the King permission to join the Coaliton against France and Napoleon. We may have our differences, but with the French thread we need all the allies we can have."
+ coalition.2.a:0 "They are welcome"
+ coalition.2.b:0 "We don't need them"
+ 
+ #Prussia wants to join the coalition
+ coalition.3.t:0 "Prussia Wants To Join The Coaliton"
+ coalition.3.d:0 "The Prussian diplomats sent by the emperor have asked the King permission to join the Coaliton against France and Napoleon. We may have our differences, but with the French thread we need all the allies we can have."
+ coalition.3.a:0 "They are welcome"
+ coalition.3.b:0 "We don't need them"
+ 
+ #Russia wants to join the coalition
+ coalition.4.t:0 "The Russian Empire Wants To Join The Coaliton"
+ coalition.4.d:0 "The Russian diplomats sent by the emperor have asked the King permission to join the Coaliton against France and Napoleon. We may have our differences, but with the French thread we need all the allies we can have."
+ coalition.4.a:0 "They are welcome"
+ coalition.4.b:0 "We don't need them"
+ 
+ #Sweden wants to join the coalition
+ coalition.5.t:0 "The Swedish Empire Wants To Join The Coaliton"
+ coalition.5.d:0 "The Swedish diplomats sent by the emperor have asked the King permission to join the Coaliton against France and Napoleon. We may have our differences, but with the French thread we need all the allies we can have."
+ coalition.5.a:0 "They are welcome"
+ coalition.5.b:0 "We don't need them"
+ 
+ #Austria offers peace. Treaty of Luneville
+ coalition.6.t:0 "The Treaty Of Luneville. Austria Offers Peace"
+ coalition.6.d:0 "The Austrian diplomats are currently trying to negotiate peace so they can end this war losing as little as possible. Peacing out the Austrians may allow as to reorganize the army and concentrate on our other enemies."
+ coalition.6.a:0 "Peace and friendship forever"
+ coalition.6.b:0 "The war continues"
+ 
+ #Naples offers peace.
+ coalition.7.t:0 "Naples Offers Peace"
+ coalition.7.d:0 "Naples is a minor beligerent in this massive war, they are now offering a white peace to avoid future damages as they may be in the loosing side."
+ coalition.7.a:0 "One enemy less"
+ coalition.7.b:0 "The war continues"
+ 
+ #Portugal offers peace.
+ coalition.8.t:0 "Portugal Offers Peace"
+ coalition.8.d:0 "Portugal is a minor beligerent in this massive war, they are now offering a white peace to avoid future damages as they may be in the loosing side."
+ coalition.8.a:0 "One enemy less"
+ coalition.8.b:0 "The war continues"
+ 
+ #England offers peace. Treaty of Amiens.
+ coalition.9.t:0 "Treaty Of Amiens. Britain Offers Peace"
+ coalition.9.d:0 "After 10 years of war, the British have finally accepted negotiations for peace. Most of our advisors think that this a temporal armistice rather than an everlasting peace, however, this could help us to reorganize and improve our economical and diplomatic posisiton in continental Europe."
+ coalition.9.a:0 "Peace in our times"
+ coalition.9.b:0 "We won't negotiate with that aritocratic bastards"
+ 
+ #England declares war. 3rd Coalition War
+ coalition.10.t:0 "The Third Coalition War"
+ coalition.10.d:0 "The United Kingdom has started intercepting merchant ships from the French allies, violating the Treaty Of Amiens and therefore resuming the Coalition Wars against France."
+ coalition.10.a:0 "Here we go again"
+ coalition.10.b:0 "Perfidious Albion!"
+ coalition.10.c:0 "We will crush the French once and for all!"
+ 
+ #Austria offers peace. Treaty of Pressburg
+ coalition.11.t:0 "The Treaty Of Pressburg. Austria Offers Peace"
+ coalition.11.d:0 "After being defeated and humillated by the French army, the Austrian Empire has come to us in order to negotiate peace. This would mean the victory of France over the Third Coalition and the dissolution of the Holy Roman Empire."
+ coalition.11.a:0 "La France triomphe"
+ coalition.11.b:0 "We won't negotiate with that aritocratic bastards"
+ 
+ #Saxony wants to join the coalition
+ coalition.12.t:0 "Saxony Wants To Join The Coaliton"
+ coalition.12.d:0 "The Saxon diplomats sent by the emperor have asked the King permission to join the Coaliton against France and Napoleon. We may have our differences, but with the French thread we need all the allies we can have."
+ coalition.12.a:0 "They are welcome"
+ coalition.12.b:0 "We don't need them"
+ 
+ #Prussia declares war. 4th Coalition War
+ coalition.13.t:0 "The Fourth Coalition War"
+ coalition.13.d:0 "After watching France beat the Austrian Empire and increase her influence in Middle Europe, the Prussian have declared war on the French and therefore starting the Fourth Coalition War."
+ coalition.13.a:0 "Here we go again"
+ coalition.13.b:0 "Lets test your discipline with cannonballs"
+ coalition.13.c:0 "God bless the Prussian army"
+ coalition.13.d:0 "We will hold the line"
+ 
+ #Prussia and Russia offers peace. Treaties of Tilsit
+ coalition.14.t:0 "The Treaties Of Tilsit. Prussia And Russia Offer Peace"
+ coalition.14.d:0 "After being defeated and humillated by the French army, the Russian Empire and Prussia are willing to negotiate the peace terms. This is a great opportunity to secure our position in Central Europe and liberate the Grand Duchy Of Varsovia, giving a home to the poles."
+ coalition.14.a:0 "La France triomphe"
+ coalition.14.b:0 "We won't negotiate with that aritocratic bastards"
+ 
+ #Austria declares war. 5th Coalition War
+ coalition.15.t:0 "The Fifth Coalition War"
+ coalition.15.d:0 "In a last atemp to recover his hegemony in central Europe, the Austrian Empire has declared war on France, therefore starting the Fifth Coalition War."
+ coalition.15.a:0 "Here we go again"
+ coalition.15.b:0 "They don't learn from the past times?"
+ coalition.15.c:0 "One ally more"
+ coalition.15.d:0 "The fifth time 's the charm"
+ 
+ #Sweden offers peace.
+ coalition.16.t:0 "Sweden Offers Finland For Peace"
+ coalition.16.d:0 "Sweden is a minor beligerent in this massive war, they are now offering us land in Finland in exchange for peace between our countries."
+ coalition.16.a:0 "Just what we wanted!"
+ coalition.16.b:0 "Mother Russia wants everything"
+ 
+ #Autria offers peace. Treaty of SchonBrunn
+ coalition.17.t:0 "The Treaty Of SchonBrunn. Austria Offers Peace"
+ coalition.17.d:0 "After being defeated and humillated by the French army, the Austrian Empire has come to us in order to negotiate peace. This would mean the victory of France over the Fifth Coalition and the concessions of land to Poland."
+ coalition.17.a:0 "La France triomphe"
+ coalition.17.b:0 "We won't negotiate with that aritocratic bastards"
+ 
+ #France invades Russia. 6th Coalition War
+ coalition.18.t:0 "Napoleon Invades Russia. The Sixth Coalition War"
+ coalition.18.d:0 "Despite being an ally of France, Russia has violated the terms of the continental system by trading with Britain. This has angered the French Emperor, who has begun his campaign with the Grand Armée towards the Russia."
+ coalition.18.a:0 "I hope they take their winter clothes"
+ coalition.18.b:0 "Next stop: Moscow"
+ coalition.18.c:0 "They don't know what awaits them"
+ coalition.18.d:0 "Winter is coming"
+ 
+ #Prussia offers peace to the coalition
+ coalition.19.t:0 "Prussia Offers Peace"
+ coalition.19.d:0 "Prussia was defeated and forced to join the French faction, but they have take advantage of the situation in Russia to change sides and abandon Napoleon."
+ coalition.19.a:0 "The French faction is coming to pieces"
+ coalition.19.b:0 "They are traitors"
+ 
+ #Austria offers peace to the coalition
+ coalition.20.t:0 "Austria Offers Peace"
+ coalition.20.d:0 "Austria was defeated and forced to join the French faction, but they have take advantage of the situation in Russia to change sides and abandon Napoleon."
+ coalition.20.a:0 "The French faction is coming to pieces"
+ coalition.20.b:0 "They are traitors"
+ 
+ #Sweden offers peace.
+ coalition.21.t:0 "Denmark Offers Norway For Peace"
+ coalition.21.d:0 "Denmark is a minor beligerent in this massive war, they are now offering us land in Norway in exchange for peace between our countries."
+ coalition.21.a:0 "Just what we wanted!"
+ coalition.21.b:0 "We want all"
+ 
+ #France offers peace. Treaty of Fontainebleau
+ coalition.22.t:0 "The Treaty Of Fontainebleau. France Offers Peace"
+ coalition.22.d:0 "Finally, Napoleon finds himself defeated. France has opened negotiations and is our opportunity to force the Emperor to abdicate and send him in exile."
+ coalition.22.a:0 "Rule Britannia!"
+ coalition.22.b:0 "We won't negotiate with that short corsican"
+ 
+ #Napoleon Abdicates News
+ coalition.23.t:0 "Napoleon Abdicates And Exiled To Elba"
+ coalition.23.d:0 "Finally, after years of war, the Napoleonic Wars seem to have ended. The Emperor Of France has abdictaed and exiled to island of Elba in the Mediterranean. The victorious coalition now prepares to redraw the map of Europe."
+ coalition.23.a:0 "Lets hope it is all over"
+ coalition.23.b:0 "Is a dark day for France"
+ coalition.23.c:0 "Send us a letter for Christmas"
+ 
+ #Napoleon Returns News
+ coalition.24.t:0 "Napoleon Returns"
+ coalition.24.d:0 "After months of being in exile in the island of Elba, Napoleon has returned to France. After an emotive reconciliation with his troops and citizens, he has procalimed himself emperor of the French once more and has promised to bring France back to her previous glory."
+ coalition.24.a:0 "Here we go again"
+ coalition.24.b:0 "Mon Emperour!"
+ coalition.24.c:0 "Impossible"
+ 
+ #Napoleon Abdicates Again News
+ coalition.25.t:0 "Napoleon Exiled To Saint Helena"
+ coalition.25.d:0 "After being defeated again by the army of the coalition, Napoleon has abdicated and been exiled to the island of Saint Helena, in the middle of the Atlantic Ocean close to Africa. With his current health and distance, is unlikely that we see him again."
+ coalition.25.a:0 "Finally, peace in our times"
+ coalition.25.b:0 "He will never be forgotten, today is a dark day for France."

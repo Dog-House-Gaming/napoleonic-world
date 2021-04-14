@@ -1,0 +1,26 @@
+﻿l_english:
+
+ AUS_join_coalition:0 "Join the Coalition"
+ POR_join_coalition:0 "Join the Coalition"
+ NAP_join_coalition:0 "Join the Coalition"
+ GER_join_coalition:0 "Join the Coalition"
+ SOV_join_coalition:0 "Join the Coalition"
+ SWE_join_coalition:0 "Join the Coalition"
+ SAX_join_coalition:0 "Join the Coalition"
+ 
+ AUS_offers_peace_first:0 "Offer peace to France"
+ AUS_offers_peace_second:0 "Offer peace to France"
+ AUS_offers_peace_third:0 "Offer peace to France"
+ NAP_offers_peace:0 "Offer peace to France"
+ POR_offers_peace_first:0 "Offer peace to France"
+ ENG_offers_peace_amiens:0 "Offer peace to France"
+ GER_offers_peace_tilsit:0 "Offer peace to France"
+ SWE_offers_peace:0 "Offer peace to Russia"
+ DEN_offers_peace:0 "Offer peace to Sweden"
+ FRA_offers_peace:0 "Offer peace to Britain"
+ 
+ GER_changes_sides:0 "Betray France"
+ AUS_changes_sides:0 "Betray France"
+ 
+ 
+ 

@@ -620,3 +620,7 @@ HYD = {
 	color = rgb { 66 173 204 }
 	color_ui = rgb { 66 173 204 }
 }
+RHI = {
+	color = rgb { 0 153 0 }
+	color_ui = rgb { 10 163 10 }
+}
