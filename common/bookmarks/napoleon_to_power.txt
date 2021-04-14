@@ -21,19 +21,19 @@ bookmarks = {
 				FRA_rebirth_of_revolution
 			}
 		}
-		"GER"={
-			history = "GER_NAPOLEON_TO_POWER_DESC"
-			ideology = communism
+		"ENG"={
+			history = "ENG_NAPOLEON_TO_POWER_DESC"
+			ideology = democratic
 			ideas = {
-				pru_victors_from_7yw
-				pru_old_officers
-				pru_german_efficiency
-			}	
+				eng_naval_hegemony
+				eng_scottish_enlightenment
+				eng_home_industrial_revolution_1
+			}
 			focuses = {
-				PRU_prussian_discipline
-				PRU_prussian_dragoons
-				PRU_german_ambitions
-			}			
+				ENG_union_act
+				ENG_britania_rules_the_waves
+				ENG_square_deffence
+			}
 		}
 		"AUS"={
 			history = "AUS_NAPOLEON_TO_POWER_DESC"
@@ -48,31 +48,33 @@ bookmarks = {
 				AUS_dismantle_the_hierarchy
 			}
 		}
-		"ENG"={
-			history = "ENG_NAPOLEON_TO_POWER_DESC"
+		"SOV"={
+			history = "SOV_NAPOLEON_TO_POWER_DESC"
 			ideology = democratic
 			ideas = {
-				
+				sov_orthodox_church
+				sov_zars_cannon
+				spr_feudal_society
 			}
 			focuses = {
-				ENG_remain_one
-				ENG_fascism
-				ENG_war_with_france
-			}
+				SOV_winter_soldiers
+				SOV_russian_revolution
+				SOV_conquer_finland
+			}	
 		}
-
-		"TUR"={
-			history = "TUR_NAPOLEON_TO_POWER_DESC"
-			ideology = fascism
+		"GER"={
+			history = "GER_NAPOLEON_TO_POWER_DESC"
+			ideology = communism
 			ideas = {
-				tur_analphabetism
-				tur_obsolete_uniforms
-			}
+				pru_victors_from_7yw
+				pru_old_officers
+				pru_german_efficiency
+			}	
 			focuses = {
-				TUR_janissaries
-				TUR_teocracy
-				TUR_imperial
-			}
+				PRU_qual_inf
+				PRU_qual_cav
+				PRU_german_empire
+			}			
 		}
 		"SPR"={
 			history = "SPR_NAPOLEON_TO_POWER_DESC"
@@ -89,21 +91,19 @@ bookmarks = {
 				SPR_reconquest_iberia
 			}		
 		}
-		"SOV"={
-			history = "SOV_NAPOLEON_TO_POWER_DESC"
-			ideology = democratic
+		"TUR"={
+			history = "TUR_NAPOLEON_TO_POWER_DESC"
+			ideology = fascism
 			ideas = {
-				sov_orthodox_church
-				sov_zars_cannon
-				spr_feudal_society
+				tur_analphabetism
+				tur_obsolete_uniforms
 			}
 			focuses = {
-				SOV_winter_soldiers
-				SOV_russian_revolution
-				SOV_conquer_finland
-			}	
+				TUR_janissaries
+				TUR_teocracy
+				TUR_imperial
+			}
 		}
-
 		"---"={
 			history = "OTHER_NAPOLEON_TO_POWER_DESC"
 		}
