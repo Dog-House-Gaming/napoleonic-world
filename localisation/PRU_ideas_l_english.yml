@@ -1,12 +1,26 @@
 ﻿l_english:
 
  pru_victors_from_7yw:0 "Victors from the 7 Years War"
+ pru_victors_from_7yw_desc:0 "The Seven Years War lasted from 1756 to 1763, and was probably the biggest war with more open fronts worldwide until now. It all started as a dispute between Austria and Prussia, but it ended being a giant war between most of the great powers of the world. \n Despite being alone in continental Europe fighting against Austria, France and Russia for years and suffering nearly half a millon of casualties, the Prussian army proved itself the most disciplined and hardened of the world under the leadership of Frederick the Great. \n The times of the Soldier King are gone, but Prussia still remains as a prestigious military power in Central Europe and looks forward to unify the German people."
  pru_german_efficiency:0 "German Efficiency"
+ pru_german_efficiency_desc:0 "Wörk"
  pru_old_officers:0 "Old Officers"
- pru_inneficient_bureocracy:0 "Inneficient Bureocracy"
+ pru_old_officers_desc:0 "Covered by the glory of the seven years war, our mlitary staff has grown older and arrogant. The efficiency of the army has being affected by extensive bureocracy and innovation has decreased. We need to train our staff to get fit again."
+ pru_mil_budget:0 "Expanded Military Budget"
+ pru_inefficient_bureocracy:0 "Inefficient Bureocracy"
  pru_experienced_army:0 "Experienced Army"
  pru_prussian_discipline:0 "Prussian Discipline"
+ pru_prussian_discipline_desc:0 "150% Disciplin!"
+ pru_prussian_militarism:0 "Prussian Militarism"
  pru_prussian_dragoons:0 "Prussian Dragoons"
- 
+ pru_expanded_cavalry:0 "Expanded Mobile Batallions"
+ pru_quality_guns:0 "Quality Weapons"
+ pru_cheap_guns:0 "Cheap Guns"
+ pru_quality_art:0 "Quality Artillery"
+ pru_cheap_art:0 "Cheap Artillery"
+ pru_german_unity:0 "German Unity"
+ pru_imperial_economy:0 "Imperial Economy"
+ pru_imperial_army:0 "Imperial Army"
+ pru_imperial_diplomacy:0 "Imperial Diplomacy"
  
  

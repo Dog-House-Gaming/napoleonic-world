@@ -26,6 +26,7 @@
  fra_concordat:0 "The Concordat"
  fra_raised_wages:0 "Raised Wages"
  
+ 
  fra_scientific_exchange:0 "Scientific Exchange"
  fra_succesor_of_rome:0 "Successor Of Rome"
  fra_socialist_intelectuals:0 "Socialist Intelectuals"
@@ -34,6 +35,15 @@
  fra_rev_influence:0 "Revolutionary Influence"
  fra_rev_no_borders:0 "The Revolution Knows No Borders"
  
+ 
+ fra_second_italian_campaign:0 "Second Italian Campaign"
+ fra_ulm_campaign:0 "Ulm Campaign"
+ fra_invasion_naples:0 "Invasion Of Naples"
+ fra_prussian_campaign:0 "Prussian Campaign"
+ fra_invasion_portugal:0 "Invasion Of Portugal"
+ fra_invasion_russia:0 "Invasion Of Russia"
+ fra_waterloo_campaign:0 "Waterloo Campaign"
+ fra_arc_of_triumph_construction:0 "Arc Of Triumph Construction"
  
  
  charles_maurice_de_talleyrand:0 "Charles Maurice de Talleyrand"
