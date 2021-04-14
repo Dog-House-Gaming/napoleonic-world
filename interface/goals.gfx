@@ -2,7 +2,30 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 	
-	
+	SpriteType = {
+	name = "GFX_goal_generic_bourgeoisie"
+	texturefile = "gfx/interface/goals/goal_generic_bourgeoisie.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_generic_science"
+	texturefile = "gfx/interface/goals/goal_generic_science.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_louisiana_purchase"
+	texturefile = "gfx/interface/goals/focus_louisiana_purchase.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_french_military_factory"
+	texturefile = "gfx/interface/goals/focus_french_military_factory.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_france_triumphant"
+	texturefile = "gfx/interface/goals/focus_france_triumphant.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_arc_of_triumph"
+	texturefile = "gfx/interface/goals/focus_arc_of_triumph.dds"			
+	}
 	SpriteType = {
 	name = "GFX_goal_winter_soldiers"
 	texturefile = "gfx/interface/goals/goal_winter_soldiers.dds"			
