@@ -4,6 +4,10 @@ propaganda_efforts = {
 		available = {
 		tag = FRA
 		}
+		ai_will_do = {
+			factor = 20
+		}
+
 		cost = 50
 		days_remove = 10
 		
@@ -24,6 +28,9 @@ propaganda_efforts = {
 		}
 		cost = 75
 		days_remove = 10
+		ai_will_do = {
+			factor = 20
+		}
 		
 		remove_effect = {
 			add_ideas = fra_aux_armes_citoyens
@@ -42,6 +49,9 @@ propaganda_efforts = {
 		}
 		cost = 75
 		days_remove = 10
+		ai_will_do = {
+			factor = 20
+		}
 		
 		remove_effect = {
 			add_ideas = fra_la_liberte_guide_nos_pas
@@ -60,6 +70,9 @@ propaganda_efforts = {
 		}
 		cost = 75
 		days_remove = 10
+		ai_will_do = {
+			factor = 20
+		}
 		
 		remove_effect = {
 			add_ideas = fra_la_trompette_guerriere
@@ -78,6 +91,9 @@ propaganda_efforts = {
 		}
 		cost = 100
 		days_remove = 10
+		ai_will_do = {
+			factor = 20
+		}
 		
 		remove_effect = {
 			add_ideas = fra_la_republique_vous_apelle

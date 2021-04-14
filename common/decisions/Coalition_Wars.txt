@@ -1,0 +1,566 @@
+foreign_politics = {
+	#------------------------------------------Join The Coalition---------------------------------------
+	AUS_join_coalition = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = AUS
+		}
+		available = {
+			tag = AUS
+			NOT = { has_war_with = ENG }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_truce_with = FRA }
+			OR = {
+				AND = {
+					has_global_flag = thirdcw_started
+					NOT = { has_global_flag = thirdcw_over }
+				}
+				AND = {
+					has_global_flag = fourthcw_over
+					NOT = { has_global_flag = fifthcw_over }
+				}
+				AND = {
+					has_global_flag = seventhcw_started
+					NOT = { has_global_flag = seventhcw_over }
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				date > 1805.1.1
+				factor = 100
+			}
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.1
+				}
+			}
+		}
+		
+		
+	}
+	POR_join_coalition = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = POR
+		}
+		available = {
+			tag = POR
+			NOT = { has_war_with = ENG }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_truce_with = FRA }
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.2
+				}
+			}
+		}
+		
+		
+	}
+	GER_join_coalition = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+			NOT = { has_war_with = ENG }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_truce_with = FRA }
+			OR = {
+				AND = {
+					has_global_flag = thirdcw_over
+					NOT = { has_global_flag = fourthcw_started }
+				}
+				AND = {
+					has_global_flag = seventhcw_started
+					NOT = { has_global_flag = seventhcw_over }
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.3
+				}
+			}
+		}
+		
+		
+	}
+	SOV_join_coalition = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = SOV
+		}
+		available = {
+			tag = SOV
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_truce_with = FRA }
+			OR = {
+				AND = {
+					has_global_flag = thirdcw_started
+					NOT = { has_global_flag = thirdcw_over }
+				}
+				AND = {
+					has_global_flag = sixthcw_started
+					NOT = { has_global_flag = sixthcw_over }
+				}
+				AND = {
+					has_global_flag = seventhcw_started
+					NOT = { has_global_flag = seventhcw_over }
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.4
+				}
+			}
+		}
+		
+		
+	}
+	SWE_join_coalition = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = SWE
+		}
+		available = {
+			tag = SWE
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_truce_with = FRA }
+			OR = {
+				AND = {
+					has_global_flag = thirdcw_started
+					NOT = { has_global_flag = thirdcw_over }
+				}
+				AND = {
+					has_global_flag = sixthcw_started
+					NOT = { has_global_flag = sixthcw_over }
+				}
+				AND = {
+					has_global_flag = seventhcw_started
+					NOT = { has_global_flag = seventhcw_over }
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.5
+				}
+			}
+		}
+		
+		
+	}
+	SAX_join_coalition = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = SAX
+		}
+		available = {
+			tag = SAX
+			NOT = { has_war_with = ENG }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_truce_with = FRA }
+			AND = { 
+				has_global_flag = fourthcw_started
+				NOT = { has_global_flag = fourthcw_over }
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.12
+				}
+			}
+		}
+		
+		
+	}
+	#----------------------------------------------Treaties Of Peace--------------------------------
+	AUS_offers_peace_first = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = AUS
+			AND = { 
+				NOT = { has_global_flag = secondcw_over }
+			}
+		}
+		available = {
+			tag = AUS
+			has_war_with = FRA
+			surrender_progress > 0.10
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			FRA = { 
+				country_event = {
+					id = coalition.6
+				}
+			}
+		}
+		
+		
+	}
+	NAP_offers_peace = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = NAP
+			AND = { 
+				NOT = { has_global_flag = secondcw_over }
+			}
+		}
+		available = {
+			tag = NAP
+			has_war_with = FRA
+			AUS = {
+				NOT = { 
+					has_war_with = FRA
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			FRA = { 
+				country_event = {
+					id = coalition.7
+				}
+			}
+		}
+		
+		
+	}
+	POR_offers_peace_first = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = POR
+			AND = { 
+				NOT = { has_global_flag = secondcw_over }
+			}
+		}
+		available = {
+			tag = POR
+			has_war_with = FRA
+			AUS = {
+				NOT = { 
+					has_war_with = FRA
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			FRA = { 
+				country_event = {
+					id = coalition.8
+				}
+			}
+		}
+	}
+	ENG_offers_peace_amiens = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = ENG
+			AND = { 
+				NOT = { has_global_flag = secondcw_over }
+			}
+		}
+		available = {
+			tag = ENG
+			has_war_with = FRA
+			AUS = {
+				NOT = { 
+					has_war_with = FRA
+				}
+			}
+			FRA = {
+				surrender_progress < 0.05
+			}
+			NOT = { has_idea = eng_william_pitt }
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 4000
+				date > 1802.1.1
+			}
+			modifier = {
+				factor = 100
+				has_idea = eng_henry_addington
+			}
+		}
+		remove_effect = {
+			FRA = { 
+				country_event = {
+					id = coalition.9
+				}
+			}
+		}
+	}
+	AUS_offers_peace_second = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = AUS
+			AND = { 
+				has_global_flag = thirdcw_started
+				NOT = { has_global_flag = thirdcw_over }
+			}
+		}
+		available = {
+			tag = AUS
+			has_war_with = FRA
+			surrender_progress > 0.50
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			FRA = { 
+				country_event = {
+					id = coalition.11
+				}
+			}
+		}
+	}
+	GER_offers_peace_tilsit = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = GER
+			AND = { 
+				has_global_flag = fourthcw_started
+				NOT = { has_global_flag = fourthcw_over }
+			}
+		}
+		available = {
+			tag = GER
+			has_war_with = FRA
+			surrender_progress > 0.50
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			FRA = { 
+				country_event = {
+					id = coalition.14
+				}
+			}
+		}
+	}
+	SWE_offers_peace = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = SWE
+			AND = { 
+				has_global_flag = fourthcw_over
+				NOT = { has_global_flag = sixthcw_started }
+			}
+		}
+		available = {
+			tag = SWE
+			has_war_with = SOV
+			surrender_progress > 0.20
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			SOV = { 
+				country_event = {
+					id = coalition.16
+				}
+			}
+		}
+	}
+	AUS_offers_peace_third = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = AUS
+			AND = { 
+				has_global_flag = fifthcw_started
+				NOT = { has_global_flag = fifthcw_over }
+			}
+		}
+		available = {
+			tag = AUS
+			has_war_with = FRA
+			surrender_progress > 0.50
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			FRA = { 
+				country_event = {
+					id = coalition.17
+				}
+			}
+		}
+	}
+	GER_changes_sides = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = GER
+			AND = { 
+				has_global_flag = sixthcw_started
+				NOT = { has_global_flag = sixthcw_over }
+			}
+		}
+		available = {
+			tag = GER
+			has_war_with = SOV
+			surrender_progress > 0
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.19
+				}
+			}
+		}
+	}
+	AUS_changes_sides = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = AUS
+			AND = { 
+				has_global_flag = sixthcw_started
+				NOT = { has_global_flag = sixthcw_over }
+			}
+		}
+		available = {
+			tag = AUS
+			FRA = {
+				has_war_with = SOV
+			}
+			GER = {
+				NOT = {
+					is_in_faction_with = FRA
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.20
+				}
+			}
+		}
+	}
+	DEN_offers_peace = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = DEN
+			has_truce_with = SWE
+		}
+		available = {
+			tag = DEN
+			has_war_with = SWE
+			surrender_progress > 0.20
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			SWE = { 
+				country_event = {
+					id = coalition.21
+				}
+			}
+		}
+	}
+	FRA_offers_peace = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = FRA
+			has_war_with = ENG
+		}
+		available = {
+			tag = FRA
+			has_war_with = ENG
+			surrender_progress > 0.40
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = coalition.22
+				}
+			}
+		}
+	}
+}
