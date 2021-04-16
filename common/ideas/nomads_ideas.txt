@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+		
+		
+		
+		uncharted_idea = {
+			picture = unknown
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 1
+				conscription = -1
+				political_power_factor = -1
+				enemy_justify_war_goal_time = 100
+				join_faction_tension = 10
+				justify_war_goal_time = 100
+			}
+
+		}
+		
+		
+		
+	}
+}
