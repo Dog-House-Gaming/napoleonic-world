@@ -1,15 +1,25 @@
 ai_historical_focus_list_ENG = {
 	ai_national_focuses = {
 		# grab as fast as you can if available
-		ENG_international
+		ENG_union_act
+		ENG_expand_industrialization
+		ENG_dev_urban
+		ENG_agriculture_revolution
+		ENG_research1
+		ENG_research2
+		ENG_whigs
+		ENG_tories
+		ENG_reduce_monarch_power
+		ENG_anti_rev
+		ENG_liberalism
+		ENG_constitutional_monarchy
+		ENG_pm_over_the_king
+		ENG_free_trade
+		ENG_inf_countryside
 		ENG_take_position
 		ENG_dennounce_france
-		ENG_embargo_france
-		ENG_domestic
-		ENG_remain_one
-		ENG_political_parties
-		ENG_fascism
-		
+		ENG_aggressive_focus
+		ENG_war_with_france
 	}
 }
 

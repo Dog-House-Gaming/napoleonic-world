@@ -5,8 +5,10 @@ ai_historical_focus_list_FRA = {
 		FRA_appease_the_population
 		
 		NAP_instability_in_Europe
-		NAP_third_treaty_of_san_ildefonso
 		NAP_continental_system
+		FRA_2nd_ita_camp
+		FRA_triumph_over_ita
+		NAP_third_treaty_of_san_ildefonso
 		FRA_infraestructure
 		FRA_side_burg
 		FRA_bank_of_france
@@ -21,19 +23,12 @@ ai_historical_focus_list_FRA = {
 		FRA_arms_factory_construction_1
 		FRA_arms_factory_construction_2
 		FRA_arms_factory_construction_3
-		NAP_force_system_upon_portugal
-		FRA_experience_from_italy
-		FRA_small_arms
-		FRA_infantry_tactics
-		FRA_small_arms_2
-		FRA_infantry_tactics_2
-		FRA_meritocratic_army
-		FRA_french_military
-		NAP_force_system_upon_prussia
-		FRA_artillery_expansion
-		FRA_artillery_expansion_2
-		FRA_french_artillery
-		FRA_prepare_for_war
+		FRA_ulm_camp
+		FRA_confederation_rhine
+		FRA_naples_camp
+		FRA_prussia_camp
+		FRA_arc_of_triumph
+		FRA_portugal_camp
 	}
 }
 
