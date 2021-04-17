@@ -1,6 +1,7 @@
 ai_historical_focus_list_GER = {
 	ai_national_focuses = {
 		# grab as fast as you can if available
+		PRU_state_affairs
 		PRU_political
 		PRU_condemn_napoleon
 		PRU_embargo_napoleon
@@ -8,7 +9,13 @@ ai_historical_focus_list_GER = {
 		PRU_network_with_majors
 		PRU_prepare_for_war
 		PRU_the_hre
-		PRU_stand_with_austria
+		PRU_german_ambitions
+		PRU_sphere_of_influence
+		PRU_refit_the_army
+		PRU_recruit_new_officers
+		PRU_reform_bureocracy
+		PRU_qual_inf
+		PRU_qual_cav
 	}
 }
 
