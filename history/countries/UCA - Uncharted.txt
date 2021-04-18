@@ -18,7 +18,7 @@ set_popularities = {
 	neutrality = 100
 }
 
-ideas = {
+add_ideas = {
 	uncharted_idea
 }
 

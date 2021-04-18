@@ -23,5 +23,16 @@ set_popularities = {
 		communism =0
 		neutrality = 100
 	}
+	
+	create_country_leader = {
+	name = "Personal Union"
+	desc = ""
+	picture = "Portrait_GNE.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
 set_convoys = 5
 
