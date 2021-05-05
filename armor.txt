@@ -1,0 +1,540 @@
+technologies = {
+	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+	early_cavalry = { #Early Cavalry
+
+		enable_equipments = {
+			gw_tank_equipment
+			#early_cavalry_equipment
+		}
+		enable_subunits = {
+			early_cavalry
+		}
+
+		path = {
+			leads_to_tech = basic_cuirassier
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = reiter
+			research_cost_coeff = 1
+		}
+		path = {
+		leads_to_tech = basic_dragoon
+			research_cost_coeff = 1
+		}
+		path = {
+		leads_to_tech = basic_hussars
+			research_cost_coeff = 1
+		}
+		path = {
+		leads_to_tech = basic_lancers
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1750
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = -1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+		}
+
+		categories = {
+			cavalry
+		}
+	}
+	basic_cuirassier = {
+		enable_equipments = {
+			basic_cuirassier_equipment
+		}
+		enable_subunits = {
+			cuirassier
+		}
+
+		path = {
+			leads_to_tech = regular_cuirassier
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1790
+		folder = {
+			name = armour_folder
+			position = { x = 10 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+		}
+
+		categories = {
+			cavalry
+			cuirassier
+		}
+	}
+	basic_dragoon = {
+		enable_equipments = {
+			basic_dragoon_equipment
+		}
+		enable_subunits = {
+			dragoon
+		}
+
+		path = {
+			leads_to_tech = regular_dragoon
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1790
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			dragoon
+		}
+	}
+	basic_lancers = {
+		enable_equipments = {
+			basic_lancer_equipment
+		}
+		enable_subunits = {
+			lancers
+		}
+
+		path = {
+			leads_to_tech = regular_lancer
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1790
+		folder = {
+			name = armour_folder
+			position = { x = -10 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			lancer
+		}
+	}
+	basic_hussars = {
+		enable_equipments = {
+			basic_hussar_equipment
+		}
+		enable_subunits = {
+			hussars
+		}
+
+		path = {
+			leads_to_tech = regular_hussars
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1790
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			hussars
+		}
+	}
+	regular_hussars = {
+		enable_equipments = {
+			regular_hussar_equipment
+		}
+		research_cost = 2
+		start_year = 1793
+		path = {
+			leads_to_tech = light_dragoon
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_hussars
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			hussars
+		}
+	}
+	regular_lancer = {
+		enable_equipments = {
+			regular_lancer_equipment
+		}
+		research_cost = 2
+		start_year = 1793
+		path = {
+			leads_to_tech = heavy_lancer
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_lancer
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = armour_folder
+			position = { x = -10 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			lancer
+		}
+	}
+	regular_dragoon = {
+		enable_equipments = {
+			regular_dragoon_equipment
+		}
+		research_cost = 2
+		start_year = 1793
+		path = {
+			leads_to_tech = light_dragoon
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_dragoon
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_dragoon
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			dragoon
+		}
+	}
+	regular_cuirassier = {
+		enable_equipments = {
+			regular_hussar_equipment
+		}
+		research_cost = 2
+		start_year = 1793
+		folder = {
+			name = armour_folder
+			position = { x = 10 y = 3 }
+		}
+		path = {
+			leads_to_tech = advanced_cuirassier
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_dragoon
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_lancer
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			cuirassier
+		}
+	}
+	reiter = {
+		enable_equipments = {
+			regular_reiter_equipment
+		}
+		enable_subunits = {
+			reiter
+		}
+		research_cost = 2
+		start_year = 1794
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			cavalry
+			reiter
+		}
+	}
+	heavy_lancer = {
+		enable_subunits = {
+			heavy_lancer
+		}
+		research_cost = 2
+		start_year = 1796
+		folder = {
+			name = armour_folder
+			position = { x = -7 y = 5 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			cavalry
+			lancer
+		}
+	}
+	heavy_dragoon = {
+		enable_subunits = {
+		heavy_dragoon
+		}
+		research_cost = 2
+		start_year = 1796
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 5 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			cavalry
+			dragoon
+			cuirassier
+		}
+	}
+	light_dragoon = {
+		enable_subunits = {
+		light_dragoon
+		}
+		research_cost = 2
+		start_year = 1796
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 5 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			cavalry
+			dragoon
+		}
+	}
+	advanced_cuirassier = {
+		enable_equipments = {
+			advanced_hussar_equipment
+		}
+		research_cost = 2
+		start_year = 1800
+		folder = {
+			name = armour_folder
+			position = { x = 10 y = 7 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		path = {
+			leads_to_tech = horse_grenadiers
+			research_cost_coeff = 1
+		}
+		categories = {
+			cavalry
+			cuirassier
+		}
+	}
+	advanced_dragoon = {
+		enable_equipments = {
+			advanced_dragoon_equipment
+		}
+		research_cost = 2
+		start_year = 1800
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 7 }
+		}
+		path = {
+			leads_to_tech = carabiniers
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			dragoon
+		}
+	}
+	advanced_hussars = {
+		enable_equipments = {
+			advanced_hussar_equipment
+		}
+		research_cost = 2
+		start_year = 1800
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 7 }
+		}
+		path = {
+			leads_to_tech = horse_skirmishers
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			hussars
+		}
+	}
+	advanced_lancer = {
+		enable_equipments = {
+			advanced_lancer_equipment
+		}
+		research_cost = 2
+		start_year = 1800
+		folder = {
+			name = armour_folder
+			position = { x = -10 y = 7 }
+		}
+		path = {
+			leads_to_tech = light_guards
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			lancer
+		}
+	}
+	carabiniers = {
+		enable_subunits = {
+			carabiniers
+		}
+		research_cost = 2
+		start_year = 1803
+		folder = {
+			name = armour_folder
+			position = { x = 5 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			carabiniers
+		}
+	}
+	horse_grenadiers = {
+		enable_subunits = {
+			horse_grenadiers
+		}
+		research_cost = 2
+		start_year = 1803
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			mounted_grenades
+			elite_cavalry
+		}
+	}
+	light_guards = {
+		enable_subunits = {
+			light_guards
+		}
+		research_cost = 2
+		start_year = 1803
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			elite_cavalry
+		}
+	}
+	horse_skirmishers = {
+		enable_subunits = {
+			horse_skirmishers
+		}
+		research_cost = 2
+		start_year = 1803
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			cavalry
+			elite_cavalry
+			hussars
+		}
+	}
+
+
+}
