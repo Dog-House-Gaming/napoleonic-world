@@ -183,4 +183,43 @@
  howitzer_equipment_1:0 "Howitzer"
  howitzer_equipment_1_desc:0 " "
  howitzer_equipment_1_short:0 "Howitzer"
- 
+
+ fourth_ship_of_the_line_1:0 "Fourth Ship of the Line"
+ fourth_ship_of_the_line_1_desc:0 "Fourth of the line ships mounted from 46 to 60 guns. They are great for going where bigger ships struggle to go, like shallow waters, or going to far away foreign stations where larger enemy ships were unlikely to be encountered."
+ fourth_ship_of_the_line_1_short:0 "Fourth Ship of the Line"
+
+ third_ship_of_the_line_1:0 "Third Ship of the Line"
+ third_ship_of_the_line_1_desc:0 "Third of the line ships mounted from 64 to 80 guns, typically built with 2 gun decks. Third rate ships are the go-to ship in most fleets for being the optimal configuration."
+ third_ship_of_the_line_1_short:0 "Third Ship of the Line"
+
+ third_ship_of_the_line_2:0 "Improved Third Ship of the Line"
+ third_ship_of_the_line_2_desc:0 "Third of the line ships mounted from 64 to 80 guns, typically built with 2 gun decks. Third rate ships are the go-to ship in most fleets for being the optimal configuration."
+ third_ship_of_the_line_2_short:0 "Improved Third Ship of the Line"
+
+ third_ship_of_the_line_3:0 "Advanced Third Ship of the Line"
+ third_ship_of_the_line_3_desc:0 "Third of the line ships mounted from 64 to 80 guns, typically built with 2 gun decks. Third rate ships are the go-to ship in most fleets for being the optimal configuration."
+ third_ship_of_the_line_3_short:0 "Advanced Third Ship of the Line"
+
+ second_ship_of_the_line_1:0 "Second Ship of the Line"
+ second_ship_of_the_line_1_desc:0 "Second of the line ships mounted from 90 to 98 guns on three gun decks, though typically only mounted guns on two decks to reduce weight of the ship."
+ second_ship_of_the_line_1_short:0 "Second Ship of the Line"
+
+ second_ship_of_the_line_2:0 "Second Ship of the Line"
+ second_ship_of_the_line_2_desc:0 "Second of the line ships mounted from 90 to 98 guns on three gun decks, though typically only mounted guns on two decks to reduce weight of the ship."
+ second_ship_of_the_line_2_short:0 "Second Ship of the Line"
+
+ second_ship_of_the_line_3:0 "Second Ship of the Line"
+ second_ship_of_the_line_3_desc:0 "Second of the line ships mounted from 90 to 98 guns on three gun decks, though typically only mounted guns on two decks to reduce weight of the ship."
+ second_ship_of_the_line_3_short:0 "Second Ship of the Line"
+
+ first_ship_of_the_line_1:0 "First Ship of the Line"
+ first_ship_of_the_line_1_desc:0 "First of the line ships mounted from 98 to 140 guns and typically served as admeral command ships."
+ first_ship_of_the_line_1_short:0 "First Ship of the Line"
+
+ first_ship_of_the_line_2:0 "First Ship of the Line"
+ first_ship_of_the_line_2_desc:0 "First of the line ships mounted from 98 to 140 guns and typically served as admeral command ships."
+ first_ship_of_the_line_2_short:0 "First Ship of the Line"
+
+ first_ship_of_the_line_3:0 "First Ship of the Line"
+ first_ship_of_the_line_3_desc:0 "First of the line ships mounted from 98 to 140 guns and typically served as admeral command ships."
+ first_ship_of_the_line_3_short:0 "First Ship of the Line"
