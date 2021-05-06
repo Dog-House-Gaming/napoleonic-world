@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 
 	spriteType = {
 		name = "GFX_infantry_grenades_medium"
@@ -15,7 +15,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_carbine_medium"
 		texturefile = "gfx/interface/technologies/carbine.dds"
-	}	
+	}
 	SpriteType = {
 		name = "GFX_officer_pistols_medium"
 		texturefile = "gfx/interface/technologies/officer_pistols.dds"
@@ -317,7 +317,43 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/super_heavy_cannon.dds"
 	}
 	SpriteType = {
-		name = "GFX_fourth_ship_of_the_line_1_medium"
-		texturefile = "gfx/interface/technologies/4th_ship_of_the_line_1.dds"
+		name = "GFX_fourth_ship_of_the_line_medium"
+		texturefile = "gfx/interface/technologies/4th_rate_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_third_ship_of_the_line_medium"
+		texturefile = "gfx/interface/technologies/3rd_rate_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_third_ship_of_the_line_2_medium"
+		texturefile = "gfx/interface/technologies/3rd_rate_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_third_ship_of_the_line_3_medium"
+		texturefile = "gfx/interface/technologies/3rd_rate_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_second_ship_of_the_line_medium"
+		texturefile = "gfx/interface/technologies/2nd_rate_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_second_ship_of_the_line_2_medium"
+		texturefile = "gfx/interface/technologies/2nd_rate_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_second_ship_of_the_line_3_medium"
+		texturefile = "gfx/interface/technologies/2nd_rate_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_first_ship_of_the_line_medium"
+		texturefile = "gfx/interface/technologies/1st_rate_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_first_ship_of_the_line_2_medium"
+		texturefile = "gfx/interface/technologies/1st_rate_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_first_ship_of_the_line_3_medium"
+		texturefile = "gfx/interface/technologies/1st_rate_3.dds"
 	}
 }

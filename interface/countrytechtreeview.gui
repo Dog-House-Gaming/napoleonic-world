@@ -1186,7 +1186,8 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_DESTROYERS"
+					#text = "NAVAL_TITLE_DESTROYERS"
+					text = "4th Rate"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1196,11 +1197,12 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_cruiser"
-					position = { x = 30 y = 185 }
+					position = { x = 30 y = 190 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_CRUISERS"
+					#text = "NAVAL_TITLE_CRUISERS"
+					text = "3rd Rate"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1210,11 +1212,12 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_battlecruiser"
-					position = { x = 30 y = 465 }
+					position = { x = 30 y = 335 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_BATTLECRUISERS"
+					#text = "NAVAL_TITLE_BATTLECRUISERS"
+					text = "2nd Rate"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1224,11 +1227,12 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_battleship"
-					position = { x = 30 y = 605 }
+					position = { x = 30 y = 470 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_BATTLESHIPS"
+					#text = "NAVAL_TITLE_BATTLESHIPS"
+					text = "1st Rate"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1237,36 +1241,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "naval_subtitle_carrier"
-					position = { x = 30 y = 893 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_CARRIERS"
-					maxWidth = 600
-					maxHeight = 62
-					format = left
-					Orientation = "UPPER_LEFT"
-					pdx_tooltip = "carrier_desc"
-				}
-
-				instantTextBoxType = {
-					name = "naval_subtitle_sub"
-					position = { x = 30 y = 1032 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_SUBMARINES"
-					maxWidth = 600
-					maxHeight = 62
-					format = left
-					Orientation = "UPPER_LEFT"
-					pdx_tooltip = "submarine_desc"
-				}
-
-				instantTextBoxType = {
 					name = "naval_subtitle_transport"
-					position = { x = 30 y = 1177 }
+					position = { x = 30 y = 700 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
