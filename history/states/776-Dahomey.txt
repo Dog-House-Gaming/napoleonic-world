@@ -2,20 +2,15 @@
 state={
 	id=776
 	name="STATE_776" # Benin/Dahomey
-	manpower = 1351563
+	manpower = 10000
 
 	state_category = pastoral
 	history={
-		owner = UCA 
-		add_core_of = DAH
+		owner = UCA
 		victory_points = {
 			10919 1
 		}
 		buildings = {
-			infrastructure = 3
-			10919 = {
-				naval_base = 1
-			}
 		}
 	}
 

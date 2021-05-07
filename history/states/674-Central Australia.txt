@@ -9,7 +9,6 @@ state={
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 1
 
 		}
 		add_core_of = AST

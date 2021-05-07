@@ -2,19 +2,16 @@
 state={
 	id=556
 	name="STATE_556" # Mali (previously French West Africa)
-	manpower = 3324782
+	manpower = 100
 
 	state_category = rural
 
 	history={
 		owner = UCA
-		add_core_of = FRA
-		add_core_of = MLI
 		victory_points = {
 			4927 1
 		}
 		buildings = {
-			infrastructure = 3
 		}
 	}
 

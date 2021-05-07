@@ -1,7 +1,7 @@
 state={
 	id=786
 	name="STATE_786" # Mauritanian Desert
-	manpower = 124200
+	manpower = 100
 
 	state_category = wasteland
 	impassable = yes
@@ -9,7 +9,6 @@ state={
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 0
 		}
 
 	}

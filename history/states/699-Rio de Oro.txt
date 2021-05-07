@@ -1,18 +1,13 @@
 state={
 	id=699
 	name="STATE_699"
-	manpower = 21056
+	manpower = 100
 
 	state_category = wasteland
 
 	history={
 		owner = UCA
-		add_core_of = WES
 		buildings = {
-			infrastructure = 1
-			8038 = {
-				naval_base = 1
-			}
 		}
 		victory_points = {
 			8038 1

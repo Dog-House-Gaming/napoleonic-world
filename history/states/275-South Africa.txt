@@ -2,9 +2,9 @@
 state={
 	id=275
 	name="STATE_275" # Transvaal
-	manpower = 3680363
+	manpower = 10000
 
-	state_category = city
+	state_category = wasteland
 
 	resources={
 		steel=5 # was: 8
@@ -14,15 +14,10 @@ state={
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 5
-			arms_factory = 1
-			industrial_complex = 5
-			air_base = 3
 		}
 		victory_points = {
 			10400 10
 		}
-		add_core_of = SAF
 	}
 
 	provinces={

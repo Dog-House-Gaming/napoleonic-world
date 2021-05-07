@@ -2,26 +2,19 @@
 state={
 	id=272
 	name="STATE_272"
-	manpower = 1638000
+	manpower = 100
 	resources={
 		steel=3 # was: 4
 	}
 
-	state_category = pastoral
+	state_category = wasteland
 
 	history={
 		owner = UCA
-		add_core_of = FRA
-		add_core_of = SEN
 		victory_points = {
 			4948 5
 		}
 		buildings = {
-			infrastructure = 3
-			air_base = 4
-			4948 = {
-				naval_base = 3
-			}
 		}
 	}
 

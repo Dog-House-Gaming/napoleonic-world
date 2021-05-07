@@ -2,7 +2,7 @@
 state={
 	id=782
 	name="STATE_782" # Tombouctou
-	manpower = 79243
+	manpower = 100
 
 	state_category = wasteland
 	impassable = yes
@@ -10,7 +10,6 @@ state={
 	history={
 	owner = UCA
 		buildings = {
-			infrastructure = 0
 		}
 
 	}

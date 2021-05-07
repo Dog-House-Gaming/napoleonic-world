@@ -3,19 +3,14 @@ state={
 	name="STATE_669"
 	manpower = 314300
 
-	state_category = pastoral
+	state_category = wasteland
 
 	history= {
 		owner = UCA
-		add_core_of = INS
 		victory_points = {
 			12371 1
 		}
 		buildings = {
-			infrastructure = 1
-			12371 = {
-				naval_base = 2
-			}
 		}
 	}
 	provinces={

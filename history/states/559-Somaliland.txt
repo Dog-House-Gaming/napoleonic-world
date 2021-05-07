@@ -2,22 +2,16 @@ state=
 {
 	id=559
 	name="STATE_559"
-	manpower = 1028895
+	manpower = 10000
 
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = UCA
-		add_core_of = SOM
 		victory_points = {
 			12991 3
 		}
 		buildings = {
-			infrastructure = 3
-			air_base = 1
-			12941 = {
-				naval_base = 2
-			}
 		}
 	}
 	provinces=

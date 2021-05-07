@@ -4,12 +4,11 @@ state={
 	name="STATE_519"
 	manpower = 200800
 
-	state_category = pastoral
+	state_category = wasteland
 
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 2
 
 		}
 		add_core_of = AST
