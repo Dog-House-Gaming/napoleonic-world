@@ -2,9 +2,9 @@
 state={
 	id=295
 	name="STATE_295" # Leopoldville
-	manpower = 10000
+	manpower = 3540948
 
-	state_category = wasteland
+	state_category = rural
 
 	resources={
 		tungsten=2 # was: 2
@@ -13,6 +13,11 @@ state={
 	history={
 		owner = UCA
 		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			10968 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			191 1
@@ -20,6 +25,7 @@ state={
 		victory_points = {
 			5117 3
 		}
+			add_core_of = COG
 	}
 
 	provinces={

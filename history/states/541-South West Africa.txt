@@ -2,17 +2,20 @@
 state={
 	id=541
 	name="STATE_541"
-	manpower = 10000
+	manpower = 462000
 
 	state_category = wasteland
 
 	history={
 		owner = UCA
 		buildings = {
+			infrastructure = 3
 		}
 		victory_points = {
 			4879 1
 		}
+		add_core_of = SAF
+		add_core_of = NMB
 	}
 
 	provinces={

@@ -1,9 +1,9 @@
 state={
 	id=672
 	name="STATE_672"
-	manpower = 10000
+	manpower = 8254900
 
-	state_category = wasteland
+	state_category = town
 
 	resources={
 		rubber=150 # was: 268
@@ -15,6 +15,7 @@ state={
 	history=
 	{
 		owner = UCA
+		add_core_of = INS
 		victory_points = {
 			4652 1
 		}
@@ -24,6 +25,18 @@ state={
 		}
 
 		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+			4652 = {
+				naval_base = 3
+			}
+			1648 = {
+				naval_base = 1
+			}
+			12268 = {
+				naval_base = 1
+			}
 		}
 	}
 	provinces={

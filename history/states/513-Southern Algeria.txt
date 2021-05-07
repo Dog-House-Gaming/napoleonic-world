@@ -2,16 +2,19 @@
 state={
 	id=513
 	name="STATE_513" # Tlmecen
-	manpower = 100
+	manpower = 811486
 
 	state_category = wasteland
 
 	history={
 		owner = UCA
+		add_core_of = FRA
+		add_core_of = ALG
 		victory_points = {
 			12034 1
 		}
 		buildings = {
+			infrastructure = 2
 		}
 	}
 

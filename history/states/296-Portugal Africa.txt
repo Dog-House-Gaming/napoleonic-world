@@ -2,7 +2,7 @@
 state={
 	id=296
 	name="STATE_296" # Guinea-Bissau
-	manpower = 10000
+	manpower = 364900
 
 	state_category = enclave
 	resources={
@@ -10,10 +10,15 @@ state={
 	}
 	history={
 		owner = UCA
+		add_core_of = GNB
 		victory_points = {
 			12891 1
 		}
 		buildings = {
+			infrastructure = 2
+			12891 ={
+				naval_base = 1
+			}
 		}
 	}
 

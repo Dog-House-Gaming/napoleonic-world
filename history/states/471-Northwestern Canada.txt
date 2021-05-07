@@ -2,14 +2,17 @@
 state={
 	id=471
 	name="STATE_471" # Northwestern Canada
-	manpower = 100
+	manpower = 27681
 
 	state_category = wasteland
 
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
+			10548 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = CAN
 	}

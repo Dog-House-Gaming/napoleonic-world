@@ -9,10 +9,16 @@ state=
 	history=
 	{
 		owner = UCA
+		add_core_of = ETH
 		victory_points = {
 			12766 1
 		}
 		buildings = {
+			infrastructure = 4
+			air_base = 3
+			12766 = {
+				naval_base = 3
+			}
 		}
 	}
 	provinces={

@@ -2,7 +2,7 @@
 state={
 	id=538
 	name="STATE_538" # Central Congo
-	manpower = 10000
+	manpower = 1693974
 
 	state_category = wasteland
 	resources={
@@ -11,7 +11,9 @@ state={
 	history={
 		owner = UCA
 		buildings = {
+			infrastructure = 1
 		}
+		add_core_of = COG
 	}
 
 	provinces={

@@ -11,6 +11,7 @@ state=
 		add_core_of = SUD
 		owner = UCA
 		buildings = {
+			infrastructure = 0
 		}
 	}
 	provinces={

@@ -9,7 +9,10 @@ state={
 	history={
 		owner = UCA
 		buildings = {
+			infrastructure = 3
+
 		}
+		add_core_of = UGA
 		victory_points = {
 			12989 1
 		}
@@ -18,6 +21,6 @@ state={
 	provinces={
 		3854 7088 7133 8223 12929 12989 13177
 	}
-	manpower=10000
+	manpower=3515625
 	buildings_max_level_factor=1.000
 }

@@ -2,13 +2,23 @@
 state={
 	id=284
 	name="STATE_284" # North Island
-	manpower = 10000
+	manpower = 899836
 
-	state_category = wasteland
+	state_category = city
 
 	history={
 		owner = UCA
 		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 3
+			4543 = {
+				naval_base = 3
+			}
+			1814 = {
+				naval_base = 2
+			}
 		}
 		victory_points = {
 			1814 10

@@ -2,16 +2,24 @@
 state={
 	id=473
 	name="STATE_473"
-	manpower = 100
+	manpower = 638165
 	resources={
 		oil=1 # was: 2
 	}
 
-	state_category = wasteland
+	state_category = town
 
 	history={
 		owner = UCA
 		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 3
+			1408 = {
+				naval_base = 5
+			}
 		}
 		add_core_of = CAN
 		victory_points = {
