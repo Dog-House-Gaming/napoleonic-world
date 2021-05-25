@@ -17,7 +17,7 @@ SOV = {
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
-	color = rgb { 36 132 247 }
+	color = rgb { 0 100 170 }
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
@@ -102,7 +102,7 @@ BUL = {
 	color_ui = rgb { 210 147 217 }
 }
 POR = {
-	color = rgb { 39 116 70 }
+	color = rgb { 0 80 150 }
 	color_ui = rgb { 51 151 91 }
 }
 FIN = {
@@ -122,7 +122,7 @@ AFG = {
 	color_ui = rgb { 83 208 217 }
 }
 ARG = {
-	color = rgb { 145 157 236 }
+	color = rgb { 181 152 67 }
 	color_ui = rgb { 189 204 255 }
 }
 AST = {
@@ -154,7 +154,7 @@ CHL = {
 	color_ui = rgb { 202 131 139 }
 }
 COL = {
-	color = rgb { 222 187 91 }
+	color = rgb { 181 152 67 }
 	color_ui = rgb { 255 243 118 }
 }
 COS = {
@@ -194,7 +194,7 @@ LIB = {
 	color_ui = rgb { 198 169 248 }
 }
 MEX = {
-	color = rgb { 104 152 83 }
+	color = rgb { 181 152 67 }
 	color_ui = rgb { 135 198 108 }
 }
 NEP = {
@@ -222,7 +222,7 @@ PER = {
 #	color_ui = rgb { 198 169 248 }
 #}
 PRU = {
-	color = rgb { 196 189 204 }
+	color = rgb { 181 152 67 }
 	color_ui = rgb { 255 246 255 }
 }
 SAF = {
@@ -623,4 +623,20 @@ HYD = {
 RHI = {
 	color = rgb { 0 153 0 }
 	color_ui = rgb { 10 163 10 }
+}
+LIG = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+VNT = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+LUC = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+PIE = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
 }

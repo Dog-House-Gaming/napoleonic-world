@@ -1,3 +1,7 @@
+LUS = {
+	color = rgb { 200 255 0 }
+	color_ui = rgb { 255 0 0 }
+}
 GEM = {
 	color = rgb { 130 130 130 }
 	color_ui = rgb { 255 0 0 }
