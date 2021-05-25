@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = SPR
+		owner = UCA
 		buildings = {
 			infrastructure = 3
 			10953 = {

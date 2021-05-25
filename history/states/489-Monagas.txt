@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = SPR
+		owner = COL
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -20,6 +20,7 @@ state={
 			}
 		}
 		add_core_of = VEN
+		add_core_of = COL
 		victory_points = {
 			1944 1
 		}

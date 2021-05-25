@@ -13,11 +13,11 @@ state={
 	}
 
 	history={
-		owner = SPR
+		owner = MEX
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = USA
+		add_core_of = MEX
 	}
 
 	provinces={
