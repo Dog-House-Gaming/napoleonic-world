@@ -1,7 +1,106 @@
 spriteTypes = {	
 
 	#### Generic continuous goal icons
-	
+	SpriteType = {
+	name = "GFX_focus_universities"
+	texturefile = "gfx/interface/goals/focus_universities.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_ave_imperio"
+	texturefile = "gfx/interface/goals/focus_ave_imperio.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_empower_emperor"
+	texturefile = "gfx/interface/goals/focus_brazil_empower_emperor.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_stability"
+	texturefile = "gfx/interface/goals/focus_brazil_stability.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_keep_slavery"
+	texturefile = "gfx/interface/goals/focus_keep_slavery.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_military_academies"
+	texturefile = "gfx/interface/goals/focus_military_academies.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_usa"
+	texturefile = "gfx/interface/goals/focus_brazil_usa.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_spread_revolution"
+	texturefile = "gfx/interface/goals/focus_brazil_spread_revolution.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_pandereta"
+	texturefile = "gfx/interface/goals/focus_pandereta.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_por"
+	texturefile = "gfx/interface/goals/focus_brazil_por.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_parliament"
+	texturefile = "gfx/interface/goals/focus_parliament.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_dissolve_parliament"
+	texturefile = "gfx/interface/goals/focus_dissolve_parliament.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_uk"
+	texturefile = "gfx/interface/goals/focus_brazil_uk.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_neutral_republic"
+	texturefile = "gfx/interface/goals/focus_brazil_neutral_republic.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazilian_monarchy"
+	texturefile = "gfx/interface/goals/focus_brazilian_monarchy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazilian_republic"
+	texturefile = "gfx/interface/goals/focus_brazilian_republic.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_csgo"
+	texturefile = "gfx/interface/goals/focus_csgo.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_macaco"
+	texturefile = "gfx/interface/goals/focus_macaco.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_portuguese_court"
+	texturefile = "gfx/interface/goals/focus_portuguese_court.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazilian_empire"
+	texturefile = "gfx/interface/goals/focus_brazilian_empire.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_independence"
+	texturefile = "gfx/interface/goals/focus_independence.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brazil_monarchy"
+	texturefile = "gfx/interface/goals/focus_brazil_monarchy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_bolsonaro"
+	texturefile = "gfx/interface/goals/focus_bolsonaro.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_federalists"
+	texturefile = "gfx/interface/goals/focus_federalists.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_democrat_republicans"
+	texturefile = "gfx/interface/goals/focus_democrat_republicans.dds"			
+	}
 	SpriteType = {
 	name = "GFX_goal_generic_bourgeoisie"
 	texturefile = "gfx/interface/goals/goal_generic_bourgeoisie.dds"			
