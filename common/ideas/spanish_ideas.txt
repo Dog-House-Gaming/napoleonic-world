@@ -54,6 +54,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1
+				ai_call_ally_desire_factor = -300
 			}
 		}
 		
