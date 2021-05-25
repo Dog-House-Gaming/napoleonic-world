@@ -1193,11 +1193,11 @@ focus_tree = {
 			create_country_leader = {
 				name = "William Pitt"
 				desc = "POLITICS_WILLIAM_PIT_DESC"
-				picture = "Portrait_ENG_William_Pitt.dds"
+				picture = "Portrait_England_William_Pitt.dds"
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-		
+					tory
 				}
 			}
 			swap_ideas = {
@@ -1212,11 +1212,11 @@ focus_tree = {
 			create_country_leader = {
 				name = "Henry Addington"
 				desc = "POLITICS_HENRY_ADDINGTON_DESC"
-				picture = "Portrait_ENG_Henry_Addington.dds"
+				picture = "Portrait_England_Henry_Addington.dds"
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-		
+					tory
 				}
 			}
 			swap_ideas = {
@@ -1231,11 +1231,11 @@ focus_tree = {
 			create_country_leader = {
 				name = "William Grenville"
 				desc = "POLITICS_WILLIAM_GRENVILLE_DESC"
-				picture = "Portrait_ENG_William_Grenville.dds"
+				picture = "Portrait_England_William_Grenville.dds"
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
-		
+					whig
 				}
 			}
 			swap_ideas = {
@@ -1250,11 +1250,11 @@ focus_tree = {
 			create_country_leader = {
 				name = "William Cavendish"
 				desc = "POLITICS_WILLIAM_CAVENDISH_DESC"
-				picture = "Portrait_ENG_William_Cavendish.dds"
+				picture = "Portrait_England_William_Cavendish.dds"
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-		
+					tory
 				}
 			}
 			swap_ideas = {
@@ -1269,11 +1269,11 @@ focus_tree = {
 			create_country_leader = {
 				name = "Spencer Perceval"
 				desc = "POLITICS_SPENCER_PERCEVAL_DESC"
-				picture = "Portrait_ENG_Spencer_Perceval.dds"
+				picture = "Portrait_England_Spencer_Perceval.dds"
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-		
+					tory
 				}
 			}
 			swap_ideas = {
@@ -1288,11 +1288,11 @@ focus_tree = {
 			create_country_leader = {
 				name = "Robert Jenkinson"
 				desc = "POLITICS_ROBERT_JENKINSON_DESC"
-				picture = "Portrait_ENG_Robert_Jenkinson.dds"
+				picture = "Portrait_England_Robert_Jenkinson.dds"
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-		
+					tory
 				}
 			}
 			swap_ideas = {
@@ -1630,7 +1630,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_bourgeoisie
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_goal_generic_bourgeoisie
 		cost = 10
 		relative_position_id = ENG_union_act
 		x = -2
