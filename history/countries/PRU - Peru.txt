@@ -18,28 +18,36 @@ set_politics = {
 
 	
 	
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1931.10.11"
 	election_frequency = 96
-	elections_allowed = yes
+	elections_allowed = no
 }
+set_stability = 0.50
+set_war_support = 0.05
 set_popularities = {
-		democratic =  49
+		democratic =  15
 		
+		neutrality = 60
 
-		fascism = 51
+		fascism = 20
 		
 		
-		communism =  0
+		communism = 5
 			#banned = no #default is no
 		
 	}
+add_ideas = {
+	bra_colonial_nation
+	disarmed_nation
+	free_trade
+}
 create_country_leader = {
-	name = "Óscar Benavides"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
+	name = "Ambrosio O'Higgins"
+	desc = "POLITICS_AMBROSIO_OHIGGINS_DESC"
+	picture = "Portrait_Peru_Ambrosio_OHiggins.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = despotism
 	traits = {
 		#
 	}

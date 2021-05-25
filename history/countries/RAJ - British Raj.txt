@@ -52,8 +52,9 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 	add_ideas = {
 		#laws
-		volunteer_only
-		low_economic_mobilisation
+		bra_colonial_nation
+		disarmed_nation
+		free_trade
 	}
 
 
@@ -105,30 +106,38 @@ set_politics = {
 
 
 
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
+set_stability = 0.50
+set_war_support = 0.05
 set_popularities = {
-		democratic =  51
+		democratic =  10
 
 
-		fascism =  2
+		fascism =  10
 
 
-		communism = 17
+		communism = 0
 
 
-		neutrality = 30
+		neutrality = 80
 
+	}
+	add_ideas = {
+		#laws
+		bra_colonial_nation
+		disarmed_nation
+		free_trade
 	}
 create_country_leader = {
 	name = "George III"
 	desc = "POLITICS_GEORGE_III_DESC"
 	picture = "Portrait_England_George_III.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = despotism
 	traits = {
 		#
 	}

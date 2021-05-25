@@ -55,9 +55,9 @@ set_technology = {
 	}
 
 	add_ideas = {
-		#laws
-		volunteer_only
-		low_economic_mobilisation
+		bra_colonial_nation
+		disarmed_nation
+		free_trade
 	}
 
 
@@ -106,23 +106,35 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1935.10.14"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
+add_ideas = {
+		bra_colonial_nation
+		disarmed_nation
+		free_trade
+	}
 set_popularities = {
-		democratic = 98
-		fascism = 1
-		communism =  1
-		neutrality = 0
-}
+		democratic =  10
+
+
+		fascism =  10
+
+
+		communism = 0
+
+
+		neutrality = 80
+
+	}
 create_country_leader = {
 	name = "George III"
 	desc = "POLITICS_GEORGE_III_DESC"
 	picture = "Portrait_England_George_III.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -150,19 +162,9 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "J. S. Woodsworth"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
 set_convoys = 100
-set_national_unity = 0.9
+set_stability = 0.50
+set_war_support = 0.05
 
 1939.1.1 = {
 	set_politics = {

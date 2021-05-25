@@ -29,29 +29,6 @@ set_technology = {
 
 }
 
-#Monroe Doctrine
-give_guarantee = CAN
-give_guarantee = MEX
-give_guarantee = CUB
-give_guarantee = HAI
-give_guarantee = DOM
-give_guarantee = GUA
-give_guarantee = HON
-give_guarantee = ELS
-give_guarantee = NIC
-give_guarantee = COS
-give_guarantee = PAN
-give_guarantee = VEN
-give_guarantee = COL
-give_guarantee = ECU
-give_guarantee = PRU
-give_guarantee = BRA
-give_guarantee = BOL
-give_guarantee = CHL
-give_guarantee = PAR
-give_guarantee = ARG
-give_guarantee = URG
-
 1939.1.1 = {
 
 	add_political_power = 1199
@@ -145,34 +122,36 @@ give_guarantee = URG
 
 
 set_convoys = 400
-set_national_unity = 0.6
+set_stability = 0.45
+set_war_support = 0.10
 
 set_politics = {
 
 
 
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1796.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-		democratic = 99
+		democratic = 55
 
 
-		fascism = 0
+		fascism = 5
 
-
-		communism = 1
+		neutrality = 15
+		communism = 25
 			#banned = no #default is no
 
 	}
 add_ideas = {
 	undisturbed_isolation
-#	great_depression
 	disarmed_nation
-#	free_trade
-#	home_of_the_free
+	free_trade
+	usa_land_of_the_free
+	usa_national_debt1
+	usa_national_bank1
 }
 
 
@@ -211,9 +190,10 @@ create_country_leader = {
 	desc = "POLITICS_JOHN_ADAMS_DESC"
 	picture = "Portrait_USA_John_Adams.dds"
 	expire = "1947.1.1"
-	ideology = liberalism
+	ideology = conservatism
 	traits = {
-		freedom_fighter
+		founding_father
+		federalist
 	}
 }
 

@@ -30,26 +30,36 @@ set_technology = {
 }
 
 set_convoys = 300
-set_national_unity = 0.65
+set_stability = 0.50
+set_war_support = 0.05
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1799.11.9"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	fascism = 0
-	communism = 10
-	neutrality = 15
-	democratic = 75
+	fascism = 15
+	communism = 15
+	neutrality = 45
+	democratic = 25
 }
 
 add_ideas = {
+	bra_colonial_nation
+	disarmed_nation
+	free_trade
 }
 
-
+create_country_leader = {
+	name = "Gabriel de Avilés y del Fierro"
+	desc = "POLITICS_GABRIEL_AVILES_DESC"
+	picture = "Portrait_Argentina_Gabriel_Aviles.dds"
+	expire = "1947.1.1"
+	ideology = despotism
+}
 create_country_leader = {
 	name = "Cornelio Saavedra"
 	desc = "POLITICS_CORNELIO_SAAVEDRA_DESC"
