@@ -1,20 +1,29 @@
 
-ai_historical_focus_list_USA = {
+ai_historical_focus_list_BRA = {
 	ai_national_focuses = {
 		# grab as fast as you can if available
-		USA_1800_elections
-		USA_republicans
-		USA_lousiana_purchase
-		USA_lewis_expedition
-		USA_territory_louisiana
-		USA_develop_our_economy
-		USA_decentralized_economy
-		USA_take_a_position
-		USA_rival_britain
+		BRA_royal_family
+		BRA_open_trade
+		BRA_written_publications
+		BRA_banco_do_brasil
+		BRA_receive_all_foreigners
+		BRA_entitle_brasilian_nobles
+		BRA_brasilian_universities_and_academies
+		BRA_separate_metro
+		BRA_brazilian_monarchy
+		BRA_brazilian_empire
+		BRA_stabilize_empire
+		BRA_diplo_with_uk
+		BRA_slavery_issue
+		BRA_keep_slavery
+		BRA_parliament
+		BRA_keep_parliament
+		BRA_emperor_remains_power
+		BRA_economic_boom
 	}
 }
 
-ai_focus_defense_USA = {
+ai_focus_defense_BRA = {
 	research = {
 		defensive = 5.0	
 		
@@ -23,7 +32,7 @@ ai_focus_defense_USA = {
 	}
 }
 
-ai_focus_aggressive_USA = {
+ai_focus_aggressive_BRA = {
 	research = {
 		offensive = 5.0
 
@@ -32,7 +41,7 @@ ai_focus_aggressive_USA = {
 	}
 }
 
-ai_focus_war_production_USA = {
+ai_focus_war_production_BRA = {
 	research = {
 		industry = 10.0
 		construction_tech = 2.0
@@ -41,7 +50,7 @@ ai_focus_war_production_USA = {
 	}
 }
 
-ai_focus_military_equipment_USA = {
+ai_focus_military_equipment_BRA = {
 	research = {
 		infantry_weapons = 50.0
 		infantry_tech = 15.0
@@ -50,7 +59,7 @@ ai_focus_military_equipment_USA = {
 	}
 }
 
-ai_focus_military_advancements_USA = {
+ai_focus_military_advancements_BRA = {
 	research = {
 		# = 20.0
 		# = 5.0
@@ -66,7 +75,7 @@ ai_focus_military_advancements_USA = {
 	}
 }
 
-ai_focus_peaceful_USA = {
+ai_focus_peaceful_BRA = {
 	research = {
 		industry = 15.0
 		construction_tech = 5.0
@@ -75,7 +84,7 @@ ai_focus_peaceful_USA = {
 	}
 }
 
-ai_focus_naval_USA = {
+ai_focus_naval_BRA = {
     research = {
         naval_equipment = 10.0
         naval_doctrine = 100.0
@@ -93,7 +102,7 @@ ai_focus_naval_USA = {
 }
 
 
-ai_focus_aviation_USA = {
+ai_focus_aviation_BRA = {
 	research = {
 		# = 75.0
 		# = 4.0
