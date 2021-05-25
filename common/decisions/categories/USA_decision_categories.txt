@@ -1,0 +1,55 @@
+################
+##### USA ######
+################
+
+USA_lewis_clark_expedition_category = {
+	
+	icon = border_war
+	
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		tag = USA
+		has_completed_focus = USA_lewis_expedition
+	}
+}
+
+USA_settle_louisiana_category = {
+	
+	icon = hol_secret_staff_talks
+	
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		tag = USA
+		has_completed_focus = USA_territory_louisiana
+	}
+}
+
+USA_core_louisiana_category = {
+	
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		tag = USA
+		has_completed_focus = USA_core_louisiana
+	}
+}
+
+USA_pay_debt_category = {
+	
+	icon = gre_paying_ifc_debt
+	
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		tag = USA
+		has_completed_focus = USA_pay_national_debt
+	}
+}
