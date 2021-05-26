@@ -13,12 +13,12 @@ state={
 
 
 	history={
-		owner = SPR
+		owner = MEX
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
-		add_core_of = USA
+		add_core_of = MEX
 		victory_points = {
 			4975 1
 		}

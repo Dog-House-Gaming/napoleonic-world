@@ -1,1 +1,642 @@
-﻿ 
+add_namespace = usa
+
+#Canada For Alliance
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = usa.1.a
+		ai_chance = {
+			factor = 99
+		}
+		USA = {
+			give_guarantee = ENG
+			annex = CAN
+			set_state_owner = 470
+			set_state_controller = 470
+			add_state_core = 470
+			set_state_owner = 469
+			set_state_controller = 469
+			add_state_core = 469
+			set_state_owner = 467
+			set_state_controller = 467
+			add_state_core = 467
+			set_state_owner = 683
+			set_state_controller = 683
+			add_state_core = 683
+			set_state_owner = 682
+			set_state_controller = 682
+			add_state_core = 682
+			set_state_owner = 276
+			set_state_controller = 276
+			add_state_core = 276
+			set_state_owner = 466
+			set_state_controller = 466
+			add_state_core = 466
+			set_state_owner = 468
+			set_state_controller = 468
+			add_state_core = 468
+			set_state_owner = 465
+			set_state_controller = 465
+			add_state_core = 465
+			set_state_owner = 464
+			set_state_controller = 464
+			add_state_core = 464
+			set_state_owner = 332
+			set_state_controller = 332
+			add_state_core = 332
+			set_state_owner = 331
+			set_state_controller = 331
+			add_state_core = 331
+		}
+		give_guarantee = USA
+		diplomatic_relation = {
+			country = USA
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	#No
+	option = {
+		name = usa.1.b
+		ai_chance = {
+			factor = 1
+		}
+		
+	}
+}
+
+#Louisiana Or War
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = usa.2.a
+		ai_chance = {
+			factor = 75
+		}
+		USA = {
+			set_state_owner = 371
+			set_state_owner = 372
+			set_state_owner = 373
+			set_state_owner = 392
+			set_state_owner = 391
+			set_state_owner = 374
+			set_state_owner = 383
+			set_state_owner = 384
+			set_state_owner = 390
+			set_state_owner = 389
+			set_state_owner = 382
+			set_state_owner = 381
+			set_state_owner = 388
+			set_state_controller = 371
+			set_state_controller = 372
+			set_state_controller = 373
+			set_state_controller = 392
+			set_state_controller = 391
+			set_state_controller = 374
+			set_state_controller = 383
+			set_state_controller = 384
+			set_state_controller = 390
+			set_state_controller = 389
+			set_state_controller = 382
+			set_state_controller = 381
+			set_state_controller = 388
+		}
+	}
+	#No
+	option = {
+		name = usa.2.b
+		ai_chance = {
+			factor = 25
+		}
+		USA = {
+			create_wargoal = {
+					type = annex_everything
+					target = FRA
+			}
+		}
+	}
+}
+
+#Ask To Join The Coalition
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = usa.3.a
+		ai_chance = {
+			factor = 99
+		}
+		add_to_faction = USA
+	}
+	#No
+	option = {
+		name = usa.3.b
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Louisiana Purchase
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = usa.4.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 150
+		add_offsite_building = {
+			type = industrial_complex
+			level = 4
+		}
+		USA = {
+			add_political_power = -150
+			add_offsite_building = {
+				type = industrial_complex
+				level = -4
+			}
+			set_state_owner = 371
+			set_state_owner = 372
+			set_state_owner = 373
+			set_state_owner = 392
+			set_state_owner = 391
+			set_state_owner = 374
+			set_state_owner = 383
+			set_state_owner = 384
+			set_state_owner = 390
+			set_state_owner = 389
+			set_state_owner = 382
+			set_state_owner = 381
+			set_state_owner = 388
+			set_state_controller = 371
+			set_state_controller = 372
+			set_state_controller = 373
+			set_state_controller = 392
+			set_state_controller = 391
+			set_state_controller = 374
+			set_state_controller = 383
+			set_state_controller = 384
+			set_state_controller = 390
+			set_state_controller = 389
+			set_state_controller = 382
+			set_state_controller = 381
+			set_state_controller = 388
+		}
+	}
+	#No
+	option = {
+		name = usa.4.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Florida Purchase
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = usa.5.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 50
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+		USA = {
+			add_political_power = -50
+			add_offsite_building = {
+				type = industrial_complex
+				level = -2
+			}
+			set_state_owner = 366
+			set_state_controller = 366
+			add_state_core = 366
+		}
+	}
+	#No
+	option = {
+		name = usa.5.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Peace deal USA wins
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = usa.6.a
+		ai_chance = {
+			factor = 100
+		}
+		USA = {
+			annex = CAN
+			set_state_owner = 470
+			set_state_controller = 470
+			add_state_core = 470
+			set_state_owner = 469
+			set_state_controller = 469
+			add_state_core = 469
+			set_state_owner = 467
+			set_state_controller = 467
+			add_state_core = 467
+			set_state_owner = 683
+			set_state_controller = 683
+			add_state_core = 683
+			set_state_owner = 682
+			set_state_controller = 682
+			add_state_core = 682
+			set_state_owner = 276
+			set_state_controller = 276
+			add_state_core = 276
+			set_state_owner = 466
+			set_state_controller = 466
+			add_state_core = 466
+			set_state_owner = 468
+			set_state_controller = 468
+			add_state_core = 468
+			set_state_owner = 465
+			set_state_controller = 465
+			add_state_core = 465
+			set_state_owner = 464
+			set_state_controller = 464
+			add_state_core = 464
+			set_state_owner = 332
+			set_state_controller = 332
+			add_state_core = 332
+			set_state_owner = 331
+			set_state_controller = 331
+			add_state_core = 331
+		}
+		white_peace = USA
+		set_truce = {
+			target = USA
+			days = 1000
+		}
+	}
+	#No
+	option = {
+		name = usa.6.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Peace deal draw
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = usa.7.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		white_peace = USA
+		set_truce = {
+			target = USA
+			days = 1000
+		}
+	}
+	#No
+	option = {
+		name = usa.7.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Elections 1800
+#Peace deal draw
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1800.1.1
+		date < 1801.1.1
+	}
+	
+	#Democratic-Republicans
+	option = {
+		name = usa.8.a
+		ai_chance = {
+			factor = 100
+		}
+		set_party_name = { ideology = democratic long_name = USA_democratic_republican_party name = USA_democratic_republican_party }
+		create_country_leader = {
+			name = "Thomas Jefferson"
+			desc = "POLITICS_THOMAS_JEFFERSON_DESC"
+			picture = "Portrait_USA_Thomas_Jefferson.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				founding_father
+				republican
+			}
+		}
+	}
+	#Federalists
+	option = {
+		name = usa.8.b
+		ai_chance = {
+			factor = 0
+		}
+		set_party_name = { ideology = democratic long_name = USA_federalist_party name = USA_federalist_party }
+		create_country_leader = {
+			name = "John Adams"
+			desc = "POLITICS_JOHN_ADAMS_DESC"
+			picture = "Portrait_USA_John_Adams.dds"
+			expire = "1947.1.1"
+			ideology = conservatism
+			traits = {
+				founding_father
+				federalist
+			}
+		}
+	}
+}
+
+#Elections 1804
+#Peace deal draw
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1804.1.1
+		date < 1805.1.1
+	}
+	
+	#Democratic-Republicans
+	option = {
+		name = usa.9.a
+		ai_chance = {
+			factor = 100
+		}
+		set_party_name = { ideology = democratic long_name = USA_democratic_republican_party name = USA_democratic_republican_party }
+		create_country_leader = {
+			name = "Thomas Jefferson"
+			desc = "POLITICS_THOMAS_JEFFERSON_DESC"
+			picture = "Portrait_USA_Thomas_Jefferson.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				founding_father
+				republican
+			}
+		}
+	}
+	#Federalists
+	option = {
+		name = usa.9.b
+		ai_chance = {
+			factor = 0
+		}
+		set_party_name = { ideology = democratic long_name = USA_federalist_party name = USA_federalist_party }
+		create_country_leader = {
+			name = "Charles Pinckney"
+			desc = "POLITICS_CHARLES_PINCKNEY_DESC"
+			picture = "Portrait_USA_Charles_Pinckney.dds"
+			expire = "1947.1.1"
+			ideology = conservatism
+			traits = {
+				federalist
+			}
+		}
+	}
+}
+
+#Elections 1808
+#Peace deal draw
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1808.1.1
+		date < 1809.1.1
+	}
+	
+	#Democratic-Republicans
+	option = {
+		name = usa.10.a
+		ai_chance = {
+			factor = 100
+		}
+		set_party_name = { ideology = democratic long_name = USA_democratic_republican_party name = USA_democratic_republican_party }
+		create_country_leader = {
+			name = "James Madison"
+			desc = "POLITICS_JAMES_MADISON_DESC"
+			picture = "Portrait_USA_James_Madison.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				founding_father
+				republican
+			}
+		}
+	}
+	#Federalists
+	option = {
+		name = usa.10.b
+		ai_chance = {
+			factor = 0
+		}
+		set_party_name = { ideology = democratic long_name = USA_federalist_party name = USA_federalist_party }
+		create_country_leader = {
+			name = "Charles Pinckney"
+			desc = "POLITICS_CHARLES_PINCKNEY_DESC"
+			picture = "Portrait_USA_Charles_Pinckney.dds"
+			expire = "1947.1.1"
+			ideology = conservatism
+			traits = {
+				federalist
+			}
+		}
+	}
+}
+
+#Elections 1812
+#Peace deal draw
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1812.1.1
+		date < 1813.1.1
+	}
+	
+	#Democratic-Republicans
+	option = {
+		name = usa.11.a
+		ai_chance = {
+			factor = 100
+		}
+		set_party_name = { ideology = democratic long_name = USA_democratic_republican_party name = USA_democratic_republican_party }
+		create_country_leader = {
+			name = "James Madison"
+			desc = "POLITICS_JAMES_MADISON_DESC"
+			picture = "Portrait_USA_James_Madison.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				founding_father
+				republican
+			}
+		}
+	}
+	#Federalists
+	option = {
+		name = usa.11.b
+		ai_chance = {
+			factor = 0
+		}
+		set_party_name = { ideology = democratic long_name = USA_federalist_party name = USA_federalist_party }
+		create_country_leader = {
+			name = "DeWitt Clinton"
+			desc = "POLITICS_DEWITT_CLINTON_DESC"
+			picture = "Portrait_USA_DeWitt_Clinton.dds"
+			expire = "1947.1.1"
+			ideology = conservatism
+			traits = {
+				federalist
+			}
+		}
+	}
+}
+
+#Elections 1816
+#Peace deal draw
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date > 1816.1.1
+		date < 1817.1.1
+	}
+	
+	#Democratic-Republicans
+	option = {
+		name = usa.12.a
+		ai_chance = {
+			factor = 100
+		}
+		set_party_name = { ideology = democratic long_name = USA_democratic_republican_party name = USA_democratic_republican_party }
+		create_country_leader = {
+			name = "James Monroe"
+			desc = "POLITICS_JAMES_MONROE_DESC"
+			picture = "Portrait_USA_James_Monroe.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				founding_father
+				republican
+			}
+		}
+	}
+	#Federalists
+	option = {
+		name = usa.12.b
+		ai_chance = {
+			factor = 0
+		}
+		set_party_name = { ideology = democratic long_name = USA_federalist_party name = USA_federalist_party }
+		create_country_leader = {
+			name = "Rufus King"
+			desc = "POLITICS_RUFUS_KING_DESC"
+			picture = "Portrait_USA_Rufus_King.dds"
+			expire = "1947.1.1"
+			ideology = conservatism
+			traits = {
+				federalist
+			}
+		}
+	}
+}

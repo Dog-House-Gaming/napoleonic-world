@@ -1,0 +1,61 @@
+﻿l_english:
+ 
+ usa.1.t:0 "The United States Offers Alliance For Canada"
+ usa.1.d:0 "The diplomats of the United States have come to London with intentions of putting aside our differences. They want to integrate the colonies of the North, offering us a diplomatic and military alliance in exchange.\nIf we accept, we could finally end our territorial conflicts and concentrate in our mutual enemies."
+ usa.1.a:0 "It is time to put our differences aside"
+ usa.1.b:0 "We won't give them an inch of land"
+ 
+ usa.2.t:0 "Louisiana Or War"
+ usa.2.d:0 "The diplomats of the United states have come to Paris and presented us an ultimatum for the colony of Louisiana. Their objective is to unify the territory of North America, and they won't tolerate our presence in the continent. They seem willingly to fight for it if necessary, and another war is the last thing we need."
+ usa.2.a:0 "It is theirs"
+ usa.2.b:0 "Non"
+ 
+ usa.3.t:0 "The United States Request To Join The Coalition"
+ usa.3.d:0 "Our new allies of the Americas have come to us wanting to join us in our efforts against the French Empire."
+ usa.3.a:0 "They are welcome"
+ usa.3.b:0 "We are better without them"
+ 
+ usa.4.t:0 "The Louisiana Purchase"
+ usa.4.d:0 "Since the fall our colony of Saint-Domingue in the Caribbean due to a revolt from the slaves, the territory of Louisiana is worthless to us. James Monroe has been sent from the United States in order to negotiate with us.\nThe americans have offered us 10,000,000 US dollars for the port of New Orleans, that would give them access to the coast of the Caribbean. We have talked with our ministers and heard their propositions. Our foreign minister Talleyrand opposes the selling of the colony, arguing that would mean giving up our dream of a French colonial Empire. However, our treasury minister Barbé-Marbois finds the colony useless and advices us to make a counteroffer to the americans, selling them all of Louisiana for 15,000,000."
+ usa.4.a:0 "Counteroffer. Sell All Of The Colony"
+ usa.4.b:0 "Don't Cede Anything"
+ 
+ usa.5.t:0 "The Florida Purchase"
+ usa.5.d:0 "Our colonial Empire has been in decline and we can't afford to sustain our colony in Florida. The americans now this and have offered a financial compensation for the colony."
+ usa.5.a:0 "Accept Their offer"
+ usa.5.b:0 "We Will Keep What Is Ours"
+ 
+ usa.6.t:0 "The United States Offers Peace"
+ usa.6.d:0 "The United States has clearly win the war in North America, and now they are in a position to offer us peace for the land they request."
+ usa.6.a:0 "We accept"
+ usa.6.b:0 "We will keep fighting!"
+ 
+ usa.7.t:0 "The United States Offers White Peace"
+ usa.7.d:0 "The war in America has not benefit any side. We find ourselves in a draw and the americans are asking to stop the hostilities."
+ usa.7.a:0 "We accept"
+ usa.7.b:0 "We will keep fighting!"
+ 
+ usa.8.t:0 "Election of 1800: Jefferson vs Adams"
+ usa.8.d:0 "The two biggest political parties of the United States of America, the Federalist Party and the Democratic-Republican Party, have had a long and bitter campaign for winning the neccesary electoral votes.\nThe elections were very rigged, but at the end the winner is..."
+ usa.8.a:0 "Jefferson: The Republican"
+ usa.8.b:0 "Adams: The Federalist"
+ 
+ usa.9.t:0 "Election of 1804: Jefferson vs Pinckney"
+ usa.9.d:0 "The two biggest political parties of the United States of America, the Federalist Party and the Democratic-Republican Party, have had a long and bitter campaign for winning the neccesary electoral votes.\nThe elections were very rigged, but at the end the winner is..."
+ usa.9.a:0 "Jefferson: The Republican"
+ usa.9.b:0 "Pinckney: The Federalist"
+ 
+ usa.10.t:0 "Election of 1808: Madison vs Pinckney"
+ usa.10.d:0 "The two biggest political parties of the United States of America, the Federalist Party and the Democratic-Republican Party, have had a long and bitter campaign for winning the neccesary electoral votes.\nThe elections were very rigged, but at the end the winner is..."
+ usa.10.a:0 "Madison: The Republican"
+ usa.10.b:0 "Pinckney: The Federalist"
+ 
+ usa.11.t:0 "Election of 1812: Madison vs Clinton"
+ usa.11.d:0 "The two biggest political parties of the United States of America, the Federalist Party and the Democratic-Republican Party, have had a long and bitter campaign for winning the neccesary electoral votes.\nThe elections were very rigged, but at the end the winner is..."
+ usa.11.a:0 "Madison: The Republican"
+ usa.11.b:0 "Clinton: The Federalist"
+ 
+ usa.12.t:0 "Election of 1816: Monroe vs King"
+ usa.12.d:0 "The two biggest political parties of the United States of America, the Federalist Party and the Democratic-Republican Party, have had a long and bitter campaign for winning the neccesary electoral votes.\nThe elections were very rigged, but at the end the winner is..."
+ usa.12.a:0 "Monroe: The Republican"
+ usa.12.b:0 "King: The Federalist"

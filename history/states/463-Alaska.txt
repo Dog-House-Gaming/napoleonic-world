@@ -3,7 +3,7 @@ state={
 	name="STATE_463"
 
 	history={
-		owner = USA
+		owner = UCA
 		buildings = {
 			infrastructure = 2
 			air_base = 1

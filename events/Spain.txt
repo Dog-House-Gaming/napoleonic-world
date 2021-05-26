@@ -1,5 +1,8 @@
-﻿add_namespace = spain
+﻿###########################
+# Spanish Events
+###########################
 
+add_namespace = spain
 
 #No pasarán
 country_event = {
@@ -38,8 +41,6 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
-	
 	trigger = {
 		tag = SPR
 		SPR = {
@@ -47,229 +48,77 @@ country_event = {
 			NOT = {controls_state = 41}
 			has_capitulated = yes
 			is_subject = yes
+			is_puppet = yes
 		}
 		}
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+	immediate = {
+ 		hidden_effect = {
+ 			end_puppet = ARG
+			end_puppet = COL
+			end_puppet = MEX
+			ARG = {
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			COL = {
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			MEX = {
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+ 		} 		
+ 	}
 	
 	option = {
 		name = spain.2.a
-		release = ARG
-		release = VEN
-		release = MEX
+		
 		if = {
 			limit = {
 				SPR = {
-				is_subject = no
+				is_puppet = no
 				}
 			}
 			ARG = {
-				declare_war_on = {
-					target = SPR
-					type = annex_everything
+				leave_faction = yes
+				white_peace = FRA
+				add_ideas = {
+					bra_fighting_for_independence
 				}
-				hidden_effect = {
-				division_template = {
-					name = "American Rebels"
-					priority = 2
-					division_names_group = ARG_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-			
-	    	   		 	infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-			
-	    	   		 	infantry = { x = 2 y = 0 }
-						artillery_brigade = { x = 2 y = 1 }
-						artillery_brigade = { x = 2 y = 2 }
-					}
-				}
-				278 = {
-					create_unit = {
-						division = "name = \"1. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"2. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"3. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"1. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"2. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"3. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = ARG
-					}
-				}
-				}				
 			}
-			VEN = {
-				declare_war_on = {
-					target = SPR
-					type = annex_everything
+			COL = {
+				leave_faction = yes
+				white_peace = FRA
+				add_ideas = {
+				bra_fighting_for_independence
 				}
-				hidden_effect = {
-				division_template = {
-					name = "American Rebels"
-					priority = 2
-					division_names_group = VEN_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-			
-	    	   		 	infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-			
-	    	   		 	infantry = { x = 2 y = 0 }
-						artillery_brigade = { x = 2 y = 1 }
-						artillery_brigade = { x = 2 y = 2 }
-					}
-				}
-				307 = {
-					create_unit = {
-						division = "name = \"1. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"2. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"3. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"1. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"2. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"3. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = VEN
-					}
-				}
-				}	
 			}
 			MEX = {
-				declare_war_on = {
-					target = SPR
-					type = annex_everything
+				leave_faction = yes
+				white_peace = FRA
+				add_ideas = {
+				bra_fighting_for_independence
 				}
-				hidden_effect = {
-				division_template = {
-					name = "American Rebels"
-					priority = 2
-					division_names_group = MEX_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-			
-	    	   		 	infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-			
-	    	   		 	infantry = { x = 2 y = 0 }
-						artillery_brigade = { x = 2 y = 1 }
-						artillery_brigade = { x = 2 y = 2 }
-					}
-				}
-				277 = {
-					create_unit = {
-						division = "name = \"1. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"2. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"3. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"1. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"2. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"3. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-					create_unit = {
-						division = "name = \"4. American Rebels\" division_template = \"American Rebels\" start_experience_factor = 1.0" 
-						owner = MEX
-					}
-				}
-				}	
 			}
+			declare_war_on = {
+				target = ARG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = COL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MEX
+				type = annex_everything
+			}
+			
 		}
 	}
 }

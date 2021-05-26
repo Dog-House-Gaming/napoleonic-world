@@ -1,0 +1,229 @@
+ideas = {
+	country = {
+		
+		
+	#-------------------------------------------------------STARTING IDEAS---------------------------------------
+		usa_land_of_the_free = {
+			picture = usa_department_of_defense
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			rule = {
+				can_join_opposite_factions = no
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.25
+				democratic_drift = 0.01
+				monthly_population = 0.50
+				surrender_limit = 0.1
+			}
+		}
+		
+		usa_national_debt1 = {
+			picture = usa_great_depression_2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				political_power_cost = 1
+				consumer_goods_factor = 0.25
+				conscription_factor = -0.5
+				join_faction_tension = 0.50
+			}
+		}
+		
+		usa_national_debt2 = {
+			picture = great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.15
+				conscription_factor = -0.2
+				join_faction_tension = 0.20
+			}
+		}
+		
+		usa_national_bank1 = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = 0.10
+			}
+		}
+		
+		usa_national_bank2 = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = 0.15
+			}
+		}
+		
+		#-------------------------------------------------------POLITIC TREE---------------------------------------
+		
+		usa_debased_currency = {
+			picture = chi_hyper_inflation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		usa_cutted_public_spending = {
+			picture = generic_goods_red_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		usa_land_of_opportunity = {
+			picture = eng_steady_as_she_goes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.50
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		usa_era_of_good_feelings = {
+			picture = generic_victors_of_ww1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_org_factor = 0.15
+			}
+		}
+		
+		usa_monroe_doctrine = {
+			picture = usa_war_department
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				generate_wargoal_tension = -0.50
+				justify_war_goal_time = -0.25
+			}
+		}
+		
+		#-----------------------------------------------------MILITARY TREE-----------------------------------------
+		
+		usa_home_of_the_brave = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.15
+				surrender_limit = 0.1
+				army_core_defence_factor = 0.20
+				army_core_attack_factor = 0.15
+			}
+		}
+		
+		usa_rangers = {
+			picture = generic_motorized_equipment_manufacturer_2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				cavalry_attack_factor = 0.10
+				cavalry_defence_factor = 0.10
+				recon_factor = 0.25
+			}
+		}
+		
+	}
+}

@@ -19,39 +19,44 @@ set_politics = {
 
 	
 	
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1934.2.11"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
+set_stability = 0.50
+set_war_support = 0.05
 set_popularities = {
-		democratic = 99
+		democratic = 20
 		
+		neutrality = 50
 
-		fascism = 0
+		fascism = 20
 		
 		
-		communism =  1
+		communism =  10
 			#banned = no #default is no
 		
 	}
-create_country_leader = {
-	name = "Alfonso López Pumarejo"
-	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
+	add_ideas = {
+		bra_colonial_nation
+		disarmed_nation
+		free_trade
 	}
+create_country_leader = {
+	name = "Cristóbal Mendoza"
+	desc = "POLITICS_CRISTOBAL_MENDOZA_DESC"
+	picture = "Portrait_Colombia_Cristobal_Mendoza.dds"
+	expire = "1947.1.1"
+	ideology = liberalism
 }
 
 create_country_leader = {
-	name = "Mariano Ospina Pérez"
-	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	name = "Pedro Mendinueta"
+	desc = "POLITICS_PEDRO_MENDINUETA_DESC"
+	picture = "Portrait_Colombia_Pedro_Mendinueta.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = despotism
 	traits = {
 		#
 	}

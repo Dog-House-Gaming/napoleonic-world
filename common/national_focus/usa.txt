@@ -1,1 +1,1833 @@
+focus_tree = {
+	id = american_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	
+	#-----------------------------------------POLITICS-----------------------
+	
+	focus = {
+		id = USA_1800_elections
+		icon = GFX_focus_usa_voter_registration_act
+		x = 15
+		y = 0
+		cost = 10
+		mutually_exclusive = {
+		}
+		available = {
+			date > 1801.1.1
+		}
+		available_if_capitulated = yes
 
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+		}
+	}
+	
+	#-----------------------------------------FEDERALISTS-----------------------
+	
+	focus = {
+		id = USA_federalists
+		icon = GFX_focus_federalists
+		relative_position_id = USA_1800_elections
+		x = -6
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_1800_elections
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_focus_america
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_federalists
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_federalists
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.10
+		}
+	}
+	
+	focus = {
+		id = USA_strengthen_our_position
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = USA_federalists
+		x = 0
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_focus_america
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = army_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_anti_war_party
+		icon = GFX_goal_generic_neutrality_focus
+		relative_position_id = USA_federalists
+		x = 0
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_strengthen_our_position
+		}
+		mutually_exclusive = {
+			focus = USA_canada_for_alliance
+			focus = USA_louisiana_or_war
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = { 
+				neutrality_idea
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_befriend_britain
+		icon = GFX_focus_chi_british_cooperation
+		relative_position_id = USA_federalists
+		x = -2
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_focus_america
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+			NOT = {has_war_with = ENG}
+			NOT = {has_completed_focus = USA_rival_britain}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = large_increase
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_british_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = USA_federalists
+		x = -2
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_befriend_britain
+		}
+		prerequisite = {
+			focus = USA_strengthen_our_position
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+			NOT = {has_war_with = ENG}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = large_increase
+				}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_canada_for_alliance
+		icon = GFX_goal_generic_military_deal
+		relative_position_id = USA_federalists
+		x = -2
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_british_trade
+		}
+		mutually_exclusive = {
+			focus = USA_anti_war_party
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+			NOT = {has_war_with = ENG}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = usa.1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_oppose_france
+		icon = GFX_focus_attack_france
+		relative_position_id = USA_federalists
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_focus_america
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+			NOT = {has_completed_focus = USA_lousiana_purchase}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = large_decrease
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_prepare_the_army
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = USA_federalists
+		x = 2
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_oppose_france
+		}
+		prerequisite = {
+			focus = USA_strengthen_our_position
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.15
+		}
+	}
+	
+	focus = {
+		id = USA_louisiana_or_war
+		icon = GFX_goal_generic_territory_or_war
+		relative_position_id = USA_federalists
+		x = 2
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_prepare_the_army
+		}
+		mutually_exclusive = {
+			focus = USA_anti_war_party
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+			371 = {is_owned_by = FRA}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA = {
+				country_event = {
+					id = usa.2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_join_the_coalition
+		icon = GFX_goal_generic_alliance
+		relative_position_id = USA_federalists
+		x = 0
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USA_canada_for_alliance
+		}
+		prerequisite = {
+			focus = USA_louisiana_or_war
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+			NOT = {has_war_with = ENG}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = usa.3
+				}
+			}
+		}
+	}
+	#-----------------------------------------ECONOMY-----------------------
+	
+	focus = {
+		id = USA_develop_our_economy
+		icon = GFX_focus_generic_industry_3
+		relative_position_id = USA_1800_elections
+		x = 0
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_federalists
+			focus = USA_republicans
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_centralized_economy
+		icon = GFX_goal_generic_production2
+		relative_position_id = USA_develop_our_economy
+		x = -2
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_develop_our_economy
+		}
+		prerequisite = {
+			focus = USA_federalists
+		}
+		mutually_exclusive = {
+			focus = USA_decentralized_economy
+		}
+		available = {
+			has_country_leader_with_trait = federalist
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				technology = concentrated_industry
+				technology = concentrated_industry2
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_decentralized_economy
+		icon = GFX_goal_generic_construction2
+		relative_position_id = USA_develop_our_economy
+		x = 2
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_develop_our_economy
+		}
+		prerequisite = {
+			focus = USA_republicans
+		}
+		mutually_exclusive = {
+			focus = USA_centralized_economy
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				technology = dispersed_industry
+				technology = dispersed_industry2
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_the_national_bank
+		icon = GFX_focus_generic_self_management
+		relative_position_id = USA_develop_our_economy
+		x = 0
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_centralized_economy
+			focus = USA_decentralized_economy
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = USA_expand_national_bank
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		relative_position_id = USA_develop_our_economy
+		x = -2
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_the_national_bank
+		}
+		prerequisite = {
+			focus = USA_centralized_economy
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = usa_national_bank2
+				remove_idea = usa_national_bank1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_close_national_bank
+		icon = GFX_goal_generic_forceful_treaty
+		relative_position_id = USA_develop_our_economy
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_the_national_bank
+		}
+		prerequisite = {
+			focus = USA_decentralized_economy
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = {
+				usa_national_bank1
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_pay_national_debt
+		icon = GFX_focus_GRE_reevaluating_the_drachma
+		relative_position_id = USA_develop_our_economy
+		x = 0
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_national_bank
+			focus = USA_close_national_bank
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = pay_debt_tt
+		}
+	}
+	
+	focus = {
+		id = USA_debase_currency
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		relative_position_id = USA_develop_our_economy
+		x = -2
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_national_bank
+		}
+		prerequisite = {
+			focus = USA_pay_national_debt
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = usa_national_debt1
+				add_idea = usa_national_debt2
+			}
+			add_ideas = {
+				usa_debased_currency
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_cut_public_spending
+		icon = GFX_goal_generic_consumer_goods
+		relative_position_id = USA_develop_our_economy
+		x = 2
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_close_national_bank
+		}
+		prerequisite = {
+			focus = USA_pay_national_debt
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				usa_cutted_public_spending
+			}
+			swap_ideas = {
+				remove_idea = usa_national_debt1
+				add_idea = usa_national_debt2
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_the_land_of_opportunity
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		relative_position_id = USA_develop_our_economy
+		x = 0
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USA_debase_currency
+			focus = USA_cut_public_spending
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				civilian_economy
+				usa_land_of_opportunity
+			}
+		}
+	}
+	
+	#-----------------------------------------REPUBLICANS-----------------------
+	
+	focus = {
+		id = USA_republicans
+		icon = GFX_focus_democrat_republicans
+		relative_position_id = USA_1800_elections
+		x = 6
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_1800_elections
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}
+	}
+	
+	#LOUISIANA PURCHASE
+	
+	focus = {
+		id = USA_lousiana_purchase
+		icon = GFX_focus_louisiana_purchase
+		relative_position_id = USA_republicans
+		x = 8
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_republicans
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = republican
+			NOT = {has_war_with = FRA}
+			371 = { is_owned_by = FRA }
+			HAI = {
+				NOT = { is_puppet_of = FRA }
+			}
+			NOT = {has_completed_focus = USA_oppose_france}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA = {
+				country_event = {
+					id = usa.4
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_lewis_expedition
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = USA_republicans
+		x = 8
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_lousiana_purchase
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = lewis_clark_expedition_tt
+		}
+	}
+	
+	focus = {
+		id = USA_territory_louisiana
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 8
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_lewis_expedition
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = republican
+			has_global_flag = lewis_clark_expedition_finished
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = settle_louisiana_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_ark
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 4
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_territory_louisiana
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_mis
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 7
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_territory_louisiana
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_iowa
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 9
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_territory_louisiana
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_min
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 12
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_territory_louisiana
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_ok
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 4
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_ark
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_mis
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_kan
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 6
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_mis
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_neb
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 8
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_mis
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_iowa
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_sda
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 10
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_min
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_iowa
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_nda
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 12
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_min
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_col
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 6
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_ok
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_kan
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_neb
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_wyo
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 8
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_neb
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_sda
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_plan_occupation_mon
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = USA_republicans
+		x = 10
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_sda
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_nda
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = plan_occupation_tt
+		}
+	}
+	
+	focus = {
+		id = USA_core_louisiana
+		icon = GFX_focus_generic_treaty
+		relative_position_id = USA_republicans
+		x = 8
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = USA_plan_occupation_col
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_wyo
+		}
+		prerequisite = {
+			focus = USA_plan_occupation_mon
+		}
+		prerequisite = {
+			focus = USA_plan_col
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = core_louisiana_tt
+		}
+	}
+	
+	#CHOOSE A POSITION
+	
+	focus = {
+		id = USA_take_a_position
+		icon = GFX_focus_usa_focus_on_europe
+		relative_position_id = USA_republicans
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_republicans
+		}
+		mutually_exclusive = {
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = USA_neutrality_republican
+		icon = GFX_goal_generic_neutrality_focus
+		relative_position_id = USA_republicans
+		x = -2
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_take_a_position
+		}
+		mutually_exclusive = {
+			focus = USA_rival_britain
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				neutrality_idea
+			}
+			add_stability = 0.10
+		}
+	}
+	
+	focus = {
+		id = USA_prosperity
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = USA_republicans
+		x = -2
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_neutrality_republican
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
+			add_stability = 0.10
+		}
+	}
+	
+	focus = {
+		id = USA_befriend_canada
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = USA_republicans
+		x = -2
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USA_prosperity
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			has_country_leader_with_trait = republican
+			NOT = {has_war_with = CAN}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			CAN = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = USA_rival_britain
+		icon = GFX_focus_attack_britain
+		relative_position_id = USA_republicans
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_take_a_position
+		}
+		mutually_exclusive = {
+			focus = USA_neutrality_republican
+		}
+		available = {
+			has_country_leader_with_trait = republican
+			NOT = {has_completed_focus = USA_befriend_britain}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			add_opinion_modifier = {
+					target = ENG
+					modifier = large_decrease
+			}
+			add_opinion_modifier = {
+					target = CAN
+					modifier = huge_decrease
+			}
+			add_war_support = 0.10
+		}
+	}
+	
+	focus = {
+		id = USA_embargo_act
+		icon = GFX_goal_generic_trade
+		relative_position_id = USA_republicans
+		x = 2
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = USA_rival_britain
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_opinion_modifier = {
+					target = ENG
+					modifier = embargo
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = embargo
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_take_canada
+		icon = GFX_focus_attack_canada
+		relative_position_id = USA_republicans
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = 
+		{
+			factor = 1
+			modifier = {
+				factor = 10
+				date > 1812.1.1
+			}
+		}
+		
+		prerequisite = {
+			focus = USA_embargo_act
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			OR = {
+			has_country_leader = {
+				name = "James Madison"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "James Monroe"
+				ruling_only = yes
+			}
+			}
+		}
+		available_if_capitulated = yes
+		bypass = {
+			CAN = { exists = no }
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			create_wargoal = {
+					type = annex_everything
+					target = CAN
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_era_of_good_feelings
+		icon = GFX_goal_support_democracy
+		relative_position_id = USA_republicans
+		x = 0
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = USA_take_canada
+			focus = USA_befriend_canada
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			has_country_leader_with_trait = republican
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				usa_era_of_good_feelings
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_monroe_doctrine
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		relative_position_id = USA_republicans
+		x = 4
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = USA_era_of_good_feelings
+		}
+		prerequisite = {
+			focus = USA_core_louisiana
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			has_country_leader = {
+				name = "James Monroe"
+				ruling_only = yes
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				usa_monroe_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_florida_purchase
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = USA_republicans
+		x = 4
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = USA_monroe_doctrine
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			has_country_leader_with_trait = republican
+			366 = {is_owned_by = SPR}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SPR = {
+				country_event = {
+					id = usa.5
+				}
+			}
+		}
+	}
+	
+	#--------------------------------------------------ARMY-------------------------------
+	
+	focus = {
+		id = USA_home_of_the_brave
+		icon = GFX_focus_usa_recruit_the_free_corps
+		relative_position_id = USA_1800_elections
+		x = 24
+		y = 0
+		cost = 10
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				usa_home_of_the_brave
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_expand_army
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_home_of_the_brave
+		x = -4
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_home_of_the_brave
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_officers
+		icon = GFX_focus_chi_army_reform
+		relative_position_id = USA_home_of_the_brave
+		x = -6
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_army
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+			create_field_marshal = {
+				name = "Andrew Jackson"
+				picture = "Portrait_USA_Andrew_Jackson.dds"
+				traits = {old_guard defensive_doctrine swamp_fox}
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_cavalry
+		icon = GFX_goal_generic_cavalry
+		relative_position_id = USA_home_of_the_brave
+		x = -6
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_officers
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				usa_rangers
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_infantry
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		relative_position_id = USA_home_of_the_brave
+		x = -4
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_officers
+		}
+		prerequisite = {
+			focus = USA_expand_mils
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_artillery
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = USA_home_of_the_brave
+		x = -2
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_mils
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_expand_armament_industry
+		icon = GFX_goal_generic_construct_military
+		relative_position_id = USA_home_of_the_brave
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_home_of_the_brave
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_expand_mils
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = USA_home_of_the_brave
+		x = -2
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_army
+		}
+		prerequisite = {
+			focus = USA_expand_armament_industry
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_expand_docks
+		icon = GFX_goal_generic_construct_naval_dockyard
+		relative_position_id = USA_home_of_the_brave
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_navy
+		}
+		prerequisite = {
+			focus = USA_expand_armament_industry
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_expand_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = USA_home_of_the_brave
+		x = 4
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = USA_home_of_the_brave
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_almirants
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = USA_home_of_the_brave
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_navy
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = naval_doctrine
+			}
+			create_navy_leader = {
+				name = "Oliver Hazard Perry"
+				picture = "Portrait_USA_Oliver_Hazard_Perry.dds"
+				traits = {fleet_protector blockade_runner ironside}
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				maneuvering_skill = 3
+				coordination_skill = 3
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_submarines
+		icon = GFX_goal_generic_navy_submarine
+		relative_position_id = USA_home_of_the_brave
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_almirants
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = trade_interdiction_tree
+		}
+		add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = ss_tech
+		}
+		}
+	}
+	
+	focus = {
+		id = USA_battleships
+		icon = GFX_focus_generic_navy_battleship2
+		relative_position_id = USA_home_of_the_brave
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_almirants
+		}
+		prerequisite = {
+			focus = USA_expand_docks
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = fleet_in_being_tree
+		}
+		add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = shbb_tech
+		}
+		}
+	}
+	
+	focus = {
+		id = USA_cruisers
+		icon = GFX_focus_generic_cruiser2
+		relative_position_id = USA_home_of_the_brave
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = USA_expand_docks
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = convoy_defense_tree
+		}
+		add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = dd_tech
+		}
+		}
+	}
+	
+	default = no
+	}

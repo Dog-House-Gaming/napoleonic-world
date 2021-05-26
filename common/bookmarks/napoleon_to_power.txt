@@ -118,9 +118,37 @@ bookmarks = {
 				
 			}
 			focuses = {
-				#POL_the_baltic_alliance
-				#POL_draw_closer_to_britain
-				#POL_seek_accommodation_with_germany
+				
+			}
+		}
+		"USA"={
+			minor = yes
+			history = "USA_NAPOLEON_TO_POWER_DESC"
+			ideology = democratic
+			ideas = {
+				usa_land_of_the_free
+				usa_national_debt1
+				usa_national_bank1
+			}
+			focuses = {
+				USA_lousiana_purchase
+				USA_take_canada
+				USA_doctrine_monroe
+			}
+		}
+		"BRA"={
+			minor = yes
+			history = "BRA_NAPOLEON_TO_POWER_DESC"
+			ideology = democratic
+			ideas = {
+				bra_african_slaves
+				bra_mineiros_revolts
+				bra_colonial_nation
+			}
+			focuses = {
+				BRA_brazilian_empire
+				BRA_jewel_of_the_crown
+				BRA_luso_empire
 			}
 		}
 		#"CAN"={

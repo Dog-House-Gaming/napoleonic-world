@@ -1607,29 +1607,6 @@ focus = {
 		}
 	}
 #
-focus = {
-		id = NAP_louisiana_purchase
-		icon = GFX_focus_louisiana_purchase
-		prerequisite = { focus = NAP_third_treaty_of_san_ildefonso }
-		available = {
-			SPR = {
-				exists = yes
-			}
-			date > 1803.1.1
-		}
-		relative_position_id = NAP_continental_system
-		x = -5
-		y = 2
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			USA = {
-				country_event = napoleon.7
-			}
-		add_political_power = 150
-		}
-	}
 	
 	focus = {
 		id = FRA_house_of_bonaparte
@@ -1685,6 +1662,11 @@ focus = {
 				}
 			}
 		}
+		bypass = {
+			HOL = {
+				exists = no
+			}
+		}
 	}
 	
 	focus = {
@@ -1723,6 +1705,11 @@ focus = {
 
 						}
 				}
+			}
+		}
+		bypass = {
+			TUS = {
+				exists = no
 			}
 		}
 	}
@@ -1821,7 +1808,11 @@ focus = {
 				has_war_with = POR
 			}
 		}
-		
+		bypass = {
+			SPR = {
+				exists = no
+			}
+		}
 		relative_position_id = NAP_third_treaty_of_san_ildefonso
 		x = 0
 		y = 5
@@ -1866,6 +1857,9 @@ focus = {
 		x = 0
 		y = 1
 		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			annex_country = { target = HOL }
@@ -1889,6 +1883,9 @@ focus = {
 		x = 0
 		y = 2
 		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			annex_country = { target = SWI }
@@ -1911,6 +1908,9 @@ focus = {
 		x = 0
 		y = 3
 		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			annex_country = { target = ITA }
@@ -2370,7 +2370,7 @@ focus = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		add_national_unity = 0.15
+		add_stability = 0.15
 
 		random_owned_controlled_state = {
 				limit = {

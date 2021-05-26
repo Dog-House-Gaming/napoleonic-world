@@ -1,0 +1,39 @@
+add_namespace = brazil
+
+#A Visitor
+country_event = {
+	id = brazil.1
+	title = brazil.1.t
+	desc = brazil.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	#Yes
+	option = {
+		name = brazil.1.a
+		ai_chance = {
+			factor = 50
+		}
+		BRA = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			create_country_leader = {
+				name = "Jair Bolsonaro"
+				desc = ""
+				picture = "Portrait_Brazil_Jair_Bolsonaro.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					time_traveller
+				}
+			}
+			POR = {
+				end_puppet = BRA
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+}

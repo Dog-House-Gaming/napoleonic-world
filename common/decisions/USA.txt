@@ -1,1 +1,718 @@
- 
+USA_lewis_clark_expedition_category = {
+	USA_lewis_clark_expedition = {
+		icon = hol_draw_up_staff_plans
+		available = {
+			tag = USA
+			has_completed_focus = USA_lewis_expedition
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+
+		cost = 200
+		days_remove = 1000
+		
+		remove_effect = {
+			set_global_flag = lewis_clark_expedition_finished
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_lewis_expedition
+		}
+	}
+	
+	
+}
+
+USA_settle_louisiana_category = {
+	USA_settle_orleans = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_territory_louisiana
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			371 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_territory_louisiana
+		}
+	}
+	
+	USA_settle_ark = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_ark
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			372 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_ark
+		}
+	}
+	
+	USA_settle_mis = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_mis
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			373 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_mis
+		}
+	}
+	
+	USA_settle_iowa = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_iowa
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			392 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_iowa
+		}
+	}
+	
+	USA_settle_min = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_min
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			391 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_min
+		}
+	}
+	
+	USA_settle_ok = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_ok
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			374 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_ok
+		}
+	}
+	
+	USA_settle_kan = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_kan
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			383 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_kan
+		}
+	}
+	
+	USA_settle_neb = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_neb
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			384 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_neb
+		}
+	}
+	
+	USA_settle_sda = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_sda
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			390 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_sda
+		}
+	}
+	
+	USA_settle_nda = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_nda
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			389 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_nda
+		}
+	}
+	
+	USA_settle_col = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_col
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			382 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_col
+		}
+	}
+	
+	USA_settle_wyo = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_wyo
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			381 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_wyo
+		}
+	}
+	
+	USA_settle_mon = {
+		icon = infiltrate_state
+		available = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_mon
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+			388 = { add_claim_by = USA }
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_plan_occupation_mon
+		}
+	}
+	
+}
+
+USA_core_louisiana_category = {
+	USA_core_orleans = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			371 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			371 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+		}
+	}
+	
+	USA_core_ark = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			372 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			372 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_mis = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			373 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			373 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_iowa = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			392 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			392 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_min = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			391 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			391 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_ok = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			374 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			374 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_kan = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			383 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			383 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_neb = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			384 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			384 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_sda = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			390 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			390 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_nda = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			389 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			389 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_col = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			382 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			382 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_wyo = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			381 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			381 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+
+		}
+	}
+	
+	USA_core_mon = {
+		icon = generic_form_nation
+		available = {
+			tag = USA
+			388 = { is_claimed_by = USA }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 100
+		days_remove = 100
+		
+		remove_effect = {
+			388 = { add_core_of = USA }
+		}
+		
+		visible = {
+			tag = USA
+		}
+	}
+	
+}
+
+USA_pay_debt_category = {
+	USA_pay_reduced_debt = {
+		icon = hol_attract_foreign_investors
+		available = {
+			tag = USA
+			has_idea = usa_national_debt2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 300
+		
+		complete_effect = {
+			remove_ideas = {
+				usa_national_debt2
+			}
+		}
+		
+		visible = {
+			tag = USA
+			has_completed_focus = USA_pay_national_debt
+		}
+	}
+	
+	
+}
+
+foreign_politics = {
+	USA_offer_peace_win = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = USA
+			has_war_with = ENG
+			NOT = {
+				owns_state = 276
+			}
+		}
+		available = {
+			tag = USA
+			has_war_with = ENG
+			controls_state = 276
+			CAN = {
+				has_capitulated = yes
+			}
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = usa.6
+				}
+			}
+		}
+		
+		
+	}
+	
+	USA_offer_peace_white = {
+		icon = generic_prepare_civil_war
+		visible = {
+			tag = USA
+			has_war_with = ENG
+		}
+		available = {
+			tag = USA
+			has_war_with = ENG
+			surrender_progress > 0.10
+		}
+		cost = 0
+		days_remove = 10
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			ENG = { 
+				country_event = {
+					id = usa.7
+				}
+			}
+		}
+		
+		
+	}
+}

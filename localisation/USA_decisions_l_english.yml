@@ -1,0 +1,50 @@
+﻿l_english:
+ 
+ USA_lewis_clark_expedition_category:0 "Expedition To Louisiana"
+ USA_settle_louisiana_category:0 "Settle In Louisiana"
+ USA_core_louisiana_category:0 "Make The New Territories States"
+ USA_pay_debt_category:0 "The National Debt"
+ 
+ lewis_clark_expedition_finished:0 "The Lewis and Clark expedition has finished"
+ 
+ USA_lewis_clark_expedition:0 "Start the Lewis and Clark Expedition"
+ 
+ USA_settle_orleans:0 "Settle in Orleans"
+ USA_settle_ark:0 "Settle in Arkansas"
+ USA_settle_mis:0 "Settle in Missouri"
+ USA_settle_iowa:0 "Settle in Iowa"
+ USA_settle_min:0 "Settle in Minnesota"
+ USA_settle_ok:0 "Settle in Oklahoma"
+ USA_settle_kan:0 "Settle in Kansas"
+ USA_settle_neb:0 "Settle in Nebraska"
+ USA_settle_sda:0 "Settle in South Dakota"
+ USA_settle_nda:0 "Settle in North Dakota"
+ USA_settle_col:0 "Settle in Colorado"
+ USA_settle_wyo:0 "Settle in Wyoming"
+ USA_settle_mon:0 "Settle in Montana"
+ 
+ USA_core_orleans:0 "Make Orleans A State"
+ USA_core_ark:0 "Make Arkansas A State"
+ USA_core_mis:0 "Make Missouri A State"
+ USA_core_iowa:0 "Make Iowa A State"
+ USA_core_min:0 "Make Minnesota A State"
+ USA_core_ok:0 "Make Oklahoma A State"
+ USA_core_kan:0 "Make Kansas A State"
+ USA_core_neb:0 "Make Nebraska A State"
+ USA_core_sda:0 "Make South Dakota A State"
+ USA_core_nda:0 "Make North Dakota A State"
+ USA_core_col:0 "Make Colorado A State"
+ USA_core_wyo:0 "Make Wyoming A State"
+ USA_core_mon:0 "Make Montana A State"
+ 
+ USA_pay_reduced_debt:0 "Pay The Reduced Debt"
+ 
+ plan_occupation_tt:0 "§YA decision to settle in the territory will be available§"
+ pay_debt_tt:0 "§YUnlocks a decision to pay the national debt§"
+ lewis_clark_expedition_tt:0 "§YUnlocks a decision to start the Lewis and Clark expedition§"
+ settle_louisiana_tt:0 "§YUnlocks decisions to settle in Louisiana§"
+ core_louisiana_tt:0 "§YUnlocks decisions to turn the new territories into states§"
+ 
+ USA_offer_peace_win:0 "Offer Peace For Canada"
+ USA_offer_peace_white:0 "Offer White Peace"
+ 

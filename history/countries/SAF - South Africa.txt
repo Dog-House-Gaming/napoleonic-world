@@ -16,35 +16,42 @@ set_technology = {
 }
 
 set_convoys = 25
-set_politics = {
 
-	set_popularities = {
-		democratic = {
-			 75
-		}
-
-		fascism = {
-			 20
-		}
-
-		communism = {
-			 5
-		}
-	}
-
-	ruling_party = democratic
-	last_election = "1933.5.17"
-	election_frequency = 60
-	elections_allowed = yes
+add_ideas = {
+	bra_colonial_nation
+	disarmed_nation
+	free_trade
 }
 
+set_politics = {
+
+	ruling_party = neutrality
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_stability = 0.50
+set_war_support = 0.05
+set_popularities = {
+		democratic =  10
+
+
+		fascism =  10
+
+
+		communism = 0
+
+
+		neutrality = 80
+
+}
 
 create_country_leader = {
 	name = "George III"
 	desc = "POLITICS_GEORGE_III_DESC"
 	picture = "Portrait_England_George_III.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -73,17 +80,6 @@ create_country_leader = {
 		}
 	}
 }
-set_popularities = {
-			democratic =  100
-
-
-			fascism =  0
-
-
-			communism = 0
-				#banned = no #default is no
-
-		}
 create_country_leader = {
 	name = "D. F. Malan"
 	desc = "POLITICS_DF_MALAN_DESC"
@@ -101,17 +97,6 @@ create_country_leader = {
 	picture = "GFX_SAF_moses_kotane"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pixley Ka Isaka Seme"
-	desc = "POLITICS_PIXLEY_SEME_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = centrism
 	traits = {
 		#
 	}

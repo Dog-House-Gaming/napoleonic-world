@@ -51,7 +51,10 @@ set_popularities = {
 set_convoys = 150
 set_national_unity = 0.7
 
-puppet = NSP
+puppet = MEX
+puppet = COL
+puppet = PRU
+puppet = ARG
 
 
 

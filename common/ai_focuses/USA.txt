@@ -1,4 +1,18 @@
 
+ai_historical_focus_list_USA = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		USA_1800_elections
+		USA_republicans
+		USA_lousiana_purchase
+		USA_lewis_expedition
+		USA_territory_louisiana
+		USA_develop_our_economy
+		USA_decentralized_economy
+		USA_take_a_position
+		USA_rival_britain
+	}
+}
 
 ai_focus_defense_USA = {
 	research = {
