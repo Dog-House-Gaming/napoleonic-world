@@ -2,7 +2,7 @@
 
 oob = "JAP_1936"
 
-set_national_unity = 0.65
+set_stability = 0.65
 
 set_research_slots = 4
 
@@ -26,10 +26,10 @@ set_technology = {
 	early_battleship = 1
 	basic_battleship = 1
 	early_battlecruiser = 1
-	early_carrier = 1
-	basic_carrier = 1
-	trench_warfare = 1
-	base_strike = 1
+	##early_carrier = 1
+	##basic_carrier = 1
+	##trench_warfare = 1
+	##base_strike = 1
 }
 
 create_import = {
@@ -81,30 +81,7 @@ set_popularities = {
 		neutrality = 0
 	}
 
-1939.1.1 = {
-	set_politics = {
 
-		set_popularities = {
-			democratic = {
-				 0
-			}
-
-			fascism = {
-				 100
-			}
-
-			communism = {
-				 0
-				#banned = no #default is no
-			}
-		}
-
-		ruling_party = fascism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-}
 
 create_country_leader = {
 	name = "Emperor Kōkaku"
@@ -224,41 +201,4 @@ create_country_leader = {
 		}
 
 	# 1939 Start #
-	1939.1.1 = {
-		### Carrier Variants
-		create_equipment_variant = {
-			name = "Hiryu Class"
-			type = carrier_2
-			parent_version = 0
-			upgrades = {
-				ship_deckspace_upgrade = 1
-				carrier_armor_upgrade = 0
-				ship_engine_upgrade = 0
-				ship_reliability_upgrade = 1
-			}
-		}
-		### Destroyer Variants
-		#create_equipment_variant = {
-		#	name = "Fubuki Class"
-		#	type = destroyer_1
-		#	parent_version = 0
-		#	upgrades = {
-		#		ship_torpedo_upgrade = 2
-		#		destroyer_engine_upgrade = 4
-		#		ship_ASW_upgrade = 2
-		#		ship_anti_air_upgrade = 2
-		#	}
-		#	obsolete = yes
-		#}
-		create_equipment_variant = {
-			name = "Kagero Class"
-			type = destroyer_2
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 3
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}
-	}
+	

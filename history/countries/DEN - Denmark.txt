@@ -23,7 +23,7 @@ set_politics = {
 	ruling_party = fascism
 	last_election = "1935.10.22"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 		democratic = 20
@@ -35,29 +35,7 @@ set_popularities = {
 		communism = 20
 
 	}
-1939.1.1 = {
-	set_politics = {
 
-		set_popularities = {
-			democratic = {
-				 30
-			}
-
-			fascism = {
-				 60
-			}
-
-			communism = {
-				 10
-			}
-		}
-
-		ruling_party = fascism
-		last_election = "1939.4.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 set_convoys = 40
 

@@ -35,10 +35,8 @@ set_popularities = {
 		neutrality = 0
 	}
 set_convoys = 500
-set_national_unity = 0.75
-annex_country = {
-	target = 
-}
+set_stability = 0.75
+
 
 create_country_leader = {
 	name = "Uitvoerend Bewind"

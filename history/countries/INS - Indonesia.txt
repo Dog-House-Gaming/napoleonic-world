@@ -23,8 +23,10 @@ set_technology = {
 set_convoys = 25
 
 set_politics = {
-
-
+	ruling_party = neutrality
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = no
 }
 set_popularities = {
 		democratic = 10
@@ -109,7 +111,7 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 
 
 		interwar_artillery = 1
-		interwar_antiair = 1
+		##interwar_antiair = 1
 		tech_recon = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
@@ -117,22 +119,22 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
+		##trench_warfare = 1
+		##fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
+		#radio = 1
+		#radio_detection = 1
 		mechanical_computing = 1
 
 		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
-		synth_oil_experiments = 1
+		##synth_oil_experiments = 1
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1

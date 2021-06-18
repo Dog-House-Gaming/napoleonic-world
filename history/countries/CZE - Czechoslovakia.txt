@@ -12,7 +12,7 @@ set_technology = {
 	
 	
 	
-	interwar_antiair = 1
+	##interwar_antiair = 1
 	
 	
 	
@@ -27,7 +27,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1935.5.19"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 		democratic = 65

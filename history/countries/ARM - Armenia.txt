@@ -14,7 +14,7 @@ set_technology = {
 	tech_military_police = 1
 	tech_mountaineers = 1
 
-	paratroopers = 1
+	##paratroopers = 1
 	gw_artillery = 1
 
 	  # PLACEHOLDER
@@ -32,13 +32,15 @@ set_technology = {
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
-	mass_assault = 1
-	fleet_in_being = 1
+	##mass_assault = 1
+	##fleet_in_being = 1
 }
 
 set_politics = {
-
-
+	ruling_party = neutrality
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = no
 }
 set_popularities = {
 		fascism = 34

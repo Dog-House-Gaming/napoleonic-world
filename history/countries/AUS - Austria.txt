@@ -40,7 +40,7 @@ declare_war_on = {
 	type = puppet_wargoal_focus
 }
 	
-set_national_unity = 0.50
+set_stability = 0.50
 
 create_country_leader = {
 	name = "Francis I"
@@ -92,7 +92,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Archduke John"
 	picture = "Portrait_Austria_John.dds"
-	traits = { infelxible_strategist infantry_leader politically_connected }
+	traits = { inflexible_strategist infantry_leader politically_connected }
 	skill = 4
 	attack_skill = 2
 	defense_skill = 3
@@ -103,7 +103,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Karl Mack von Leiberich"
 	picture = "Portrait_Austria_Mack.dds"
-	traits = { organizer skilled_staffer reckless }
+	traits = { organizer skilled_staffer trait_reckless }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -114,7 +114,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Archduke Charles"
 	picture = "Portrait_Austria_Charles.dds"
-	traits = { organizer skilled_staffer reckless }
+	traits = { organizer skilled_staffer trait_reckless }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3

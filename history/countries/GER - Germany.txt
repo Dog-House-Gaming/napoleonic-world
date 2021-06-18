@@ -21,8 +21,8 @@ set_technology = {
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
+	##mobile_warfare = 1
+	##trade_interdiction = 1
 }
 add_ideas = {
 	pru_victors_from_7yw
@@ -32,7 +32,7 @@ add_ideas = {
 
 set_research_slots = 4
 set_convoys = 200
-set_national_unity = 0.75
+set_stability = 0.75
 
 #Trade
 create_import = {

@@ -13,7 +13,7 @@ set_technology = {
 	tech_engineers = 1
 
 
-			trench_warfare = 1
+			##trench_warfare = 1
 
 }
 
@@ -22,7 +22,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 		democratic =  83
@@ -31,7 +31,7 @@ set_popularities = {
 		neutrality = 0
 	}
 set_convoys = 80
-set_national_unity = 0.75
+set_stability = 0.75
 
 create_country_leader = {
 	name = "Hubert Pierlot"

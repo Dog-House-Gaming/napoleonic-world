@@ -24,7 +24,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1932.10.30"
 	election_frequency = 72  #but 4 years after this one in 1938.
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 		democratic = 98
@@ -48,41 +48,7 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
-	set_politics = {
 
-		set_popularities = {
-			democratic = {
-				 100
-			}
-
-			fascism = {
-				 0
-			}
-
-			communism = {
-				 0
-				#banned = no #default is no
-			}
-		}
-
-		ruling_party = democratic
-		last_election = "1938.10.25"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Pedro Aguirre Cerda"
-		desc = "POLITICS_PEDRO_AGUIRRE_CERDA_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = socialism
-		traits = {
-			#
-		}
-	}
-}
 
 create_country_leader = {
 	name = "Jorge González von Marées"

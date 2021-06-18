@@ -12,7 +12,7 @@ set_technology = {
 	tech_recon = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
-	interwar_antiair = 1
+	##interwar_antiair = 1
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
@@ -24,10 +24,9 @@ set_technology = {
 	early_battleship = 1
 	early_battlecruiser = 1
 	basic_battlecruiser = 1
-	early_carrier = 1
-	trench_warfare = 1
-	fleet_in_being = 1
-	early_cavalry = 1
+	##early_carrier = 1
+	##trench_warfare = 1
+	##fleet_in_being = 1
 }
 
 puppet = HOL
@@ -35,18 +34,18 @@ puppet = SWI
 puppet = ITA
 
 set_convoys = 300
-set_national_unity = 0.65
+set_stability = 0.65
 
 set_politics = {
 	ruling_party = fascism
 	last_election = "1799.11.9"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 		democratic = 26
 		fascism = 70
-		communism =4
+		communism = 4
 	}
 #create_faction = Second_Coalition_France
 #add_to_faction = FRA
@@ -119,20 +118,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-					name = "Louis XVIII"
-						desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
-						picture = "Portrait_France_Louis_XVIII.dds"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							autocratic_imperialist
-						}
-				}
+	name = "Louis XVIII"
+	desc = "POLITICS_NAPOLEON_BONAPARTE_DESC"
+	picture = "Portrait_France_Louis_XVIII.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		autocratic_imperialist
+	}
+}
 
 create_field_marshal = {
 	name = "Napoléon Bonaparte"
 	picture = "Portrait_France_Napoleon_Bonaparte.dds"
-	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer dictator }
+	traits = { brilliant_strategist expert_improviser bearer_of_artillery trickster organisational_leader inspirational_leader skilled_staffer }
 	skill = 5
 	attack_skill = 4
 	defense_skill = 3
@@ -165,7 +164,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Joachim Murat"
 	picture = "Portrait_France_Murat.dds"
-	traits = { army_cavalry_3 cavalry_leader aggressive_assaulter reckless }
+	traits = { cavalry_leader cavalry_expert aggressive_assaulter trait_reckless }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
@@ -232,97 +231,4 @@ create_field_marshal = {
 
 
 
-### Ship Variants ###
 
-create_equipment_variant = {
-	name = "630 Series"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "Redoutable Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "Chacal Class"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "Agile & Vauquelin Class"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 2
-		destroyer_engine_upgrade = 2
-		ship_ASW_upgrade = 2
-		ship_anti_air_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "Bretagne Class"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-        ship_armor_upgrade = 1
-        ship_gun_upgrade = 1
-	}
-}
-
-1939.1.1 = {
-
-	create_equipment_variant = {
-		name = "Aurore Class"
-		type = submarine_2
-		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 3
-			sub_stealth_upgrade = 3
-			sub_torpedo_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Le Hardi Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Mogador Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-}
