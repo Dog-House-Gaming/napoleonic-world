@@ -179,6 +179,20 @@ country_event = {
 			target = AUS
 			days = 1000
 		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		AUS = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
+		}
 	}
 	
 	#NO
@@ -215,6 +229,20 @@ country_event = {
 		set_truce = {
 			target = NAP
 			days = 1000
+		}
+		add_opinion_modifier = {
+			target = NAP
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = NAP
+			modifier = CW_recent_truce
+		}
+		NAP = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
 		}
 	}
 	
@@ -253,6 +281,20 @@ country_event = {
 			target = POR
 			days = 1000
 		}
+		add_opinion_modifier = {
+			target = POR
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = POR
+			modifier = CW_recent_truce
+		}
+		POR = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
+		}
 	}
 	
 	#NO
@@ -290,9 +332,37 @@ country_event = {
 			target = ENG
 			days = 360
 		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = ENG
+			modifier = CW_recent_truce
+		}
+		ENG = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 360
+			}
+		}
 		set_truce = {
 			target = TUR
 			days = 1000
+		}
+		add_opinion_modifier = {
+			target = TUR
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = TUR
+			modifier = CW_recent_truce
+		}
+		TUR = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
 		}
 		set_global_flag = secondcw_over
 	}
@@ -370,6 +440,20 @@ country_event = {
 		set_truce = {
 			target = AUS
 			days = 1000
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		AUS = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
 		}
 		puppet = BAV
 		puppet = WUR
@@ -503,10 +587,38 @@ country_event = {
 			target = GER
 			days = 1000
 		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = GER
+			modifier = CW_recent_truce
+		}
+		GER = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
+		}
 		white_peace = SOV
 		set_truce = {
 			target = SOV
 			days = 1000
+		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = SOV
+			modifier = CW_recent_truce
+		}
+		SOV = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
 		}
 		GER = {
 			release = POL
@@ -597,6 +709,20 @@ country_event = {
 			target = SWE
 			days = 1000
 		}
+		add_opinion_modifier = {
+			target = SWE
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = SWE
+			modifier = CW_recent_truce
+		}
+		SWE = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
+		}
 		SWE = {
 			leave_faction = yes
 		}
@@ -657,6 +783,20 @@ country_event = {
 		set_truce = {
 			target = AUS
 			days = 1000
+		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		AUS = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
 		}
 		AUS = {
 			leave_faction = yes
@@ -746,6 +886,20 @@ country_event = {
 			target = GER
 			days = 1000
 		}
+		add_opinion_modifier = {
+			target =GER
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = GER
+			modifier = CW_recent_truce
+		}
+		GER = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
+		}
 		GER = {
 		leave_faction = yes
 		}
@@ -784,6 +938,20 @@ country_event = {
 			target = AUS
 			days = 1000
 		}
+		add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = AUS
+			modifier = CW_recent_truce
+		}
+		AUS = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
+		}
 		AUS = {
 		leave_faction = yes
 		}
@@ -820,6 +988,20 @@ country_event = {
 		set_truce = {
 			target = DEN
 			days = 1000
+		}
+		add_opinion_modifier = {
+			target = DEN
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = DEN
+			modifier = CW_recent_truce
+		}
+		DEN = {
+			add_timed_idea = {
+				idea = aus_truce
+				days = 1000
+			}
 		}
 		110 = {
 			add_core_of = SWE
@@ -885,6 +1067,14 @@ country_event = {
 		set_truce = {
 			target = FRA
 			days = 300
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = CW_recent_truce
+		}
+		reverse_add_opinion_modifier = {
+			target = ENG
+			modifier = CW_recent_truce
 		}
 		FRA = {
 			release = BEL

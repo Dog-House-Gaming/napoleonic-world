@@ -17,7 +17,10 @@ country_event = {
 		}
 		USA = {
 			give_guarantee = ENG
-			annex = CAN
+			annex_country = {
+				target = CAN
+				transfer_troops = yes
+			}
 			set_state_owner = 470
 			set_state_controller = 470
 			add_state_core = 470
@@ -276,7 +279,10 @@ country_event = {
 			factor = 100
 		}
 		USA = {
-			annex = CAN
+			annex_country = {
+				target = CAN
+				transfer_troops = yes
+			}
 			set_state_owner = 470
 			set_state_controller = 470
 			add_state_core = 470

@@ -774,7 +774,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		add_national_unity = 0.05
+		add_stability = 0.05
 		FRA = {
 				country_event = { days = 1 id = napoleon.24 }
 		} 
@@ -838,7 +838,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		add_national_unity = 0.05
+		add_stability = 0.05
 		FRA = {
 				country_event = { days = 1 id = napoleon.27 }
 		} 
@@ -901,7 +901,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		add_national_unity = 0.05
+		add_stability = 0.05
 		FRA = {
 				country_event = { days = 1 id = napoleon.30 }
 		} 
