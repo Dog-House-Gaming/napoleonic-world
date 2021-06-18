@@ -1244,8 +1244,6 @@ ideas = {
 			allowed = { 
 				has_dlc = "La Resistance"
 				# china gets a special one via focus
-				NOT = { original_tag = CHI }
-				NOT = { is_chinese_warlord = yes }
 				if = {
 					limit = {
 						has_dlc = "Battle for the Bosporus"
@@ -1314,7 +1312,6 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = {
-							is_literally_china = yes
 							tag = MAN
 						}
 						has_dlc = "Waking the Tiger"
@@ -1667,7 +1664,6 @@ ideas = {
 						has_DLC = "Waking the Tiger"
 						OR = {
 							original_tag = MAN
-							is_literally_china = yes
 						}
 					}
 				}

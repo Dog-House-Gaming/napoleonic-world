@@ -113,7 +113,6 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				research_speed_factor = -0.05
 				min_export = -0.10
-				add_opinion_modifier = { target = ENG modifier = embargo }
 			}
 		}
 		

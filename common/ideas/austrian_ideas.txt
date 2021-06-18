@@ -1,6 +1,34 @@
 ideas = {
 	country = {
 	
+		aus_truce = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				
+			}
+			
+			cancel = {
+				
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				ai_get_ally_desire_factor = -100
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
+		
 		aus_holy_roman_emperor = {
 			picture = generic_pp_unity_bonus
 			allowed = {
@@ -103,7 +131,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				conscription_factor = -0.4
+				conscription_factor = -0.5
 				army_org_factor = -0.2
 				planning_speed = -0.2
 			}
