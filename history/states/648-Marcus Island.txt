@@ -6,14 +6,11 @@ state=
 	manpower=42
 	history=
 	{
-		owner = JAP
+		owner = UCA
 		add_core_of = GUM
 		buildings = {
-			infrastructure = 3
-			air_base = 1
-			13026 = {
-				naval_base = 1
-			}
+			infrastructure = 1
+			
 		}
 
 	}
