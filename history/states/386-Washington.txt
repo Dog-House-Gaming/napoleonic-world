@@ -10,10 +10,8 @@ state={
 		owner = UCA
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 1
-			air_base = 5
 			7315 = {
 				naval_base = 3
 			}
