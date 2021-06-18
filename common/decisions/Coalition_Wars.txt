@@ -9,7 +9,7 @@ foreign_politics = {
 			tag = AUS
 			NOT = { has_war_with = ENG }
 			NOT = { is_in_faction_with = ENG }
-			NOT = { has_truce_with = FRA }
+			NOT = { has_idea = aus_truce }
 			OR = {
 				AND = {
 					has_global_flag = thirdcw_started
@@ -28,10 +28,10 @@ foreign_politics = {
 		cost = 0
 		days_remove = 10
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
+				factor = 4000
 				date > 1805.1.1
-				factor = 100
 			}
 		}
 		remove_effect = {
@@ -53,7 +53,7 @@ foreign_politics = {
 			tag = POR
 			NOT = { has_war_with = ENG }
 			NOT = { is_in_faction_with = ENG }
-			NOT = { has_truce_with = FRA }
+			NOT = { has_idea = aus_truce }
 		}
 		cost = 0
 		days_remove = 10
@@ -79,7 +79,7 @@ foreign_politics = {
 			tag = GER
 			NOT = { has_war_with = ENG }
 			NOT = { is_in_faction_with = ENG }
-			NOT = { has_truce_with = FRA }
+			NOT = { has_idea = aus_truce }
 			OR = {
 				AND = {
 					has_global_flag = thirdcw_over
@@ -114,7 +114,7 @@ foreign_politics = {
 		available = {
 			tag = SOV
 			NOT = { is_in_faction_with = ENG }
-			NOT = { has_truce_with = FRA }
+			NOT = { has_idea = aus_truce }
 			OR = {
 				AND = {
 					has_global_flag = thirdcw_started
@@ -153,7 +153,7 @@ foreign_politics = {
 		available = {
 			tag = SWE
 			NOT = { is_in_faction_with = ENG }
-			NOT = { has_truce_with = FRA }
+			NOT = { has_idea = aus_truce }
 			OR = {
 				AND = {
 					has_global_flag = thirdcw_started
@@ -193,7 +193,7 @@ foreign_politics = {
 			tag = SAX
 			NOT = { has_war_with = ENG }
 			NOT = { is_in_faction_with = ENG }
-			NOT = { has_truce_with = FRA }
+			NOT = { has_idea = aus_truce }
 			AND = { 
 				has_global_flag = fourthcw_started
 				NOT = { has_global_flag = fourthcw_over }
@@ -519,7 +519,7 @@ foreign_politics = {
 		icon = generic_prepare_civil_war
 		visible = {
 			tag = DEN
-			has_truce_with = SWE
+			has_idea = aus_truce
 		}
 		available = {
 			tag = DEN

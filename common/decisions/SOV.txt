@@ -1,12 +1,12 @@
 economy_decisions = {
 	SOV_open_trade = {
-		icon =
+		icon = hol_attract_foreign_investors
 		available = {
-		tag = SOV
-		SOV={
+			tag = SOV
 			has_completed_focus = SOV_open_trade_with_britain
 			has_idea = sov_embargo_britain
-			NOT = {has_idea = sov_trade_britain}
+			NOT = {
+				has_idea = sov_trade_britain	
 			}
 		}
 		cost = 100
@@ -27,15 +27,13 @@ economy_decisions = {
 		}
 	}
 	SOV_close_trade = {
-		icon =
+		icon = generic_break_treaty
 		
 		available = {
-		tag = SOV
-		SOV={
+			tag = SOV
 			has_completed_focus = SOV_embargo_britain
 			has_idea = sov_trade_britain
 			NOT = {has_idea = sov_embargo_britain}
-			}
 		}
 		
 		cost = 100

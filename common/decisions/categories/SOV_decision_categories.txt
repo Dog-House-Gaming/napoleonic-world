@@ -1,0 +1,14 @@
+################
+#### SOVIET ####
+################
+
+
+SOV_great_patriotic_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_war = yes
+	}
+		
+}
