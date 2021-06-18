@@ -3,14 +3,9 @@ state={
 	name="STATE_739"
 
 	history={
-		owner = CAN
+		owner = UCA
 		buildings = {
 			infrastructure = 1
-
-			1869 = {
-				naval_base = 1
-
-			}
 
 
 		}
