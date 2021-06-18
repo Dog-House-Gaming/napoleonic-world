@@ -11,7 +11,467 @@ focus_tree = {
 	}
 
 	default = no
+	
+	##########
+	#INDUSTRY#
+	##########
+	
+	focus = {
+		id = FRA_infraestructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 15
+		y = 0
+		prerequisite = {}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
 
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			21 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+				}
+			}
+			14 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+				}
+			}
+			19 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_heavy_industry
+		icon = GFX_focus_generic_industry_3
+		relative_position_id = FRA_infraestructure
+		x = -2
+		y = 1
+		prerequisite = {focus = FRA_infraestructure}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_arms_factory_construction_1
+		icon = GFX_focus_french_military_factory
+		relative_position_id = FRA_infraestructure
+		x = -2
+		y = 2
+		prerequisite = {focus = FRA_heavy_industry}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_arms_factory_construction_2
+		icon = GFX_focus_french_military_factory
+		relative_position_id = FRA_infraestructure
+		x = -2
+		y = 3
+		prerequisite = {focus = FRA_arms_factory_construction_1}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			29 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_arms_factory_construction_3
+		icon = GFX_focus_french_military_factory
+		relative_position_id = FRA_infraestructure
+		x = -2
+		y = 4
+		prerequisite = {focus = FRA_arms_factory_construction_2}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			21 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_bank_of_france
+		icon = GFX_focus_fra_devalue_the_franc
+		relative_position_id = FRA_infraestructure
+		x = 0
+		y = 1
+		prerequisite = {focus = FRA_infraestructure}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = fra_bank_of_france
+		}
+	}
+	
+	focus = {
+		id = FRA_public_works_1
+		icon = GFX_goal_generic_construction2
+		relative_position_id = FRA_infraestructure
+		x = 0
+		y = 2
+		prerequisite = {focus = FRA_bank_of_france}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+					infrastructure < 7
+					infrastructure > 3
+					}
+					
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+					infrastructure < 7
+					infrastructure > 3
+					}
+					
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_public_works_2
+		icon = GFX_goal_generic_construction
+		relative_position_id = FRA_infraestructure
+		x = 0
+		y = 3
+		prerequisite = {focus = FRA_public_works_1}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+					infrastructure < 7
+					infrastructure > 3
+					}
+					
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+					infrastructure < 7
+					infrastructure > 3
+					}
+					
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_free_enterprise
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = FRA_infraestructure
+		x = 2
+		y = 2
+		prerequisite = {focus = FRA_infraestructure}
+		prerequisite = {focus = FRA_side_burg}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_textile_industry
+		icon = GFX_focus_generic_industry_1
+		relative_position_id = FRA_free_enterprise
+		x = 0
+		y = 1
+		prerequisite = {focus = FRA_free_enterprise}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_industrialization
+		icon = GFX_focus_generic_industry_3
+		relative_position_id = FRA_textile_industry
+		x = 1
+		y = 1
+		prerequisite = {focus = FRA_textile_industry}
+		prerequisite = {focus = FRA_industrial_exhibitions}
+		mutually_exclusive = { }
+		cost = 10
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				ahead_reduction = 2
+				category = industry
+			}
+		}
+	}
+	
 	######
 	#ARMY#
 	######
@@ -653,465 +1113,7 @@ focus_tree = {
 		}
 	}
 	
-	##########
-	#INDUSTRY#
-	##########
 	
-	focus = {
-		id = FRA_infraestructure
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 15
-		y = 0
-		prerequisite = {}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			21 = {
-				add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-				}
-			}
-			14 = {
-				add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-				}
-			}
-			19 = {
-				add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_heavy_industry
-		icon = GFX_focus_generic_industry_3
-		relative_position_id = FRA_infraestructure
-		x = -2
-		y = 1
-		prerequisite = {focus = FRA_infraestructure}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 3
-				category = industry
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_arms_factory_construction_1
-		icon = GFX_focus_french_military_factory
-		relative_position_id = FRA_infraestructure
-		x = -2
-		y = 2
-		prerequisite = {focus = FRA_heavy_industry}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			16 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_arms_factory_construction_2
-		icon = GFX_focus_french_military_factory
-		relative_position_id = FRA_infraestructure
-		x = -2
-		y = 3
-		prerequisite = {focus = FRA_arms_factory_construction_1}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			29 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_arms_factory_construction_3
-		icon = GFX_focus_french_military_factory
-		relative_position_id = FRA_infraestructure
-		x = -2
-		y = 4
-		prerequisite = {focus = FRA_arms_factory_construction_2}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			21 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_bank_of_france
-		icon = GFX_focus_fra_devalue_the_franc
-		relative_position_id = FRA_infraestructure
-		x = 0
-		y = 1
-		prerequisite = {focus = FRA_infraestructure}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = fra_bank_of_france
-		}
-	}
-	
-	focus = {
-		id = FRA_public_works_1
-		icon = GFX_goal_generic_construction2
-		relative_position_id = FRA_infraestructure
-		x = 0
-		y = 2
-		prerequisite = {focus = FRA_bank_of_france}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					AND = {
-					infrastructure < 7
-					infrastructure > 3
-					}
-					
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					AND = {
-					infrastructure < 7
-					infrastructure > 3
-					}
-					
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_public_works_2
-		icon = GFX_goal_generic_construction
-		relative_position_id = FRA_infraestructure
-		x = 0
-		y = 3
-		prerequisite = {focus = FRA_public_works_1}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					AND = {
-					infrastructure < 7
-					infrastructure > 3
-					}
-					
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					AND = {
-					infrastructure < 7
-					infrastructure > 3
-					}
-					
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_free_enterprise
-		icon = GFX_goal_generic_intelligence_exchange
-		relative_position_id = FRA_infraestructure
-		x = 2
-		y = 2
-		prerequisite = {focus = FRA_infraestructure}
-		prerequisite = {focus = FRA_side_burg}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				bonus = 0.50
-				uses = 2
-				category = industry
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_textile_industry
-		icon = GFX_focus_generic_industry_1
-		relative_position_id = FRA_free_enterprise
-		x = 0
-		y = 1
-		prerequisite = {focus = FRA_free_enterprise}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_industrialization
-		icon = GFX_focus_generic_industry_3
-		relative_position_id = FRA_textile_industry
-		x = 1
-		y = 1
-		prerequisite = {focus = FRA_textile_industry}
-		prerequisite = {focus = FRA_industrial_exhibitions}
-		mutually_exclusive = { }
-		cost = 10
-			ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				ahead_reductions = 2
-				category = industry
-			}
-		}
-	}
 	
 	###################
 	#INTERNAL POLITICS#
@@ -1575,7 +1577,7 @@ focus = {
 			create_faction = continental_system_name
 			ENG = { 
 			add_opinion_modifier = { target = FRA modifier = embargo }
-			add_national_unity = 0.1 
+			add_war_support = 0.1 
 			}
 		}
 	}

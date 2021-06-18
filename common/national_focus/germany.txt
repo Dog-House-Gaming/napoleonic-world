@@ -1235,7 +1235,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			political_power = 120
+			add_political_power = 120
 			navy_experience = 30
 		}
 	}
@@ -1449,7 +1449,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = peoples_commissariat_focus
+			add_war_support = 0.10
 			add_ideas = war_economy
 		}
 	}
@@ -1502,7 +1502,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 #

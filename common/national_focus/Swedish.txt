@@ -1203,7 +1203,7 @@ focus_tree = {
 				}
 			completion_reward = {
 			    add_ideas = fascist_influence
-					add_national_unity = 0.05
+					add_stability = 0.05
 					FRA = {
 							add_opinion_modifier = {
 									target = ROOT
@@ -1363,7 +1363,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 150
-					add_national_unity = 0.2
+					add_stability = 0.2
 				}
 
 	}
@@ -1384,7 +1384,7 @@ focus_tree = {
 				}
 			completion_reward = {
 			add_ideas = democratic_influence
-					add_national_unity = 0.05
+					add_stability = 0.05
 					SOV = {
 							add_opinion_modifier = {
 									target = ROOT
@@ -1581,7 +1581,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 120
-					add_national_unity = 0.2
+					add_stability = 0.2
 				}
 
 	}
@@ -1654,7 +1654,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 120
-					add_national_unity = 0.2
+					add_stability = 0.2
 				}
 
 	}
@@ -1816,7 +1816,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 120
-					add_national_unity = -0.3
+					add_stability = -0.3
 				}
 
 	}
@@ -1834,7 +1834,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = SWE_monarch
-					add_national_unity = 0.2
+					add_stability = 0.2
 				}
 
 	}

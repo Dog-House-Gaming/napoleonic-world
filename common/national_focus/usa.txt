@@ -113,7 +113,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = army_doctrine
+				category = land_doctrine
 			}
 		}
 	}
@@ -1054,9 +1054,6 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_plan_occupation_mon
 		}
-		prerequisite = {
-			focus = USA_plan_col
-		}
 		mutually_exclusive = {
 		}
 		available = {
@@ -1209,7 +1206,7 @@ focus_tree = {
 			}
 			add_opinion_modifier = {
 					target = CAN
-					modifier = huge_decrease
+					modifier = large_decrease
 			}
 			add_war_support = 0.10
 		}

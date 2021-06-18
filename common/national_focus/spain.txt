@@ -524,23 +524,23 @@ focus_tree = {
 		#}
 		completion_reward = {
 			315 = {
-			set_building_level = {
+				set_building_level = {
 				type = infrastructure
 				level = 6
 				instant_build = yes
 				}
-			}
-			set_building_level = {
-				type = naval_base
-				level = 8
-				instant_build = yes
-				province = 7622
-				}
-			add_resource = {
+				add_resource = {
 				type = chromium
 				amount = 100
 				state = 315
+				}
+				set_building_level = {
+				type = naval_base
+				province = 7622
+				level = 8
+				}
 			}
+			
 		}
 	}
 	
@@ -1106,7 +1106,7 @@ focus_tree = {
 		icon = GFX_focus_chi_british_cooperation
 		prerequisite = {focus = SPR_choose_our_side}
 		mutually_exclusive = {focus = SPR_stay_neutral}
-		mutually_exclusive = {focus = SPR_side_with_the_coalition}
+		mutually_exclusive = {focus = SPR_side_with_france}
 		available = {
 			NOT = {
 				has_non_aggression_pact_with = FRA

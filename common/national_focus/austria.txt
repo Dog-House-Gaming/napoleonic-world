@@ -1092,7 +1092,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			stability_factor = 0.05
+			add_stability = 0.05
 			add_political_power = 120
 		}
 	}
@@ -1568,7 +1568,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = {focus = AUS_dismantle_the_hierarchy}
 		relative_position_id = AUS_dismantle_the_hierarchy
-		mutually_exclusive = {focus = AUS_sell_to_pru}
+		mutually_exclusive = {focus = AUS_sell_their_independence}
 		x = -3
 		y = 1
 		cost = 10
@@ -1893,7 +1893,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = peoples_commissariat_focus
+			add_war_support = 0.10
 			add_ideas = war_economy
 		}
 	}

@@ -1119,7 +1119,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			stability_factor = 0.10
+			add_stability = 0.10
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.20
@@ -2260,9 +2260,6 @@ focus_tree = {
 		id = ENG_take_position
 		icon = GFX_goal_generic_more_territorial_claims
 		cost = 10.00
-		prerequisite = {
-			focus = ENG_international
-		}
 		mutually_exclusive = {
 			focus = ENG_remain_neutral
 		}
@@ -2480,7 +2477,7 @@ focus_tree = {
 									target = ENG
 									modifier = embargo
 								}
-							add_national_unity = 0.05
+							add_stability = 0.05
 						}
 				}
 
@@ -2489,9 +2486,6 @@ focus_tree = {
 		id = ENG_remain_neutral
 		icon = GFX_goal_generic_cavalry
 		cost = 10.00
-		prerequisite = {
-			focus = ENG_international
-		}
 		mutually_exclusive = {
 			focus = ENG_take_position
 		}
@@ -2654,7 +2648,7 @@ focus_tree = {
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
-					add_national_unity = -0.07
+					add_stability = -0.07
 				}
 
 	}
@@ -2737,7 +2731,7 @@ focus_tree = {
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
-					add_national_unity = -0.1
+					add_stability = -0.1
 				}
 
 	}
