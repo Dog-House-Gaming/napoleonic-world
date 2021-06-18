@@ -3,7 +3,7 @@ ai_historical_focus_list_SOV = {
 		# grab as fast as you can if available
 		SOV_catch_up
 		SOV_roads_construction
-		SOV_railway_networks
+		SOV_railway_network
 		SOV_small_manu
 		SOV_desregulate_enterprises
 		SOV_scientific_revolution

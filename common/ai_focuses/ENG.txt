@@ -1,3 +1,4 @@
+
 ai_historical_focus_list_ENG = {
 	ai_national_focuses = {
 		# grab as fast as you can if available
@@ -18,6 +19,7 @@ ai_historical_focus_list_ENG = {
 		ENG_inf_countryside
 		ENG_take_position
 		ENG_dennounce_france
+		ENG_embargo_france
 		ENG_aggressive_focus
 		ENG_war_with_france
 	}
