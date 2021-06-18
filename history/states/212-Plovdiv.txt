@@ -13,14 +13,13 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 3
-			industrial_complex =2
-			air_base = 2
+			arms_factory = 1
+			industrial_complex = 2
 		}
 		add_core_of = BUL
 	}
 
 	provinces={
-		878 893 3796 3819 3937 3952 6814 6842 6923 6952 6982 9610 9862 11813
+		878 893 3937 6814 6923 6952 6982 9862 11813
 	}
 }
