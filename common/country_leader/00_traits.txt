@@ -6,7 +6,7 @@ leader_traits = {
 		democratic_acceptance = 50
 		communism_acceptance = -50
 		neutrality_acceptance = 10
-		absolutism_acceptance = -50
+		fascism_acceptance = -50
 		ai_strategy = {
 			type = antagonize
 			id = "FRA"			
@@ -2083,10 +2083,7 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
+			
 		}
 	}
 	
@@ -2109,10 +2106,7 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = { 
-				not = { has_completed_focus = USA_america_first }
-				factor = 0
-			}
+			
 		}
 	}
 	staunch_monarchist = {
@@ -2123,11 +2117,7 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				tag = HUN
-				not = { has_completed_focus = HUN_invite_the_habsburg_prince }
-				factor = 0
-			}
+			
 		}
 	}
 	
