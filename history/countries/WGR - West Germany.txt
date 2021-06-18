@@ -9,7 +9,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
-	interwar_antiair = 1
+	##interwar_antiair = 1
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
@@ -19,15 +19,15 @@ set_technology = {
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
-	synth_oil_experiments = 1
+	##mobile_warfare = 1
+	##trade_interdiction = 1
+	##formation_flying = 1
+	##synth_oil_experiments = 1
 }
 
 set_research_slots = 4
 set_convoys = 50
-set_national_unity = 0.7
+set_stability = 0.7
 
 
 set_politics = {
@@ -37,7 +37,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 
 }
 set_popularities = {
@@ -48,7 +48,7 @@ set_popularities = {
 
 
 		communism =  10
-			banned = no #default is no
+			
 
 	}
 
@@ -139,43 +139,4 @@ create_equipment_variant = {
 	}
 }
 
-## 1939 Start ##
-1939.1.1 = {
-	# Submarines #
-	create_equipment_variant = {
-		name = "Type VIIA"
-		type = submarine_2
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
-	# Destroyer #
-	create_equipment_variant = {
-		name = "Zerstörer 1936"
-		type = destroyer_2
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-	# Heavy Cruisers #
-	#create_equipment_variant = {
-	#	name = "Deutschland Class"
-	#	type = heavy_cruiser_1
-	#	parent_version = 0
-	#	upgrades = {
-	#		ship_reliability_upgrade = 1
-	#		ship_engine_upgrade = 1
-	#		ship_armor_upgrade = 1
-	#		ship_gun_upgrade = 2
-	#	}
-	#	obsolete = yes
-	#}
-}
+

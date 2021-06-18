@@ -30,7 +30,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1932.9.18"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 		democratic = 75
@@ -46,37 +46,10 @@ set_popularities = {
 
 
 	}
-1939.1.1 = {
-	set_politics = {
 
-		set_popularities = {
-			democratic = {
-				 85
-			}
-
-			neutrality = {
-				popularity  = 12
-			}
-
-			communism = {
-				 4
-			}
-
-			fascism = {
-				 1
-			}
-
-		}
-
-		ruling_party = democratic
-		last_election = "1936.9.20"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 set_convoys = 25
-set_national_unity = 0.9
+set_stability = 0.9
 
 
 

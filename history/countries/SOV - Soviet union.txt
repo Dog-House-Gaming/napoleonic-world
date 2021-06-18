@@ -13,7 +13,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
-	paratroopers = 1
+	##paratroopers = 1
 	gw_artillery = 1
 	early_submarine = 1
 	basic_submarine = 1
@@ -22,12 +22,12 @@ set_technology = {
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
-	mass_assault = 1
-	fleet_in_being = 1
+	##mass_assault = 1
+	##fleet_in_being = 1
 }
 
 set_convoys = 50
-set_national_unity = 0.55
+set_stability = 0.55
 
 set_politics = {
 
@@ -115,7 +115,7 @@ add_namespace = {
 create_field_marshal = {
 	name = "Mikhail Kutuzov"
 	picture = "Portrait_Russia_Kutuzov.dds"
-	traits = { engineer trickster inflexible_strategist }
+	traits = { trait_engineer trickster inflexible_strategist }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 3
@@ -126,7 +126,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Friedrich Wilhelm von Buxhoeveden"
 	picture = "Portrait_Russia_Buxhoeveden.dds"
-	traits = { substance_abuser winter_specialist infatry_leader cautions }
+	traits = { substance_abuser winter_specialist infantry_leader trait_cautious }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
