@@ -45,7 +45,6 @@ ideologies = {
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
 			guarantee_tension = 0.25
-			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
 		
