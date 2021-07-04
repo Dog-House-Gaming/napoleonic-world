@@ -9,7 +9,13 @@
 # trade = yes/no
 
 opinion_modifiers = {
-
+	
+	CW_recent_truce = {
+		value = 50
+		moths = 12
+		decay = -1
+	}
+	
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100
 	}
