@@ -17,35 +17,15 @@ careful_with_early_invasions = {
 
 		if = {
 			limit = { NOT = { has_dlc = "Man the Guns"} }
-			NOT = { has_tech = landing_craft }
+			
 		}
 		else = {
-			NOT = { has_tech = mtg_landing_craft }
+			
 		}
 		
 		OR = {
 			is_in_faction_with = ENG # anyone in allies
 			tag = FRA
-		}
-
-		NOT = {
-			SOV = { 
-				has_war_with = GER 
-				surrender_progress > 0.07
-			}
-		}
-	}
-	abort = {
-		OR = {
-			has_tech = landing_craft
-			has_tech = mtg_landing_craft
-		}
-		OR = {
-			SOV = { 
-				has_war_with = GER 
-				surrender_progress > 0.07
-			}
-			date > 1943.1.1
 		}
 	}
 
