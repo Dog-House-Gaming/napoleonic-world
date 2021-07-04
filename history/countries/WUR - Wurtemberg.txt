@@ -9,15 +9,15 @@ set_technology = {
 	tech_engineers = 1
 	tech_mountaineers = 1
 	#motorised_infantry = 1
-	gw_artillery = 1
+	#gw_artillery = 1
 	#interwar_antiair = 1
 	#gwtank = 1
-	#basic_light_tank = 1
+	##basic_light_tank = 1
 	#improved_light_tank = 1
-	#basic_heavy_tank = 1
-	#early_fighter = 1
+	##basic_#heavy_tank = 1
+	##early_fighter = 1
 	#fighter1 = 1
-	#early_bomber = 1
+	##early_bomber = 1
 	#tactical_bomber1 = 1
 	#strategic_bomber1 = 1
 	#CAS1 = 1
@@ -25,7 +25,7 @@ set_technology = {
 	#mobile_warfare = 1
 	#trade_interdiction = 1
 	#formation_flying = 1
-	#fuel_silos = 1
+	###fuel_silos = 1
 	#synth_oil_experiments = 1
 	#oil_processing = 1
 	#fuel_refining = 1
@@ -44,7 +44,7 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		mtg_transport = 1
+		#mtg_transport = 1
 	}
 }
 
@@ -65,23 +65,23 @@ set_stability = 0.75
 
 	set_technology = {
 		#improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_#fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
+		##basic_medium_tank = 1 
+		#CAS2 = 1
+		#heavy_#fighter1 = 1
+		#interwar_artillery = 1
+		#interwar_antitank = 1
 		infantry_weapons2 = 1
 		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
+		#support_weapons = 1
+		#support_weapons2 = 1
 		#paratroopers = 1
 
 		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
+		#delay = 1
+		#elastic_defence = 1
+		#armored_spearhead = 1
+		#schwerpunk = 1
+		#blitzkrieg = 1
 		convoy_interdiction_ti = 1
 		unrestricted_submarine_warfare = 1
 		raider_patrols = 1
@@ -97,11 +97,11 @@ set_stability = 0.75
 		decimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
+		#basic_encryption = 1
+		#basic_decryption = 1
 
 		#industry
-		basic_machine_tools = 1
+		#basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		construction1 = 1
