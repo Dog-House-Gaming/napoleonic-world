@@ -10,7 +10,7 @@
 		infantry = { x = 2 y = 1 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # Regiment of 155mm howitzers, 105mm arty
+		#artillery = { x = 0 y = 0 }  # Regiment of 155mm howitzers, 105mm arty
 		engineer = { x = 0 y = 1 }   
 		recon = { x = 0 y = 2 }      # Recon consisted of ACs, motorcycle inf, cavalry
 	}
@@ -19,9 +19,9 @@ division_template = {
 	name = "Kavalleribrigaden"  	# Cavalry Brigade
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		#cavalry = { x = 0 y = 1 }
+		#cavalry = { x = 0 y = 2 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }      # Recon consisted of ACs, motorcycle inf, cavalry
@@ -33,8 +33,8 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		#cavalry = { x = 1 y = 0 }
+		#cavalry = { x = 1 y = 1 }
 	}
 	priority = 0
 }
@@ -139,44 +139,13 @@ units = {
 	}
 
 	##### NAVAL UNITS #####
-	navy = { 
-		name = "Kustflottan"
-		base = 6050 
-		location = 6050 # Stockholm
-		ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
-		ship = { name = "HMS Örnen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
-		ship = { name = "HMS Jacob Bagge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
-	}
-	navy = { 
-		name = "1a Eskadern"
-		base = 11215
-		location = 11215 # Karlskrona
-		ship = { name = "HMS Sverige" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
-		ship = { name = "HMS Drottning Victoria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
-		ship = { name = "HMS Gustaf V" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
-		ship = { name = "HMS Gotland" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SWE } } }				
-		# 1. Jagarflottiljen				
-		ship = { name = "HMS Klas Horn" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
-		ship = { name = "HMS Klas Uggla" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
-		ship = { name = "HMS Ehrensköld" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
-		ship = { name = "HMS Nordenskjöld" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }		
-	}
-	navy = { 
-		name = "Ålandshavseskader"
-		base = 408 
-		location = 408 # Gotland
-		ship = { name = "HMS Äran" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
-		ship = { name = "HMS Tapperheten" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
-	}
+	#navy = { 
+	#	name = "Kustflottan"
+	#	base = 6050 
+	#	location = 6050 # Stockholm
+	#	#ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }					
+	#}
 	
-	navy = { 
-		name = "Göteborgs Eskadern"
-		base = 383
-		location = 383 # Göteborg
-		ship = { name = "HMS Oscar II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }				
-		ship = { name = "HMS Fylgia" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SWE } } }				
-		
-	}
 }
 
 
@@ -202,13 +171,13 @@ instant_effect = {
 	}
 	### Under Construction Notes ###
 	# DD: Göteborg class (x1) ("HMS Göteborg")
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "SWE"
-		}
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = destroyer_2
+	#		creator = "SWE"
+	#	}
+	#	requested_factories = 1
+	#	progress = 0.50
+	#	amount = 1
+	#}
 }

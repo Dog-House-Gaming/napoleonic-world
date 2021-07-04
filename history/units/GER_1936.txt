@@ -15,46 +15,30 @@
 	
 	support = {
         engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
+        #artillery = { x = 0 y = 1 }
 	}
 }
-#division_template = {
-#	name = "Kavallerie-Division"
-#
-#	regiments = {
-#		light_armor = { x = 0 y = 0 }
-#		light_armor = { x = 0 y = 1 }
-#       light_armor = { x = 1 y = 0 }
-#		light_armor = { x = 1 y = 1 }
-#		motorized = { x = 2 y = 0 }
-#       motorized = { x = 2 y = 1 }
-#	}
-#	support = {
-#        recon = { x = 0 y = 0 }
-#        engineer = { x = 0 y = 1 }
-#        artillery = { x = 0 y = 2 }
-#	}
-#}
+
 division_template = {
 	name = "SS-Division" 			# SS division
 	# Note: actually a grouping of 3 independent SS-mot regiments
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-	    cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+	    #cavalry = { x = 0 y = 1 }
+		#cavalry = { x = 0 y = 2 }
 		
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
+		#cavalry = { x = 1 y = 0 }
+		#cavalry = { x = 1 y = 1 }
+		#cavalry = { x = 1 y = 2 }
 		
-		cavalry = { x = 2 y = 0 }
-	    cavalry = { x = 2 y = 1 }
-		cavalry = { x = 2 y = 2 }
+		#cavalry = { x = 2 y = 0 }
+	    #cavalry = { x = 2 y = 1 }
+		#cavalry = { x = 2 y = 2 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
 	 	engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
+        #artillery = { x = 0 y = 2 }
 	}
 	priority = 2
 }
@@ -74,14 +58,14 @@ division_template = {
 	name = "Kavallerie-Division"
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 0 }
+        #cavalry = { x = 0 y = 1 }
+        #cavalry = { x = 1 y = 0 }
+		#cavalry = { x = 1 y = 1 }
 	}
 	support = {
 	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
+	    #artillery = { x = 0 y = 1 }
 	}
 }
 
@@ -247,72 +231,15 @@ units = {
 	}
 
 	##### NAVAL UNITS #####
-	navy = {
-		name = "Kriegsmarine"
-		base = 241
-		location = 241  # Wilhemshaven
-		ship = { name = "Deutschland" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
-		ship = { name = "Admiral Scheer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-		ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } } 		
-		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }		
-		ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-		ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
-		ship = { name = "Köln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-		ship = { name = "Emden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
-		# 1. Torpedobootflottille
-		ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Leopard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Luchs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Tiger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-	}
+	#navy = {
+	#	name = "Kriegsmarine"
+	#	base = 241
+	#	location = 241  # Wilhemshaven
+	#	ship = { name = "Deutschland" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
+	#	
+	#}
 
-	navy = {
-		name = "Ostseeflotte"
-		base = 6332
-		location = 6332  # Konigsberg
-		ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
-		# 2. Torpedobootflottille
-		ship = { name = "Möwe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Albatros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Seeadler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Greif" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		# 3. Torpedobootflottille
-		ship = { name = "Falke" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Kondor" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Iltis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-	}
 	
-	navy = {
-		name = "Unterseebootsflotte Weddigen"
-		base = 6389
-		location = 6389  # Kiel
-		# 1. Unterseebootsflottille
-		ship = { name = "U-7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-10" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		# 4. Unterseebootsflottille
-		ship = { name = "U-11" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-13" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-17" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-	}
-
-	navy = {
-		name = "Unterseeboots-Schule"
-		base = 241
-		location = 241  # Wilhemshaven
-		# 2. Unterseebootsflottille
-		ship = { name = "U-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		# 3. Unterseebootsflottille
-		ship = { name = "U-4" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-5" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-6" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-	}
 }
 
 
@@ -344,48 +271,28 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = artillery_equipment_1
+	#		creator = "GER" 
+	#	}
+	#	requested_factories = 1
+	#	progress = 0.3
+	#	efficiency = 50
+	#}
 
 	### Ships Under Contruction ###
 	# SS: Type IIA (x2) ("U-25" "U-26"), Type IIB (x6) ("U-14" "U-16" "U-18" "U-15" "U-20" "U-19")
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "GER" 
-		}
-		requested_factories = 5
-		progress = 0.75
-		amount = 8
-	}
-	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "GER"
-		}
-		requested_factories = 3
-		progress = 0.75
-		amount = 4
-	}
-	# CA: "Graf Spee"
-	add_equipment_production = {
-		equipment = {
-			type = heavy_cruiser_1
-			creator = "GER"
-			version_name = "Deutschland Class"
-		}
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-	}
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = submarine_2
+	#		creator = "GER" 
+	#	}
+	#	requested_factories = 5
+	#	progress = 0.75
+	#	amount = 8
+	#}
+	
 }
 
 #####################

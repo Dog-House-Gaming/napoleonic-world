@@ -17,9 +17,9 @@ division_template = {
 	name = "Cavalry Militia"  
 	# Note: all forces at reserve levels in 1936
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		#cavalry = { x = 0 y = 1 }
+		#cavalry = { x = 0 y = 2 }
 	}
 }
 
@@ -27,12 +27,12 @@ division_template = {
 	name = "Cavalry-Division"
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 0 }
+		#cavalry = { x = 0 y = 1 }
+		#cavalry = { x = 1 y = 0 }
+		#cavalry = { x = 1 y = 1 }
+		#cavalry = { x = 2 y = 0 }
+		#cavalry = { x = 2 y = 1 }
 	}
 }
 
@@ -163,14 +163,14 @@ units = {
 
 
 	##### Naval OOB #####
-	navy = {				
-		name = "Atlantic Squadron"			
-		base = 7361 
-		location = 7361 # Halifax
-		# Scrap Iron Flotilla
-		ship = { name = "HMCS Saguenay" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-		ship = { name = "HMCS Skeena" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-	}				
+	#navy = {				
+	#	name = "Atlantic Squadron"			
+	#	base = 7361 
+	#	location = 7361 # Halifax
+	#	# Scrap Iron Flotilla
+	#	#ship = { name = "HMCS Saguenay" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+	#	
+	#}				
 }
 
 ##### Starting Production #####
