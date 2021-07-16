@@ -1683,7 +1683,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1799"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1709,7 +1709,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1937"
+					text = "1804"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1722,7 +1722,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1807"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1735,7 +1735,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1941"
+					text = "1810"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1748,7 +1748,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
+					text = "1814"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1779,11 +1779,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_year2"
-					position = { x = 0 y = 140 }
+					position = { x = 0 y = 275 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1799"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1809,7 +1809,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1937"
+					text = "1804"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1822,7 +1822,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1807"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1835,7 +1835,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1941"
+					text = "1810"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1848,7 +1848,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
+					text = "1814"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1900,22 +1900,22 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-				instantTextBoxType = {
-					name = "industry_subtitle_synthetic_oil"
-					position = { x = 1208 y = 115  }
-					textureFile = ""
-					font = "hoi_22tech"
-					borderSize = {x = 0 y = 4}
-					text = "INDUSTRY_TITLE_OIL"
-					maxWidth = 150
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+#				instantTextBoxType = {
+#					name = "industry_subtitle_synthetic_oil"
+#					position = { x = 1208 y = 115  }
+#					textureFile = ""
+#					font = "hoi_22tech"
+#					borderSize = {x = 0 y = 4}
+#					text = "INDUSTRY_TITLE_OIL"
+#					maxWidth = 150
+#					maxHeight = 62
+#					format = center
+#					Orientation = "UPPER_LEFT"
+#				}
 
 				instantTextBoxType = {
 					name = "industry_subtitle_construction"
-					position = { x = 871 y = 255  }
+					position = { x = 1010 y = 255  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -1943,16 +1943,8 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "synth_oil_experiments_tree"
-				position = { x = 1250 y = 172 }
-				size = { width =72 height = 650 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
 				name = "construction1_tree"
-				position = { x = 894 y = 312 }
+				position = { x = 1100 y = 312 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2794,7 +2786,7 @@ guiTypes = {
 #					textureFile = ""
 #					font = "hoi_36header"
 #					borderSize = {x = 0 y = 4}
-#					text = "1936"
+#					text = "11"
 #					maxWidth = 130
 #					maxHeight = 32
 #					format = left
@@ -2803,11 +2795,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year3"
-					position = { x = 0 y = 260 }
+					position = { x = 0 y = 150 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "1789"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2816,11 +2808,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year4"
-					position = { x = 0 y = 380 }
+					position = { x = 0 y = 330 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
+					text = "1804"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2829,11 +2821,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year5"
-					position = { x = 0 y = 500 }
+					position = { x = 0 y = 510 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1944"
+					text = "1807"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2842,29 +2834,29 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year6"
-					position = { x = 0 y = 620 }
+					position = { x = 0 y = 690 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1945"
+					text = "1810"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
 
-				instantTextBoxType = {
-					name = "wonderweapon_year7"
-					position = { x = 0 y = 740 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1946"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
+#				instantTextBoxType = {
+#					name = "wonderweapon_year7"
+#					position = { x = 0 y = 800 }
+#					textureFile = ""
+#					font = "hoi_36header"
+#					borderSize = {x = 0 y = 4}
+#					text = "16"
+#					maxWidth = 130
+#					maxHeight = 32
+#					format = left
+#					Orientation = "UPPER_LEFT"
+#				}
 
 #				instantTextBoxType = {
 #					name = "wonderweapon_year8"
@@ -2915,11 +2907,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year2"
-					position = { x = 0 y = 140 }
+					position = { x = 0 y = 150 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1799"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2954,11 +2946,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year5"
-					position = { x = 0 y = 500 }
+					position = { x = 0 y = 330 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1938"
+					text = "1804"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2967,11 +2959,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year6"
-					position = { x = 0 y = 620 }
+					position = { x = 0 y = 510 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1807"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2980,11 +2972,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year7"
-					position = { x = 0 y = 740 }
+					position = { x = 0 y = 690 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "1810"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2993,42 +2985,42 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year8"
-					position = { x = 0 y = 860 }
+					position = { x = 0 y = 870 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1941"
+					text = "1814"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
 
-				instantTextBoxType = {
-					name = "wonderweapon_year9"
-					position = { x = 0 y = 980 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1942"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year10"
-					position = { x = 0 y = 1258 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1945"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
+				#instantTextBoxType = {
+				#	name = "wonderweapon_year9"
+				#	position = { x = 0 y = 980 }
+				#	textureFile = ""
+				#	font = "hoi_36header"
+				#	borderSize = {x = 0 y = 4}
+				#	text = "22"
+				#	maxWidth = 130
+				#	maxHeight = 32
+				#	format = left
+				#	Orientation = "UPPER_LEFT"
+				#}
+				#
+				#instantTextBoxType = {
+				#	name = "wonderweapon_year10"
+				#	position = { x = 0 y = 1258 }
+				#	textureFile = ""
+				#	font = "hoi_36header"
+				#	borderSize = {x = 0 y = 4}
+				#	text = "23"
+				#	maxWidth = 130
+				#	maxHeight = 32
+				#	format = left
+				#	Orientation = "UPPER_LEFT"
+				#}
 
 			}
 
@@ -3037,31 +3029,31 @@ guiTypes = {
 					position = { x = 295 y = 100 }
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
-					text = "TITLE_ELECTRONIC_SUBTITLE"
+					text = "ENGINEERING"
 					maxWidth = 200
 					maxHeight = 122
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
 
-				instantTextBoxType = {
-					name = "experimental_rockets_subtitle"
-					position = { x = 1095 y = 325 }
-					font = "hoi_22tech"
-					borderSize = {x = 0 y = 4}
-					text = "TITLE_EXP_ROCKETS_SUBTITLE"
-					maxWidth = 200
-					maxHeight = 122
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+#				instantTextBoxType = {
+#					name = "experimental_rockets_subtitle"
+#					position = { x = 1095 y = 325 }
+#					font = "hoi_22tech"
+#					borderSize = {x = 0 y = 4}
+#					text = "TITLE_EXP_ROCKETS_SUBTITLE"
+#					maxWidth = 200
+#					maxHeight = 122
+#					format = center
+#					Orientation = "UPPER_LEFT"
+#				}
 
 				instantTextBoxType = {
 					name = "atomic_research_subtitle"
-					position = { x = 900 y = 220 }
+					position = { x = 1140 y = 100 }
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
-					text = "TITLE_ATOMIC_RESEARCH_SUBTITLE"
+					text = "CULTURE"
 					maxWidth = 200
 					maxHeight = 122
 					format = center
@@ -3071,6 +3063,14 @@ guiTypes = {
 			gridboxtype = {
 				name = "electronic_mechanical_engineering_tree"
 				position = { x=50 y=172 }
+				size = { width = 680 height = 800 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "culture_enlightenment_tree"
+				position = { x=900 y=172 }
 				size = { width = 680 height = 800 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"

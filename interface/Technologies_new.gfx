@@ -356,4 +356,36 @@ spriteTypes = {
 		name = "GFX_first_ship_of_the_line_3_medium"
 		texturefile = "gfx/interface/technologies/1st_rate_3.dds"
 	}
+	SpriteType = {
+		name = "GFX_culture_enlightenment_medium"
+		texturefile = "gfx/interface/technologies/culture_enlightenment.dds"
+	}
+	SpriteType = {
+		name = "GFX_culture_neoclassicism_medium"
+		texturefile = "gfx/interface/technologies/culture_neoclassicism.dds"
+	}
+	SpriteType = {
+		name = "GFX_culture_nationalism_medium"
+		texturefile = "gfx/interface/technologies/culture_nationalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_culture_mass_media_medium"
+		texturefile = "gfx/interface/technologies/culture_mass_media.dds"
+	}
+	SpriteType = {
+		name = "GFX_train1_medium"
+		texturefile = "gfx/interface/technologies/train1.dds"
+	}
+	SpriteType = {
+		name = "GFX_train2_medium"
+		texturefile = "gfx/interface/technologies/train2.dds"
+	}
+	SpriteType = {
+		name = "GFX_train3_medium"
+		texturefile = "gfx/interface/technologies/train3.dds"
+	}
+	SpriteType = {
+		name = "GFX_train4_medium"
+		texturefile = "gfx/interface/technologies/train4.dds"
+	}
 }
