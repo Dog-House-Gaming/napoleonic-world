@@ -9,7 +9,7 @@ state=
 		owner = UCA
 		add_core_of = HAW
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1#1
 			
 		}
 	}

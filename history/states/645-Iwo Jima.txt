@@ -9,7 +9,7 @@ state=
 		owner = UCA
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1#1
 			
 		}
 		victory_points = {

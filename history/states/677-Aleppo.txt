@@ -15,7 +15,7 @@ state={
 			1056 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2#3
 		}
 		add_core_of = SYR
 

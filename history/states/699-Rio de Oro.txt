@@ -9,7 +9,7 @@ state={
 		owner = UCA
 		add_core_of = WES
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1#1
 			8038 = {
 				naval_base = 1
 			}
