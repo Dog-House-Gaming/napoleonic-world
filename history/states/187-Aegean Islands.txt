@@ -13,7 +13,7 @@ state={
 	history={
 		owner = TUR
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1#4
 			8435 = {
 				naval_base = 1
 			}
