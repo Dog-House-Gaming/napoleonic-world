@@ -13,7 +13,7 @@ state={
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1#1
 			12530 = {
 				naval_base = 1
 			}
