@@ -13,7 +13,7 @@ state={
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1#1
 		}
 		add_core_of = BOT
 		victory_points = {

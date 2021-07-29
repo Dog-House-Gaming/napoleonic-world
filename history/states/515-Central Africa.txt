@@ -10,7 +10,7 @@ state={
 		add_core_of = FRA
 		add_core_of = NGR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1#1
 
 		}
 
