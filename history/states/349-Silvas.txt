@@ -12,7 +12,7 @@ state={
 			9777 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1#3
 			industrial_complex = 1
 		}
 		add_core_of = TUR

@@ -15,7 +15,7 @@ state={
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1#4
 		}
 		victory_points = {
 			9616 1
