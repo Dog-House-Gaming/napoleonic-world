@@ -14,7 +14,7 @@ state={
 		add_core_of = SLV
 		add_core_of = AUS
 		buildings = {
-			infrastructure = 2
+			infrastructure = 2#2
 			6626 = {
 				naval_base = 5
 
