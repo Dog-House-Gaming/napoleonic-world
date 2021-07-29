@@ -15,7 +15,7 @@ state=
 		owner = FRA
 		add_core_of = LUX
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4#6
 			arms_factory = 1
 			industrial_complex = 1
 		}

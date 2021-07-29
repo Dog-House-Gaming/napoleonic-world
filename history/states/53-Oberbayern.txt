@@ -10,7 +10,7 @@ state={
 		owner = BAV
 		add_core_of = BAV
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4#6
 		}
 		add_core_of = GER
 		victory_points = {

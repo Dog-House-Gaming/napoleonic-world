@@ -7,7 +7,7 @@ state={
 		owner = HES
 		add_core_of = HES
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4#7
 			arms_factory = 1
 			industrial_complex = 2
 

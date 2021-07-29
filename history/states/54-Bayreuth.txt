@@ -10,7 +10,7 @@ state={
 		owner = BAV
 		add_core_of = BAV
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4#7
 			industrial_complex = 2
 		}
 		victory_points = {

@@ -14,7 +14,7 @@ state={
 		owner = SAX
 		add_core_of = SAX
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4#7
 			arms_factory = 2
 			industrial_complex = 7
 		}
