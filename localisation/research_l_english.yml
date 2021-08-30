@@ -1,4 +1,10 @@
 ﻿l_english:
+ guards:0 "Guard I"
+ guards_desc:0 ""
+ guards2:0 "Guard II"
+ guards2_desc:0 ""
+ guards3:0 "Guard III"
+ guards3_desc:0 ""
  limbered_transport_1_desc:0 ""
  limbered_transport_2_desc:0 ""
  limbered_howitzer:0 "Limbered Howitzers"

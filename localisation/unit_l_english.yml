@@ -1,4 +1,9 @@
 ﻿l_english:
+ irregulars:0 "Irregulars"
+ grenadier:0 "Grenadiers"
+ rifleman:0 "Riflemen"
+ guards:0 "Guard"
+ skirmishers:0 "Skirmishers"
  demi_cannonsbrigade:0 "Demi-Cannons"
  wooden_cannons:0 "Wooden Cannon"
  gun_cannon:0 "Gun Cannon"
