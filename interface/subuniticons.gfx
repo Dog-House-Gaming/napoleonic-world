@@ -67,11 +67,16 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_mot_recon_icon_medium"									texturefile = "gfx/interface/counters/divisions_large/support_unit_motorized_recon_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_fake_intel_unit_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_fake_intel_unit_icon.dds" noOfFrames = 2}
 	#spriteType = { name = "GFX_unit_wooden_cannons_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_wooden_cannons_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_gun_cannon_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_gun_cannon_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_howitzer_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_howitzer_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_gun_cannon_icon_medium"									texturefile = "gfx/interface/counters/divisions_large/unit_gun_cannon_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_howitzer_icon_medium"									texturefile = "gfx/interface/counters/divisions_large/unit_howitzer_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_limbered_cannon_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_limbered_cannon_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_mortar_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_mortar_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_mortar_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_mortar_icon.dds" noOfFrames = 2}
 	#spriteType = { name = "GFX_unit_demi_cannonsbrigade_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_demi_cannonsbrigade_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_irregulars_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_irregulars_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_grenadier_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_grenadier_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_rifleman_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_rifleman_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_guards_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_guards_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_skirmishers_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_skirmishers_icon.dds" noOfFrames = 2}
 	
 	####################################################
 	### Small images for DIVISIONS (On-map-counters) ###
@@ -130,13 +135,17 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_heavy_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_medium_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_light_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
-	#spriteType = { name = "GFX_unit_wooden_cannons_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_wooden_cannons_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_gun_cannon_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_gun_cannon_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_howitzer_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_howitzer_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_limbered_cannon_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_limbered_cannon_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_mortar_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mortar_icon.dds" noOfFrames = 2 }
-	#spriteType = { name = "GFX_unit_demi_cannonsbrigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_demi_cannonsbrigade_icon.dds" noOfFrames = 2 }
-	
+	#spriteType = { name = "GFX_unit_wooden_cannons_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_wooden_cannons_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gun_cannon_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_gun_cannon_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_howitzer_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_howitzer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_limbered_cannon_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_limbered_cannon_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mortar_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mortar_icon.dds" noOfFrames = 2 }
+	#spriteType = { name = "GFX_unit_demi_cannonsbrigade_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_demi_cannonsbrigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_irregulars_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_irregulars_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_grenadier_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_grenadier_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rifleman_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rifleman_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_guards_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_skirmishers_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_skirmishers_icon.dds" noOfFrames = 2 }
 	###########################################
 	### Large images for DIVISION TEMPLATES ###
 
