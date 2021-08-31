@@ -1,7 +1,10 @@
 ﻿l_english:
  limbered_transport:0 "Limbered Cannons Carriages"
+ limbered_transport_desc:0 ""
  limbered_transport_1:0 "Basic Limbered Cannons Carriages"
+ limbered_transport_1_desc:0 ""
  limbered_transport_2:0 "Improved Limbered Cannons Carriages"
+ limbered_transport_1_desc:0 ""
  demi_cannons:0 "Demi Cannon"
  demi-cannons_1:0 "Demi Cannon"
  carronades:0 "Carronades"
