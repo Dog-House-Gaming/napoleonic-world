@@ -42,10 +42,10 @@ technologies = {
 			leads_to_tech = tech_military_police
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = tech_signal_company
-			research_cost_coeff = 1
-		}
+#		path = {
+#			leads_to_tech = tech_signal_company
+#			research_cost_coeff = 1
+#		}
 		path = {
 			leads_to_tech = tech_maintenance_company
 			research_cost_coeff = 1
@@ -1105,165 +1105,165 @@ technologies = {
 	}
 
 
-	tech_signal_company = {
-
-		enable_subunits = {
-			signal_company
-		}
-		
-		path = {
-			leads_to_tech = tech_signal_company2
-			research_cost_coeff = 1
-		}
-
-		dependencies = {
-			radio = 1
-		#	motorised_infantry = 1
-		}
-
-		research_cost = 2
-		start_year = 1799
-		folder = {
-			name = support_folder
-			position = { x = 12 y = @1799 }
-		}
-		
-		categories = {
-			support_tech
-			signal_company_tech
-			electronics
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_signal_company2 = {
-
-		signal_company = {
-			initiative = 0.12
-		}
-		
-		
-		path = {
-			leads_to_tech = tech_signal_company3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1803
-		folder = {
-			name = support_folder
-			position = { x = 12 y = @1803 }
-		}
-		
-		categories = {
-			support_tech
-			signal_company_tech
-			electronics
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1799.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1802.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1803.1.1"
-			}
-		}
-	}
-	
-	tech_signal_company3 = {
-
-		signal_company = {
-			initiative = 0.12
-		}
-		path = {
-			leads_to_tech = tech_signal_company4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1806
-		folder = {
-			name = support_folder
-			position = { x = 12 y = @1806 }
-		}
-		
-		categories = {
-			support_tech
-			signal_company_tech
-			electronics
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1807.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1808.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1809.1.1"
-			}
-		}
-	}
-	tech_signal_company4 = {
-
-		signal_company = {
-			initiative = 0.12
-		}
-
-		research_cost = 1.5
-		start_year = 1809
-		folder = {
-			name = support_folder
-			position = { x = 12 y = @1809 }
-		}
-		
-		categories = {
-			support_tech
-			signal_company_tech
-			electronics
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1810.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1948.1.1"
-			}
-		}
-	}
+#	tech_signal_company = {
+#
+#		enable_subunits = {
+#			signal_company
+#		}
+#		
+#		path = {
+#			leads_to_tech = tech_signal_company2
+#			research_cost_coeff = 1
+#		}
+#
+#		dependencies = {
+#			radio = 1
+#		#	motorised_infantry = 1
+#		}
+#
+#		research_cost = 2
+#		start_year = 1799
+#		folder = {
+#			name = support_folder
+#			position = { x = 12 y = @1799 }
+#	}
+#		
+#		categories = {
+#			support_tech
+#			signal_company_tech
+#			electronics
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
+#	tech_signal_company2 = {
+#
+#		signal_company = {
+#			initiative = 0.12
+#		}
+#		
+#		
+#		path = {
+#			leads_to_tech = tech_signal_company3
+#			research_cost_coeff = 1
+#		}
+#
+#		research_cost = 1.5
+#		start_year = 1803
+#		folder = {
+#			name = support_folder
+#			position = { x = 12 y = @1803 }
+#		}
+#		
+#		categories = {
+#			support_tech
+#			signal_company_tech
+#			electronics
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1799.1.1"
+#			}
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1802.1.1"
+#			}
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1803.1.1"
+#			}
+#		}
+#	}
+#	
+#	tech_signal_company3 = {
+#
+#		signal_company = {
+#			initiative = 0.12
+#		}
+#		path = {
+#			leads_to_tech = tech_signal_company4
+#			research_cost_coeff = 1
+#		}
+#
+#		research_cost = 1.5
+#		start_year = 1806
+#		folder = {
+#			name = support_folder
+#			position = { x = 12 y = @1806 }
+#		}
+#		
+#		categories = {
+#			support_tech
+#			signal_company_tech
+#			electronics
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1807.1.1"
+#			}
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1808.1.1"
+#			}
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1809.1.1"
+#			}
+#		}
+#	}
+#	tech_signal_company4 = {
+#
+#		signal_company = {
+#			initiative = 0.12
+#		}
+#
+#		research_cost = 1.5
+#		start_year = 1809
+#		folder = {
+#			name = support_folder
+#			position = { x = 12 y = @1809 }
+#		}
+#		
+#		categories = {
+#			support_tech
+#			signal_company_tech
+#			electronics
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1810.1.1"
+#			}
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1947.1.1"
+#			}
+#			
+#			modifier = {
+#				factor = 1.2
+#				date > "1948.1.1"
+#			}
+#		}
+#	}
 
 
 }
