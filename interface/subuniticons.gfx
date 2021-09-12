@@ -77,6 +77,10 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_rifleman_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_rifleman_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_guards_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_guards_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_skirmishers_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_skirmishers_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_lancers_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_lancers_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_dragoon_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_dragoon_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_cuirassier_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_cuirassier_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_carabiniers_icon_medium"										texturefile = "gfx/interface/counters/divisions_large/unit_carabiniers_icon.dds" noOfFrames = 2}
 	
 	####################################################
 	### Small images for DIVISIONS (On-map-counters) ###
@@ -146,6 +150,10 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_rifleman_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rifleman_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_guards_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_guards_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_skirmishers_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_skirmishers_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_lancers_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_lancers_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_dragoon_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_dragoon_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_cuirassier_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cuirassier_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_carabiniers_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_carabininiers_icon.dds" noOfFrames = 2 }
 	###########################################
 	### Large images for DIVISION TEMPLATES ###
 

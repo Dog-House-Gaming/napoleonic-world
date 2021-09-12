@@ -242,6 +242,30 @@ spriteTypes = {
 
 	#### unit texticons
 	spriteType = {
+		name = "GFX_unit_carabiniers_icon_small"
+		texturefile = "gfx/texticons/unit_carabiniers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_cuirassier_icon_small"
+		texturefile = "gfx/texticons/unit_cuirassier_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_dragoon_icon_small"
+		texturefile = "gfx/texticons/unit_dragoon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_lancers_icon_small"
+		texturefile = "gfx/texticons/unit_lancers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
 		name = "GFX_unit_skirmishers_icon_small"
 		texturefile = "gfx/texticons/unit_skirmishers_icon_small.dds"
 		legacy_lazy_load = no
