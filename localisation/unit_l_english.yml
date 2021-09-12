@@ -1,4 +1,8 @@
 ﻿l_english:
+ lancers:0 "Light Cavalry"
+ dragoon:0 "Medium Cavalry"
+ cuirassier:0 "Heavy Cavalry"
+ carabiniers:0 "Carabiniers"
  irregulars:0 "Irregulars"
  grenadier:0 "Grenadiers"
  rifleman:0 "Riflemen"
