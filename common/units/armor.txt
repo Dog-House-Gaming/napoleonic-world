@@ -307,7 +307,7 @@ sub_units = {
 	
 		need = {
 			medium_cavalry_equipment = 100
-			carabine = 100
+			carbine = 100
 		}
 
 		forest = {
