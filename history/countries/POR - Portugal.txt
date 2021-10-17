@@ -11,6 +11,8 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	construction1 = 1
+	seven_artillery = 1
+	early_cavalry = 1
 }
 
 

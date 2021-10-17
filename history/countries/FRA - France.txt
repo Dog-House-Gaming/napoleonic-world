@@ -12,6 +12,8 @@ set_technology = {
 	tech_recon = 1
 	tech_mountaineers = 1
 	construction1 = 1
+	seven_artillery = 1
+	early_cavalry = 1
 }
 
 puppet = HOL

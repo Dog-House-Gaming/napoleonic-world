@@ -12,7 +12,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	construction1 = 1
-	
+	early_cavalry = 1
 }
 
 
