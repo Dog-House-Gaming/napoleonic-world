@@ -7,38 +7,27 @@
 		infantry = { x = 0 y = 2 }
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		gun_cannon = { x = 2 y = 0 }
 	}
 	
 	support = {
         engineer = { x = 0 y = 0 }
-        #artillery = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "SS-Division" 			# SS division
+	name = "Leichte Kavallerie" 			# SS division
 	# Note: actually a grouping of 3 independent SS-mot regiments
 	regiments = {
-		infantry = { x = 0 y = 0 }
-	    #cavalry = { x = 0 y = 1 }
-		#cavalry = { x = 0 y = 2 }
+		lancers = { x = 0 y = 0 }
+	    lancers = { x = 0 y = 1 }
+		lancers = { x = 0 y = 2 }
 		
-		#cavalry = { x = 1 y = 0 }
-		#cavalry = { x = 1 y = 1 }
-		#cavalry = { x = 1 y = 2 }
-		
-		#cavalry = { x = 2 y = 0 }
-	    #cavalry = { x = 2 y = 1 }
-		#cavalry = { x = 2 y = 2 }
+		lancers = { x = 1 y = 0 }
+		lancers = { x = 1 y = 1 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-        #artillery = { x = 0 y = 2 }
 	}
 	priority = 2
 }
@@ -51,21 +40,6 @@ division_template = {
 		mountaineers = { x = 0 y = 2 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "Kavallerie-Division"
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-        #cavalry = { x = 0 y = 1 }
-        #cavalry = { x = 1 y = 0 }
-		#cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
-	    #artillery = { x = 0 y = 1 }
 	}
 }
 
@@ -97,12 +71,6 @@ units = {
 		name = "23. Infanterie-Division"
 		location = 478
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "SS-Verfügungstruppe" 
-		location = 11505
-		division_template = "SS-Division"
 		start_experience_factor = 0.3
 	}
 
@@ -162,7 +130,7 @@ units = {
 	division= {	
 		name = "Kavallerie-Kommando Insterburg" 
 		location = 281
-		division_template = "Kavallerie-Division"
+		division_template = "Leichte Kavallerie"
 		start_experience_factor = 0.3
 	}
 

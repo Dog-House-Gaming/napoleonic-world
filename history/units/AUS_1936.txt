@@ -7,13 +7,10 @@
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		gun_cannon = { x = 2 y = 0 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		engineer = { x = 0 y = 0 }
 	}
 }
 
@@ -26,10 +23,9 @@ division_template = {
 		mountaineers = { x = 0 y = 2 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
+       	engineer = { x = 0 y = 0 }
 	}
 }
 
@@ -37,10 +33,11 @@ division_template = {
 	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		#cavalry = { x = 0 y = 1 }
-		#cavalry = { x = 1 y = 0 }
-		#cavalry = { x = 1 y = 1 }
+		lancers = { x = 0 y = 0 }
+		lancers = { x = 0 y = 1 }
+		lancers = { x = 0 y = 2 }
+        lancers = { x = 1 y = 0 }
+		lancers = { x = 1 y = 1 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }      # Light tank (tankette) bn
@@ -77,6 +74,54 @@ units = {
 	division= {	
 		name = "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
 		location = 11651 # St Poelten
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "4. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		location = 11542
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		location = 3569
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "6. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		location = 11581
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "7. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		location = 9660
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "8. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		location = 9427
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "9. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		location = 11479
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -125,6 +170,7 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+	
 }
 
 ### Starting Production ###
