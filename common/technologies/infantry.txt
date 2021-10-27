@@ -497,8 +497,8 @@ technologies = {
 	}
 	sword_bayonets = {
 		category_all_infantry = {
-			soft_attack = 0.3
-			ap_attack = 0.3
+			soft_attack = 0.03
+			ap_attack = 0.03
 		}
 
 		research_cost = 2
