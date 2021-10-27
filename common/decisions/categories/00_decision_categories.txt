@@ -85,10 +85,9 @@ fascism_on_the_rise = {
 		}
 	}
 	
-	#visible = {
-	#	NOT = { has_government = fascism }
-	#	has_idea_with_trait = fascist_demagogue
-	#}
+	visible = {
+		NOT = { exists = yes }
+	}
 }
 
 democratic_on_the_rise = {
@@ -98,10 +97,9 @@ democratic_on_the_rise = {
 		always = yes
 	}
 	
-	#visible = {
-	#	NOT = { has_government = democratic }
-	#	has_idea_with_trait = democratic_reformer
-	#}
+	visible = {
+		NOT = { exists = yes }
+	}
 }
 
 communism_on_the_rise = {
@@ -120,10 +118,9 @@ communism_on_the_rise = {
 		}
 	}
 	
-	#visible = {
-	#	NOT = { has_government = communism }
-	#	has_idea_with_trait = communist_revolutionary
-	#}
+	visible = {
+		NOT = { exists = yes }
+	}
 }
 
 crisis = {
