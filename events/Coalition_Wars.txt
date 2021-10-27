@@ -193,6 +193,7 @@ country_event = {
 				days = 1000
 			}
 		}
+		set_global_flag = treaty_1_offered
 	}
 	
 	#NO
@@ -203,6 +204,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_1_offered
 	}
 	
 }
@@ -244,6 +246,7 @@ country_event = {
 				days = 1000
 			}
 		}
+		set_global_flag = treaty_2_offered
 	}
 	
 	#NO
@@ -254,6 +257,7 @@ country_event = {
 		}
 		add_stability = -0.10
 		add_war_support = -0.10
+		set_global_flag = treaty_2_offered
 	}
 	
 }
@@ -295,6 +299,7 @@ country_event = {
 				days = 1000
 			}
 		}
+		set_global_flag = treaty_3_offered
 	}
 	
 	#NO
@@ -305,6 +310,7 @@ country_event = {
 		}
 		add_stability = -0.10
 		add_war_support = -0.10
+		set_global_flag = treaty_3_offered
 	}
 	
 }
@@ -365,6 +371,7 @@ country_event = {
 			}
 		}
 		set_global_flag = secondcw_over
+		set_global_flag = treaty_4_offered
 	}
 	
 	#NO
@@ -375,6 +382,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_4_offered
 	}
 	
 }
@@ -489,6 +497,7 @@ country_event = {
 			set_state_owner = 39
 		}
 		set_global_flag = thirdcw_over 
+		set_global_flag = treaty_5_offered
 	}
 	
 	#NO
@@ -499,6 +508,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_5_offered
 	}
 	
 }
@@ -637,6 +647,7 @@ country_event = {
 			}
 		}
 		set_global_flag = fourthcw_over 
+		set_global_flag = treaty_6_offered
 	}
 	
 	#NO
@@ -647,6 +658,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_6_offered
 	}
 	
 }
@@ -750,6 +762,7 @@ country_event = {
 		SOV = {
 			set_state_owner = 149
 		}
+		set_global_flag = treaty_7_offered
 	}
 	
 	#NO
@@ -760,6 +773,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_7_offered
 	}
 	
 }
@@ -811,7 +825,8 @@ country_event = {
 		POL = {
 			set_state_owner = 92
 		}
-		set_global_flag = fifthcw_over 
+		set_global_flag = fifthcw_over
+		set_global_flag = treaty_8_offered
 	}
 	
 	#NO
@@ -822,6 +837,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_8_offered
 	}
 	
 }
@@ -903,7 +919,7 @@ country_event = {
 		GER = {
 		leave_faction = yes
 		}
-		
+		set_global_flag = treaty_9_offered
 	}
 	
 	#NO
@@ -914,6 +930,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_9_offered
 	}
 	
 }
@@ -955,6 +972,7 @@ country_event = {
 		AUS = {
 		leave_faction = yes
 		}
+		set_global_flag = treaty_10_offered
 	}
 	
 	#NO
@@ -965,6 +983,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_10_offered
 	}
 	
 }
@@ -1033,7 +1052,7 @@ country_event = {
 		DEN = {
 			set_state_owner = 807
 		}
-		
+		set_global_flag = treaty_11_offered
 	}
 	
 	#NO
@@ -1044,6 +1063,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_11_offered
 	}
 	
 }
@@ -1128,6 +1148,7 @@ country_event = {
 				id = coalition.23
 			}
 		}
+		set_global_flag = treaty_12_offered
 	}
 	
 	#NO
@@ -1138,6 +1159,7 @@ country_event = {
 		}
 		add_stability = -0.20
 		add_war_support = -0.20
+		set_global_flag = treaty_12_offered
 	}
 	
 }
