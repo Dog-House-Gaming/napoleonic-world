@@ -19,6 +19,8 @@ ideas = {
 			removal_cost = -1
 				modifier = {
 					drift_defence_factor = 0.5
+					army_core_attack_factor = 0.20
+					army_core_defence_factor = 0.20
 				}
 		}
 		
@@ -35,7 +37,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.20
 			}
 		}
 		
@@ -255,8 +257,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = AUS
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 		
@@ -279,8 +281,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = AUS
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 		
@@ -303,8 +305,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = NAP
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 		
@@ -327,8 +329,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 		
@@ -351,8 +353,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = POR
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 		
@@ -376,8 +378,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 		
@@ -400,8 +402,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = ENG
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.20
 			}
 		}
 		#######
