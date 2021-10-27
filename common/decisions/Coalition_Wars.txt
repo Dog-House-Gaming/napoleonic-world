@@ -221,12 +221,13 @@ foreign_politics = {
 			tag = AUS
 			AND = { 
 				NOT = { has_global_flag = secondcw_over }
+				NOT = { has_global_flag = treaty_1_offered }
 			}
 		}
 		available = {
 			tag = AUS
 			has_war_with = FRA
-			surrender_progress > 0.10
+			surrender_progress > 0.05
 		}
 		cost = 0
 		days_remove = 10
@@ -249,6 +250,7 @@ foreign_politics = {
 			tag = NAP
 			AND = { 
 				NOT = { has_global_flag = secondcw_over }
+				NOT = { has_global_flag = treaty_2_offered }
 			}
 		}
 		available = {
@@ -281,6 +283,7 @@ foreign_politics = {
 			tag = POR
 			AND = { 
 				NOT = { has_global_flag = secondcw_over }
+				NOT = { has_global_flag = treaty_3_offered }
 			}
 		}
 		available = {
@@ -311,6 +314,7 @@ foreign_politics = {
 			tag = ENG
 			AND = { 
 				NOT = { has_global_flag = secondcw_over }
+				NOT = { has_global_flag = treaty_4_offered }
 			}
 		}
 		available = {
@@ -354,6 +358,7 @@ foreign_politics = {
 			AND = { 
 				has_global_flag = thirdcw_started
 				NOT = { has_global_flag = thirdcw_over }
+				NOT = { has_global_flag = treaty_5_offered }
 			}
 		}
 		available = {
@@ -381,6 +386,7 @@ foreign_politics = {
 			AND = { 
 				has_global_flag = fourthcw_started
 				NOT = { has_global_flag = fourthcw_over }
+				NOT = { has_global_flag = treaty_6_offered }
 			}
 		}
 		available = {
@@ -408,6 +414,7 @@ foreign_politics = {
 			AND = { 
 				has_global_flag = fourthcw_over
 				NOT = { has_global_flag = sixthcw_started }
+				NOT = { has_global_flag = treaty_7_offered }
 			}
 		}
 		available = {
@@ -435,6 +442,7 @@ foreign_politics = {
 			AND = { 
 				has_global_flag = fifthcw_started
 				NOT = { has_global_flag = fifthcw_over }
+				NOT = { has_global_flag = treaty_8_offered }
 			}
 		}
 		available = {
@@ -462,6 +470,7 @@ foreign_politics = {
 			AND = { 
 				has_global_flag = sixthcw_started
 				NOT = { has_global_flag = sixthcw_over }
+				NOT = { has_global_flag = treaty_9_offered }
 			}
 		}
 		available = {
@@ -489,6 +498,7 @@ foreign_politics = {
 			AND = { 
 				has_global_flag = sixthcw_started
 				NOT = { has_global_flag = sixthcw_over }
+				NOT = { has_global_flag = treaty_10_offered }
 			}
 		}
 		available = {
@@ -520,6 +530,7 @@ foreign_politics = {
 		visible = {
 			tag = DEN
 			has_idea = aus_truce
+			NOT = { has_global_flag = treaty_11_offered }
 		}
 		available = {
 			tag = DEN
@@ -544,6 +555,7 @@ foreign_politics = {
 		visible = {
 			tag = FRA
 			has_war_with = ENG
+			NOT = { has_global_flag = treaty_12_offered }
 		}
 		available = {
 			tag = FRA
