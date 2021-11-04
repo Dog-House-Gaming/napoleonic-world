@@ -1143,10 +1143,8 @@ country_event = {
 			}
 		}
 		set_global_flag = sixthcw_over
-		every_country = {
-			news_event = {
-				id = coalition.23
-			}
+		news_event = {
+			id = coalition.23
 		}
 		set_global_flag = treaty_12_offered
 	}
