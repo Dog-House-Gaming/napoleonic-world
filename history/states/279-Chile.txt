@@ -2,7 +2,7 @@
 state={
 	id=279
 	name="STATE_279" # Santiago
-	manpower = 3935146
+	manpower = 755146
 
 	state_category = large_city
 
@@ -16,7 +16,7 @@ state={
 			infrastructure = 1#5
 			arms_factory = 1
 			industrial_complex = 7
-			air_base = 3
+			#air_base = 3
 			8222 = {
 				naval_base = 5
 			}
@@ -24,7 +24,7 @@ state={
 				naval_base = 1
 			}
 			650 = {
-				bunker = 1
+				#bunker = 1
 			}
 		}
 		add_core_of = CHL

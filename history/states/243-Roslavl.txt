@@ -2,7 +2,7 @@
 state={
 	id=243
 	name="STATE_243"
-	manpower = 576210
+	manpower = 176210
 	
 	state_category = rural
 
@@ -10,7 +10,7 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 1#5
-			air_base = 2
+			#air_base = 2
 		}
 		add_core_of = SOV
 		victory_points = {

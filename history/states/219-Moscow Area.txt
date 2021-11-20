@@ -2,7 +2,7 @@
 state={
 	id=219
 	name="STATE_219"
-	manpower = 8335992
+	manpower = 1665992
 	
 	state_category = megalopolis
 	resources={
@@ -18,7 +18,7 @@ state={
 			infrastructure = 3#8
 			arms_factory = 7
 			industrial_complex = 3
-			air_base = 10
+			#air_base = 10
 		}
 		add_core_of = SOV
 		1939.1.1 = {

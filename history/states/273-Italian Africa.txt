@@ -2,7 +2,7 @@
 state={
 	id=273
 	name="STATE_273" # Libyan Desert
-	manpower = 42633
+	manpower = 1# = 0#42633
 
 	state_category = wasteland
 	impassable = yes
