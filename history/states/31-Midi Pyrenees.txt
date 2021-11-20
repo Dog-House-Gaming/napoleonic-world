@@ -2,7 +2,7 @@
 state={
 	id=31
 	name="STATE_31"
-	manpower = 1825000
+	manpower = 925000
 	
 	state_category = city
 
@@ -15,7 +15,7 @@ state={
 			infrastructure = 3#6
 			arms_factory = 1
 			industrial_complex = 1
-			air_base = 2
+			#air_base = 2
 
 		}
 		add_core_of = OCC

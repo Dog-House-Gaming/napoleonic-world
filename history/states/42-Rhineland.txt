@@ -28,8 +28,8 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				radar_station = 1
-				synthetic_refinery = 3
+				#radar_station = 1
+				#synthetic_refinery = 3
 
 			}
 
@@ -40,7 +40,7 @@ state={
 	provinces={
 		563 3423 3558 9575 11435 11470 11494 11531 11547 
 	}
-	manpower=3027739
+	manpower=1027739
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 }

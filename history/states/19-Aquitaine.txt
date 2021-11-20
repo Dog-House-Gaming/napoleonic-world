@@ -2,7 +2,7 @@
 state={
 	id=19
 	name="STATE_19"
-	manpower = 1340400
+	manpower = 1440400
 	resources={
 		steel=25 # was: 40
 		aluminium=11 # was: 18
@@ -19,10 +19,10 @@ state={
 			infrastructure = 4#6
 			arms_factory = 1
 			dockyard = 1
-			air_base = 3
+			#air_base = 3
 			9737 = {
 				naval_base = 3
-				coastal_bunker = 1
+				#coastal_#bunker = 1
 			}
 		}
 		add_core_of = OCC

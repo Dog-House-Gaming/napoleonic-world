@@ -21,7 +21,7 @@ state={
 		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
-				air_base = 3
+				#air_base = 3
 				arms_factory = 4
 
 			}
@@ -33,7 +33,7 @@ state={
 	provinces={
 		564 589 3397 3524 3574 6444 6488 6549 9486 9524 9547 11445 11533 11560 
 	}
-	manpower=3798235
+	manpower=1798235
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

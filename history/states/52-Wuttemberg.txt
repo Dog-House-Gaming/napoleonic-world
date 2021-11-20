@@ -2,7 +2,7 @@
 state={
 	id=52
 	name="STATE_52"
-	manpower = 2679413
+	manpower = 1379413
 	resources={
 		aluminium=18 # was: 30
 	}
@@ -22,13 +22,13 @@ state={
 			infrastructure = 4#7
 			arms_factory = 2
 			industrial_complex = 1
-			air_base = 6
+			#air_base = 6
 		}
 		add_core_of = GER
 
 		1939.1.1 = {
 			buildings = {
-				air_base = 10
+				#air_base = 10
 			}
 		}
 	}

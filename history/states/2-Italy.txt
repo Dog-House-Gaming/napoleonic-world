@@ -1,7 +1,7 @@
 state= {
 	id=2
 	name="STATE_2" # Latium
-	manpower = 2781971
+	manpower = 1381971
 
 	state_category = city
 
@@ -13,7 +13,7 @@ state= {
 		victory_points = { 11846 5 }
 		buildings = {
 			infrastructure = 4#8
-			air_base = 8
+			#air_base = 8
 			arms_factory = 1
 			industrial_complex = 4
 			11751 = {

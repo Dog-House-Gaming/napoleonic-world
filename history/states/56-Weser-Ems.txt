@@ -1,7 +1,7 @@
 state={
 	id=56
 	name="STATE_56"
-	manpower = 2058467
+	manpower = 958467
 
 	state_category = city
 
@@ -21,12 +21,12 @@ state={
 			infrastructure = 4#6
 			industrial_complex = 2
 			dockyard = 2
-			fuel_silo = 1
+			#fuel_silo = 1
 			241 = {
 				naval_base = 8
 
 			}
-			air_base = 3
+			#air_base = 3
 
 		}
 		add_core_of = GER
