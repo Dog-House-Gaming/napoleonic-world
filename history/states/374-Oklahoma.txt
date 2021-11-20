@@ -2,7 +2,7 @@
 state={
 	id=374
 	name="STATE_374"
-	manpower = 2396039
+	manpower = 23960
 
 	state_category = city
 
@@ -17,7 +17,7 @@ state={
 		buildings = {
 			infrastructure = 1#4
 			industrial_complex = 2
-			air_base = 2
+			#air_base = 2
 		}
 		#add_core_of = USA
 		victory_points = {

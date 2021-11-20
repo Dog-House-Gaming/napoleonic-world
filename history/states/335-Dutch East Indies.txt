@@ -2,7 +2,7 @@
 state={
 	id=335
 	name="STATE_335" # Java
-	manpower = 41718200
+	manpower = 2371820
 	
 	state_category = city
 	
@@ -25,7 +25,7 @@ state={
 			infrastructure = 1#5
 			industrial_complex = 1
 			dockyard = 1
-			air_base = 3
+			#air_base = 3
 			7381 = {
 				naval_base = 6
 			}

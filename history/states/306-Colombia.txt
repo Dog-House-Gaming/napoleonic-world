@@ -2,7 +2,7 @@
 state={
 	id=306
 	name="STATE_306" # Cundinamarca
-	manpower = 4953049
+	manpower = 753049
 
 	state_category = city
 
@@ -12,7 +12,7 @@ state={
 			infrastructure = 2#3
 			arms_factory = 1
 			industrial_complex = 5
-			air_base = 2
+			#air_base = 2
 		}
 		add_core_of = COL
 		victory_points = {

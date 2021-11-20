@@ -2,7 +2,7 @@
 state={
 	id=360
 	name="STATE_360"
-	manpower = 9631346
+	manpower = 963134
 	
 	state_category = megalopolis
 	
@@ -17,7 +17,7 @@ state={
 			infrastructure = 3#8
 			industrial_complex = 5
 			dockyard = 7
-			air_base = 2
+			#air_base = 2
 			6845 = {
 				naval_base = 8
 
