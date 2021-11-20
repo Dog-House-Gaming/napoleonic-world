@@ -1,7 +1,7 @@
 state= {
 	id=595
 	name="STATE_595"
-	manpower = 11755600
+	manpower = 7755600
 	state_category = city
 	history=
 	{
@@ -13,13 +13,13 @@ state= {
 			industrial_complex = 1
 			7071 = {
 				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
+				#coastal_#bunker = 1
+				#bunker = 1
 			}
 			4196 = {
 				naval_base = 3
-				coastal_bunker = 1
-				bunker = 1
+				#coastal_#bunker = 1
+				#bunker = 1
 			}
 		}
 		victory_points = { 

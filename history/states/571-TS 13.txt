@@ -2,7 +2,7 @@
 state={
 	id=571
 	name="STATE_571" # Omsk
-	manpower = 1317157
+	manpower = 57157
 	
 	state_category = town
 	history={

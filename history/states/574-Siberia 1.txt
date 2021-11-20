@@ -2,7 +2,7 @@
 state={
 	id=574
 	name="STATE_574" # Yakutsk
-	manpower = 407866
+	manpower = 81866
 	
 	state_category = wasteland
 
@@ -13,7 +13,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 1#2
-			air_base = 1
+			#air_base = 1
 		}
 		add_core_of = SOV
 	}

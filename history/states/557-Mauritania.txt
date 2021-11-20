@@ -2,7 +2,7 @@
 state={
 	id=557
 	name="STATE_557" # Mauritania
-	manpower = 225000
+	manpower = 1# = 0#225000
 
 	state_category = pastoral
 

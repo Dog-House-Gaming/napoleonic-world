@@ -2,7 +2,7 @@
 state={
 	id=516
 	name="STATE_516" # Northwestern Siberia
-	manpower = 43948
+	manpower = 8748
 	
 	state_category = wasteland
 

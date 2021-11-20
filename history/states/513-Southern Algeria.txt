@@ -2,7 +2,7 @@
 state={
 	id=513
 	name="STATE_513" # Tlmecen
-	manpower = 811486
+	manpower = 1# = 0#811486
 
 	state_category = wasteland
 

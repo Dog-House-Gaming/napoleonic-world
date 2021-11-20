@@ -2,7 +2,7 @@
 state={
 	id=528
 	name="STATE_528" # Kyushu
-	manpower = 9069000
+	manpower = 4509000
 	state_category = large_city
 	resources={
 		chromium=52 # was: 88
@@ -13,7 +13,7 @@ state={
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 1#7
-			air_base = 3
+			#air_base = 3
 			dockyard = 4
 			arms_factory = 2
 			industrial_complex = 2

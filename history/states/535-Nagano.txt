@@ -2,7 +2,7 @@
 state={
 	id=535
 	name="STATE_535" # Koshinetsu
-	manpower = 3871000
+	manpower = 1901000
 	state_category = large_city
 	
 	resources={
@@ -19,7 +19,7 @@ state={
 			industrial_complex = 2
 			infrastructure = 1#3
 			dockyard = 1
-			fuel_silo = 1
+			#fuel_silo = 1
 
 		}
 		

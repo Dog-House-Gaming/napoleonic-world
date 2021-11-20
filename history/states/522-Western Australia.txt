@@ -3,7 +3,7 @@ state={
 	id=522
 	name="STATE_522"
 
-	manpower = 367200
+	manpower = 1# = 367200
 	state_category = rural
 
 	history={
@@ -11,10 +11,10 @@ state={
 		buildings = {
 			infrastructure = 1#5
 			industrial_complex = 1
-			air_base = 1
+			#air_base = 1
 			1652 = {
 				naval_base = 1
-				coastal_bunker = 1
+				#coastal_#bunker = 1
 			}
 		}
 		victory_points = {
