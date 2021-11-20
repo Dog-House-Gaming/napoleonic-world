@@ -11,7 +11,7 @@ state={
 		buildings = {
 			infrastructure = 1#5
 			industrial_complex = 3
-			air_base = 1
+			#air_base = 1
 
 		}
 		add_core_of = SOV
@@ -28,7 +28,7 @@ state={
 	provinces={
 		1459 1573 4629 7639 7682 7775 10205 10488 10671 11687 12239 12722 
 	}
-	manpower=6275820
+	manpower=1265820
 	buildings_max_level_factor=1.000
 	state_category=city
 }

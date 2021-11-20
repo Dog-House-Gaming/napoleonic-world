@@ -2,7 +2,7 @@
 state={
 	id=433
 	name="STATE_433" # Rajasthan
-	manpower = 11786000
+	manpower = 5786000
 
 	state_category = town
 
@@ -16,7 +16,7 @@ state={
 			2054 1
 		}
 		owner = RAP
-		add_core_of = PAP
+		add_core_of = RAP
 		buildings = {
 			infrastructure = 1#3
 			industrial_complex = 1

@@ -2,7 +2,7 @@
 state={
 	id=414
 	name="STATE_414"
-	manpower = 486013
+	manpower = 126013
 	
 	state_category = wasteland
 
