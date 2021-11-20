@@ -2,7 +2,7 @@
 state={
 	id=772
 	name="STATE_772" # Middle Congo (Brazzaville)
-	manpower = 746415
+	manpower = 1# = 0#746415
 
 	state_category = pastoral
 	resources={

@@ -18,7 +18,7 @@ state={
 			740 = {
 				naval_base = 1
 			}
-			air_base = 1
+			#air_base = 1
 		}
 		add_core_of = SPR
 
@@ -27,7 +27,7 @@ state={
 	provinces={
 		740 3735 6756 13233 
 	}
-	manpower=928094
+	manpower = 1#manpower=928094
 	buildings_max_level_factor=1.000
 	state_category=town
 }

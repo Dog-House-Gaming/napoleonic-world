@@ -2,7 +2,7 @@ state=
 {
 	id=767
 	name="STATE_767" # North Darfur
-	manpower = 8143
+	manpower = 1# = 0#8143
 
 	state_category = wasteland
 	impassable = yes

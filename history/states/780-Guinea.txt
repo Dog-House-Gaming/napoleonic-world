@@ -2,7 +2,7 @@
 state={
 	id=780
 	name="STATE_780" # Guinea
-	manpower = 195041
+	manpower = 1# = 0#195041
 
 	state_category = pastoral
 	history={

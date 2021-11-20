@@ -1,7 +1,7 @@
 state={
 	id=719
 	name="STATE_719" # Natal
-	manpower = 3962157
+	manpower = 1# = 0#3962157
 	resources={
 		chromium=60 # was: 116
 	}
@@ -14,7 +14,7 @@ state={
 		buildings = {
 			infrastructure = 1#5
 			industrial_complex = 2
-			air_base = 1
+			#air_base = 1
 			1468 = {
 				naval_base = 2
 			}

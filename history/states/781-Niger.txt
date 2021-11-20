@@ -2,7 +2,7 @@
 state={
 	id=781
 	name="STATE_781" # Niger
-	manpower = 543817
+	manpower = 1# = 0#543817
 
 	state_category = pastoral
 
