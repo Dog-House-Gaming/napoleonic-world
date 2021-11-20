@@ -12,10 +12,10 @@ state=
 		}
 		buildings = {
 			infrastructure = 1#3
-			air_base = 3
+			#air_base = 3
 			12003 = {
 				naval_base = 3
-				coastal_bunker = 1
+				#coastal_#bunker = 1
 			}
 		}
 	}

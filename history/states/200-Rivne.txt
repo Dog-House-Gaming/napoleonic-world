@@ -2,7 +2,7 @@
 state={
 	id=200
 	name="STATE_200" # Zaporozhe
-	manpower = 1294082
+	manpower = 404082
 	state_category = town
 
 	history={
@@ -12,7 +12,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 2#5
-			air_base = 3
+			#air_base = 3
 		}
 		add_core_of = SOV
 		add_core_of = UKR

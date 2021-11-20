@@ -2,7 +2,7 @@
 state={
 	id=117
 	name="STATE_117" # Campania
-	manpower = 5333611
+	manpower = 2633611
 
 	state_category = city
 	resources={
@@ -20,7 +20,7 @@ state={
 			infrastructure = 3#6
 			arms_factory = 1
 			industrial_complex = 2
-			air_base = 3
+			#air_base = 3
 			819 = {
 				naval_base = 6
 			}

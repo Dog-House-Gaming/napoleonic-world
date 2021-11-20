@@ -2,7 +2,7 @@ state=
 {
 	id=177
 	name="STATE_177"
-	manpower = 365500
+	manpower = 40500
 	
 	state_category = rural
 	
@@ -14,7 +14,7 @@ state=
 		owner = SPR
 		buildings = {
 			infrastructure = 1#6
-			air_base = 1
+			#air_base = 1
 			9793 = {
 				naval_base = 2
 			}

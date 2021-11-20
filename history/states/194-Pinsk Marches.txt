@@ -2,7 +2,7 @@
 state={
 	id=194
 	name="STATE_194" # Mozyr
-	manpower = 934632
+	manpower = 194632
 	
 	state_category = rural
 
@@ -10,7 +10,7 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 1#3
-			air_base = 3
+			#air_base = 3
 		}
 		victory_points = {
 			6232 1

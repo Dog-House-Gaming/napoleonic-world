@@ -2,7 +2,7 @@
 state={
 	id=111
 	name="STATE_111" # Uusimaa
-	manpower = 1670190
+	manpower = 580190
 
 	state_category = city
 
@@ -23,14 +23,14 @@ state={
 			arms_factory = 3
 			industrial_complex = 2
 			dockyard = 1
-			air_base = 5
+			#air_base = 5
 			11105 = {
 				naval_base = 5
-				coastal_bunker = 2
+				#coastal_#bunker = 2
 			}
 			3083 = {
 				naval_base = 3
-				coastal_bunker = 1
+				#coastal_#bunker = 1
 			}
 		}
 		add_core_of = FIN

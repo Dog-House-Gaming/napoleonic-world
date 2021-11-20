@@ -2,7 +2,7 @@
 state={
 	id=128
 	name="STATE_128"
-	manpower = 3685235
+	manpower = 985235
 	
 	state_category = metropolis
 	resources={
@@ -15,7 +15,7 @@ state={
 			infrastructure = 4#8
 			arms_factory = 2
 			industrial_complex = 3
-			air_base = 6
+			#air_base = 6
 		}
 		victory_points = {
 			9297 25

@@ -2,7 +2,7 @@
 state={
 	id=144
 	name="STATE_144"
-	manpower = 355251
+	manpower = 75251
 
 	state_category = rural
 
@@ -16,7 +16,7 @@ state={
 		add_core_of = DEN
 		buildings = {
 			infrastructure = 1#3
-			air_base = 1
+			#air_base = 1
 			192 = {
 				naval_base = 3
 			}
