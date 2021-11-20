@@ -2,7 +2,7 @@
 state={
 	id=610
 	name="STATE_610" # Jehol
-	manpower = 1975377
+	manpower = 1075377
 
 	state_category = pastoral
 

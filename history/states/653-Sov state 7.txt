@@ -2,7 +2,7 @@
 state={
 	id=653
 	name="STATE_653" # Sverdlovsk
-	manpower = 2161650
+	manpower = 81650
 	
 	state_category = city
 
@@ -15,7 +15,7 @@ state={
 			infrastructure = 1#6
 			arms_factory = 2
 			industrial_complex = 1
-			air_base = 1
+			#air_base = 1
 
 		}
 		add_core_of = SOV

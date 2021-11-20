@@ -2,7 +2,7 @@
 state={
 	id=640
 	name="STATE_640" # Mandalay
-	manpower = 3944600
+	manpower = 1044600
 
 	state_category = town
 	resources={
@@ -14,7 +14,7 @@ state={
 		owner = BUR
 		buildings = {
 			infrastructure = 1#3
-			air_base = 1
+			#air_base = 1
 		}
 		victory_points = {
 			1492 1

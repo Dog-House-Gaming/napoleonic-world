@@ -16,11 +16,11 @@ state={
 			153 1
 		}
 		buildings = {
-			fuel_silo = 1
+			#fuel_silo = 1
 			infrastructure = 1#3
 			153 = {
 				naval_base = 1
-				coastal_bunker = 2
+				#coastal_#bunker = 2
 			}
 		}
 	}
